@@ -1,0 +1,165 @@
+html {
+			overflow-y : scroll;
+		}
+
+		.page {
+			will-change        : height;
+			-webkit-transition : height .3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+			transition         : height .3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+		}
+
+		ul.portfolio-list {
+			list-style : none;
+			margin     : 0;
+		}
+
+		.portfolio-list__li {
+			float    : left;
+			/* width    : 50%; */
+			height: 333px;
+			width: 25%;   
+			/* margin: 1.6666%; */
+			overflow : hidden;
+			position : relative;
+		}
+
+		@media screen and (max-width : 960px) {
+			.portfolio-list__li {
+				width  : 33.33%;
+				height : 204px;
+			}
+		}
+
+		@media screen and (max-width : 767px) {
+			.portfolio-list__li {
+				width: 96%;
+				height: auto;
+				margin: 2%;
+			}
+		}
+
+		.portfolio-list__img {
+			width              : 100%;
+			/* height             : 100%; */
+			will-change        : transform;
+			-webkit-transform  : scale(1); /* Chrome, Opera 15+, Safari 3.1+ */
+			-ms-transform      : scale(1); /* IE 9 */
+			transform          : scale(1); /* Firefox 16+, IE 10+, Opera */
+			-webkit-transition : transform 1.2s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+			transition         : transform 1.2s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+		}
+
+		.portfolio-list__li:hover .portfolio-list__img {
+			-webkit-transform : scale(1.1); /* Chrome, Opera 15+, Safari 3.1+ */
+			-ms-transform     : scale(1.1); /* IE 9 */
+			transform         : scale(1.1); /* Firefox 16+, IE 10+, Opera */
+		}
+
+		.portfolio-list__bg {
+			opacity: 0;
+		}
+
+		.portfolio-list__icons-wrapper {
+			position           : absolute;
+			width              : 100%;
+			height             : 100%;
+			text-align         : center;
+			/* vertical centering */
+			top                : 50%;
+			margin-top         : -35px;
+			-ms-filter         : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			opacity            : 0;
+			-webkit-transition : opacity .2s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+			transition         : opacity .2s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+			will-change        : opacity;
+		}
+
+		.portfolio-list__li:hover .portfolio-list__icons-wrapper {
+			-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			opacity    : 1;
+		}
+
+		.portfolio-list__icon {
+			cursor             : pointer;
+			display            : inline-block;
+			height             : 100%;
+			width              : 100%;
+			margin             : 0 20px;
+			-ms-filter         : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			opacity            : 0.5;
+			will-change        : transform, opacity;
+			-webkit-transform  : scale(1.2); /* Chrome, Opera 15+, Safari 3.1+ */
+			-ms-transform      : scale(1.2); /* IE 9 */
+			transform          : scale(1.2); /* Firefox 16+, IE 10+, Opera */
+			-webkit-transition : transform .2s ease-out, opacity .4s; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+			transition         : transform .2s ease-out, opacity .4s; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+		}
+
+		/*.portfolio-list__icon.view {
+			background : url('images/layout/sprite/icon-white.png') no-repeat -300px 0;
+		}
+
+		.portfolio-list__icon.project {
+			background : url('images/layout/sprite/icon-white.png') no-repeat -394px 0;
+		}*/
+
+		.portfolio-list__li:hover .portfolio-list__icon {
+			-webkit-transform : scale(1); /* Chrome, Opera 15+, Safari 3.1+ */
+			-ms-transform     : scale(1); /* IE 9 */
+			transform         : scale(1); /* Firefox 16+, IE 10+, Opera */
+		}
+
+		.portfolio-list__icon:hover {
+			margin     : 0 20px;
+			-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			opacity    : 1;
+		}
+
+		.portfolio-list__gallery {
+			display : none;
+		}
+
+		/* Instantiate MixItUp */
+		.page .portfolio-list .mix {
+			display : none;
+		}
+
+		@media only screen and (min-width: 900px) {
+			.portfolio-list__icon {
+				height             : 80px;
+				width              : 80px;
+			}
+
+			.portfolio-list__icon.view {
+				background : url('../images/layout/sprite/icon-white.png') no-repeat -300px 0;
+			}
+
+			.portfolio-list__icon.project {
+				background : url('../images/layout/sprite/icon-white.png') no-repeat -394px 0;
+			}
+
+			.portfolio-list__bg {
+				position           : absolute;
+				top                : 6%;
+				left               : 5%;
+				width              : 90%;
+				height             : 88%;
+				background         : #000;
+				-ms-filter         : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+				opacity            : 0;
+				will-change        : transform, opacity;
+				-webkit-transform  : scale(1.2); /* Chrome, Opera 15+, Safari 3.1+ */
+				-ms-transform      : scale(1.2); /* IE 9 */
+				transform          : scale(1.2); /* Firefox 16+, IE 10+, Opera */
+				-webkit-transition : all .1s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+				transition         : all .1s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+			}
+
+			.portfolio-list__li:hover .portfolio-list__bg {
+				-ms-filter        : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+				opacity           : .5;
+				-webkit-transform : scale(1); /* Chrome, Opera 15+, Safari 3.1+ */
+				-ms-transform     : scale(1); /* IE 9 */
+				transform         : scale(1); /* Firefox 16+, IE 10+, Opera */
+			}
+		}

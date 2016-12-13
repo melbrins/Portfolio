@@ -1,0 +1,1 @@
+…¹©U<?php exit; ?>a:1:{s:7:"content";s:281:"a:3:{s:25:"relevanssi/relevanssi.php";s:20:"relevanssi_uninstall";s:41:"easy-contact-forms/easy-contact-forms.php";a:2:{i:0;s:16:"EasyContactForms";i:1;s:9:"uninstall";}s:41:"simple-ads-manager/simple-ads-manager.php";a:2:{i:0;s:21:"SimpleAdsManagerAdmin";i:1;s:11:"onUninstall";}}";}
