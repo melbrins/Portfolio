@@ -1,0 +1,145 @@
+/* ============================================ *
+ * HEADER
+ * ============================================ */
+
+#header{
+	width           : 100%;
+	/*position        : absolute;*/
+	position 		: relative;
+	z-index         : 9999;
+	padding         : 0;
+	height 			: $s-header;
+	background-color: $c-header;
+
+	#toggle-nav{
+		display 	: none;
+		color 		: #fff;
+		font-size 	: $f-size-l;
+		line-height : $s-header;
+		margin-right: $gap;
+
+		i{
+			vertical-align: middle;
+			line-height: $s-header;
+		}
+	}
+
+	#logo{
+		display 		: inline-block;
+		line-height 	: $s-header;
+		vertical-align  : middle;
+		text-align 		: center;
+		float 			: left;
+	    
+	    /*&:before{
+	    	    content: '';
+			    width: 20%;
+			    position: absolute;
+			    top: -100%;
+			    left: 10%;
+			    height: 160px;
+			    background-color: $c-background;
+			    border-radius: 0 0 50% 50%;
+			    z-index: 8889;
+		}*/
+
+		img{
+			max-height 		: $s-logo;
+			line-height 	: $s-header;
+			max-width 		: 100%;
+			display 		: inline-block;
+			vertical-align  : middle;
+			z-index 		: 9999;
+    		position 		: relative;
+		}
+	}
+
+	#toggle-filters{
+		display      : none;
+	}
+
+	#menu {
+		float       : right;
+		margin 		: 0;
+		display 	: inline-block;
+		height 		: $s-header;
+
+		ul{
+			margin: 0;
+			padding: 0;
+
+			li { 
+				float 		: left; 
+				margin 		: 0 0 0 10px; 
+
+				a { 
+					@include bounce_hover($c-primary);
+					display 			: inline-block;
+					text-decoration 	: none; 
+					color 				: $c-main-nav; 
+					font-size 			: $f-size; 
+					padding 			: 0 $gap; 
+					line-height 		: $s-header;   
+					font-weight 		: 200; 
+					cursor 				: pointer;
+
+					&:hover, &.active{
+						color 			: #fff; 
+						background-color: $c-primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+#mobile-menu{
+	display 	: none;
+	width 		: 100%;
+	padding 	: 90px 0 $gap 0;
+	background 	: rgba(42,42,42,0.8);
+	position 	: absolute;
+    top 		: 0;
+    left 		: 0;
+    height 		: 100%;
+    z-index 	: 8888;
+
+	ul{ 
+		padding 	: 0;
+
+		li{
+			width 		: 90%;
+			margin 		: 0 auto;
+			border-top 	: 1px dotted #ccc;
+			
+			a{
+				color 		: #ccc;
+				display 	: block;
+				padding 	: $gap 0;
+
+				&:hover{
+					color 	: #fff;
+				}
+			}
+
+			&:first-child{
+				border-top 	: 0px solid #ccc;
+			}
+		}
+	}
+}
+
+@include bp(max-width, $bp-medium){
+	#header{ 
+		width 		: 100%; 
+
+		#toggle-nav{
+			display 	: inline-block;
+			float 		: left;
+		}
+
+		#menu, .not-mobile{ 
+			display 	: none; 
+		}
+	}
+}

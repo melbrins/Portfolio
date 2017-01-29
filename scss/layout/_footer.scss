@@ -1,0 +1,65 @@
+/* ============================================ *
+ * FOOTER
+ * ============================================ */
+
+#footer{
+	@include transition(all 1s ease);
+	float              : left;
+	width              : 100%;
+	font-size          : $f-size;
+	color              : $c-text-gray;
+	text-align         : left;
+	background-color   : $c-footer;
+	
+
+	.copyright{ 
+		float 			: left; 
+		line-height 	: $s-footer; 
+	}
+
+	/* Social Media */
+	.social {
+		width 			: 50%;
+		float 			: right;
+		line-height     : $s-footer;
+		margin 			: 0;
+		padding 		: 0;
+
+		li{
+			float 			: right;
+
+			a{
+				font-size 		: $f-size-xl;
+				display 		: inline-block;
+				color 			: $c-text-gray;
+				margin-left 	: $gap;
+
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@include bp(max-width, $bp-xsmall) {	
+	#footer{
+		.wrap { 
+			padding: 40px 0; 
+		}
+		.copyright { 
+			float 		: none; 
+			width 		: 100%; 
+			text-align 	: center; 
+			display 	: block; 
+			margin 		: 0; 
+			line-height : 20px; 
+		}
+
+		.social { 
+			float: none; 
+			display: block; 
+			margin: 0 auto; 
+		}
+	}
+}

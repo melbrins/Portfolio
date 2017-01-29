@@ -1,0 +1,318 @@
+#portfolio{
+	background-color: $c-background; 
+	
+	#header{
+		position: relative;
+	}
+	
+	.top-banner{
+		display: none;
+	}
+
+	.page{
+		padding 		    : 0;
+		margin 				: 0; 
+		will-change         : height;
+		-webkit-transition  : height .3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+		transition          : height .3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+	}
+
+	.heading{
+		background-color: $c-heading;
+		width 			: 100%;
+	}
+
+	#filters {
+		margin      : 0 auto;
+		padding     : 0;
+		list-style  : none;
+
+		li {
+			float 			: left;
+			margin-bottom 	: 0px;
+			width 			: percentage(1/5);
+			
+
+			span {
+				display				: inline-block;
+				padding				: 15px $gap;
+				width 				: 100%;		
+				text-decoration     : none;
+				color 				: #fff;
+				cursor				: pointer;
+				text-align 			: center;
+
+				&.active {
+					background      : #fff;
+					color           : $c-primary;
+				}
+			}
+		}
+	}
+}
+
+ul.products-grid > li {
+	float: left;
+	width: percentage(6 / 12);
+	padding-right: ($box-spacing/ 2);
+	margin-left: 0;
+	margin-bottom: 30px;
+}
+
+
+
+ul.portfolio-list {
+	list-style : none;
+	margin     : 0;
+	padding    : 0;
+
+	li.portfolio-list__li {
+		float    		: left;
+		width 	 		: 25%;   
+		overflow  		: hidden;
+		position  		: relative;
+		margin-bottom 	: 0px;
+
+		.portfolio-list__img {
+			@include transform(scale(1.01));
+			@include transition(transform 1.2s ease-out);
+			will-change        : transform;
+			width              : 100%;
+			height             : 100%;
+		}
+
+		.portfolio-list__bg {
+			opacity: 0;
+		}
+
+		.portfolio-list__icons-wrapper {
+			position           : absolute;
+			width              : 100%;
+			height             : 100%;
+			text-align         : center;
+			/* vertical centering */
+			top                : 50%;
+			margin-top         : -35px;
+			-ms-filter         : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			opacity            : 0;
+			@include transition(opacity .2s ease-out);
+			will-change        : opacity;
+
+			h2 {
+				color: #fff;
+			}
+		}
+
+		.portfolio-list__icon {
+			cursor             : pointer;
+			display            : inline-block;
+			height             : 100%;
+			width              : 100%;
+			margin             : 0 20px;
+			-ms-filter         : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			opacity            : 0.5;
+			will-change        : transform, opacity;
+			@include transform(scale(1.2));
+			@include transition(transform .2s ease-out, opacity .4s);
+
+			&:hover{
+				margin     : 0 20px;
+				-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				opacity    : 1;
+			}
+		}
+
+		.portfolio-list__gallery {
+			display : none;
+		}
+
+		&:hover{
+			.portfolio-list__img {
+				@include transform(scale(1.1));
+			}
+
+			.portfolio-list__icons-wrapper {
+				-ms-filter : "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				opacity    : 1;
+			}
+
+			.portfolio-list__icon {
+				@include transform(scale(1));
+			}
+		}
+	}
+}
+
+@include bp(min-width, 960px) {
+	@include product-grid(3, 960);
+	@include product-grid(4, 960);
+	@include product-grid(5, 960);
+	@include product-grid(6, 960);
+}
+
+
+
+@include bp(max-width, $bp-medium){
+	ul.portfolio-list {
+		li.portfolio-list__li {
+			width  : 33.33%;
+			height : auto;
+		}
+	}
+}
+
+/* Instantiate MixItUp */
+.page .portfolio-list .mix {
+	display : none;
+}
+
+#toggle-filters { 
+	margin: 0 auto; 
+	display: none; 
+}
+
+@include bp(min-width, $bp-large) {
+	#portfolio{
+		ul.portfolio-list {
+			list-style : none;
+			margin     : 0;
+
+			li.portfolio-list__li {
+				.portfolio-list__icon {
+					height             : 80px;
+					width              : 80px;
+
+					&.view {
+						background : url('../images/layout/sprite/icon-white.png') no-repeat -300px 0;
+					}
+
+					&.project {
+						background : url('../images/layout/sprite/icon-white.png') no-repeat -394px 0;
+					}
+				}
+
+				.portfolio-list__bg {
+					position           : absolute;
+					top                : 0;
+					left               : 0;
+					width              : 100%;
+					height             : 100%;
+					background         : #000;
+					-ms-filter         : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+					opacity            : 0;
+					will-change        : transform, opacity;
+					@include transform(scale(1.2));
+					@include transition(all .1s ease-out);
+				}
+
+				&:hover .portfolio-list__bg {
+					-ms-filter        : "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+					opacity           : .5;
+					@include transform(scale(1));
+				}
+			}
+		}
+	}
+}
+
+@include bp(min-width, $bp-medium){
+	#portfoliolist {
+		.portfolio {
+			width:100%;
+
+			img{
+				width:100%;
+			}	
+		}	
+	}
+}
+
+@include bp(max-width, $bp-medium){
+	#portfolio{
+		#header{
+			
+		}
+
+		.top-banner{
+			display: block;
+			background-color: $c-top-banner;
+			height: $s-top-banner;
+			line-height: $s-top-banner;
+
+			.current-filter{
+				font-size: $f-size-xl;
+				font-weight: bold;
+				color: #fff;
+				float: left;
+				display: inline-block;
+			}
+			
+			#toggle-filters{
+			    display 		: block;
+			    float 			: right;
+			    line-height 	: $s-top-banner;
+			    color 			: #fff;
+			    padding 		: 0 $gap;
+
+			    i{
+			    	margin-right: 5px;
+			    }
+
+		    	@include bounce_hover(#fff);
+				display 			: inline-block;
+				text-decoration 	: none; 
+				color 				: #fff; 
+				font-size 			: $f-size; 
+				padding 			: 0 $gap; 
+				line-height 		: $s-top-banner;   
+				font-weight 		: 200; 
+				cursor 				: pointer;
+
+				&:hover, &.active{
+					color 			: $c-top-banner; 
+					background-color: #fff;
+					text-decoration : none;
+				}
+			}
+		}
+
+		.heading { 
+			width 		: 50%;
+		    position 	: absolute;
+		    z-index 	: 10000;
+		    right 		: 0;
+		    top 		: $s-header + $s-top-banner;
+
+			#filters{
+				display 			: none;
+				width 				: 100%;
+				z-index 			: 99999;
+
+				li{
+					width 			: 100%;
+					margin 			: 0 auto;
+					float 			: none;
+					border-top 	 	: 1px dotted #fff;
+
+					&:first-child{
+						border-top: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include bp(max-width, $bp-xlarge){
+
+	#portfoliolist {
+		.portfolio {
+			width   : 33.33%;
+			height  : 204px;
+
+			img{
+				width 	: 100%;
+			}	
+		}
+	}
+}

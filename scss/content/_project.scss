@@ -1,0 +1,366 @@
+
+/* ============================================ *
+ * Project Page 
+ * ============================================ */
+
+.container.project{
+
+	background-color: #fff;
+
+	#main-picture {
+		@include transition(opacity 1s ease-in-out);
+		opacity: 0;
+	}
+
+	#main-picture.full{
+		opacity: 1;
+	}
+
+
+	.nav-dots span {
+		background: rgba(150,150,150,0.1);
+		margin: 6px;
+		@include transition(all 0.2s);
+		box-shadow: 
+			0 1px 1px rgba(255,255,255,0.4), 
+			inset 0 1px 1px rgba(0,0,0,0.1),
+			0 0 0 2px rgba(255,255,255,0.5);
+
+		&.nav-dot-current,
+		&:hover {
+			box-shadow: 
+				0 1px 1px rgba(255,255,255,0.4), 
+				inset 0 1px 1px rgba(0,0,0,0.1),
+				0 0 0 5px rgba(255,255,255,0.5);
+		}
+	}
+
+	.bg-img {
+		@include box-sizing(content-box);
+		padding: 200px;
+		position: absolute;
+		top: -200px;
+		left: -200px;
+		width: 100%;
+		height: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.bg-img-1 {
+		background-image: url(../images/fullscreen/3d/everclear.jpg);
+	}
+
+	.bg-img-2 {
+		background-image: url(../images/fullscreen/3d/iphone.jpg);
+	}
+
+	.bg-img-3 {
+		background-image: url(../images/fullscreen/3d/glumandfish.jpg);
+	}
+
+	.bg-img-4 {
+		background-image: url(../images/fullscreen/3d/glumandfish.jpg);
+	}
+
+	.bg-img-5 {
+		background-image: url(../images/fullscreen/web/visiondirect-project.jpg);
+	}
+
+	.sl-slider-wrapper {
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+	}
+	.col-6, 
+	.col-12{
+		img{ width: 100%; }
+	}
+
+	.page { margin-top: 0px; }
+
+	.sl-slider{
+		h2,
+		blockquote {
+			padding: 100px 30px 10px 30px;
+			width: 80%;
+			max-width: 960px;
+			color: #fff;
+			margin: 0 auto;
+			position: relative;
+			z-index: 100;
+		}
+
+		h2 {
+			font-size: 100px;
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+		}
+
+		blockquote {
+			font-size: 28px;
+			padding-top: 10px;
+			font-weight: 300;
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+
+			cite {
+				font-size: 16px;
+				font-weight: 700;
+				font-style: normal;
+				text-transform: uppercase;
+				letter-spacing: 5px;
+				padding-top: 30px;
+				display: inline-block;
+			}
+		}
+	}
+
+	
+	.see-more { 
+		background-color: $c-background;
+
+		h3 { 
+			color: $c-text-gray; 
+			text-align: center; 
+			font-size: $f-size-xxl; 
+			margin: $gap 0; 
+			border-bottom: 0px; 
+		} 
+	}
+
+	.artwork{
+		text-align: center;
+		background-color: #000;
+	}
+
+	.description{
+		background-color 	: $c-description;
+		overflow-x 			: hidden;
+		overflow-y 			: scroll;
+		color 				: #fff;
+
+		.col-inside{
+			padding-top 		: $gap;
+			
+			span.date{
+				display 		: inline-block;
+				font-weight 	: 100;
+			}
+
+			h1{
+				font-size 		: $f-size-xxl;
+				color 			: #fff;
+				margin-bottom 	: 0px;
+				font-weight 	: bold;
+				text-transform 	: uppercase;
+			}
+
+			h2{
+				font-size 		: $f-size-l;
+				color 			: #fff;
+				margin-bottom 	: 40px;
+				text-transform 	: initial;
+				font-weight 	: 100;
+				letter-spacing 	: 2px;
+			}
+
+			
+
+			p{
+				font-size 		: $f-size;
+				color 			: #fff;
+				line-height 	: 1.2;
+				font-weight 	: 100;
+				letter-spacing 	: 2px;
+			}
+
+			h3{
+				margin 	 		: 40px 0 20px 0;
+				padding-bottom 	: 10px;
+				border-bottom 	: 1px solid #fff;
+				text-transform 	: uppercase;
+				color 			: #fff;
+
+			}
+		}
+	}
+
+	/* background setup    */
+	/* Custom Project Page */
+	.background {
+		background-repeat:no-repeat;
+		/* custom background-position */
+		background-position:50% 50%;
+		/* ie8- graceful degradation */
+		background-position:50% 50%\9 !important;
+	}
+
+	.fullscreen,
+	.content-a {
+		width:100%;
+		min-height:100%;
+	}
+
+	/* content centering styles */
+	.content-a {
+		display:table;
+	}
+
+	.content-b {
+		display: table-cell;
+		position: absolute;
+		vertical-align: middle;
+	}
+
+	.not-fullscreen,
+	.not-fullscreen .content-a,
+	.fullscreen.not-overflow,
+	.fullscreen.not-overflow .content-a {
+		height:100%;
+		overflow:hidden;
+	}
+
+	/* visual styles */
+	.not-fullscreen {
+		height:50%;
+	}
+
+
+	&#vision-direct{
+
+	}
+
+	&#residence{
+				
+	}
+} 
+
+
+.content-a { position: relative; }
+.content-b { 
+	text-align: left;
+
+	h1{ 
+		color:#fff; 
+		margin-bottom: 0px; 
+		line-height: 50px; 
+		font-size: $f-size-xxl;   
+		font-weight: 800;   
+		letter-spacing: 10px;   
+		text-transform: uppercase; 
+		text-shadow: 0 0 1px #000;
+	}
+
+	h2 { 
+		color: #fff; 
+		margin-bottom: 0px; 
+		font-weight: 100;   
+		font-size: $f-size-l;   
+		line-height: 1.1;
+		margin-top: 0px;
+		letter-spacing: 2px;
+	}
+
+	h1, h2{
+		@include animation(push-in 0.6s);
+		opacity: 1;
+	}
+
+	&.top-5  { top: 5%; }
+	&.top-10 { top: 10%; }
+	&.top-20 { top: 20%; }
+	&.top-30 { top: 30%; }
+	&.left   { left: 10%; }
+	&.right  { left: 50%; }
+	&.center { width: 100%; text-align: center; }
+	&.bottom { top: 70%; }
+
+}
+
+.center{ text-align: center; }
+
+.subtitle {
+    margin-bottom: $gap;
+    display: inline-block;
+    color: $c-primary;
+}
+
+.content-b h1{
+	-webkit-animation-name: push-in;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: push-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.content-b h2{
+	-webkit-animation-name: topanimation2;
+    -webkit-animation-duration: 2s;
+}
+
+
+/* ============================================ *
+ * Project - Vision Direct
+ * ============================================ */
+
+.colour-banner { 
+	height: 100px; 
+	background-color: #5fa5d7; 
+	text-align: center; 
+
+	.text-colour-banner{ 
+		font: 36px/100px 'Open Sans', Arial, Helvetica, sans-serif; 
+		font-weight: 800; 
+		color: #fff; 
+	}
+}
+
+.img-banner { 
+	height: 300px; 
+	background-color: #f3f3f3; 
+	text-align: left; 
+	background-image:url('../images/project/vd-third-slide.png'); 
+}
+
+
+
+@include bp(max-width, $bp-medium) {
+
+	.container.project{
+		.sl-slider-wrapper {
+			height: 500px;
+		}
+
+		.sl-slider{
+			h2 {
+				font-size: 36px;
+			}
+
+			blockquote {
+				font-size: 16px;
+			}
+		}
+	} 
+
+}
+
+
+@include bp(max-width, $bp-xlarge){
+	.content-b.left {
+	  left: 10%;
+	}
+}
+
+@include bp(max-width, $bp-xsmall) {
+	.content-b{
+		.bottom { top:60%; }
+		.right { left: 10%; }
+		h1 { font-size:3em; }
+		h2 { font-size:1.5em; }
+
+	}
+}
+

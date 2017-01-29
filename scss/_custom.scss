@@ -1,65 +1,113 @@
+/* ============================================ *
+ * Homepage - Slider
+ * ============================================ */
+
+ .sl-slider-wrapper {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.sl-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Slide wrapper and slides */
+
+.sl-slide,
+.sl-slides-wrapper,
+.sl-slide-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+} 
+
+.sl-slide {
+	z-index: 1;
+}
+
+/* The duplicate parts/slices */
+
+.sl-content-slice {
+	@include box-sizing(content-box);
+	@include visibility(hidden);
+	overflow: hidden;
+	position: absolute;
+	background: #fff;
+	opacity : 1;
+}
+
+/* Horizontal slice */
+
+.sl-slide-horizontal .sl-content-slice {
+	width: 100%;
+	height: 50%;
+	left: -200px;
+	@include transform(translateY(0%) scale(1))
+}
+
+.sl-slide-horizontal .sl-content-slice:first-child {
+	top: -200px;
+	padding: 200px 200px 0px 200px;
+}
+
+.sl-slide-horizontal .sl-content-slice:nth-child(2) {
+	top: 50%;
+	padding: 0px 200px 200px 200px;
+}
+
+/* Vertical slice */
+
+.sl-slide-vertical .sl-content-slice {
+	width: 50%;
+	height: 100%;
+	top: -200px;
+	@include transform(translateX(0%) scale(1))
+}
+
+.sl-slide-vertical .sl-content-slice:first-child {
+	left: -200px;
+	padding: 200px 0px 200px 200px;
+}
+
+.sl-slide-vertical .sl-content-slice:nth-child(2) {
+	left: 50%;
+	padding: 200px 200px 200px 0px;
+}
+
+/* Content wrapper */
+/* Width and height is set dynamically */
+.sl-content-wrapper {
+	position: absolute;
+}
+
+.sl-content {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+/* Default styles for background colors */
+.sl-slide-horizontal .sl-slide-inner {
+	background: #ddd;
+}
+
+.sl-slide-vertical .sl-slide-inner {
+	background: #ccc;
+}
+
 #index .sl-slider-wrapper {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-}
-
-.container.project .sl-slider-wrapper {
-	width: 100%;
-	height: 600px;
-	overflow: hidden;
-	position: relative;
-}
-
-.container.project .sl-slider h2,
-.container.project .sl-slider blockquote {
-	padding: 100px 30px 10px 30px;
-	width: 80%;
-	max-width: 960px;
-	color: #fff;
-	margin: 0 auto;
-	position: relative;
-	z-index: 100;
-}
-
-.container.project .sl-slider h2 {
-	font-size: 100px;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-}
-
-.container.project .sl-slider blockquote {
-	font-size: 28px;
-	padding-top: 10px;
-	font-weight: 300;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-}
-
-.container.project .sl-slider blockquote cite {
-	font-size: 16px;
-	font-weight: 700;
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	padding-top: 30px;
-	display: inline-block;
-}
-
-.container.project .bg-img {
-	padding: 200px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	position: absolute;
-	top: -200px;
-	left: -200px;
-	width: 100%;
-	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
 }
 
 /* Custom navigation arrows */
@@ -76,11 +124,7 @@
 	margin-top: -40px;
 	cursor: pointer;
 	
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
+	@include transform(rotate(45deg));
 }
 
 .nav-arrows span:hover {
@@ -126,28 +170,6 @@
 		inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.container.project .nav-dots span {
-	background: rgba(150,150,150,0.1);
-	margin: 6px;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.4), 
-		inset 0 1px 1px rgba(0,0,0,0.1),
-		0 0 0 2px rgba(255,255,255,0.5);
-}
-
-.container.project .nav-dots span.nav-dot-current,
-.container.project .nav-dots span:hover {
-	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.4), 
-		inset 0 1px 1px rgba(0,0,0,0.1),
-		0 0 0 5px rgba(255,255,255,0.5);
-}
-
 .nav-dots span.nav-dot-current:after {
 	content: "";
 	position: absolute;
@@ -161,358 +183,246 @@
 
 /* Content elements */
 
-#index .deco {
-	width: 260px;
-	height: 260px;
-	border: 2px dashed #ddd;
-	border: 2px dashed rgba(150,150,150,0.4);
-	border-radius: 50%;
-	position: absolute;
-	bottom: 50%;
-	left: 50%;
-	margin: 0 0 0 -130px;
-}
-
-#index [data-icon]:after {
-    content: attr(data-icon);
-    font-family: 'AnimalsNormal';
-	color: #999;
-	text-shadow: 0 0 1px #999;
-	position: absolute;
-	width: 220px;
-	height: 220px;
-	line-height: 220px;
-	text-align: center;
-	font-size: 100px;
-	top: 50%;
-	left: 50%;
-	margin: -110px 0 0 -110px;
-	box-shadow: inset 0 0 0 10px #f7f7f7;
-	border-radius: 50%;
-}
-
-#index .sl-slide h2 {
-	color: #fff;
-	text-shadow: 0 0 1px #000;
-	padding: 20px 0;
-	position: absolute;
-	font-size: 44px;
-	font-weight: 800;
-	letter-spacing: 13px;
-	text-transform: uppercase;
-	width: 80%;
-	left: 10%;
-	text-align: center;
-	line-height: 50px;
-	bottom: 50%;
-	margin: 0 0 -90px 0;
-}
-
-#index .sl-slide h3 {
-	position: absolute;
-	width: 80%;
-	text-align: center;
-	left: 10%;
-	font-weight: 200;
-	font-size: 34px;
-	line-height: 20px;
-	height: 70px;
-	color: #fff;
-	z-index: 2;
-	bottom: 50%;
-	margin: 0 0 -150px 0;
-	padding: 0;
-	border-bottom: 0px;
-	/* text-shadow: 4px 4px rgba(0,0,0,0.3); */
-	/* text-shadow: 0 0 1px #000; */
-}
-
-#index .sl-slide .wrapper {
-	position: absolute;
-	width: 80%;
-	text-align: center;
-	left: 10%;
-	font-weight: 400;
-	font-size: 34px;
-	line-height: 20px;
-	height: 70px;
-	color: #000;
-	z-index: 2;
-	bottom: 50%;
-	margin: 0 0 -250px 0;
-	padding: 0;
-	/* text-shadow: 4px 4px rgba(0,0,0,0.3); */
-	/* text-shadow: 0 0 1px #000; */
-}
-
-#index .sl-slide blockquote {
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	left: 0;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	height: 70px;
-	color: #fff;
-	z-index: 2;
-	bottom: 50%;
-	margin: 0 0 -200px 0;
-	padding: 0;
-}
-
-#index .sl-slide blockquote p{
-	margin: 0 auto;
-	width: 60%;
-	max-width: 400px;
-	position: relative;
-}
 
 
-#index .sl-slide blockquote p:before {
-	color: #f0f0f0;
-	color: rgba(244,244,244,0.65);
-	font-family: "Bookman Old Style", Bookman, Garamond, serif;
-	position: absolute;
-	line-height: 60px;
-	width: 75px;
-	height: 75px;
-	font-size: 200px;
-	z-index: -1;
-	left: -80px;
-	top: 35px;
-	/* content: '\0100'; */
-}
+/* ============================================ *
+ * Homepage - Slider Banner
+ * ============================================ */
+#index{
+	[data-icon]:after {
+	    content: attr(data-icon);
+	    font-family: 'AnimalsNormal';
+		color: $c-text-gray;
+		text-shadow: 0 0 1px #999;
+		position: absolute;
+		width: 220px;
+		height: 220px;
+		line-height: 220px;
+		text-align: center;
+		font-size: 100px;
+		top: 50%;
+		left: 50%;
+		margin: -110px 0 0 -110px;
+		box-shadow: inset 0 0 0 10px #f7f7f7;
+		border-radius: 50%;
+	}
 
-#index .sl-slide blockquote cite {
-	font-size: 10px;
-	padding-top: 10px;
-	display: inline-block;
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-}
+	.sl-slide{ 
+		h2 {
+			color: #fff;
+			text-shadow: 0 0 1px #000;
+			padding: 20px 0;
+			position: absolute;
+			font-size: 44px;
+			font-weight: 800;
+			letter-spacing: 13px;
+			text-transform: uppercase;
+			width: 80%;
+			left: 10%;
+			text-align: center;
+			line-height: 50px;
+			bottom: 50%;
+			margin: 0 0 -90px 0;
+		}
 
-/* Custom background colors for slides in first demo */
+		h3 {
+			position: absolute;
+			width: 80%;
+			text-align: center;
+			left: 10%;
+			font-weight: 200;
+			font-size: 34px;
+			line-height: 20px;
+			height: 70px;
+			color: #fff;
+			z-index: 2;
+			bottom: 50%;
+			margin: 0 0 -150px 0;
+			padding: 0;
+			border-bottom: 0px;
+		}
 
-/* First Slide */
-#index .bg-1 .sl-slide-inner,
-#index .bg-1 .sl-content-slice {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	/*Everclear City*/
-	/*background-image: url(../images/fullscreen/3d/everclear3.jpg);*/
-	background-image: url(../images/fullscreen/illustration/Black_Sheep_Goat_web.jpg);
-}
+		.wrapper {
+			position: absolute;
+			width: 80%;
+			text-align: center;
+			left: 10%;
+			font-weight: 400;
+			font-size: 34px;
+			line-height: 20px;
+			height: 70px;
+			color: #000;
+			z-index: 2;
+			bottom: 50%;
+			margin: 0 0 -250px 0;
+			padding: 0;
+		}
 
-/* Second Slide */
-#index .bg-2 .sl-slide-inner,
-#index .bg-2 .sl-content-slice {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	/*Black & White iPhone*/
-	/*background-image: url(../images/fullscreen/3d/iphone.jpg);*/
-	background-image: url(../images/fullscreen/3d/london-coffee-festival.jpg);
-}
+		blockquote {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			left: 0;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			height: 70px;
+			color: #fff;
+			z-index: 2;
+			bottom: 50%;
+			margin: 0 0 -200px 0;
+			padding: 0;
 
-#index .bg-2 [data-icon]:after,
-#index .bg-2 h2, #index .bg-2 h3 {
-	color: #fff;
-}
+			p{
+				margin: 0 auto;
+				width: 60%;
+				max-width: 400px;
+				position: relative;
 
-#index .bg-2 blockquote:before {
-	color: #fff;
-}
+				&:before {
+					color: #f0f0f0;
+					color: rgba(244,244,244,0.65);
+					font-family: "Bookman Old Style", Bookman, Garamond, serif;
+					position: absolute;
+					line-height: 60px;
+					width: 75px;
+					height: 75px;
+					font-size: 200px;
+					z-index: -1;
+					left: -80px;
+					top: 35px;
+					/* content: '\0100'; */
+				}
+			}
 
-/* Third Slide */
-#index .bg-3 .sl-slide-inner,
-#index .bg-3 .sl-content-slice {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-}
+			cite {
+				font-size: 10px;
+				padding-top: 10px;
+				display: inline-block;
+				font-style: normal;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+			}
+		}
+	}
 
-#index .bg-3 .deco {
-	border-color: #fff;
-	border-color: rgba(255,255,255,0.5);
-}
+	.sl-slide .sl-slide-inner, .sl-slide .sl-content-slice {
+		-webkit-background-size 		: cover;
+		-moz-background-size 			: cover;
+		background-size 				: cover;
+		background-position 			: center center;
+	}
 
-#index .bg-3 [data-icon]:after {
-	color: #fff;
-	text-shadow: 0 0 1px #fff;
-	box-shadow: inset 0 0 0 10px #b55381;
-}
+	/* First Slide */
+	.bg-1{
+		.sl-slide-inner, .sl-content-slice{
+			/*Everclear City*/
+			/*background-image: url(../images/fullscreen/3d/everclear3.jpg);*/
+			background-image 				: url(../images/fullscreen/illustration/Black_Sheep_Goat_web.jpg);
+		}
+	}
+	/* Second Slide */
+	.bg-2{
+		.sl-slide-inner, .sl-content-slice{
+			/*Black & White iPhone*/
+			/*background-image: url(../images/fullscreen/3d/iphone.jpg);*/
+			background-image 				: url(../images/fullscreen/3d/london-coffee-festival.jpg);
+		}
 
-#index .bg-3 h2,
-#index .bg-3 blockquote{
-	color: #fff;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-}
+		[data-icon]:after, h2, h3 { 
+			color: #fff; 
+		}
 
-#index .bg-3 blockquote:before {
-	color: #c46c96;
-}
+		blockquote:before {
+			color: #fff;
+		}
+	}
+	/* Third Slide */
+	.bg-3{
+		.sl-slide-inner, .sl-content-slice{
+			background-image 				: url(../images/fullscreen/3d/glumandfish.jpg);
+		}
 
-/* Forth Slide */
-#index .bg-4 .sl-slide-inner,
-#index .bg-4 .sl-content-slice {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-image: url(../images/fullscreen/3d/vein2.jpg);
-}
+		[data-icon]:after {
+			color: #fff;
+			text-shadow: 0 0 1px #fff;
+			box-shadow: inset 0 0 0 10px #b55381;
+		}
 
-#index .bg-4 .deco {
-	border-color: #379eaa;
-}
+		h2, blockquote{
+			color: #fff;
+			text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+		}
 
-#index .bg-4 [data-icon]:after {
-	text-shadow: 0 0 1px #277d87;
-	color: #277d87;
-}
+		blockquote:before {
+			color: #c46c96;
+		}
+	}
+	/* Forth Slide */
+	.bg-4{
+		.sl-slide-inner, .sl-content-slice{
+			background-image 				: url(../images/fullscreen/3d/vein2.jpg);
+		}
 
-#index .bg-4 h2,
-#index .bg-4 blockquote{
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
+		[data-icon]:after {
+			text-shadow: 0 0 1px #277d87;
+			color: #277d87;
+		}
 
-#index .bg-4 blockquote:before {
-	color: #379eaa;
-}
+		h2, blockquote{
+			color: #fff;
+			text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+		}
 
-/* Fifth Slide */
-#index .bg-5 .sl-slide-inner,
-#index .bg-5 .sl-content-slice {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-image: url(../images/fullscreen/web/visiondirect-project.jpg);
-}
+		blockquote:before {
+			color: #379eaa;
+		}
+	}
+	/* Fifth Slide */
+	.bg-5{
+		.sl-slide-inner, .sl-content-slice{
+			background-image 				: url(../images/fullscreen/web/visiondirect-project.jpg);
+		}
 
-#index .bg-5 .deco {
-	border-color: #ECD82C;
-}
+		h2, h3, blockquote{
+			color: #000;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		}
 
-#index .bg-5 .deco:after {
-	color: #000;
-	text-shadow: 0 0 1px #000;
-}
-
-#index .bg-5 h2, #index .bg-5 h3,
-#index .bg-5 blockquote{
-	color: #000;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-
-#index .bg-5 blockquote:before {
-	color: #ecd82c;
-}
-
-/* Sith Slide */
-#index .bg-6 .sl-slide-inner,
-#index .bg-6 .sl-content-slice {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-image: url(../images/fullscreen/web/residenceestates.jpg);
-}
-
-/*#index .bg-6 .deco {
-	border-color: #ECD82C;
-}
-
-#index .bg-6 .deco:after {
-	color: #000;
-	text-shadow: 0 0 1px #000;
-}
-
-#index .bg-6 h2, #index .bg-5 h3,
-#index .bg-6 blockquote{
-	color: #000;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-
-#index .bg-6 blockquote:before {
-	color: #ecd82c;
-}*/
-
-.container.project .bg-img-1 {
-	background-image: url(../images/fullscreen/3d/everclear.jpg);
-}
-.container.project .bg-img-2 {
-	background-image: url(../images/fullscreen/3d/iphone.jpg);
-}
-.container.project .bg-img-3 {
-	background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-}
-.container.project .bg-img-4 {
-	background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-}
-.container.project .bg-img-5 {
-	background-image: url(../images/fullscreen/web/visiondirect-project.jpg);
+		blockquote:before {
+			color: #ecd82c;
+		}
+	}
+	/* Sixth Slide */
+	.bg-6{
+		.sl-slide-inner, .sl-content-slice{
+			background-image 				: url(../images/fullscreen/web/residenceestates.jpg);
+		}
+	}
 }
 
 /* Animations for content elements */
 
 .sl-trans-elems .deco{
-	-webkit-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	-moz-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	-o-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	-ms-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	animation: roll 1s ease-out both, fadeIn 1s ease-out both;
+	@include animation(roll 1s ease-out both, fadeIn 1s ease-out both);
 }
 .sl-trans-elems h2{
-	-webkit-animation: moveUp 1s ease-in-out both;
-	-moz-animation: moveUp 1s ease-in-out both;
-	-o-animation: moveUp 1s ease-in-out both;
-	-ms-animation: moveUp 1s ease-in-out both;
-	animation: moveUp 1s ease-in-out both;
+	@include animation(moveUp 1s ease-in-out both);
 }
 .sl-trans-elems h3{
-	-webkit-animation: fadeIn 0.5s linear 0.5s both;
-	-moz-animation: fadeIn 0.5s linear 0.5s both;
-	-o-animation: fadeIn 0.5s linear 0.5s both;
-	-ms-animation: fadeIn 0.5s linear 0.5s both;
-	animation: fadeIn 0.5s linear 0.5s both;
+	@include animation(fadeIn 0.5s linear 0.5s both);
 }
-
 .sl-trans-elems blockquote{
-	-webkit-animation: fadeIn 0.5s linear 0.5s both;
-	-moz-animation: fadeIn 0.5s linear 0.5s both;
-	-o-animation: fadeIn 0.5s linear 0.5s both;
-	-ms-animation: fadeIn 0.5s linear 0.5s both;
-	animation: fadeIn 0.5s linear 0.5s both;
+	@include animation(fadeIn 0.5s linear 0.5s both);
 }
 .sl-trans-back-elems .deco{
-	-webkit-animation: scaleDown 1s ease-in-out both;
-	-moz-animation: scaleDown 1s ease-in-out both;
-	-o-animation: scaleDown 1s ease-in-out both;
-	-ms-animation: scaleDown 1s ease-in-out both;
-	animation: scaleDown 1s ease-in-out both;
+	@include animation(scaleDown 1s ease-in-out both);
 }
 .sl-trans-back-elems h2{
-	-webkit-animation: fadeOut 1s ease-in-out both;
-	-moz-animation: fadeOut 1s ease-in-out both;
-	-o-animation: fadeOut 1s ease-in-out both;
-	-ms-animation: fadeOut 1s ease-in-out both;
-	animation: fadeOut 1s ease-in-out both;
+	@include animation(fadeOut 1s ease-in-out both);
 }
 .sl-trans-back-elems blockquote{
-	-webkit-animation: fadeOut 1s linear both;
-	-moz-animation: fadeOut 1s linear both;
-	-o-animation: fadeOut 1s linear both;
-	-ms-animation: fadeOut 1s linear both;
-	animation: fadeOut 1s linear both;
+	@include animation(fadeOut 1s linear both);
 }
 @-webkit-keyframes roll{
 	0% {-webkit-transform: translateX(500px) rotate(360deg);}
@@ -661,19 +571,4 @@
 		font-size: 120px;
 		left: -45px;
 	}
-
-	.container.project .sl-slider-wrapper {
-		height: 500px;
-	}
-
-	.container.project .sl-slider h2 {
-		font-size: 36px;
-	}
-
-	.container.project .sl-slider blockquote {
-		font-size: 16px;
-	}
-
 }
-
-

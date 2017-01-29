@@ -1,68 +1,106 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/********************------------------- Caroussel--------*******************/
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
+#nav a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+#nav a {
+  color: #01A2F3;
+  text-decoration: none;
 }
+
+#nav a:hover {
+  border-bottom: solid 1px #2edbac;
+}
+
+#viewport-shadow {
+  position: relative;
+  width: 100%;
+  background-size: 100%;
+  
+}
+
+#box
+{
+    width: 100%;
+    height: 300px;
+}
+
+#viewport {}
+
+#nav {
+  position: absolute;
+  top: 310px;
+  left: 43%;
+}
+
+#controls {
+  position: relative;
+  float: right;
+  overflow: hidden;
+}
+
+#controls li {
+  display: inline;
+}
+
+.goto-slide {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  float: left;
+  border: solid 1px #FFF;
+  border-radius: 8px;
+}
+
+.goto-slide.current {
+  background-color: #FFF;
+}
+
+#next, #prev {
+  @include transition (background .4s);
+  position: absolute;
+  top: 125px;
+  width: 40px;
+  height: 60px;
+  background: url(img/sprite_slider.png) no-repeat;
+  background-position: -4px 0px;
+  display: block;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+#next:hover, #prev:hover {
+  opacity: 1;
+  border: none;
+}
+
+
+#prev {
+  left: 40px;
+}
+
+
+#next, #next:hover {
+  right: 40px;
+  background-position: -40px 0;
+}
+
+#time-indicator {
+  width: 0px;
+  height: 3px;
+  background-color: #366FA8;
+  position: absolute;
+  top: 352px;
+  left: 0px;
+  z-index: 9999;
+}
+
+
+/********************--------------------Fin Caroussel--------*******************/
+

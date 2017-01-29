@@ -68,21 +68,21 @@
 
 	$.Slitslider.defaults = {
 		// transitions speed
-		speed : 800,
+		speed : 1200,
 		// if true the item's slices will also animate the opacity value
 		optOpacity : false,
 		// amount (%) to translate both slices - adjust as necessary
-		translateFactor : 230,
+		translateFactor : 150,
 		// maximum possible angle
-		maxAngle : 25,
+		maxAngle : 50,
 		// maximum possible scale
-		maxScale : 2,
+		maxScale : 1,
 		// slideshow on / off
 		autoplay : false,
 		// keyboard navigation
 		keyboard : true,
 		// time between transitions
-		interval : 4000,
+		interval : 2000,
 		// callbacks
 		onBeforeChange : function( slide, idx ) { return false; },
 		onAfterChange : function( slide, idx ) { return false; }

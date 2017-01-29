@@ -1,0 +1,98 @@
+
+@mixin animation($args...){
+	-webkit-animation: $args;
+	-moz-animation: $args;
+	-o-animation: $args;
+	-ms-animation: $args;
+	animation: $args;
+}
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+@mixin visibility($arg){
+	-webkit-backface-visibility: $arg;
+	-moz-backface-visibility: $arg;
+	-o-backface-visibility: $arg;
+	-ms-backface-visibility: $arg;
+	backface-visibility: $arg;
+}
+
+@mixin box-sizing($arg){
+	-webkit-box-sizing: $arg;
+	-moz-box-sizing: $arg;
+	-o-box-sizing: $arg;
+	-ms-box-sizing: $arg;
+	box-sizing: $arg;
+}
+
+@mixin transform($args){
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-o-transform: $args;
+	-ms-transform: $args;
+	transform: $args;
+}
+
+@mixin border-radius($arg){
+	-webkit-border-radius: $arg;
+	-moz-border-radius: $arg;
+	border-radius: $arg;	
+}
+
+/* Config: Two columns + flexible gutter */
+
+// This mixin outputs the styles to allow for grids with more than 3 columns
+@mixin product-grid($column-count, $container-width, $class-append:"") {
+
+	// Allow this mixin to be used for more specific purposes, such as grids contained within widgets
+    @if $class-append != "" {
+        $class-append: -#{$class-append};
+    }
+    
+    /* Config: Columns + flexible gutter */
+    $column-grid: 12 / $column-count;
+    ul.portfolio-list.portfolio-list--max-#{$column-count} > li.portfolio-list__li{
+        width: percentage($column-grid/ 12);
+    }
+}
+
+@mixin bounce_hover($colour: $nav-hover){
+    z-index: 2;
+    position: relative;
+
+    @include transition(all 0.4s ease-out);
+
+     &:before{
+        content         : "";
+        position        : absolute;
+        z-index         : -1;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
+        background      : $colour;
+
+        @include transition(transform 0.4s ease-out);
+
+        /* == TRANSFORM == */
+        -webkit-transform       : scaleY(0);
+        transform               : scaleY(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin        : 50% 100%;
+    }
+
+    &:hover{
+        &:before{
+            -webkit-transform       : scaleY(1);
+            transform               : scaleY(1);
+            -webkit-transition-timing-function  : cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function          : cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+}
