@@ -15,7 +15,7 @@ function logMsg($text,$slug=null) {
 }
 function upload_payload($payload) {
         global $bitbucket_credentials;
-	$bitbucket_username = $bitbucket_credentials['ender711'];
+	$bitbucket_username = $bitbucket_credentials['melbrins@gmail.com'];
 	$bitbucket_password = $bitbucket_credentials['hcx2wpaw'];
 
 	$json = stripslashes($payload);
