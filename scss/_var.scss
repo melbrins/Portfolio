@@ -58,7 +58,7 @@ $section-divider: 20px;
 
 // Dimensions
 
-$max-content-width: 1240px;
+$max-content-width: 1280px;
 $max-container-width: $trim + $max-content-width + $trim;
 $max-std-formatted-width: 50em;
 
@@ -242,7 +242,7 @@ $b-margin-bottom 	: 1.5em;
 // =============================================
 
 $c-main-nav: #ddd;
-$c-header: rgba(42, 42, 42, 0.8);
+$c-header: rgba(0, 0, 0, 0.4);
 $s-header: 80px;
 $s-logo: 40px;
 $c-heading: $c-primary;
@@ -269,3 +269,10 @@ $s-footer: 70px;
 
 $c-description: $c-primary;
 
+
+// =============================================
+// Work List - Project
+// =============================================
+
+$s-thumbnails-height: 450px;
+$s-thumbnails-width: 275px;
