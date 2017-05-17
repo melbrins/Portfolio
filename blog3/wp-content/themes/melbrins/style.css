@@ -38,6 +38,15 @@ Version: 1.0
 20.0 Print
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+1.0 Fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.1 Font Sizes
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 Primary Break Points
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
@@ -344,8 +353,7 @@ template {
   word-wrap: normal !important;
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
-
-/* line 16, assets/scss/_accessibility.scss */
+/* line 15, assets/scss/_accessibility.scss */
 .screen-reader-text:focus {
   -moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -457,7 +465,7 @@ select,
 textarea {
   color: #333;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.66;
@@ -475,8 +483,7 @@ h6 {
   margin: 0 0 0.75em;
   padding: 1.5em 0 0;
 }
-
-/* line 30, assets/scss/_typography.scss */
+/* line 29, assets/scss/_typography.scss */
 h1:first-child,
 h2:first-child,
 h3:first-child,
@@ -486,22 +493,22 @@ h6:first-child {
   padding-top: 0;
 }
 
-/* line 39, assets/scss/_typography.scss */
+/* line 34, assets/scss/_typography.scss */
 h1 {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-/* line 45, assets/scss/_typography.scss */
+/* line 40, assets/scss/_typography.scss */
 h2 {
   color: #666;
-  font-size: 20px;
+  font-size: 18px;
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-/* line 52, assets/scss/_typography.scss */
+/* line 47, assets/scss/_typography.scss */
 h3 {
   color: #333;
   font-size: 18px;
@@ -509,39 +516,39 @@ h3 {
   font-weight: 300;
 }
 
-/* line 59, assets/scss/_typography.scss */
+/* line 54, assets/scss/_typography.scss */
 h4 {
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
   font-size: 1rem;
   font-weight: 800;
 }
 
-/* line 66, assets/scss/_typography.scss */
+/* line 61, assets/scss/_typography.scss */
 h5 {
   color: #767676;
-  font-size: 13px;
+  font-size: 14px;
   font-size: 0.8125rem;
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
-/* line 75, assets/scss/_typography.scss */
+/* line 70, assets/scss/_typography.scss */
 h6 {
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   font-size: 0.9375rem;
   font-weight: 800;
 }
 
-/* line 82, assets/scss/_typography.scss */
+/* line 77, assets/scss/_typography.scss */
 p {
   margin: 0 0 1.5em;
   padding: 0;
 }
 
-/* line 87, assets/scss/_typography.scss */
+/* line 82, assets/scss/_typography.scss */
 dfn,
 cite,
 em,
@@ -549,7 +556,7 @@ i {
   font-style: italic;
 }
 
-/* line 94, assets/scss/_typography.scss */
+/* line 89, assets/scss/_typography.scss */
 blockquote {
   color: #666;
   font-size: 18px;
@@ -561,7 +568,7 @@ blockquote {
   padding: 0;
 }
 
-/* line 105, assets/scss/_typography.scss */
+/* line 100, assets/scss/_typography.scss */
 blockquote cite {
   display: block;
   font-style: normal;
@@ -569,12 +576,12 @@ blockquote cite {
   margin-top: 0.5em;
 }
 
-/* line 112, assets/scss/_typography.scss */
+/* line 107, assets/scss/_typography.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 116, assets/scss/_typography.scss */
+/* line 111, assets/scss/_typography.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -587,7 +594,7 @@ pre {
   padding: 1.6em;
 }
 
-/* line 128, assets/scss/_typography.scss */
+/* line 123, assets/scss/_typography.scss */
 code,
 kbd,
 tt,
@@ -597,48 +604,48 @@ var {
   font-size: 0.9375rem;
 }
 
-/* line 137, assets/scss/_typography.scss */
+/* line 132, assets/scss/_typography.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 143, assets/scss/_typography.scss */
+/* line 138, assets/scss/_typography.scss */
 mark,
 ins {
   background: #eee;
   text-decoration: none;
 }
 
-/* line 149, assets/scss/_typography.scss */
+/* line 144, assets/scss/_typography.scss */
 big {
   font-size: 125%;
 }
 
-/* line 153, assets/scss/_typography.scss */
+/* line 148, assets/scss/_typography.scss */
 blockquote {
   quotes: "" "";
 }
 
-/* line 157, assets/scss/_typography.scss */
+/* line 152, assets/scss/_typography.scss */
 q {
   quotes: "“" "”" "‘" "’";
 }
 
-/* line 161, assets/scss/_typography.scss */
+/* line 156, assets/scss/_typography.scss */
 blockquote:before,
 blockquote:after {
   content: "";
 }
 
-/* line 166, assets/scss/_typography.scss */
+/* line 161, assets/scss/_typography.scss */
 :focus {
   outline: none;
 }
 
 /* Typography for Arabic Font */
-/* line 172, assets/scss/_typography.scss */
+/* line 167, assets/scss/_typography.scss */
 html[lang="ar"] body,
 html[lang="ar"] button,
 html[lang="ar"] input,
@@ -677,7 +684,7 @@ html[lang="ur"] textarea {
   font-family: Tahoma, Arial, sans-serif;
 }
 
-/* line 210, assets/scss/_typography.scss */
+/* line 205, assets/scss/_typography.scss */
 html[lang="ar"] h1,
 html[lang="ar"] h2,
 html[lang="ar"] h3,
@@ -724,7 +731,7 @@ html[lang="ur"] h6 {
 }
 
 /* Typography for Chinese Font */
-/* line 257, assets/scss/_typography.scss */
+/* line 252, assets/scss/_typography.scss */
 html[lang^="zh-"] body,
 html[lang^="zh-"] button,
 html[lang^="zh-"] input,
@@ -733,7 +740,7 @@ html[lang^="zh-"] textarea {
   font-family: "PingFang TC", "Helvetica Neue", Helvetica, STHeitiTC-Light, Arial, sans-serif;
 }
 
-/* line 265, assets/scss/_typography.scss */
+/* line 260, assets/scss/_typography.scss */
 html[lang^="zh-"] h1,
 html[lang^="zh-"] h2,
 html[lang^="zh-"] h3,
@@ -744,7 +751,7 @@ html[lang^="zh-"] h6 {
 }
 
 /* Typography for Cyrillic Font */
-/* line 276, assets/scss/_typography.scss */
+/* line 271, assets/scss/_typography.scss */
 html[lang="bg-BG"] body,
 html[lang="bg-BG"] button,
 html[lang="bg-BG"] input,
@@ -763,7 +770,7 @@ html[lang="uk"] textarea {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
-/* line 294, assets/scss/_typography.scss */
+/* line 289, assets/scss/_typography.scss */
 html[lang="bg-BG"] h1,
 html[lang="bg-BG"] h2,
 html[lang="bg-BG"] h3,
@@ -787,7 +794,7 @@ html[lang="uk"] h6 {
 }
 
 /* Typography for Devanagari Font */
-/* line 318, assets/scss/_typography.scss */
+/* line 313, assets/scss/_typography.scss */
 html[lang="bn-BD"] body,
 html[lang="bn-BD"] button,
 html[lang="bn-BD"] input,
@@ -806,7 +813,7 @@ html[lang="mr-IN"] textarea {
   font-family: Arial, sans-serif;
 }
 
-/* line 336, assets/scss/_typography.scss */
+/* line 331, assets/scss/_typography.scss */
 html[lang="bn-BD"] h1,
 html[lang="bn-BD"] h2,
 html[lang="bn-BD"] h3,
@@ -829,7 +836,7 @@ html[lang="mr-IN"] h6 {
 }
 
 /* Typography for Greek Font */
-/* line 359, assets/scss/_typography.scss */
+/* line 354, assets/scss/_typography.scss */
 html[lang="el"] body,
 html[lang="el"] button,
 html[lang="el"] input,
@@ -838,7 +845,7 @@ html[lang="el"] textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 367, assets/scss/_typography.scss */
+/* line 362, assets/scss/_typography.scss */
 html[lang="el"] h1,
 html[lang="el"] h2,
 html[lang="el"] h3,
@@ -850,7 +857,7 @@ html[lang="el"] h6 {
 }
 
 /* Typography for Gujarati Font */
-/* line 379, assets/scss/_typography.scss */
+/* line 374, assets/scss/_typography.scss */
 html[lang="gu-IN"] body,
 html[lang="gu-IN"] button,
 html[lang="gu-IN"] input,
@@ -859,7 +866,7 @@ html[lang="gu-IN"] textarea {
   font-family: Arial, sans-serif;
 }
 
-/* line 387, assets/scss/_typography.scss */
+/* line 382, assets/scss/_typography.scss */
 html[lang="gu-IN"] h1,
 html[lang="gu-IN"] h2,
 html[lang="gu-IN"] h3,
@@ -870,7 +877,7 @@ html[lang="gu-IN"] h6 {
 }
 
 /* Typography for Hebrew Font */
-/* line 398, assets/scss/_typography.scss */
+/* line 393, assets/scss/_typography.scss */
 html[lang="he-IL"] body,
 html[lang="he-IL"] button,
 html[lang="he-IL"] input,
@@ -879,7 +886,7 @@ html[lang="he-IL"] textarea {
   font-family: "Arial Hebrew", Arial, sans-serif;
 }
 
-/* line 406, assets/scss/_typography.scss */
+/* line 401, assets/scss/_typography.scss */
 html[lang="he-IL"] h1,
 html[lang="he-IL"] h2,
 html[lang="he-IL"] h3,
@@ -890,7 +897,7 @@ html[lang="he-IL"] h6 {
 }
 
 /* Typography for Japanese Font */
-/* line 417, assets/scss/_typography.scss */
+/* line 412, assets/scss/_typography.scss */
 html[lang="ja"] body,
 html[lang="ja"] button,
 html[lang="ja"] input,
@@ -899,7 +906,7 @@ html[lang="ja"] textarea {
   font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
 }
 
-/* line 425, assets/scss/_typography.scss */
+/* line 420, assets/scss/_typography.scss */
 html[lang="ja"] h1,
 html[lang="ja"] h2,
 html[lang="ja"] h3,
@@ -910,7 +917,7 @@ html[lang="ja"] h6 {
 }
 
 /* Typography for Korean font */
-/* line 436, assets/scss/_typography.scss */
+/* line 431, assets/scss/_typography.scss */
 html[lang="ko-KR"] body,
 html[lang="ko-KR"] button,
 html[lang="ko-KR"] input,
@@ -919,7 +926,7 @@ html[lang="ko-KR"] textarea {
   font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", Dotum, sans-serif;
 }
 
-/* line 444, assets/scss/_typography.scss */
+/* line 439, assets/scss/_typography.scss */
 html[lang="ko-KR"] h1,
 html[lang="ko-KR"] h2,
 html[lang="ko-KR"] h3,
@@ -930,7 +937,7 @@ html[lang="ko-KR"] h6 {
 }
 
 /* Typography for Thai Font */
-/* line 455, assets/scss/_typography.scss */
+/* line 450, assets/scss/_typography.scss */
 html[lang="th"] h1,
 html[lang="th"] h2,
 html[lang="th"] h3,
@@ -941,7 +948,7 @@ html[lang="th"] h6 {
   font-family: "Sukhumvit Set", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 465, assets/scss/_typography.scss */
+/* line 460, assets/scss/_typography.scss */
 html[lang="th"] body,
 html[lang="th"] button,
 html[lang="th"] input,
@@ -952,7 +959,7 @@ html[lang="th"] textarea {
 }
 
 /* Remove letter-spacing for all non-latin alphabets */
-/* line 476, assets/scss/_typography.scss */
+/* line 471, assets/scss/_typography.scss */
 html[lang="ar"] *,
 html[lang="ary"] *,
 html[lang="azb"] *,
@@ -1087,18 +1094,16 @@ input[type="submit"] {
   line-height: 1;
   padding: 1em 2em;
   text-shadow: none;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
 }
 
-/* line 100, assets/scss/_forms.scss */
+/* line 98, assets/scss/_forms.scss */
 input + button,
 input + input[type="button"],
 input + input[type="submit"] {
   padding: 0.75em 2em;
 }
 
-/* line 106, assets/scss/_forms.scss */
+/* line 104, assets/scss/_forms.scss */
 button.secondary,
 input[type="reset"],
 input[type="button"].secondary,
@@ -1108,7 +1113,7 @@ input[type="submit"].secondary {
   color: #222;
 }
 
-/* line 115, assets/scss/_forms.scss */
+/* line 113, assets/scss/_forms.scss */
 button:hover,
 button:focus,
 input[type="button"]:hover,
@@ -1118,7 +1123,7 @@ input[type="submit"]:focus {
   background: #767676;
 }
 
-/* line 124, assets/scss/_forms.scss */
+/* line 122, assets/scss/_forms.scss */
 button.secondary:hover,
 button.secondary:focus,
 input[type="reset"]:hover,
@@ -1133,19 +1138,19 @@ input[type="submit"].secondary:focus {
 }
 
 /* Placeholder text color -- selectors need to be separate to work. */
-/* line 138, assets/scss/_forms.scss */
+/* line 136, assets/scss/_forms.scss */
 ::-webkit-input-placeholder {
   color: #333;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-/* line 143, assets/scss/_forms.scss */
+/* line 141, assets/scss/_forms.scss */
 :-moz-placeholder {
   color: #333;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-/* line 148, assets/scss/_forms.scss */
+/* line 146, assets/scss/_forms.scss */
 ::-moz-placeholder {
   color: #333;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
@@ -1153,7 +1158,7 @@ input[type="submit"].secondary:focus {
   /* Since FF19 lowers the opacity of the placeholder by default */
 }
 
-/* line 155, assets/scss/_forms.scss */
+/* line 153, assets/scss/_forms.scss */
 :-ms-input-placeholder {
   color: #333;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
@@ -1239,13 +1244,12 @@ td {
   padding: 0.4em;
 }
 
-/* line 29, assets/scss/_tables.scss */
+/* line 31, assets/scss/_tables.scss */
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
-
-/* line 34, assets/scss/_tables.scss */
+/* line 35, assets/scss/_tables.scss */
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -1419,38 +1423,36 @@ a:hover .nav-title,
   background: #fff;
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
-  font-size: 16px;
+  font-size: 18px;
   font-size: 1rem;
   position: relative;
 }
-
-/* line 14, assets/scss/_navigation.scss */
-.navigation-top .wrap {
+/* line 13, assets/scss/_navigation.scss */
+.navigation-top.wrap {
   max-width: 1000px;
   padding: 0;
 }
-
-/* line 19, assets/scss/_navigation.scss */
-.navigation-top a {
-  color: #222;
-  font-weight: 600;
+/* line 17, assets/scss/_navigation.scss */
+.navigation-top.wrap a {
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  color: #333;
+  font-weight: 600;
 }
-
-/* line 26, assets/scss/_navigation.scss */
-.navigation-top .current-menu-item > a,
-.navigation-top .current_page_item > a {
+/* line 23, assets/scss/_navigation.scss */
+.navigation-top.wrap .current-menu-item > a,
+.navigation-top.wrap .current_page_item > a {
   color: #767676;
 }
 
-/* line 31, assets/scss/_navigation.scss */
+/* line 30, assets/scss/_navigation.scss */
 .main-navigation {
   clear: both;
   display: block;
 }
-
-/* line 36, assets/scss/_navigation.scss */
+/* line 34, assets/scss/_navigation.scss */
 .main-navigation ul {
   background: #fff;
   list-style: none;
@@ -1462,7 +1464,7 @@ a:hover .nav-title,
 /* Hide the menu on small screens when JavaScript is available.
  * It only works with JavaScript.
  */
-/* line 48, assets/scss/_navigation.scss */
+/* line 47, assets/scss/_navigation.scss */
 .js .main-navigation ul,
 .main-navigation .menu-item-has-children > a > .icon,
 .main-navigation .page_item_has_children > a > .icon,
@@ -1470,13 +1472,13 @@ a:hover .nav-title,
   display: none;
 }
 
-/* line 55, assets/scss/_navigation.scss */
+/* line 54, assets/scss/_navigation.scss */
 .main-navigation > div > ul {
   border-top: 1px solid #eee;
   padding: 0.75em 1.695em;
 }
 
-/* line 60, assets/scss/_navigation.scss */
+/* line 59, assets/scss/_navigation.scss */
 .js .main-navigation.toggled-on > div > ul {
   display: block;
 }
@@ -1485,52 +1487,46 @@ a:hover .nav-title,
 .main-navigation ul ul {
   padding: 0 0 0 1.5em;
 }
-
-/* line 68, assets/scss/_navigation.scss */
-.main-navigation ul ul.toggled-on {
-  display: block;
-}
-
-/* line 72, assets/scss/_navigation.scss */
+/* line 67, assets/scss/_navigation.scss */
 .main-navigation ul ul a {
   letter-spacing: 0;
   padding: 0.4em 0;
   position: relative;
   text-transform: none;
 }
-
+/* line 74, assets/scss/_navigation.scss */
+.main-navigation ul ul.toggled-on {
+  display: block;
+}
 /* line 79, assets/scss/_navigation.scss */
 .main-navigation li {
   border-bottom: 1px solid #eee;
   position: relative;
 }
-
-/* line 84, assets/scss/_navigation.scss */
-.main-navigation li li,
-.main-navigation li:last-child {
+/* line 83, assets/scss/_navigation.scss */
+.main-navigation li li, .main-navigation li:last-child {
   border: 0;
 }
-
 /* line 89, assets/scss/_navigation.scss */
 .main-navigation a {
   display: block;
   padding: 0.5em 0;
   text-decoration: none;
 }
-
-/* line 95, assets/scss/_navigation.scss */
+/* line 94, assets/scss/_navigation.scss */
 .main-navigation a:hover {
   color: #767676;
 }
 
 /* Menu toggle */
-/* line 101, assets/scss/_navigation.scss */
+/* line 103, assets/scss/_navigation.scss */
 .menu-toggle {
-  background-color: transparent;
-  border: 0;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #222;
+  background-color: transparent;
+  border: 0;
+  color: #333;
   display: none;
   font-size: 14px;
   font-size: 0.875rem;
@@ -1542,22 +1538,23 @@ a:hover .nav-title,
 }
 
 /* Display the menu toggle when JavaScript is available. */
-/* line 119, assets/scss/_navigation.scss */
+/* line 120, assets/scss/_navigation.scss */
 .js .menu-toggle {
   display: block;
 }
 
-/* line 123, assets/scss/_navigation.scss */
+/* line 124, assets/scss/_navigation.scss */
 .main-navigation.toggled-on ul.nav-menu {
   display: block;
 }
 
-/* line 127, assets/scss/_navigation.scss */
+/* line 128, assets/scss/_navigation.scss */
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: transparent;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  background-color: transparent;
 }
 
 /* line 134, assets/scss/_navigation.scss */
@@ -1585,13 +1582,14 @@ a:hover .nav-title,
 /* Dropdown Toggle */
 /* line 154, assets/scss/_navigation.scss */
 .dropdown-toggle {
-  background-color: transparent;
-  border: 0;
+  -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  background-color: transparent;
+  border: 0;
   color: #222;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   right: -0.5em;
   line-height: 1.5;
   margin: 0 auto;
@@ -1600,29 +1598,25 @@ a:hover .nav-title,
   text-shadow: none;
   top: 0;
 }
-
-/* line 171, assets/scss/_navigation.scss */
-.dropdown-toggle:hover,
-.dropdown-toggle:focus {
+/* line 169, assets/scss/_navigation.scss */
+.dropdown-toggle:hover, .dropdown-toggle:focus {
   background: transparent;
 }
-
-/* line 176, assets/scss/_navigation.scss */
+/* line 174, assets/scss/_navigation.scss */
 .dropdown-toggle:focus {
   outline: thin dotted;
 }
 
-/* line 180, assets/scss/_navigation.scss */
+/* line 179, assets/scss/_navigation.scss */
 .dropdown-toggle.toggled-on .icon {
+  -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
-  /* IE 9 */
   -webkit-transform: rotate(-180deg);
-  /* Chrome, Safari, Opera */
   transform: rotate(-180deg);
 }
 
 /* Scroll down arrow */
-/* line 188, assets/scss/_navigation.scss */
+/* line 185, assets/scss/_navigation.scss */
 .site-header .menu-scroll-down {
   display: none;
 }
@@ -3416,33 +3410,31 @@ object {
 
 /* line 20, assets/scss/_svg.scss */
 .no-svg .dropdown-toggle .svg-fallback.icon-angle-down {
-  font-size: 20px;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-size: 18px;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1;
-  -webkit-transform: rotate(180deg);
-  /* Chrome, Safari, Opera */
-  -ms-transform: rotate(180deg);
-  /* IE 9 */
-  transform: rotate(180deg);
 }
 
-/* line 30, assets/scss/_svg.scss */
+/* line 28, assets/scss/_svg.scss */
 .no-svg .dropdown-toggle.toggled-on .svg-fallback.icon-angle-down {
-  -webkit-transform: rotate(0);
-  /* Chrome, Safari, Opera */
+  -moz-transform: rotate(0);
   -ms-transform: rotate(0);
-  /* IE 9 */
+  -webkit-transform: rotate(0);
   transform: rotate(0);
 }
 
-/* line 36, assets/scss/_svg.scss */
+/* line 32, assets/scss/_svg.scss */
 .no-svg .dropdown-toggle .svg-fallback.icon-angle-down:before {
   content: "\005E";
 }
 
 /* Social Menu fallbacks */
-/* line 42, assets/scss/_svg.scss */
+/* line 38, assets/scss/_svg.scss */
 .no-svg .social-navigation a {
   background: transparent;
   color: #222;
@@ -3451,13 +3443,13 @@ object {
 }
 
 /* Show screen reader text in some cases */
-/* line 51, assets/scss/_svg.scss */
+/* line 47, assets/scss/_svg.scss */
 .no-svg .next.page-numbers .screen-reader-text,
 .no-svg .prev.page-numbers .screen-reader-text,
 .no-svg .social-navigation li a .screen-reader-text,
 .no-svg .search-submit .screen-reader-text {
   clip: auto;
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
   font-weight: 400;
   height: auto;

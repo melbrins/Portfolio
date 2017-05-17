@@ -1,0 +1,11 @@
+/* IE9 does not do animations
+--------------------------------------------------------- */
+#loadscreen, .loadreveal { display: none; }
+.btl,.btr,.bbl,.bbr { display: none; }
+#header nav #menu { opacity: 0; top: -100%; }
+body.reveal-nav #header nav #menu { opacity: 1; top: 0; }
+.hero-headline { opacity: 1; }
+.hero-headline.hide { opacity: 0; z-index: -1; }
+.entry-count a.nr, .gallery-count a.nr { transform: translate(0,-40px); }
+article.activeSlide .entry-count a.nr, .gallery-item.activeSlide .gallery-count a.nr { transform: translate(0,0); }
+ 

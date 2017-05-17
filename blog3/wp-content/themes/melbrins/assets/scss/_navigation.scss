@@ -3,42 +3,41 @@
 --------------------------------------------------------------*/
 
 .navigation-top {
-	background: #fff;
-	border-bottom: 1px solid #eee;
-	border-top: 1px solid #eee;
-	font-size: 16px;
-	font-size: 1rem;
-	position: relative;
-}
+	background 			: #fff;
+	border-bottom 		: 1px solid #eee;
+	border-top 			: 1px solid #eee;
+	font-size 			: $f-size-l;
+	font-size 			: 1rem;
+	position 			: relative;
 
-.navigation-top .wrap {
-	max-width: 1000px;
-	padding: 0;
-}
+	&.wrap {
+		max-width: 1000px;
+		padding: 0;
 
-.navigation-top a {
-	color: #222;
-	font-weight: 600;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
+		a {
+			@include transition(color 0.2s);
+			color 			: $c-text-darker;
+			font-weight 	: 600;
+		}
 
-.navigation-top .current-menu-item > a,
-.navigation-top .current_page_item > a {
-	color: #767676;
+		.current-menu-item > a,
+		.current_page_item > a {
+			color: #767676;
+		}
+	}
 }
 
 .main-navigation {
-	clear: both;
-	display: block;
-}
+	clear 		: both;
+	display 	: block;
 
-.main-navigation ul {
-	background: #fff;
-	list-style: none;
-	margin: 0;
-	padding: 0 1.5em;
-	text-align: left;
+	ul {
+		background 		: #fff;
+		list-style 		: none;
+		margin 			: 0;
+		padding 		: 0 1.5em;
+		text-align 		: left;
+	}
 }
 
 /* Hide the menu on small screens when JavaScript is available.
@@ -61,57 +60,59 @@
 	display: block;
 }
 
-.main-navigation ul ul {
-	padding: 0 0 0 1.5em;
-}
+.main-navigation {
+	ul ul {
+		padding: 0 0 0 1.5em;
 
-.main-navigation ul ul.toggled-on {
-	display: block;
-}
+		a {
+			letter-spacing: 0;
+			padding: 0.4em 0;
+			position: relative;
+			text-transform: none;
+		}
 
-.main-navigation ul ul a {
-	letter-spacing: 0;
-	padding: 0.4em 0;
-	position: relative;
-	text-transform: none;
-}
+		&.toggled-on {
+			display: block;
+		}
+	}
 
-.main-navigation li {
-	border-bottom: 1px solid #eee;
-	position: relative;
-}
+	li {
+		border-bottom: 1px solid #eee;
+		position: relative;
 
-.main-navigation li li,
-.main-navigation li:last-child {
-	border: 0;
-}
+		li,
+		&:last-child {
+			border: 0;
+		}
+	}
 
-.main-navigation a {
-	display: block;
-	padding: 0.5em 0;
-	text-decoration: none;
-}
+	a {
+		display: block;
+		padding: 0.5em 0;
+		text-decoration: none;
 
-.main-navigation a:hover {
-	color: #767676;
+		&:hover {
+			color: #767676;
+		}
+	}
+	
 }
 
 /* Menu toggle */
 
 .menu-toggle {
-	background-color: transparent;
-	border: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: #222;
-	display: none;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: 800;
-	line-height: 1.5;
-	margin: 1px auto 2px;
-	padding: 1em;
-	text-shadow: none;
+	@include box-shadow(none);
+	background-color 	: transparent;
+	border 				: 0;
+	color 				: $c-text-darker;
+	display 			: none;
+	font-size 			: $f-size;
+	font-size 			: 0.875rem;
+	font-weight 		: 800;
+	line-height 		: 1.5;
+	margin 				: 1px auto 2px;
+	padding 			: 1em;
+	text-shadow 		: none;
 }
 
 /* Display the menu toggle when JavaScript is available. */
@@ -126,9 +127,8 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
+	@include box-shadow(none);
 	background-color: transparent;
-	-webkit-box-shadow: none;
-	box-shadow: none;
 }
 
 .menu-toggle:focus {
@@ -152,35 +152,32 @@
 /* Dropdown Toggle */
 
 .dropdown-toggle {
-	background-color: transparent;
-	border: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: #222;
-	display: block;
-	font-size: 16px;
-	right: -0.5em;
-	line-height: 1.5;
-	margin: 0 auto;
-	padding: 0.5em;
-	position: absolute;
-	text-shadow: none;
-	top: 0;
-}
+	@include box-shadow(none);
+	background-color 	: transparent;
+	border 				: 0;
+	color 				: #222;
+	display 			: block;
+	font-size 			: $f-size-l;
+	right 				: -0.5em;
+	line-height 		: 1.5;
+	margin 				: 0 auto;
+	padding 			: 0.5em;
+	position 			: absolute;
+	text-shadow 		: none;
+	top 				: 0;
 
-.dropdown-toggle:hover,
-.dropdown-toggle:focus {
-	background: transparent;
-}
+	&:hover,
+	&:focus {
+		background: transparent;
+	}
 
-.dropdown-toggle:focus {
-	outline: thin dotted;
+	&:focus {
+		outline: thin dotted;
+	}
 }
 
 .dropdown-toggle.toggled-on .icon {
-	-ms-transform: rotate(-180deg); /* IE 9 */
-	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
-	transform: rotate(-180deg);
+	@include transform(rotate(-180deg));
 }
 
 /* Scroll down arrow */

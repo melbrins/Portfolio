@@ -19,16 +19,16 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'melbrins');
+define('DB_NAME', 'melbrins_wordpress');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'melbrins');
+define('DB_USER', 'root');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'ender711');
+define('DB_PASSWORD', '');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'mysql5-18');
+define('DB_HOST', 'localhost');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
@@ -76,7 +76,7 @@ $table_prefix  = 'wp_';
  * Par exemple, pour mettre en place une traduction française, mettez le fichier
  * fr_FR.mo dans wp-content/languages, et réglez l'option ci-dessous à "fr_FR".
  */
-define('WPLANG', 'fr_FR');
+define('WPLANG', 'en_EN');
 
 /** 
  * Pour les développeurs : le mode deboguage de WordPress.

@@ -3,10 +3,10 @@
 --------------------------------------------------------------*/
 
 label {
-	color: #333;
-	display: block;
-	font-weight: 800;
-	margin-bottom: 0.5em;
+	color 			: $c-text-darker;
+	display 		: block;
+	font-weight 	: 800;
+	margin-bottom 	: 0.5em;
 }
 
 fieldset {
@@ -93,8 +93,6 @@ input[type="submit"] {
 	line-height: 1;
 	padding: 1em 2em;
 	text-shadow: none;
-	-webkit-transition: background 0.2s;
-	transition: background 0.2s;
 }
 
 input + button,
