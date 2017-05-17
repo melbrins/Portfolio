@@ -7,7 +7,7 @@
     margin-bottom: 0.7em;
     color: $c-h1;
     font-family: $f-stack-special;
-    font-size: 36px;
+    font-size: $f-size-xxl;
     font-weight: 200;
     font-style: normal;
     line-height: 1.2;
@@ -19,7 +19,7 @@
     margin-bottom: 0.5em;
     color: $c-h2;
     font-family: $f-stack-special;
-    font-size: 24px;
+    font-size: $f-size-xl;
     font-weight: 400;
     font-style: normal;
     line-height: 1.2;
@@ -32,7 +32,7 @@
     margin-bottom: 10px;
     color: $c-h3;
     font-family: $f-stack-special;
-    font-size: 18px;
+    font-size: $f-size-l;
     font-weight: 800;
     font-style: normal;
     line-height: 1.4;
@@ -44,7 +44,7 @@
     margin-bottom: 10px;
     color: $c-h4;
     font-family: $f-stack-special;
-    font-size: 14px;
+    font-size: $f-size;
     font-weight: bold;
     font-style: normal;
     line-height: 1.4;
@@ -57,7 +57,7 @@
     margin-bottom: 10px;
     color: $c-h5;
     font-family: $f-stack-sans;
-    font-size: 13px;
+    font-size: $f-size;
     font-weight: bold;
     font-style: normal;
     line-height: 1.4;
@@ -70,7 +70,7 @@
     margin-bottom: 5px;
     color: $c-h6;
     font-family: $f-stack-sans;
-    font-size: 12px;
+    font-size: $f-size-s;
     font-weight: bold;
     font-style: normal;
     line-height: 1.4;
@@ -79,7 +79,7 @@
 }
 
 @mixin pageTitle() {
-    font-size: 36px;
+    font-size: $f-size-xxl;
     font-weight: 200;
     color: $c-text-darker;
     border-bottom: 1px solid $c-module-border-light;

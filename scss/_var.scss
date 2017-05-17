@@ -116,7 +116,7 @@ $c-success-background 	: $c-green;
 $c-warn 				: darken(#E26703, 15%);
 $c-warn-background 		: #E26703;
 
-$c-dark : #676157;
+$c-dark  				: #676157;
 
 // Global Elements
 
@@ -220,20 +220,21 @@ $f-stack-special: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-seri
 $f-stack-default: $f-stack-sans;
 
 // Font Sizes
+$base-font-size: 14;
 
-$f-size-xxl 	: 36px;
-$f-size-xl 		: 24px;
-$f-size-l 		: 18px;
+$f-size-xxl 	: (36/$base-font-size) * 1em;
+$f-size-xl 		: (24/$base-font-size) * 1em;
+$f-size-l 		: (18/$base-font-size) * 1em;
 
-$f-size 		: 14px;
+$f-size 		: (14/$base-font-size) * 1em;
 
-$f-size-s 		: 14px;
-$f-size-xs 		: 12px;
-$f-size-xxs 	: 10px;
+$f-size-s 		: (12/$base-font-size) * 1em;
+$f-size-xs 		: (10/$base-font-size) * 1em;
+$f-size-xxs 	: (8/$base-font-size) * 1em;
 
 // Base Measures
 
-$b-line-height 		: 1.5;
+$b-line-height 		: 1.2;
 $b-margin-bottom 	: 1.5em;
 
 
@@ -242,7 +243,7 @@ $b-margin-bottom 	: 1.5em;
 // =============================================
 
 $c-main-nav: #ddd;
-$c-header: rgba(0, 0, 0, 0.4);
+$c-header: rgba(0, 0, 0, 0.6);
 $s-header: 80px;
 $s-logo: 40px;
 $c-heading: $c-primary;

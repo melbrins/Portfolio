@@ -10,17 +10,295 @@
 	#main-picture {
 		@include transition(opacity 1s ease-in-out);
 		opacity: 0;
+
+		&.full{
+			opacity: 1;
+		}
 	}
 
-	#main-picture.full{
-		opacity: 1;
+
+	/* ============================================ *
+	 * Project - Wall Street Institutes
+	 * ============================================ */
+
+	&#wall-street-institutes{
+ 		.banner{ 
+			overflow 			: hidden; 
+			margin 				: 0;
+			/*background-color 	: $c-primary;*/
+			/*padding 			: 80px 0;*/
+
+			&.banner-main{
+				background 			 	: url(../images/project/wsi-main-banner.jpg);
+				background-size 	 	: cover;
+				background-position 	: 67%;
+				height 				 	: 762px;
+				display 			 	: inline-block;
+				margin-top 			 	: -$s-header;
+				padding 				: 0;
+				max-height 				: 90%;
+			}
+
+			&.banner-fullscreen{
+				img{ width: 100%; }
+
+
+				.wsi-consultant-expression-content{
+					width: 100%;
+					padding: 0px 10% 40px;
+					text-align: center;
+					background-color: #bcbcbc;
+					color: #fff;
+
+					h3{
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.page{
+			position 		: relative;
+			margin-top 		: -6px;
+			overflow 		: hidden;
+
+			.project-title,
+			.section-title{
+				margin 		: 80px auto;
+				position 	: relative;
+				width 		: 90%;
+
+				h1,
+				h2{
+					text-transform 	: uppercase;
+					font-weight 	: bold;
+					letter-spacing 	: 4px;
+					margin-bottom 	: 0;
+					color 			: #fff;
+					font-size 		: $f-size-xxl;
+					position 	: relative;
+					z-index 	: 2;
+				}
+
+				h2.project-category{
+					font-weight 	: 100;
+					color 			: #fff;
+					letter-spacing 	: 2px;
+					font-size 		: $f-size-xl;
+					text-transform 	: inherit;
+				}
+			}
+
+			.bg-slide{
+				@include transform(rotate(-10deg));
+				background-color 	: #004388;
+				width 				: 300%;
+				height 				: 400px;
+			    /*padding 			: 20% 0;*/
+			    position 			: absolute;
+			    left 				: -150%;
+			    z-index 			: 1;
+			    bottom 				: -190px;
+			}
+
+			.wsi-advertising {
+				position 			: relative;
+				z-index 			: 2;
+
+				.wsi-advert{
+					@include display-flex(flex);
+					@include flex-direction(row);
+					@include align-items(center);
+
+					img{
+						@include box-shadow(5px 5px 20px rgba(0,0,0,0.5));
+						max-width: 40%;
+						margin: 0 40px;
+					}
+
+					.wsi-advert--content{
+						@include display-flex(flex);
+						@include flex-direction(column);
+						max-width: 30%;
+
+						h3{
+							font-weight: 600;
+							font-size: $f-size-xl;
+							color: $c-text-darker;
+						}
+					}
+
+					&.wsi-advert-brian,
+					&.wsi-advert-tailor{
+						@include justify-content(flex-start);
+					}
+
+					&.wsi-advert-umbrella{
+						@include justify-content(flex-end);
+
+						.wsi-advert--content{
+							text-align: right;
+						}
+					}
+
+					&.wsi-advert-umbrella,
+					&.wsi-advert-tailor{
+						margin-top: -10%;
+					}
+				}
+			}
+
+			.wsi-consultant{
+				text-align: center;
+
+				img{
+					width: 90%;
+					position: relative;
+					z-index: 2;
+				}
+
+				.wsi-consultant--introduction{
+					width: 70%;
+					margin: 80px auto;
+
+					h3{
+						font-weight: 600;
+						font-size: $f-size-xl;
+						color: $c-text-darker;
+					}
+					
+					strong{
+						color: #004388;
+
+					}
+				}
+
+				.wsi-consultant--expressions{
+					@include display-flex(flex);
+					@include flex-direction(row);
+					@include flex-flow(wrap);
+					@include justify-content(center);
+					@include align-items(center);
+
+					.wsi-consultant-expression{
+						/*@include display-flex(flex);
+						@include align-items(center);*/
+						width: 50%;
+						margin-bottom: $gap;
+
+
+						.wsi-consultant-expression-content{
+							width: 80%;
+							margin: 40px auto 0 ;
+						}
+
+						&.full{
+							width: 100%;
+
+							.wsi-consultant-expression-content{
+								margin: 0 auto 40px;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
+	@include bp(max-width, $bp-large){
+		&#wall-street-institutes{
+			.page{
+
+				.wsi-advertising {
+					.wsi-advert{
+						&.wsi-advert-umbrella,
+						&.wsi-advert-tailor{
+							margin-top: 0;
+						}
+					}
+				}
+
+				.wsi-consultant{
+					.wsi-consultant--introduction{
+						width: 100%;
+					}
+				}
+
+				.bg-slide{
+					height 				: 300px;
+				    bottom 				: -130px;
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-small){
+		&#wall-street-institutes{
+			.page{
+
+				.project-title,
+				.section-title{
+					margin 		: 40px auto;
+					width 		: 100%;
+					text-align  : center;
+				}
+
+				.section-title{
+					margin-top: 150px;
+				}
+
+				.wsi-advertising{
+					.wsi-advert{
+						@include flex-direction(column);
+
+						img{
+							max-width: 100%;
+							margin-bottom: 20px;
+						}
+
+						.wsi-advert--content{
+							max-width 	: 100%;
+						}
+
+						&.wsi-advert-umbrella,
+						&.wsi-advert-tailor,
+						&.wsi-advert-brian{
+							margin-top 		: 40px;
+
+							.wsi-advert--content{
+								@include order(2);
+								text-align 		: center;
+							}
+						}
+					}
+				}
+
+				.wsi-consultant{
+					img{
+						width: 100%;
+					}
+
+					.wsi-consultant--expressions{
+						@include flex-direction(column);
+
+						.wsi-consultant-expression{
+							width: 100%;
+
+							.wsi-consultant-expression-content{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 	.nav-dots span {
+		@include transition(all 0.2s);
 		background: rgba(150,150,150,0.1);
 		margin: 6px;
-		@include transition(all 0.2s);
+		
 		box-shadow: 
 			0 1px 1px rgba(255,255,255,0.4), 
 			inset 0 1px 1px rgba(0,0,0,0.1),
@@ -43,9 +321,7 @@
 		left: -200px;
 		width: 100%;
 		height: 100%;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
+		@include background-size(cover);
 		background-position: center center;
 	}
 
@@ -79,8 +355,6 @@
 	.col-12{
 		img{ width: 100%; }
 	}
-
-	.page { margin-top: 0px; }
 
 	.sl-slider{
 		h2,
@@ -363,4 +637,3 @@
 
 	}
 }
-

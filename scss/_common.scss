@@ -34,9 +34,22 @@ table,
 textarea {
     font-family: $f-stack-sans;
     color: $c-text;
-    font-size: $f-size;
+    font-size: 1em;
     line-height: $b-line-height;
 }
+
+@include bp(min-width, $bp-xlarge){
+	body{
+		font-size: 1.1em;
+	}
+}
+
+@include bp(max-width, $bp-medium){
+	body{
+		font-size: 0.9em;
+	}
+}
+
 
 .container { 
 	position 			: relative; 
@@ -324,6 +337,10 @@ h6, .h6 { @include h6; }
 
 .fixed #filters li span:hover { color:#fff; }
 
+/* ============================================ *
+ * BANNER
+ * ============================================ */
+.banner-fullscreen{ width: 100%; }
 
 /* ============================================ *
  * Clearing
