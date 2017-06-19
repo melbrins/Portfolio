@@ -8,18 +8,7 @@
 
 	<?php include 'layout/head.php'; ?>
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mixitup.2.17.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js" charset="utf-8"></script>
-
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
-
-
-	<script type="text/javascript" charset="utf-8">
-		$(document).ready(function(){
-		$("a[rel^='prettyPhoto']").prettyPhoto();
-		});
-	</script>
 
 </head>
 <body id="portfolio" class="container">
@@ -54,8 +43,8 @@
 	  					</a>
 	  				</li>
 
-	  				<li class="work--project" style="background-image: url(images/work/thumbnails/puzzle-connabel.jpg);">
-	  					<a href="#" class="work--project-link">
+	  				<li class="work--project mix illustration" style="background-image: url(images/work/thumbnails/puzzle-connabel.jpg);">
+	  					<a href="images/fullscreen/3d/london-coffee-festival.jpg" rel="prettyPhoto[]" class="work--project-link">
 
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Star Wars Family</h3>
@@ -66,7 +55,7 @@
 	  					</a>
 	  				</li>
 
-	  				<li class="work--project" style="background-image: url(images/work/thumbnails/melissa-cold-touch.jpg);">
+	  				<li class="work--project mix illustration" style="background-image: url(images/work/thumbnails/melissa-cold-touch.jpg);">
 	  					<a href="#" class="work--project-link">
 
 	  						<span class="work--project-title">
@@ -539,6 +528,13 @@
 </body>
 
 <?php include 'layout/after-body.php'; ?>
+	<script type="text/javascript" src="js/jquery.mixitup.2.17.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+	</script>
 
 		<script type="text/javascript" charset="utf-8">
 
@@ -617,7 +613,7 @@
 			/* ============================================================ */
 			/* ================================================= MixItUp == */
 			/* ============================================================ */
-			var $portfolioList = $('.portfolio-list'),
+			var $portfolioList = $('.work--list'),
 					$page = $('.page');
 
 			$portfolioList.mixItUp({

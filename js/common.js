@@ -90,11 +90,11 @@ jQuery(document).ready(function($) {
 		if ($(window).scrollTop() > 300) {
 			$(".toggle-fix").addClass('fixed');
 			var toggleSize = $(".toggle-fix").height() + $(".heading").height();
-			$("body").css('margin-top', toggleSize);
+			$("body").css('padding-top', toggleSize);
 		}
 		else {
 			$(".toggle-fix").removeClass('fixed');
-			$("body").css('margin-top', "0");
+			$("body").css('padding-top', "0");
 		}
 	});
 	// ============================
