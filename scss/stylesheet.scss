@@ -56,6 +56,11 @@ $mq-fixed-value: false;
 @import "content/homepage";
 @import "content/contact";
 
+// ----------------------------------------------
+// Override
+
+@import "override/prettyPhoto";
+
 
 // ----------------------------------------------
 // SLIDER

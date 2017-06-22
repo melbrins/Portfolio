@@ -1,0 +1,68 @@
+//
+// @package     melbrins
+//
+
+div.pp_overlay{
+	background: #111;
+}
+
+a.pp_close,
+a.pp_next, 
+a.pp_previous{
+	text-indent: 0;
+}
+ 
+div.light_rounded .pp_next, 
+div.light_rounded .pp_previous, 
+div.light_rounded .pp_next:hover, 
+div.light_rounded .pp_previous:hover,
+div.light_rounded .pp_close{
+    background      :none;
+    font-size       : 30px;
+    color           : #fff;
+    width           : 30px;
+    height          : 30px;
+}
+
+div.light_rounded .pp_next, 
+div.light_rounded .pp_previous{
+    @include opacity(0.7);
+    position: fixed;
+    top: 48%;
+}
+
+div.light_rounded .pp_previous{
+    text-align: left;
+    left: 20px;
+    right: auto;
+}
+
+div.light_rounded .pp_next{
+    text-align: right;
+    right: 20px;
+    left: auto;
+}
+
+div.light_rounded .pp_next:hover, 
+div.light_rounded .pp_previous:hover{
+    @include opacity(1);
+}
+div.light_rounded .pp_details{
+	float: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    /*Need to find where the width is added from js file*/
+    width: 100vw !important;
+    height: 30px;
+    line-height: 30px;
+}
+
+.pp_nav p.currentTextHolder{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 2px;
+}

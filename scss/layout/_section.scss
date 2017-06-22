@@ -75,6 +75,10 @@
 			max-width 	: initial;
 		}
 
+		&.mix{
+			display: none;
+		}
+
 		.work--project-link{
 			height 	 	: 100%;
 			width 	 	: 100%;
