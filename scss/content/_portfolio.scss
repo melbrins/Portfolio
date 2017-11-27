@@ -17,6 +17,10 @@
 		transition          : height .3s ease-out; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 	}
 
+	.section.section--grey{
+		padding-bottom 		: 0px;
+	}
+
 	.heading{
 		background-color: $c-heading;
 		width 			: 100%;

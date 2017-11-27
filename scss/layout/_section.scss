@@ -64,7 +64,7 @@
 
 		width 			: 23%;
 		height 			: $s-thumbnails-height;
-		margin	 		: 0 2% 2% 0;
+		margin	 		: 0 1% 2% 1%;
 		overflow 		: hidden;
 		position 		: relative;
 		text-align 		: center;
@@ -174,13 +174,13 @@
 		    }
 	    }
 
-		&:nth-child(even){
+		/*&:nth-child(even){
 	    	margin-top: -$gap;
 	    }
 
 	    &:nth-child(4n){
 	    	margin-right: 0;
-	    }
+	    }*/
 	}
 
 	@include bp(max-width, $bp-large){
@@ -202,9 +202,9 @@
 		    	margin-top: 0;
 		    }
 
-		    &:nth-child(4n){
+		    /*&:nth-child(4n){
 		    	margin-right: 2%;
-		    }
+		    }*/
 		}
 	}
 
@@ -219,9 +219,9 @@
 				}
 			}
 
-			&:nth-child(3n){
+			/*&:nth-child(3n){
 		    	margin-right: 2%;
-		    }
+		    }*/
 
 		    &:nth-child(2n){
 		    	margin-right: 0;
@@ -244,6 +244,56 @@
 			&:nth-child(3n){
 		    	margin-right: 0;
 		    }
+		}
+	}
+}
+
+.work--list{
+	margin: 0; 
+	
+	.work--project { 
+		border-radius: 0; 
+		width: 20vw; 
+		margin: 0; 
+
+		i{
+			background-color: #000;
+		    height: 30px;
+		    width: 30px;
+		    line-height: 30px;
+		    color: #fff;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    font-size: 14px;
+		}
+
+		.work--project-title{ 
+			display: none; 
+		}
+	}
+}
+
+@include bp(max-width, $bp-large){
+	.work--list{
+		.work--project { 
+			width: 25vw; 
+		}
+	}
+}
+
+@include bp(max-width, $bp-medium){
+	.work--list{
+		.work--project { 
+			width: 50vw; 
+		}
+	}
+}
+
+@include bp(max-width, $bp-xsmall){
+	.work--list{
+		.work--project { 
+			width: 100vw; 
 		}
 	}
 }

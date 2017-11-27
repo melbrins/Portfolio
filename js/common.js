@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
 	$(window).bind('scroll', function() {
 		if ($(window).scrollTop() > 300) {
 			$(".toggle-fix").addClass('fixed');
-			var toggleSize = $(".toggle-fix").height() + $(".heading").height();
+			var toggleSize = $(".toggle-fix").height();
 			$("body").css('padding-top', toggleSize);
 		}
 		else {

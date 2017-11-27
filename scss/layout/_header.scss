@@ -132,10 +132,17 @@
 @include bp(max-width, $bp-medium){
 	#header{ 
 		width 		: 100%; 
+		text-align  : center;
 
 		#toggle-nav{
 			display 	: inline-block;
-			float 		: left;
+			position 	: absolute;
+			left 		: 20px;
+			height 		: $s-header;
+		}
+
+		#logo{
+			float 		: none;
 		}
 
 		#menu, .not-mobile{ 
