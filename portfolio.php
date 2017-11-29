@@ -138,7 +138,7 @@
 
 	  				<!-- VISION DIRECT 3D -->
 	  				<li class="work--project mix illustration" style="background-image: url(images/work/thumbnails/vision-direct-boxes.jpg);">
-	  					<a href="#" class="work--project-link">
+	  					<a href="images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-link" aria-hidden="true"></i>
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
@@ -255,7 +255,7 @@
 
 	  				<!-- Isabella -->
 	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/isabella.jpg);">
-	  					<a href="images/fullscreen/illustration/isabella.jpg" class="work--project-link">
+	  					<a href="images/fullscreen/illustration/isabella.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Isabella</h3>

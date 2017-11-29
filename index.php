@@ -58,7 +58,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/puzzle-connabel.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[Illustration]/2/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Star Wars Family</h3>
@@ -70,7 +70,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/melissa-cold-touch.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[Illustration]/3/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Melissa - Cold Touch</h3>
@@ -82,7 +82,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/medusa.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[Illustration]/4/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Medusa</h3>
@@ -94,7 +94,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/black-sheep-goat.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[Illustration]/5/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Black Sheep Goat</h3>
@@ -106,7 +106,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/anger.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[3d]/0/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Inside Out - Anger</h3>
@@ -118,7 +118,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/vision-direct-boxes.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[3d]/1/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
@@ -130,7 +130,7 @@
   				</li>
 
   				<li class="work--project" style="background-image: url(images/work/thumbnails/glum-and-fish.jpg);">
-  					<a href="#" class="work--project-link">
+  					<a href="/portfolio.php#prettyPhoto[3d]/2/" class="work--project-link">
 
   						<span class="work--project-title">
   							<h3 class="work--project-name">Glum &amp; Fish</h3>
