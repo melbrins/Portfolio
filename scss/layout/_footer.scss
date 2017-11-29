@@ -4,23 +4,27 @@
 
 #footer{
 	@include transition(all 1s ease);
-	float              : left;
 	width              : 100%;
 	font-size          : $f-size;
 	color              : $c-text-gray;
 	text-align         : left;
 	background-color   : $c-footer;
 	
+	.wrap{ 
+		width: 100%;
+		@include display-flex(flex);
+		@include justify-content(space-between);
+		@include flex-direction(row); 
+	}
 
 	.copyright{ 
-		float 			: left; 
+		@include order(1);
 		line-height 	: $s-footer; 
 	}
 
 	/* Social Media */
 	.social {
-		width 			: 50%;
-		float 			: right;
+		@include order(2);
 		line-height     : $s-footer;
 		margin 			: 0;
 		padding 		: 0;
@@ -44,11 +48,14 @@
 
 @include bp(max-width, $bp-xsmall) {	
 	#footer{
+		
 		.wrap { 
-			padding: 40px 0; 
+			padding: 40px 0;
+			@include flex-direction(column); 
 		}
+
 		.copyright { 
-			float 		: none; 
+			@include order(2);
 			width 		: 100%; 
 			text-align 	: center; 
 			display 	: block; 
@@ -57,7 +64,7 @@
 		}
 
 		.social { 
-			float: none; 
+			@include order(1);
 			display: block; 
 			margin: 0 auto; 
 		}

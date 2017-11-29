@@ -1081,7 +1081,7 @@ h1, .h1 {
   margin-bottom: 0.7em;
   color: #2d79b9;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 2.57143em;
+  font-size: 36px;
   font-weight: 200;
   font-style: normal;
   line-height: 1.2;
@@ -1094,7 +1094,7 @@ h2, .h2 {
   margin-bottom: 0.5em;
   color: #333;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.71429em;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
@@ -1108,7 +1108,7 @@ h3, .h3 {
   margin-bottom: 10px;
   color: #555;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.28571em;
+  font-size: 18px;
   font-weight: 800;
   font-style: normal;
   line-height: 1.4;
@@ -1121,7 +1121,7 @@ h4, .h4 {
   margin-bottom: 10px;
   color: #777777;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.4;
@@ -1135,7 +1135,7 @@ h5, .h5 {
   margin-bottom: 10px;
   color: #777777;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.4;
@@ -1149,7 +1149,7 @@ h6, .h6 {
   margin-bottom: 5px;
   color: #777777;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 0.85714em;
+  font-size: 12px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.4;
@@ -1173,7 +1173,7 @@ h6, .h6 {
   cursor: pointer;
   white-space: nowrap;
   display: inline-block;
-  font-size: 1em;
+  font-size: 14px;
 }
 /* line 139, ../scss/_common.scss */
 .btn span {
@@ -1225,13 +1225,13 @@ h6, .h6 {
 .btn.h40 span {
   height: 40px;
   line-height: 40px !important;
-  font-size: 1.28571em !important;
+  font-size: 18px !important;
 }
 /* line 189, ../scss/_common.scss */
 .btn.h60 span {
   /* height: 60px; */
   /* line-height: 60px!important; */
-  font-size: 1.71429em !important;
+  font-size: 24px !important;
   font-weight: 200;
 }
 /* line 196, ../scss/_common.scss */
@@ -1779,7 +1779,7 @@ h6, .h6 {
 #header #toggle-nav {
   display: none;
   color: #fff;
-  font-size: 1.28571em;
+  font-size: 18px;
   line-height: 80px;
   margin-right: 20px;
 }
@@ -1850,7 +1850,7 @@ h6, .h6 {
   display: inline-block;
   text-decoration: none;
   color: #ddd;
-  font-size: 1em;
+  font-size: 14px;
   padding: 0 20px;
   line-height: 80px;
   font-weight: 200;
@@ -1959,60 +1959,74 @@ h6, .h6 {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  float: left;
   width: 100%;
-  font-size: 1em;
+  font-size: 14px;
   color: #999999;
   text-align: left;
   background-color: #2a2a2a;
   /* Social Media */
 }
-/* line 15, ../scss/layout/_footer.scss */
+/* line 13, ../scss/layout/_footer.scss */
+#footer .wrap {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+/* line 20, ../scss/layout/_footer.scss */
 #footer .copyright {
-  float: left;
+  -webkit-order: 1;
+  order: 1;
   line-height: 70px;
 }
-/* line 21, ../scss/layout/_footer.scss */
+/* line 26, ../scss/layout/_footer.scss */
 #footer .social {
-  width: 50%;
-  float: right;
+  -webkit-order: 2;
+  order: 2;
   line-height: 70px;
   margin: 0;
   padding: 0;
 }
-/* line 28, ../scss/layout/_footer.scss */
+/* line 32, ../scss/layout/_footer.scss */
 #footer .social li {
   float: right;
 }
-/* line 31, ../scss/layout/_footer.scss */
+/* line 35, ../scss/layout/_footer.scss */
 #footer .social li a {
-  font-size: 1.71429em;
+  font-size: 24px;
   display: inline-block;
   color: #999999;
   margin-left: 20px;
 }
-/* line 37, ../scss/layout/_footer.scss */
+/* line 41, ../scss/layout/_footer.scss */
 #footer .social li a:hover {
   color: #fff;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 47, ../scss/layout/_footer.scss */
+  /* line 52, ../scss/layout/_footer.scss */
   #footer .wrap {
     padding: 40px 0;
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
-  /* line 50, ../scss/layout/_footer.scss */
+  /* line 57, ../scss/layout/_footer.scss */
   #footer .copyright {
-    float: none;
+    -webkit-order: 2;
+    order: 2;
     width: 100%;
     text-align: center;
     display: block;
     margin: 0;
     line-height: 20px;
   }
-  /* line 59, ../scss/layout/_footer.scss */
+  /* line 66, ../scss/layout/_footer.scss */
   #footer .social {
-    float: none;
+    -webkit-order: 1;
+    order: 1;
     display: block;
     margin: 0 auto;
   }
@@ -2139,7 +2153,7 @@ h6, .h6 {
 }
 /* line 106, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name {
-  font-size: 1.28571em;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
   color: #2a2a2a;
@@ -2148,7 +2162,7 @@ h6, .h6 {
 }
 /* line 115, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-category {
-  font-size: 0.85714em;
+  font-size: 12px;
   color: #2a2a2a;
   font-weight: 400;
   letter-spacing: 2px;
@@ -2392,7 +2406,7 @@ h6, .h6 {
   letter-spacing: 4px;
   margin-bottom: 0;
   color: #fff;
-  font-size: 2.57143em;
+  font-size: 36px;
   position: relative;
   z-index: 2;
 }
@@ -2402,7 +2416,7 @@ h6, .h6 {
   font-weight: 100;
   color: #fff;
   letter-spacing: 2px;
-  font-size: 1.71429em;
+  font-size: 24px;
   text-transform: inherit;
 }
 /* line 92, ../scss/content/_project.scss */
@@ -2454,7 +2468,7 @@ h6, .h6 {
 /* line 124, ../scss/content/_project.scss */
 .container.project#wall-street-institutes .page .wsi-advertising .wsi-advert .wsi-advert--content h3 {
   font-weight: 600;
-  font-size: 1.71429em;
+  font-size: 24px;
   color: #333;
 }
 /* line 131, ../scss/content/_project.scss */
@@ -2493,7 +2507,7 @@ h6, .h6 {
 /* line 164, ../scss/content/_project.scss */
 .container.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--introduction h3 {
   font-weight: 600;
-  font-size: 1.71429em;
+  font-size: 24px;
   color: #333;
 }
 /* line 170, ../scss/content/_project.scss */
@@ -2709,7 +2723,7 @@ h6, .h6 {
 .container.project .see-more h3 {
   color: #999999;
   text-align: center;
-  font-size: 2.57143em;
+  font-size: 36px;
   margin: 20px 0;
   border-bottom: 0px;
 }
@@ -2736,7 +2750,7 @@ h6, .h6 {
 }
 /* line 426, ../scss/content/_project.scss */
 .container.project .description .col-inside h1 {
-  font-size: 2.57143em;
+  font-size: 36px;
   color: #fff;
   margin-bottom: 0px;
   font-weight: bold;
@@ -2744,7 +2758,7 @@ h6, .h6 {
 }
 /* line 434, ../scss/content/_project.scss */
 .container.project .description .col-inside h2 {
-  font-size: 1.28571em;
+  font-size: 18px;
   color: #fff;
   margin-bottom: 40px;
   text-transform: initial;
@@ -2753,7 +2767,7 @@ h6, .h6 {
 }
 /* line 445, ../scss/content/_project.scss */
 .container.project .description .col-inside p {
-  font-size: 1em;
+  font-size: 14px;
   color: #fff;
   line-height: 1.2;
   font-weight: 100;
@@ -2818,7 +2832,7 @@ h6, .h6 {
   color: #fff;
   margin-bottom: 0px;
   line-height: 50px;
-  font-size: 2.57143em;
+  font-size: 36px;
   font-weight: 800;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -2829,7 +2843,7 @@ h6, .h6 {
   color: #fff;
   margin-bottom: 0px;
   font-weight: 100;
-  font-size: 1.28571em;
+  font-size: 18px;
   line-height: 1.1;
   margin-top: 0px;
   letter-spacing: 2px;
@@ -3311,7 +3325,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
   }
   /* line 246, ../scss/content/_portfolio.scss */
   #portfolio .top-banner .current-filter {
-    font-size: 1.71429em;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
     float: left;
@@ -3334,7 +3348,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 14px;
     padding: 0 20px;
     line-height: 50px;
     font-weight: 200;
@@ -3531,7 +3545,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
 }
 /* line 29, ../scss/content/_contact.scss */
 #contact .page .col-inside a i {
-  font-size: 2.57143em;
+  font-size: 36px;
 }
 /* line 33, ../scss/content/_contact.scss */
 #contact .page .col-inside a.btn {
@@ -3684,7 +3698,7 @@ div.light_rounded .pp_details {
   top: 0;
   left: 0;
   position: absolute;
-  font-size: 0.85714em;
+  font-size: 12px;
   list-style: none;
   margin: 0;
   padding: 0;

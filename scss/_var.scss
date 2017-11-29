@@ -222,15 +222,15 @@ $f-stack-default: $f-stack-sans;
 // Font Sizes
 $base-font-size: 14;
 
-$f-size-xxl 	: (36/$base-font-size) * 1em;
-$f-size-xl 		: (24/$base-font-size) * 1em;
-$f-size-l 		: (18/$base-font-size) * 1em;
+$f-size-xxl 	: 36px;
+$f-size-xl 		: 24px;
+$f-size-l 		: 18px;
 
-$f-size 		: (14/$base-font-size) * 1em;
+$f-size 		: 14px;
 
-$f-size-s 		: (12/$base-font-size) * 1em;
-$f-size-xs 		: (10/$base-font-size) * 1em;
-$f-size-xxs 	: (8/$base-font-size) * 1em;
+$f-size-s 		: 12px;
+$f-size-xs 		: 10px;
+$f-size-xxs 	: 8px;
 
 // Base Measures
 
