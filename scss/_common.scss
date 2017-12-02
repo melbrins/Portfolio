@@ -380,6 +380,12 @@ h6, .h6 { @include h6; }
 	clear: both;
 }
 
+@include bp(min-width, $bp-medium+1){
+	.show-mobile{
+		display: none;
+	}
+}
+
 
 /* ============================================ *
  * Animation
