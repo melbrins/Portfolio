@@ -1984,36 +1984,64 @@ h6, .h6 {
 }
 /* line 26, ../scss/layout/_footer.scss */
 #footer .social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
   -webkit-order: 2;
   order: 2;
-  line-height: 70px;
+  -webkit-align-items: center;
+  align-items: center;
+  /*line-height     : $s-footer;*/
   margin: 0;
   padding: 0;
 }
-/* line 32, ../scss/layout/_footer.scss */
+/* line 36, ../scss/layout/_footer.scss */
 #footer .social li {
-  float: right;
+  margin-bottom: 0;
 }
-/* line 35, ../scss/layout/_footer.scss */
+/* line 38, ../scss/layout/_footer.scss */
 #footer .social li a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
   font-size: 24px;
-  display: inline-block;
   color: #999999;
   margin-left: 20px;
 }
-/* line 41, ../scss/layout/_footer.scss */
+/* line 46, ../scss/layout/_footer.scss */
 #footer .social li a:hover {
   color: #fff;
+  text-decoration: none;
+}
+/* line 50, ../scss/layout/_footer.scss */
+#footer .social li a:hover svg #Icons-Social-Media-Artstation {
+  fill: #fff;
+}
+/* line 55, ../scss/layout/_footer.scss */
+#footer .social li a svg {
+  height: 26px;
+}
+/* line 58, ../scss/layout/_footer.scss */
+#footer .social li a svg #Icons-Social-Media-Artstation {
+  fill: #777;
+}
+/* line 65, ../scss/layout/_footer.scss */
+#footer .social li:first-child a {
+  margin-left: 0;
 }
 
 @media only screen and (max-width: 479px) {
-  /* line 52, ../scss/layout/_footer.scss */
+  /* line 76, ../scss/layout/_footer.scss */
   #footer .wrap {
     padding: 40px 0;
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 57, ../scss/layout/_footer.scss */
+  /* line 81, ../scss/layout/_footer.scss */
   #footer .copyright {
     -webkit-order: 2;
     order: 2;
@@ -2023,12 +2051,13 @@ h6, .h6 {
     margin: 0;
     line-height: 20px;
   }
-  /* line 66, ../scss/layout/_footer.scss */
+  /* line 90, ../scss/layout/_footer.scss */
   #footer .social {
     -webkit-order: 1;
     order: 1;
-    display: block;
-    margin: 0 auto;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto 20px;
   }
 }
 /* ============================================ *
