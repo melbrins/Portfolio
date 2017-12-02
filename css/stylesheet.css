@@ -3348,11 +3348,12 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
   /* line 240, ../scss/content/_portfolio.scss */
   #portfolio .top-banner {
     display: block;
+    position: relative;
     background-color: #2eb1e6;
     height: 50px;
     line-height: 50px;
   }
-  /* line 246, ../scss/content/_portfolio.scss */
+  /* line 247, ../scss/content/_portfolio.scss */
   #portfolio .top-banner .current-filter {
     font-size: 24px;
     font-weight: bold;
@@ -3360,7 +3361,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     float: left;
     display: inline-block;
   }
-  /* line 254, ../scss/content/_portfolio.scss */
+  /* line 255, ../scss/content/_portfolio.scss */
   #portfolio .top-banner #toggle-filters {
     display: block;
     float: right;
@@ -3383,7 +3384,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     font-weight: 200;
     cursor: pointer;
   }
-  /* line 261, ../scss/content/_portfolio.scss */
+  /* line 262, ../scss/content/_portfolio.scss */
   #portfolio .top-banner #toggle-filters i {
     margin-right: 5px;
   }
@@ -3415,45 +3416,45 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
-  /* line 275, ../scss/content/_portfolio.scss */
+  /* line 276, ../scss/content/_portfolio.scss */
   #portfolio .top-banner #toggle-filters:hover, #portfolio .top-banner #toggle-filters.active {
     color: #2eb1e6;
     background-color: #fff;
     text-decoration: none;
   }
-  /* line 283, ../scss/content/_portfolio.scss */
+  /* line 284, ../scss/content/_portfolio.scss */
   #portfolio .heading {
     width: 50%;
     position: absolute;
     z-index: 10000;
     right: 0;
-    top: 130px;
+    top: 50px;
   }
-  /* line 290, ../scss/content/_portfolio.scss */
+  /* line 291, ../scss/content/_portfolio.scss */
   #portfolio .heading #filters {
     display: none;
     width: 100%;
     z-index: 99999;
   }
-  /* line 295, ../scss/content/_portfolio.scss */
+  /* line 296, ../scss/content/_portfolio.scss */
   #portfolio .heading #filters li {
     width: 100%;
     margin: 0 auto;
     float: none;
     border-top: 1px dotted #fff;
   }
-  /* line 301, ../scss/content/_portfolio.scss */
+  /* line 302, ../scss/content/_portfolio.scss */
   #portfolio .heading #filters li:first-child {
     border-top: none;
   }
 }
 @media only screen and (max-width: 1199px) {
-  /* line 313, ../scss/content/_portfolio.scss */
+  /* line 314, ../scss/content/_portfolio.scss */
   #portfoliolist .portfolio {
     width: 33.33%;
     height: 204px;
   }
-  /* line 317, ../scss/content/_portfolio.scss */
+  /* line 318, ../scss/content/_portfolio.scss */
   #portfoliolist .portfolio img {
     width: 100%;
   }

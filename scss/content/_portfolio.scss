@@ -238,10 +238,11 @@ ul.portfolio-list {
 		}
 
 		.top-banner{
-			display: block;
-			background-color: $c-top-banner;
-			height: $s-top-banner;
-			line-height: $s-top-banner;
+			display				: block;
+			position			: relative;
+			background-color	: $c-top-banner;
+			height 				: $s-top-banner;
+			line-height			: $s-top-banner;
 
 			.current-filter{
 				font-size: $f-size-xl;
@@ -285,7 +286,7 @@ ul.portfolio-list {
 		    position 	: absolute;
 		    z-index 	: 10000;
 		    right 		: 0;
-		    top 		: $s-header + $s-top-banner;
+		    top 		: $s-top-banner;
 
 			#filters{
 				display 			: none;
