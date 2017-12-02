@@ -5,15 +5,15 @@
 
   <ul>
     <!-- <li>
-      <a href="/showreel.html">Showreel</a>
+      <a href="/showreel.php">Showreel</a>
     </li> -->
 
     <li>
-      <a href="/portfolio.html">Portfolio</a>
+      <a href="/portfolio.php">Portfolio</a>
     </li>
 
     <li>
-      <a href="/contact.html">Contact</a>
+      <a href="/contact.php">Contact</a>
     </li>
 
     <!-- <li>
