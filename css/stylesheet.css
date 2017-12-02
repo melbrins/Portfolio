@@ -3539,8 +3539,9 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
 /* line 85, ../scss/content/_homepage.scss */
 #index .section.work {
   margin-top: -6px;
+  padding-bottom: 0;
 }
-/* line 89, ../scss/content/_homepage.scss */
+/* line 90, ../scss/content/_homepage.scss */
 #index .page {
   padding: 0;
   width: 100%;

@@ -36,7 +36,7 @@
   * SECTION - WORK
   * ============================================ -->
   <div class="work section section--grey">
-  	<div class="wrap">
+  	<!-- <div class="wrap"> -->
   		<div class="section--title">
   			<h2>
   				WORK
@@ -45,6 +45,33 @@
 
   		<div class="section--content">
   			<ul class="work--list">
+
+          <!--  ANGELA  -->
+          <li class="work--project" style="background-image: url(images/work/thumbnails/angela.jpg);">
+            <a href="/portfolio.php#prettyPhoto[Illustration]/0/" class="work--project-link">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <span class="work--project-title">
+                <h3 class="work--project-name">Angela</h3>
+                <h4 class="work--project-category">Illustration</h4>
+
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
+
+          <!--  VERONICA  -->
+          <li class="work--project" style="background-image: url(images/work/thumbnails/veronica.jpg);">
+            <a href="/portfolio.php#prettyPhoto[Illustration]/1/" class="work--project-link">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <span class="work--project-title">
+                <h3 class="work--project-name">Veronica</h3>
+                <h4 class="work--project-category">Illustration</h4>
+
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
+
   				<li class="work--project" style="background-image: url(images/work/thumbnails/wall-street.jpg);">
   					<a href="/projects/wall-street-institutes.php" class="work--project-link">
               <i class="fa fa-link" aria-hidden="true"></i>
@@ -142,7 +169,7 @@
   				</li>
   			</ul>
   		</div>      
-  	</div>
+  	<!-- </div> -->
   </div>
 
   <div class="page">
