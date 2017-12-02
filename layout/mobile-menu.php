@@ -4,9 +4,9 @@
 <div id="mobile-menu">
 
   <ul>
-    <li>
+    <!-- <li>
       <a href="/showreel.html">Showreel</a>
-    </li>
+    </li> -->
 
     <li>
       <a href="/portfolio.html">Portfolio</a>
@@ -16,9 +16,9 @@
       <a href="/contact.html">Contact</a>
     </li>
 
-    <li>
+    <!-- <li>
       <a href="/blog/">Blog</a>
-    </li>
+    </li> -->
   </ul>
 
 </div>

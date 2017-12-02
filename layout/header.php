@@ -12,9 +12,9 @@
 
 		<div id="menu">
 			<ul>
-				<li class="menu--showreel">
+				<!-- <li class="menu--showreel">
 					<a href="/showreel.php">Showreel</a>
-				</li>
+				</li> -->
 
 				<li class="menu--portfolio">
 					<a href="/portfolio.php">Portfolio</a>
@@ -24,9 +24,9 @@
 					<a href="/contact.php">Contact</a>
 				</li>
 
-				<li class="menu--blog">
+				<!-- <li class="menu--blog">
 					<a href="/blog3/">Blog</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 
