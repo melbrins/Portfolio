@@ -370,9 +370,9 @@
 	  					</a>
 	  				</li>
 
-	  				<!-- Guiness -->
+	  				<!-- Guinness -->
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/guinness.jpg);">
-	  					<a href="images/fullscreen/3d/guiness.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+	  					<a href="images/fullscreen/3d/guinness.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Guiness Advertising</h3>
@@ -397,7 +397,7 @@
 	  				</li>
 
 	  				<!-- GetLenses Banner -->
-	  				<li class="work--project mix web" style="background-image: url(images/portfolios/web/g-banner.jpg);">
+	  				<!-- <li class="work--project mix web" style="background-image: url(images/portfolios/web/g-banner.jpg);">
 	  					<a href="images/fullscreen/web/g-banner.jpg" rel="prettyPhoto[web]" class="work--project-link">
 	  						<i class="fa fa-link" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -407,10 +407,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 
-	  				<li class="work--project mix web" style="background-image: url(images/portfolios/web/g-ceel.jpg);">
+	  				<!-- <li class="work--project mix web" style="background-image: url(images/portfolios/web/g-ceel.jpg);">
 	  					<a href="#" class="work--project-link">
 	  						<i class="fa fa-link" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -420,14 +420,14 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_business_card.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/print/getlenses_business_card.jpg" rel="prettyPhoto[print]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">GetLenses Business Cards</h3>
+	  							<h4 class="work--project-category">Branding / Print</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -435,11 +435,11 @@
 	  				</li>
 
 	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_Stationery.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/print/getlenses_Stationery.jpg" rel="prettyPhoto[print]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">GetLenses Stationery</h3>
+	  							<h4 class="work--project-category">Branding / Print</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -447,11 +447,11 @@
 	  				</li>
 
 	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/move.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/print/move.jpg" rel="prettyPhoto[print]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Movie Poster "Move!"</h3>
+	  							<h4 class="work--project-category">Advertising / Movie</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -459,8 +459,8 @@
 	  				</li>
 
 	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_Leaflet_Asos.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/print/getlenses_Leaflet_Asos.jpg" rel="prettyPhoto[print]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Wall Street Institutes</h3>
 	  							<h4 class="work--project-category">Graphic / Avertising</h4>
@@ -471,11 +471,11 @@
 	  				</li>
 
 	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/catch.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/illustration/catch.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Catch!</h3>
+	  							<h4 class="work--project-category">Digital Painting</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -483,11 +483,11 @@
 	  				</li>
 
 	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/crown.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/illustration/crown.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Crown</h3>
+	  							<h4 class="work--project-category">Digital Painting</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -495,11 +495,11 @@
 	  				</li>
 
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/necron.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/3d/necron.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Necron Builder</h3>
+	  							<h4 class="work--project-category">Gaming / Modeling</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -507,11 +507,11 @@
 	  				</li>
 
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/paulo.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/3d/paulo.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Paulo the Kraken</h3>
+	  							<h4 class="work--project-category">Character Design / Modeling</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -519,11 +519,11 @@
 	  				</li>
 
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/jack.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/3d/jack.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Jack Daniels</h3>
+	  							<h4 class="work--project-category">Character Design / Modeling</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -531,11 +531,11 @@
 	  				</li>
 
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/chaloupe.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/3d/chaloupe.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">Steampunk Boat</h3>
+	  							<h4 class="work--project-category">Concept / Modeling</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
@@ -543,11 +543,11 @@
 	  				</li>
 
 	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/e-learning.jpg);">
-	  					<a href="#" class="work--project-link">
-
+	  					<a href="images/fullscreen/illustration/e-learning.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
+	  							<h3 class="work--project-name">E-Learning Characters</h3>
+	  							<h4 class="work--project-category">Character Design / Illustration</h4>
 
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
