@@ -15,19 +15,10 @@
 	<?php include 'layout/header.php'; ?>
 	<?php include 'layout/mobile-menu.php'; ?>	
 	
-
 	<!-- ============================================ *
 	* SECTION - WORK
 	* ============================================ -->
 	<div class="work section section--grey">
-		<!-- <div class="wrap"> -->
-			<div class="section--title">
-				<h2>
-					WORK
-				</h2>
-			</div>
-
-			<?php include 'layout/top-filter.php'; ?>
 
 			<div class="section--content">
 				<ul class="work--list">
@@ -59,7 +50,7 @@
 	  				</li>
 
 	  				<!--  WALL STREET INSTITUTES  -->
-					<li class="work--project mix web" style="background-image: url(images/work/thumbnails/wall-street.jpg);">
+					<li class="work--project mix print" style="background-image: url(images/work/thumbnails/wall-street.jpg);">
 	  					<a href="projects/wall-street-institutes.php" class="work--project-link">
 	  						<i class="fa fa-link" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -124,7 +115,7 @@
 	  				</li>
 
 	  				<!--  Anger  -->
-	  				<li class="work--project mix thered" style="background-image: url(images/work/thumbnails/anger.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/work/thumbnails/anger.jpg);">
 	  					<a href="images/fullscreen/3d/Inside-out-anger.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -134,7 +125,7 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- VISION DIRECT 3D -->
 	  				<li class="work--project mix illustration" style="background-image: url(images/work/thumbnails/vision-direct-boxes.jpg);">
@@ -176,7 +167,7 @@
 	  				</li>
 
 	  				<!-- KATNISS -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/Katniss.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/Katniss.jpg);">
 	  					<a href="images/fullscreen/illustration/katniss.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -186,10 +177,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Everclear -->
-	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/everclear.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/everclear.jpg);">
 	  					<a href="images/fullscreen/3d/everclear.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -199,7 +190,7 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Wolf -->
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/wolf.jpg);">
@@ -215,7 +206,7 @@
 	  				</li>
 
 	  				<!-- Sheep -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/sheep.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/sheep.jpg);">
 	  					<a href="images/fullscreen/illustration/sheep.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -226,9 +217,9 @@
 	  						</span>
 	  					</a>
 	  				</li>
-
+ -->
 	  				<!-- Wolf 1 -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/wolves_1.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/wolves_1.jpg);">
 	  					<a href="images/fullscreen/illustration/wolves_1.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -238,10 +229,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Storyboard -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/storyboard.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/storyboard.jpg);">
 	  					<a href="images/fullscreen/illustration/storyboard.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -251,10 +242,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Isabella -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/isabella.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/isabella.jpg);">
 	  					<a href="images/fullscreen/illustration/isabella.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -264,10 +255,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Vein -->
-	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/vein.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/vein.jpg);">
 	  					<a href="images/fullscreen/3d/vein.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -277,7 +268,7 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Iphone -->
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/iphone.jpg);">
@@ -293,7 +284,7 @@
 	  				</li>
 
 	  				<!-- Monkey Cook --> 
-	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/monkey-cook.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/monkey-cook.jpg);">
 	  					<a href="images/fullscreen/3d/monkey-cook.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -303,10 +294,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Monkey --> 
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/monkey.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/monkey.jpg);">
 	  					<a href="images/fullscreen/illustration/monkey.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -316,10 +307,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Sweety -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/sweety.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/sweety.jpg);">
 	  					<a href="images/fullscreen/illustration/sweety.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -329,7 +320,7 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Sherlock -->
 	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/sherlock.jpg);">
@@ -345,7 +336,7 @@
 	  				</li>
 
 	  				<!-- Ten Chi Jin -->
-	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/ten-chi-jin.jpg);">
+	  				<li class="work--project mix print" style="background-image: url(images/portfolios/ten-chi-jin.png);">
 	  					<a href="images/fullscreen/print/ten-chi-jin.jpg" rel="prettyPhoto[print]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -358,7 +349,7 @@
 	  				</li>
 
 	  				<!-- Olympic game -->
-	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/olympic.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/olympic.jpg);">
 	  					<a href="images/fullscreen/3d/olympic.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -368,10 +359,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Guinness -->
-	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/guinness.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/guinness.jpg);">
 	  					<a href="images/fullscreen/3d/guinness.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -381,10 +372,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- Cowboy -->
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/cowboy.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/cowboy.jpg);">
 	  					<a href="images/fullscreen/illustration/cowboy.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -394,7 +385,7 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<!-- GetLenses Banner -->
 	  				<!-- <li class="work--project mix web" style="background-image: url(images/portfolios/web/g-banner.jpg);">
@@ -422,7 +413,7 @@
 	  					</a>
 	  				</li> -->
 
-	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_business_card.jpg);">
+	  				<!-- <li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_business_card.jpg);">
 	  					<a href="images/fullscreen/print/getlenses_business_card.jpg" rel="prettyPhoto[print]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -432,9 +423,9 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
-	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_Stationery.jpg);">
+	  				<!-- <li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_Stationery.jpg);">
 	  					<a href="images/fullscreen/print/getlenses_Stationery.jpg" rel="prettyPhoto[print]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -444,9 +435,9 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
-	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/move.jpg);">
+	  				<!-- <li class="work--project mix print" style="background-image: url(images/fullscreen/print/move.jpg);">
 	  					<a href="images/fullscreen/print/move.jpg" rel="prettyPhoto[print]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -456,9 +447,9 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
-	  				<li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_Leaflet_Asos.jpg);">
+	  				<!-- <li class="work--project mix print" style="background-image: url(images/fullscreen/print/getlenses_Leaflet_Asos.jpg);">
 	  					<a href="images/fullscreen/print/getlenses_Leaflet_Asos.jpg" rel="prettyPhoto[print]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -468,9 +459,9 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
-	  				<li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/catch.jpg);">
+	  				<!-- <li class="work--project mix illustration" style="background-image: url(images/fullscreen/illustration/catch.jpg);">
 	  					<a href="images/fullscreen/illustration/catch.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -516,7 +507,7 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/jack.jpg);">
 	  					<a href="images/fullscreen/3d/jack.jpg" rel="prettyPhoto[3d]" class="work--project-link">
@@ -530,7 +521,7 @@
 	  					</a>
 	  				</li>
 
-	  				<li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/chaloupe.jpg);">
+	  				<!-- <li class="work--project mix thered" style="background-image: url(images/fullscreen/3d/chaloupe.jpg);">
 	  					<a href="images/fullscreen/3d/chaloupe.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						<i class="fa fa-picture-o" aria-hidden="true"></i>
 	  						<span class="work--project-title">
@@ -552,11 +543,10 @@
 	  							<span class="work--project-view btn">View Project</span>
 	  						</span>
 	  					</a>
-	  				</li>
+	  				</li> -->
 
 				</ul>
 			</div>
-		<!-- </div> -->
 	</div>
 	<!-- page -->
 
@@ -565,7 +555,6 @@
 </body>
 
 <?php include 'layout/after-body.php'; ?>
-	<script type="text/javascript" src="js/jquery.mixitup.2.17.js"></script>
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
@@ -573,93 +562,74 @@
 		});
 	</script>
 
-		<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
 
-			$(document).ready(function(){
-				$("a[rel^='prettyPhoto']").prettyPhoto({
-					animation_speed: 'fast', /* fast/slow/normal */
-					slideshow: 5000, /* false OR interval time in ms */
-					autoplay_slideshow: false, /* true/false */
-					opacity: 0.90, /* Value between 0 and 1 */
-					show_title: true, /* true/false */
-					allow_resize: true, /* Resize the photos bigger than viewport. true/false */
-					allow_expand: false, /* Allow the user to expand a resized image. true/false */
-					default_width: 500,
-					default_height: 344,
-					counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
-					theme: 'light_rounded', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
-					horizontal_padding: 0, /* The padding on each side of the picture */
-					hideflash: false, /* Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto */
-					wmode: 'opaque', /* Set the flash wmode attribute */
-					autoplay: true, /* Automatically start videos: True/False */
-					modal: false, /* If set to true, only the close button will close the window */
-					deeplinking: true, /* Allow prettyPhoto to update the url to enable deeplinking. */
-					overlay_gallery: false, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
-					keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
-					changepicturecallback: function(){}, /* Called everytime an item is shown/changed */
-					callback: function(){}, /* Called when prettyPhoto is closed */
-					ie6_fallback: true,
-					markup: '<div class="pp_pic_holder"> \
-								<div class="ppt">&nbsp;</div> \
-								<div class="pp_content_container"> \
-									<div class="pp_content"> \
-										<div class="pp_loaderIcon"></div> \
-										<div class="pp_fade"> \
-											<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
-											<div class="pp_hoverContainer"> \
-												<a class="pp_next" href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a> \
-												<a class="pp_previous" href="#"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a> \
+		$(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				animation_speed: 'fast', /* fast/slow/normal */
+				slideshow: 5000, /* false OR interval time in ms */
+				autoplay_slideshow: false, /* true/false */
+				opacity: 0.90, /* Value between 0 and 1 */
+				show_title: true, /* true/false */
+				allow_resize: true, /* Resize the photos bigger than viewport. true/false */
+				allow_expand: false, /* Allow the user to expand a resized image. true/false */
+				default_width: 500,
+				default_height: 344,
+				counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
+				theme: 'light_rounded', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+				horizontal_padding: 0, /* The padding on each side of the picture */
+				hideflash: false, /* Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto */
+				wmode: 'opaque', /* Set the flash wmode attribute */
+				autoplay: true, /* Automatically start videos: True/False */
+				modal: false, /* If set to true, only the close button will close the window */
+				deeplinking: true, /* Allow prettyPhoto to update the url to enable deeplinking. */
+				overlay_gallery: false, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
+				keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
+				changepicturecallback: function(){}, /* Called everytime an item is shown/changed */
+				callback: function(){}, /* Called when prettyPhoto is closed */
+				ie6_fallback: true,
+				markup: '<div class="pp_pic_holder"> \
+							<div class="ppt">&nbsp;</div> \
+							<div class="pp_content_container"> \
+								<div class="pp_content"> \
+									<div class="pp_loaderIcon"></div> \
+									<div class="pp_fade"> \
+										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+										<div class="pp_hoverContainer"> \
+											<a class="pp_next" href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a> \
+											<a class="pp_previous" href="#"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a> \
+										</div> \
+										<div id="pp_full_res"></div> \
+										<div class="pp_details"> \
+											<div class="pp_nav"> \
+												<a href="#" class="pp_arrow_previous"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a> \
+												<p class="currentTextHolder">0/0</p> \
+												<a href="#" class="pp_arrow_next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a> \
 											</div> \
-											<div id="pp_full_res"></div> \
-											<div class="pp_details"> \
-												<div class="pp_nav"> \
-													<a href="#" class="pp_arrow_previous"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a> \
-													<p class="currentTextHolder">0/0</p> \
-													<a href="#" class="pp_arrow_next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a> \
-												</div> \
-												<p class="pp_description"></p> \
-												{pp_social} \
-												<a class="pp_close" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a> \
-											</div> \
+											<p class="pp_description"></p> \
+											{pp_social} \
+											<a class="pp_close" href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a> \
 										</div> \
 									</div> \
 								</div> \
 							</div> \
-							<div class="pp_overlay"></div>',
-					gallery_markup: '<div class="pp_gallery"> \
-										<a href="#" class="pp_arrow_previous"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a> \
-										<div> \
-											<ul> \
-												{gallery} \
-											</ul> \
-										</div> \
-										<a href="#" class="pp_arrow_next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a> \
-									</div>',
-					image_markup: '<img id="fullResImage" src="{path}" />',
-					flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
-					quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
-					iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
-					inline_markup: '<div class="pp_inline">{content}</div>',
-					custom_markup: ''
-				});
-			});
-		</script>
-
-	<script>
-		$(function () {
-
-			/* ============================================================ */
-			/* ================================================= MixItUp == */
-			/* ============================================================ */
-			var $portfolioList = $('.work--list'),
-					$page = $('.work.section .section--content');
-
-			$portfolioList.mixItUp({
-				callbacks: {
-					onMixEnd: function (state) {
-						$page.height($portfolioList.height());
-					}
-				}
+						</div> \
+						<div class="pp_overlay"></div>',
+				gallery_markup: '<div class="pp_gallery"> \
+									<a href="#" class="pp_arrow_previous"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a> \
+									<div> \
+										<ul> \
+											{gallery} \
+										</ul> \
+									</div> \
+									<a href="#" class="pp_arrow_next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a> \
+								</div>',
+				image_markup: '<img id="fullResImage" src="{path}" />',
+				flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
+				quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
+				iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
+				inline_markup: '<div class="pp_inline">{content}</div>',
+				custom_markup: ''
 			});
 		});
 	</script>

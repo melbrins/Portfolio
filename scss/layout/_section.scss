@@ -35,7 +35,7 @@
 	}
 
 	&.section--grey{
-		background-color 	: #eaeaea;
+		background-color 	: #111;
 
 		.section--title{
 			h2{
@@ -48,11 +48,11 @@
 .work--list{
 	@include display-flex(flex);
 	@include align-items(flex-start);
-	@include justify-content(center);
+	@include justify-content(space-evenly);
 	@include flex-wrap(wrap);
 
 	width: 100%;
-	padding: 0;
+	padding: 20px 0;
 
 	.work--project{
 		@include border-radius(10px 10px 0 0);
@@ -75,9 +75,9 @@
 			max-width 	: initial;
 		}
 
-		&.mix{
+		/*&.mix{
 			display: none;
-		}
+		}*/
 
 		.work--project-link{
 			height 	 	: 100%;
@@ -106,16 +106,17 @@
 		    .work--project-name{
 		    	font-size 		: $f-size-l;
 		    	font-weight 	: 500;
-		    	letter-spacing 	: 2px;
+		    	letter-spacing 	: 1px;
 		    	color 			: #2a2a2a;
-		    	line-height 	: 1.2;
+		    	line-height 	: 1.4;
 		    	text-transform 	: uppercase;
+		    	margin-bottom 	: 5px;
 		    }
 
 		    .work--project-category{
 		    	font-size 		: $f-size-s;
 		    	color 			: #2a2a2a;
-		    	font-weight 	: 400;
+		    	font-weight 	: 200;
 		    	letter-spacing 	: 2px;
 		    	margin-bottom 	: $gap;
 		    }
@@ -210,7 +211,7 @@
 
 	@include bp(max-width, $bp-medium){
 		.work--project{
-			width: 49%;
+			width: 49%;		
 
 			.work--project-title{
 				&:before{
@@ -231,8 +232,9 @@
 
 	@include bp(max-width, $bp-xsmall){
 		.work--project{
-			width: 100%;
-			margin: 0 0 20px 0;
+			width  : 100%;
+			margin : 0 0 20px 0;
+			
 
 			.work--project-title{
 				&:before{
@@ -253,8 +255,21 @@
 	
 	.work--project { 
 		border-radius: 0; 
-		width: 20vw; 
+		width: 15vw; 
 		margin: 0; 
+
+		&.web{
+			width: 30vw;
+		}
+
+		&.print{
+			width: 35vw;
+		}
+
+		&.thered{
+			width: 30vw;
+			margin-bottom: 2vw;
+		}
 
 		i{
 			background-color: #000;
@@ -267,33 +282,46 @@
 		    left: 0;
 		    font-size: 14px;
 		}
+	}
+}
 
-		.work--project-title{ 
-			display: none; 
+@include bp(max-width, $bp-large){
+	.work--list{
+		.work--project,
+		.work--project.web,
+		.work--project.illustration,
+		.work--project.print,
+		.work--project.thered { 
+			width  : 33.33vw;
+			height : 50vh;  
 		}
 	}
 }
 
 @include bp(max-width, $bp-large){
 	.work--list{
-		.work--project { 
-			width: 25vw; 
-		}
-	}
-}
-
-@include bp(max-width, $bp-medium){
-	.work--list{
-		.work--project { 
-			width: 50vw; 
+		.work--project,
+		.work--project.web,
+		.work--project.illustration,
+		.work--project.print,
+		.work--project.thered { 
+			width  : 46vw;
+			height : 50vh;
+			margin-bottom: 2vw; 
 		}
 	}
 }
 
 @include bp(max-width, $bp-xsmall){
 	.work--list{
-		.work--project { 
-			width: 100vw; 
+		.work--project,
+		.work--project.web,
+		.work--project.illustration,
+		.work--project.print,
+		.work--project.thered { 
+			width  : 100vw;
+			height : 90vh;
+			margin-bottom: 0;
 		}
 	}
 }

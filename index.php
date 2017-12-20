@@ -47,9 +47,9 @@
   			<ul class="work--list">
 
           <!--  ANGELA  -->
-          <li class="work--project" style="background-image: url(images/work/thumbnails/angela.jpg);">
+          <li class="work--project lazy illustration" data-src="images/work/thumbnails/angela.png">
             <a href="/portfolio.php#prettyPhoto[Illustration]/0/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
+
               <span class="work--project-title">
                 <h3 class="work--project-name">Angela</h3>
                 <h4 class="work--project-category">Illustration</h4>
@@ -59,12 +59,12 @@
             </a>
           </li>
 
-          <!--  VERONICA  -->
-          <li class="work--project" style="background-image: url(images/work/thumbnails/veronica.jpg);">
+          <!--  OCTOCAT  -->
+          <li class="work--project lazy illustration" data-src="images/work/thumbnails/octocat2.png">
             <a href="/portfolio.php#prettyPhoto[Illustration]/1/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
+
               <span class="work--project-title">
-                <h3 class="work--project-name">Veronica</h3>
+                <h3 class="work--project-name">Octocat</h3>
                 <h4 class="work--project-category">Illustration</h4>
 
                 <span class="work--project-view btn">View Project</span>
@@ -72,101 +72,97 @@
             </a>
           </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/wall-street.jpg);">
-  					<a href="/projects/wall-street-institutes.php" class="work--project-link">
-              <i class="fa fa-link" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Wall Street Institutes</h3>
-  							<h4 class="work--project-category">Graphic / Avertising</h4>
+  				<!-- VISION DIRECT 3D -->
+          <li class="work--project lazy thered" data-src="images/work/thumbnails/vd-3d3.png">
+            <a href="images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
+                <h4 class="work--project-category">Packaging / Modeling</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/puzzle-connabel.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[Illustration]/2/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Star Wars Family</h3>
-  							<h4 class="work--project-category">Illustration</h4>
+  				<!--  STAR WARS FAMILY  -->
+          <li class="work--project lazy illustration" data-src="images/work/thumbnails/star-wars.png">
+            <a href="images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Star Wars Family</h3>
+                <h4 class="work--project-category">Illustration</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/melissa-cold-touch.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[Illustration]/3/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Melissa - Cold Touch</h3>
-  							<h4 class="work--project-category">Illustration</h4>
+  				<!--  COLD TOUCH -->
+          <li class="work--project lazy illustration" data-src="images/work/thumbnails/melissa-cold-touch2.png">
+            <a href="images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Cold Touch</h3>
+                <h4 class="work--project-category">Illustration</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/medusa.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[Illustration]/4/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Medusa</h3>
-  							<h4 class="work--project-category">Illustration</h4>
+  				<!-- Iphone -->
+          <li class="work--project lazy thered" data-src="images/work/thumbnails/iphone3.png">
+            <a href="images/fullscreen/3d/iphone.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Iphone - Black &amp; White</h3>
+                <h4 class="work--project-category">Modeling / Packaging</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/black-sheep-goat.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[Illustration]/5/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Black Sheep Goat</h3>
-  							<h4 class="work--project-category">Illustration</h4>
+  				<!-- GLUM & FISH -->
+          <li class="work--project lazy thered" data-src="images/work/thumbnails/glum-and-fish2.png">
+            <a href="images/fullscreen/3d/glumandfish_2.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Glum &amp; Fish</h3>
+                <h4 class="work--project-category">Illustration / Modeling</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/anger.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[3d]/0/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Inside Out - Anger</h3>
-  							<h4 class="work--project-category">Zbrush / Modeling</h4>
+  				<!--  MEDUSA  -->
+          <li class="work--project lazy illustration" data-src="images/work/thumbnails/medusa3.png">
+            <a href="images/fullscreen/illustration/medusa.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Medusa</h3>
+                <h4 class="work--project-category">Illustration</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/vision-direct-boxes.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[3d]/1/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
-  							<h4 class="work--project-category">Packaging / Modeling</h4>
+          <!--  BLACK SHEEP GOAT  -->
+          <li class="work--project lazy illustration" data-src="images/work/thumbnails/black-sheep-goat3.png">
+            <a href="images/fullscreen/illustration/Black_Sheep_Goat_web.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+              
+              <span class="work--project-title">
+                <h3 class="work--project-name">Black Sheep Goat</h3>
+                <h4 class="work--project-category">Illustration</h4>
 
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
+                <span class="work--project-view btn">View Project</span>
+              </span>
+            </a>
+          </li>
 
-  				<li class="work--project" style="background-image: url(images/work/thumbnails/glum-and-fish.jpg);">
-  					<a href="/portfolio.php#prettyPhoto[3d]/2/" class="work--project-link">
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-  						<span class="work--project-title">
-  							<h3 class="work--project-name">Glum &amp; Fish</h3>
-  							<h4 class="work--project-category">Illustration / Modeling</h4>
-
-  							<span class="work--project-view btn">View Project</span>
-  						</span>
-  					</a>
-  				</li>
   			</ul>
   		</div>      
   	<!-- </div> -->
