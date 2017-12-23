@@ -162,6 +162,7 @@ $c-h3: $c-text-dark;
 $c-h4: $c-text;
 $c-h5: $c-text;
 $c-h6: $c-text;
+$c-p : $c-text;
 
 // Link
 $c-link 		: $c-action;
@@ -213,9 +214,9 @@ $c-email-highlighted-border 	: $c-email-highlighted-background;
 
 // Font Stacks
 
-$f-stack-sans: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+$f-stack-sans: 'Nunito', "Helvetica Neue", Helvetica, sans-serif;
 $f-stack-serif: Georgia, Times, 'Times New Roman', serif;
-$f-stack-special: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+$f-stack-special: 'Nunito', "Helvetica Neue", Helvetica, sans-serif;
 
 $f-stack-default: $f-stack-sans;
 

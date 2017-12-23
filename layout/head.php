@@ -4,8 +4,7 @@
 <link rel="icon" href="/images/layout/favicon_32.png" type="image/png">
 <link rel="shortcut icon" href="/images/layout/favicon_32.png" type="image/png">
 
-<link rel="stylesheet" id="open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css" media="all">
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
 

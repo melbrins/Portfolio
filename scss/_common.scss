@@ -40,7 +40,7 @@ textarea {
 
 @include bp(min-width, $bp-xlarge){
 	body{
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 }
 
@@ -122,6 +122,8 @@ h4, .h4 { @include h4; }
 h5, .h5 { @include h5; }
 
 h6, .h6 { @include h6; }
+
+p 		{ @include p; }
 
 /* ============================================ *
  * BUTTON
