@@ -1,3 +1,26 @@
+<div class="section section--white contact">
+  <div class="section--title">
+    <h2>Contact</h2>
+  </div>
+
+  <div class="section--content">
+    <h3>Ready to start your next project? That's great!</h3>
+    <p>Give us a call or send us an email and we will get back to you as soon as possible!</p>
+
+    <div class="contact--methods">
+      <div class="contact--method phone">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h4>+44 (0)7 5827 55 002</h4>
+      </div>
+
+      <div class="contact--method mail">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <h4>info@melbrins.com</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="footer">
   <div class="wrap">
     <ul class="social">

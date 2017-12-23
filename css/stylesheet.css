@@ -2117,60 +2117,54 @@ p {
 }
 /* line 33, ../scss/layout/_section.scss */
 .section.section--white {
-  background-color: #FFF;
-  position: relative;
-}
-/* line 39, ../scss/layout/_section.scss */
-.section.section--white .section--title h2 {
-  padding: 0;
-  color: #2a2a2a;
-  margin-bottom: 0;
-  padding: 0;
-  font-size: 36px;
-}
-/* line 53, ../scss/layout/_section.scss */
-.section.services {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  background-color: #FFF;
+  position: relative;
   height: 50vh;
 }
-/* line 60, ../scss/layout/_section.scss */
-.section.services .section--title {
+/* line 41, ../scss/layout/_section.scss */
+.section.section--white .section--title {
   width: 10vw;
   position: relative;
 }
-/* line 64, ../scss/layout/_section.scss */
-.section.services .section--title h2 {
+/* line 45, ../scss/layout/_section.scss */
+.section.section--white .section--title h2 {
   position: absolute;
   left: 0;
   bottom: 0;
+  padding: 0;
+  color: #2a2a2a;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 36px;
 }
-/* line 71, ../scss/layout/_section.scss */
-.section.services .section--content {
+/* line 57, ../scss/layout/_section.scss */
+.section.section--white .section--content {
   width: 80vw;
   text-align: center;
 }
-/* line 75, ../scss/layout/_section.scss */
+/* line 71, ../scss/layout/_section.scss */
 .section.services .section--content .service--icon {
   max-width: 100px;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 81, ../scss/layout/_section.scss */
+/* line 77, ../scss/layout/_section.scss */
 .section.services .section--content h3 {
   font-size: 24px;
   font-weight: 900;
   color: #2a2a2a;
 }
-/* line 87, ../scss/layout/_section.scss */
+/* line 83, ../scss/layout/_section.scss */
 .section.services .section--content p {
   margin-bottom: 20px;
 }
-/* line 91, ../scss/layout/_section.scss */
+/* line 87, ../scss/layout/_section.scss */
 .section.services .section--content .service--list {
   display: -webkit-flex;
   display: flex;
@@ -2181,45 +2175,79 @@ p {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 97, ../scss/layout/_section.scss */
+/* line 93, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li {
   width: 20vw;
 }
-/* line 100, ../scss/layout/_section.scss */
+/* line 96, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li p, .section.services .section--content .service--list li h3, .section.services .section--content .service--list li a {
   text-align: center;
   display: block;
 }
+/* line 112, ../scss/layout/_section.scss */
+.section.contact .section--content h3 {
+  font-size: 24px;
+  color: #2a2a2a;
+  margin-bottom: 0;
+}
+/* line 118, ../scss/layout/_section.scss */
+.section.contact .section--content .contact--methods {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+/* line 129, ../scss/layout/_section.scss */
+.section.contact .section--content .contact--methods .contact--method i {
+  font-size: 50px;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+/* line 135, ../scss/layout/_section.scss */
+.section.contact .section--content .contact--methods .contact--method h4 {
+  font-weight: 400;
+  color: #2a2a2a;
+  font-size: 18px;
+}
+/* line 141, ../scss/layout/_section.scss */
+.section.contact .section--content .contact--methods .contact--method.phone {
+  margin-right: 20px;
+}
 
 /* ============================================ *
- * HOMEPAGE - SERVICES - MEDIA QUERIES
+ * HOMEPAGE - MEDIA QUERIES
  * ============================================ */
 @media only screen and (min-width: 600px) {
-  /* line 123, ../scss/layout/_section.scss */
+  /* line 160, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.mobile {
     display: none;
   }
-  /* line 126, ../scss/layout/_section.scss */
+  /* line 163, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.desktop {
     display: -webkit-flex;
     display: flex;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 139, ../scss/layout/_section.scss */
-  .section.services {
+  /* line 176, ../scss/layout/_section.scss */
+  .section.section--white {
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
   }
-  /* line 144, ../scss/layout/_section.scss */
-  .section.services .section--title {
+  /* line 180, ../scss/layout/_section.scss */
+  .section.section--white .section--title {
     width: 100vw;
     padding: 0;
   }
-  /* line 148, ../scss/layout/_section.scss */
-  .section.services .section--title h2 {
+  /* line 184, ../scss/layout/_section.scss */
+  .section.section--white .section--title h2 {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -2230,11 +2258,11 @@ p {
     left: auto;
     font-size: 24px;
   }
-  /* line 158, ../scss/layout/_section.scss */
-  .section.services .section--content {
+  /* line 194, ../scss/layout/_section.scss */
+  .section.section--white .section--content {
     width: 100vw;
   }
-  /* line 161, ../scss/layout/_section.scss */
+  /* line 203, ../scss/layout/_section.scss */
   .section.services .section--content .service--list {
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -2251,11 +2279,11 @@ p {
     padding: 20px 0;
     margin: 0;
   }
-  /* line 171, ../scss/layout/_section.scss */
+  /* line 213, ../scss/layout/_section.scss */
   .section.services .section--content .service--list .owl-nav {
     display: none;
   }
-  /* line 175, ../scss/layout/_section.scss */
+  /* line 217, ../scss/layout/_section.scss */
   .section.services .section--content .service--list li {
     -webkit-animation: all 0.2s ease-out;
     -moz-animation: all 0.2s ease-out;
@@ -2270,16 +2298,53 @@ p {
     flex-direction: column;
     width: 100vw;
   }
-  /* line 182, ../scss/layout/_section.scss */
+  /* line 224, ../scss/layout/_section.scss */
   .section.services .section--content .service--list li p {
     max-width: 80vw;
   }
-  /* line 187, ../scss/layout/_section.scss */
+  /* line 229, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.desktop {
     display: none;
   }
+  /* line 237, ../scss/layout/_section.scss */
+  .section.contact .section--content {
+    width: 100vw;
+  }
+  /* line 240, ../scss/layout/_section.scss */
+  .section.contact .section--content h3, .section.contact .section--content p {
+    display: none;
+  }
+  /* line 244, ../scss/layout/_section.scss */
+  .section.contact .section--content .contact--methods {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 0;
+  }
+  /* line 249, ../scss/layout/_section.scss */
+  .section.contact .section--content .contact--methods .contact--method {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 10vw;
+    margin-bottom: 20px;
+  }
+  /* line 259, ../scss/layout/_section.scss */
+  .section.contact .section--content .contact--methods .contact--method i {
+    margin-right: 20px;
+  }
+  /* line 263, ../scss/layout/_section.scss */
+  .section.contact .section--content .contact--methods .contact--method.phone {
+    margin-right: 0;
+  }
 }
-/* line 196, ../scss/layout/_section.scss */
+/* line 273, ../scss/layout/_section.scss */
 .work--list {
   display: -webkit-flex;
   display: flex;
@@ -2292,7 +2357,7 @@ p {
   width: 100%;
   padding: 20px 0;
 }
-/* line 205, ../scss/layout/_section.scss */
+/* line 282, ../scss/layout/_section.scss */
 .work--list .work--project {
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
@@ -2322,13 +2387,13 @@ p {
   	    	margin-right: 0;
   	    }*/
 }
-/* line 220, ../scss/layout/_section.scss */
+/* line 297, ../scss/layout/_section.scss */
 .work--list .work--project img {
   height: 100%;
   width: auto;
   max-width: initial;
 }
-/* line 230, ../scss/layout/_section.scss */
+/* line 307, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-link {
   height: 100%;
   width: 100%;
@@ -2336,7 +2401,7 @@ p {
   position: relative;
   z-index: 40;
 }
-/* line 238, ../scss/layout/_section.scss */
+/* line 315, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -2350,14 +2415,14 @@ p {
   width: 100%;
   padding: 0 20px;
 }
-/* line 247, ../scss/layout/_section.scss */
+/* line 324, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name,
 .work--list .work--project .work--project-title .work--project-category,
 .work--list .work--project .work--project-title .work--project-view {
   z-index: 20;
   position: relative;
 }
-/* line 254, ../scss/layout/_section.scss */
+/* line 331, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name {
   font-size: 18px;
   font-weight: 500;
@@ -2367,7 +2432,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 264, ../scss/layout/_section.scss */
+/* line 341, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-category {
   font-size: 12px;
   color: #2a2a2a;
@@ -2375,7 +2440,7 @@ p {
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
-/* line 272, ../scss/layout/_section.scss */
+/* line 349, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-view {
   width: 100%;
   height: 40px;
@@ -2387,7 +2452,7 @@ p {
   left: 0;
   /*@include opacity(0);*/
 }
-/* line 284, ../scss/layout/_section.scss */
+/* line 361, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title:before {
   -webkit-border-radius: 100% 100% 0 0;
   -moz-border-radius: 100% 100% 0 0;
@@ -2403,7 +2468,7 @@ p {
   top: -60%;
   left: -10%;
 }
-/* line 300, ../scss/layout/_section.scss */
+/* line 377, ../scss/layout/_section.scss */
 .work--list .work--project:before {
   /*@include transition(all 0.3s ease-out);
   @include border-radius(10px 10px 0 0);
@@ -2417,97 +2482,97 @@ p {
   
   content: '';*/
 }
-/* line 316, ../scss/layout/_section.scss */
+/* line 393, ../scss/layout/_section.scss */
 .work--list .work--project:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 320, ../scss/layout/_section.scss */
+/* line 397, ../scss/layout/_section.scss */
 .work--list .work--project:hover .work--project-title {
   bottom: 40px;
   left: 0;
 }
 @media only screen and (max-width: 979px) {
-  /* line 336, ../scss/layout/_section.scss */
+  /* line 413, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 32%;
     /*&:nth-child(4n){
     	margin-right: 2%;
     }*/
   }
-  /* line 340, ../scss/layout/_section.scss */
+  /* line 417, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 346, ../scss/layout/_section.scss */
+  /* line 423, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 350, ../scss/layout/_section.scss */
+  /* line 427, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(even) {
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 361, ../scss/layout/_section.scss */
+  /* line 438, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 49%;
     	/*&:nth-child(3n){
         	margin-right: 2%;
         }*/
   }
-  /* line 365, ../scss/layout/_section.scss */
+  /* line 442, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 375, ../scss/layout/_section.scss */
+  /* line 452, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(2n) {
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 382, ../scss/layout/_section.scss */
+  /* line 459, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 388, ../scss/layout/_section.scss */
+  /* line 465, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 394, ../scss/layout/_section.scss */
+  /* line 471, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-/* line 401, ../scss/layout/_section.scss */
+/* line 478, ../scss/layout/_section.scss */
 .work--list {
   margin: 0;
 }
-/* line 404, ../scss/layout/_section.scss */
+/* line 481, ../scss/layout/_section.scss */
 .work--list .work--project {
   border-radius: 0;
   width: 15vw;
   margin: 0;
 }
-/* line 409, ../scss/layout/_section.scss */
+/* line 486, ../scss/layout/_section.scss */
 .work--list .work--project.web {
   width: 30vw;
 }
-/* line 413, ../scss/layout/_section.scss */
+/* line 490, ../scss/layout/_section.scss */
 .work--list .work--project.print {
   width: 35vw;
 }
-/* line 417, ../scss/layout/_section.scss */
+/* line 494, ../scss/layout/_section.scss */
 .work--list .work--project.thered {
   width: 15vw;
   margin-bottom: 2vw;
 }
-/* line 422, ../scss/layout/_section.scss */
+/* line 499, ../scss/layout/_section.scss */
 .work--list .work--project i {
   background-color: #000;
   height: 30px;
@@ -2521,7 +2586,7 @@ p {
 }
 
 @media only screen and (max-width: 979px) {
-  /* line 438, ../scss/layout/_section.scss */
+  /* line 515, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -2532,7 +2597,7 @@ p {
   }
 }
 @media only screen and (max-width: 979px) {
-  /* line 451, ../scss/layout/_section.scss */
+  /* line 528, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -2544,7 +2609,7 @@ p {
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 465, ../scss/layout/_section.scss */
+  /* line 542, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
