@@ -10,10 +10,9 @@
 	<?php include 'layout/head.php'; ?>
 
 </head>
-<body id="portfolio" class="container">
+<body id="portfolio">
 
 	<?php include 'layout/header.php'; ?>
-	<?php include 'layout/mobile-menu.php'; ?>	
 	
 	<!-- ============================================ *
 	* SECTION - WORK
@@ -116,6 +115,10 @@
 		$(document).ready(function(){
 			$("a[rel^='prettyPhoto']").prettyPhoto();
 		});
+	</script>
+
+	<script type="text/javascript">
+		$("li.menu--illustration a").addClass("active");
 	</script>
 
 	<script type="text/javascript" charset="utf-8">

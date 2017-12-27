@@ -5,6 +5,11 @@
 <script type="text/javascript" src="/js/common.js"></script> 
 <script type="text/javascript" src="/js/jquery.lazy.min.js"></script>
 <script type="text/javascript" src="/js/owl.carousel.js"></script>
+<script type="text/javascript" src="/js/classie.js"></script>
+<script type="text/javascript" src="/js/snap.svg-min.js"></script>
+<script type="text/javascript" src="/js/mobile-menu.js"></script>
+
+
 
 <script type="text/javascript">
 	$(function() {

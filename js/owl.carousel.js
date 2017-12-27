@@ -791,8 +791,6 @@
 
 		this._drag.stage.current = stage;
 
-		console.log("Drag = " + this.coordinates());
-
 		this.animate(stage.x);
 	};
 
@@ -845,9 +843,7 @@
 		var position = -1,
 			pull = 30,
 			width = this.width(),
-			coordinates = this.coordinates();
-
-		console.log("closest = " + coordinates);	
+			coordinates = this.coordinates();	
 
 		if (!this.settings.freeDrag) {
 			// check closest item
@@ -886,8 +882,6 @@
 	 * @param {Number} coordinate - The coordinate in pixels.
 	 */
 	Owl.prototype.animate = function(coordinate) {
-
-		console.log("animate = " + coordinate);
 
 		var animate = this.speed() > 0;
 
@@ -1164,10 +1158,6 @@
 			coordinate = this._coordinates[newPosition] || 0;
 		}
 
-		coordinate = Math.ceil(coordinate);
-
-		console.log("coordinates = " + coordinate);
-		console.log("position = " + position);
 		return coordinate;
 	};
 

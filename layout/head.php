@@ -10,10 +10,11 @@
 
 <style type="text/css">
 /* fullscreen setup */
-html, body {
-	/* give this to all tags from html to .fullscreen */
+/* give this to all tags from html to .fullscreen */
+/*html, body {
+
 	height:100%;
-}
+}*/
 </style>
 
 <!--[if lt IE 9]>

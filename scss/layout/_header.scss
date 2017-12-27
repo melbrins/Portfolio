@@ -11,7 +11,7 @@
 	height 			: $s-header;
 	background-color: $c-header;
 
-	#toggle-nav{
+	#open-button{
 		display 	: none;
 		color 		: #fff;
 		font-size 	: $f-size-l;
@@ -134,7 +134,7 @@
 		width 		: 100%; 
 		text-align  : center;
 
-		#toggle-nav{
+		#open-button{
 			display 	: inline-block;
 			position 	: absolute;
 			left 		: 20px;

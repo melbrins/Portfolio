@@ -8,10 +8,9 @@
 
 </head>
 
-<body id="contact" class="container">
+<body id="contact">
 
   <?php include 'layout/header.php'; ?>
-  <?php include 'layout/mobile-menu.php'; ?>
 
 
   <!-- ============================================ *
@@ -49,5 +48,9 @@
 </body>
 
 <?php include 'layout/after-body.php'; ?>
+
+<script type="text/javascript">
+  $("li.menu--contact a").addClass("active");
+</script>
 
 </html>

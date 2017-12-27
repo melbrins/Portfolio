@@ -59,6 +59,7 @@ backgroundResize();
 
 
 jQuery(document).ready(function($) {
+
 	// ============================
 	// MOBILE - MENU
 	// ============================
@@ -66,35 +67,39 @@ jQuery(document).ready(function($) {
 	$("#toggle-nav").click(function() {
 		$("#mobile-menu").slideToggle(500);
 	});
+
+
 	// ============================
 	// MOBILE - FILTER
 	// ============================
-	$("#toggle-filters").click(function() {
-		$("#filters").slideToggle(500);
-		$('#toggle-filters').toggleClass('active');
-	});
-	$(".filter").bind("click", function() {
-		if ($(window).width() < 767) {
-			$("#filters").slideToggle(500);
-			$('#toggle-filters').toggleClass('active');
+	// $("#toggle-filters").click(function() {
+	// 	$("#filters").slideToggle(500);
+	// 	$('#toggle-filters').toggleClass('active');
+	// });
+	// $(".filter").bind("click", function() {
+	// 	if ($(window).width() < 767) {
+	// 		$("#filters").slideToggle(500);
+	// 		$('#toggle-filters').toggleClass('active');
 
-			$currentfilter = $(this).html();
+	// 		$currentfilter = $(this).html();
 
-			$('.top-banner .current-filter').html($currentfilter);
-		}
-	});
+	// 		$('.top-banner .current-filter').html($currentfilter);
+	// 	}
+	// });
+
+
 	// ============================
 	// TOGGLE - FIXED HEADER
 	// ============================
-	$(window).bind('scroll', function() {
-		if ($(window).scrollTop() > 300) {
+	$(".content-wrap").bind('scroll', function() {
+		if ($(".content-wrap").scrollTop() > 300) {
 			$(".toggle-fix").addClass('fixed');
 			var toggleSize = $(".toggle-fix").height();
-			$("body").css('padding-top', toggleSize);
+			$(".content-wrap").css('padding-top', toggleSize);
 		}
 		else {
 			$(".toggle-fix").removeClass('fixed');
-			$("body").css('padding-top', "0");
+			$(".content-wrap").css('padding-top', "0");
 		}
 	});
 	// ============================
