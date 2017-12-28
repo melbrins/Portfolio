@@ -1,0 +1,96 @@
+/* ============================================ *
+ * Homepage
+ * ============================================ */
+
+#index{
+
+	.banner{ 
+		overflow 			: hidden; 
+		margin 				: 0;
+		background-color 	: $c-primary;
+		padding 			: 80px 0;
+
+		&.banner-main{
+			background 			 	: url(../images/homepage/freelance_anthony_pucelle.jpg);
+			background-size 	 	: cover;
+			background-position-x 	: 67%;
+			height 				 	: 762px;
+			display 			 	: inline-block;
+			margin-top 			 	: -$s-header;
+			padding 				: 0;
+			max-height 				: 90%;
+
+			.wrap{
+				position 			: relative;
+				height 				: 100%;
+				width 				: 100%;
+
+				.banner-content{
+					position 			: absolute;
+					bottom 				: 10%;
+					left 				: 10%;
+					top 				: auto;
+					right 				: auto;
+					letter-spacing  	: 4px;
+					width 				: 80%;
+
+					h1{
+						color 			: #fff;
+						font-size 		: 80px;
+						text-transform 	: uppercase;
+						line-height 	: 0.7;
+						margin-top 		: 10%;
+
+						span.f-main-colour{
+							font-size 	: 48px;
+							font-weight : 500;
+						}
+					}
+
+					h2{
+						color 			: #fff;
+						font-size 		: 20px;
+
+						span.f-bold{
+							font-weight : 500;
+							font-size 	: 80px;
+						}
+					}
+				}
+
+				@include bp(max-width, $bp-small){
+					.banner-content{
+
+						h1{
+							font-size 		: 40px;
+
+							span.f-main-colour{
+								font-size 	: 22px;
+							}
+						}
+
+						h2{
+							font-size 		: 14px;
+
+							span.f-bold{
+								font-size 	: 60px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section.work{
+		padding	: 0;
+	}
+
+	.page{
+		padding: 0 ;
+		width: 100%;
+		position: relative;
+	}
+}
+
+

@@ -1,0 +1,280 @@
+//
+// @package     melbrins
+//
+
+// =============================================
+// Compass Defaults
+// =============================================
+
+// Border Radius
+
+$border-radius: 4px;
+
+// Transition
+
+$default-transition-property 	: all;
+$default-transition-duration 	: 200ms;
+$default-transition-function 	: linear;
+$default-transition-delay 		: 0;
+
+// =============================================
+// Primary Break Points
+// =============================================
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+// If these are changed, they must also be updated in app.js
+
+$bp-xsmall 		: 479px;
+$bp-small 		: 599px;
+$bp-medium 		: 770px;
+$bp-large 		: 979px;
+$bp-xlarge 		: 1199px;
+
+// =============================================
+// Base Values
+// =============================================
+
+// Spacing
+
+$gap 			: 20px;
+$gap-small 		: 10px;
+
+$trim 			: 20px;
+// This will get applied on viewports smaller than 480px
+$trim-small 	: 10px;
+
+// Padding that will get applied to content areas
+$box-spacing-large: 20px;
+
+// Standard padding around box elements such as banner messages, etc
+$box-spacing: 10px;
+
+// Standard spacing between elements within a box, such as "Add to cart", "Price box", etc
+$element-spacing: 7px;
+
+// Section divider space
+$section-divider: 20px;
+
+// Dimensions
+
+$max-content-width: 1280px;
+$max-container-width: $trim + $max-content-width + $trim;
+$max-std-formatted-width: 50em;
+
+$main-header-height: 60px;
+
+// =============================================
+// Brand Colors
+// =============================================
+
+// Usually not used directly in Sass partials.
+// Only used to define context-based color vars in this file.
+
+$c-primary 		: #2eb1e6;
+$c-secondary 	: #247fbc;
+$c-blue 		: #2d79b9;
+$c-green 		: #61B558;
+$c-pink 		: #D85378;
+$c-orange 		: #F3793B;
+$c-red 			: #AF0000;
+$c-yellow 		: #FFDD15;
+$c-black 		: #000000;
+$c-gray 		: #333333;
+
+// =============================================
+// Base Colors
+// =============================================
+
+// Text
+
+$c-text-darker 		: #333;
+$c-text-dark 		: #555;
+$c-text 			: #777777;
+$c-text-gray 		: #999999;
+$c-text-white 		: #E6E6E6;
+// Primary font color for headings and other non-link text
+$c-text-primary 	: $c-blue;
+
+
+// Interaction
+
+$c-action 			: $c-blue;
+$c-stimulus 		: darken($c-blue, 15%);
+$c-subtle 			: #A0A0A0;
+$c-subtle-stimulus 	: darken($c-subtle, 15%);
+
+// Notifications
+
+$c-danger-darken	 : darken(#DF280A, 15%);
+$c-danger-background : #DF280A;
+$c-danger 			 : #DF280A;
+
+$c-success 				: darken($c-green, 15%);
+$c-success-background 	: $c-green;
+
+$c-warn 				: darken(#E26703, 15%);
+$c-warn-background 		: #E26703;
+
+$c-dark  				: #676157;
+
+// Global Elements
+
+$c-background 			: #2a2a2a;
+$c-background-content 	: #FFF;
+$c-divider-border 		: $c-background;
+
+
+// =============================================
+// Element Colors
+// =============================================
+
+// Buttons
+
+$c-button 			: $c-blue;
+$c-button-hover 	: darken($c-blue, 5%);
+$c-button-active 	: darken($c-blue, 10%);
+
+// Secondary Buttons
+
+$c-button-secondary 		: #DDDDDD;
+$c-button-secondary-hover 	: darken(#DDDDDD, 5%);
+$c-button-secondary-active 	: darken(#DDDDDD, 10%);
+
+$c-button-subtle: #ECECEC;
+
+// Forms
+
+$c-input-border 		: #C0C0C0;
+$c-input-border-focus 	: $c-blue;
+
+$c-input-placeholder 	: $c-text-gray;
+$c-input-text 			: $c-text;
+
+$c-fieldset-border 		: #CCCCCC;
+$c-fieldset-border-light: #EDEDED;
+
+// Headings
+
+$c-h1: $c-blue;
+$c-h2: $c-text-darker;
+$c-h3: $c-text-dark;
+$c-h4: $c-text;
+$c-h5: $c-text;
+$c-h6: $c-text;
+$c-p : $c-text;
+
+// Link
+$c-link 		: $c-action;
+$c-link-hover 	: darken($c-action, 5%);
+$c-link-focus 	: $c-action;
+$c-link-active 	: darken($c-action, (5% / 2));
+
+// Module (generic)
+
+$c-module-background: #F4F4F4;
+$c-module-background-hover: shade($c-module-background, 3%);
+$c-module-background-secondary: #EAF8FF;
+$c-module-background-dark: #AAAAAA;
+// This should be applied whenever the border is surrounding a white element and/or is directly showing on white.
+$c-module-border: #CCCCCC;
+// This should be applied whenever the border is wrapping an element with $c-module-background
+$c-module-border-light: #EDEDED;
+$c-module-border-dark: #777777;
+$c-module-border-highlight: $c-blue;
+$c-module-border-gray: #f4f6f7;
+
+
+// Table
+
+$c-table-background 	: #F4F4F4;
+$c-table-border 		: $c-background;
+
+$c-table-zebra-odd 		: #F8F7F5;
+$c-table-zebra-even 	: #EEEDED;
+
+// Tabs
+
+$c-tabs-background 		: #F0F0F0;
+
+// Email
+$c-email-background 			: #FFF;
+$c-email-background-secondary 	: #E1F0F8;
+$c-email-border 				: #EFEFEF;
+$c-email-action 				: $c-blue;
+$c-email-cell 					: #EFEFEF;
+$c-email-highlighted-background : #F8F8F8;
+$c-email-highlighted-border 	: $c-email-highlighted-background;
+
+// =============================================
+// Typography
+// =============================================
+
+// Google Web Font stylesheet is included via layout XML
+
+// Font Stacks
+
+$f-stack-sans: 'Nunito', "Helvetica Neue", Helvetica, sans-serif;
+$f-stack-serif: Georgia, Times, 'Times New Roman', serif;
+$f-stack-special: 'Nunito', "Helvetica Neue", Helvetica, sans-serif;
+
+$f-stack-default: $f-stack-sans;
+
+// Font Sizes
+$base-font-size: 14;
+
+$f-size-xxl 	: 36px;
+$f-size-xl 		: 24px;
+$f-size-l 		: 18px;
+
+$f-size 		: 14px;
+
+$f-size-s 		: 12px;
+$f-size-xs 		: 10px;
+$f-size-xxs 	: 8px;
+
+// Base Measures
+
+$b-line-height 		: 1.2;
+$b-margin-bottom 	: 1.5em;
+
+
+// =============================================
+// HEADER
+// =============================================
+
+$c-main-nav: #ddd;
+$c-header: rgba(0, 0, 0, 0.6);
+$s-header: 80px;
+$s-logo: 40px;
+$c-heading: $c-primary;
+
+
+// =============================================
+// TOP BANNER
+// =============================================
+
+$s-top-banner: 50px;
+$c-top-banner: $c-primary;
+
+// =============================================
+// FOOTER
+// =============================================
+
+$c-footer: #2a2a2a;
+$s-footer: 70px;
+
+
+// =============================================
+// PROJECT
+// =============================================
+
+$c-description: $c-primary;
+
+
+// =============================================
+// Work List - Project
+// =============================================
+
+$s-thumbnails-height: 780px;
+$s-thumbnails-width: 275px;

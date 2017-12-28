@@ -1,0 +1,96 @@
+/* ============================================ *
+ * FOOTER
+ * ============================================ */
+
+#footer{
+	@include transition(all 1s ease);
+	width              : 100%;
+	font-size          : $f-size;
+	color              : $c-text-gray;
+	text-align         : left;
+	background-color   : $c-footer;
+	
+	.wrap{ 
+		width: 100%;
+		@include display-flex(flex);
+		@include justify-content(space-between);
+		@include flex-direction(row); 
+	}
+
+	.copyright{ 
+		@include order(1);
+		line-height 	: $s-footer; 
+	}
+
+	/* Social Media */
+	.social {
+		@include display-flex(flex);
+		@include flex-direction(row);
+		@include justify-content(flex-end);
+		@include order(2);
+		@include align-items(center);
+		/*line-height     : $s-footer;*/
+		margin 			: 0;
+		padding 		: 0;
+
+		li{
+			margin-bottom: 0;
+			a{
+				@include display-flex(flex);
+				@include align-items(center);
+				font-size 		: $f-size-xl;
+				color 			: $c-text-gray;
+				margin-left 	: $gap;
+
+
+				&:hover{
+					color: #fff;
+					text-decoration: none;
+
+					svg #Icons-Social-Media-Artstation{
+						fill: #fff;
+					}
+				}
+
+				svg{
+					height: 26px;
+
+					#Icons-Social-Media-Artstation{
+						fill: #777;
+					}
+				}
+			}
+
+			&:first-child{
+				a{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+@include bp(max-width, $bp-xsmall) {	
+	#footer{
+
+		.wrap { 
+			padding: 40px 0;
+			@include flex-direction(column); 
+		}
+
+		.copyright { 
+			@include order(2);
+			width 		: 100%; 
+			text-align 	: center; 
+			display 	: block; 
+			margin 		: 0; 
+			line-height : 20px; 
+		}
+
+		.social { 
+			@include order(1);
+			@include flex-direction(row);
+			margin: 0 auto 20px; 
+		}
+	}
+}

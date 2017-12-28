@@ -16,12 +16,13 @@
 			ajaxcallback: function() {},
 			slideshow: false, /* false OR interval time in ms */
 			autoplay_slideshow: false, /* true/false */
-			opacity: 0.80, /* Value between 0 and 1 */
+			opacity: 0.90, /* Value between 0 and 1 */
 			show_title: true, /* true/false */
 			allow_resize: true, /* Resize the photos bigger than viewport. true/false */
 			allow_expand: true, /* Allow the user to expand a resized image. true/false */
 			default_width: 500,
 			default_height: 344,
+			fixed_position: true, /* Set up the position of the iFrame as fixed instead of absolute. true/false */
 			counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
 			theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
 			horizontal_padding: 20, /* The padding on each side of the picture */
@@ -494,7 +495,11 @@
 			$('.pp_loaderIcon').hide();
 
 			// Calculate the opened top position of the pic holder
-			projectedTop = scroll_pos['scrollTop'] + ((windowHeight/2) - (pp_dimensions['containerHeight']/2));
+			if(settings.fixed_position){
+				projectedTop = (windowHeight/2) - (pp_dimensions['containerHeight']/2);
+			}else{
+				projectedTop = scroll_pos['scrollTop'] + ((windowHeight/2) - (pp_dimensions['containerHeight']/2));
+			}
 			if(projectedTop < 0) projectedTop = 0;
 
 			$ppt.fadeTo(settings.animation_speed,1);
@@ -505,7 +510,7 @@
 					height:pp_dimensions['contentHeight'],
 					width:pp_dimensions['contentWidth']
 				},settings.animation_speed);
-			
+
 			// Resize picture the holder
 			$pp_pic_holder.animate({
 				'top': projectedTop,
@@ -578,10 +583,10 @@
 			
 				while (!fitting){
 					if((pp_containerWidth > windowWidth)){
-						imageWidth = (windowWidth - 200);
+						imageWidth = (windowWidth - 100);
 						imageHeight = (height/width) * imageWidth;
 					}else if((pp_containerHeight > windowHeight)){
-						imageHeight = (windowHeight - 200);
+						imageHeight = (windowHeight - 100);
 						imageWidth = (width/height) * imageHeight;
 					}else{
 						fitting = true;
@@ -683,14 +688,23 @@
 				if(contentHeight > windowHeight)
 					return;
 
-				$pp_pic_holder.css({
-					'top': projectedTop,
-					'left': (windowWidth/2) + scroll_pos['scrollLeft'] - (contentwidth/2)
-				});
+				if(settings.fixed_position){
+					$pp_pic_holder.css({
+						'top': (windowHeight/2) - (contentHeight/2),
+						'left': (windowWidth/2) + scroll_pos['scrollLeft'] - (contentwidth/2),
+						'position': 'fixed'
+					});
+				}else{
+					$pp_pic_holder.css({
+						'top': projectedTop,
+						'left': (windowWidth/2) + scroll_pos['scrollLeft'] - (contentwidth/2)
+					});
+				}
 			};
 		};
 	
 		function _get_scroll(){
+
 			if (self.pageYOffset) {
 				return {scrollTop:self.pageYOffset,scrollLeft:self.pageXOffset};
 			} else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict

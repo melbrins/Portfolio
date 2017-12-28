@@ -1,0 +1,99 @@
+//
+// @package     melbrins
+//
+
+@mixin h1 {
+    margin: 0;
+    margin-bottom: 0.7em;
+    color: $c-h1;
+    font-family: $f-stack-special;
+    font-size: $f-size-xxl;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin h2 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: $c-h2;
+    font-family: $f-stack-special;
+    font-size: $f-size-xl;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $c-h3;
+    font-family: $f-stack-special;
+    font-size: $f-size-l;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+}
+
+@mixin h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $c-h4;
+    font-family: $f-stack-special;
+    font-size: $f-size;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+    text-transform: uppercase;
+}
+
+@mixin h5 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $c-h5;
+    font-family: $f-stack-sans;
+    font-size: $f-size;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+    text-transform: uppercase;
+}
+
+@mixin h6 {
+    margin: 0;
+    margin-bottom: 5px;
+    color: $c-h6;
+    font-family: $f-stack-sans;
+    font-size: $f-size-s;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+    text-transform: uppercase;
+}
+
+@mixin p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: $c-p;
+    font-family: $f-stack-sans;
+    font-size: $f-size;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+}
+
+@mixin pageTitle() {
+    font-size: $f-size-xxl;
+    font-weight: 200;
+    color: $c-text-darker;
+    border-bottom: 1px solid $c-module-border-light;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}

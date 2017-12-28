@@ -1,0 +1,639 @@
+
+/* ============================================ *
+ * Project Page 
+ * ============================================ */
+
+.container.project{
+
+	background-color: #fff;
+
+	#main-picture {
+		@include transition(opacity 1s ease-in-out);
+		opacity: 0;
+
+		&.full{
+			opacity: 1;
+		}
+	}
+
+
+	/* ============================================ *
+	 * Project - Wall Street Institutes
+	 * ============================================ */
+
+	&#wall-street-institutes{
+ 		.banner{ 
+			overflow 			: hidden; 
+			margin 				: 0;
+			/*background-color 	: $c-primary;*/
+			/*padding 			: 80px 0;*/
+
+			&.banner-main{
+				background 			 	: url(../images/project/wsi-main-banner.jpg);
+				background-size 	 	: cover;
+				background-position 	: 67%;
+				height 				 	: 762px;
+				display 			 	: inline-block;
+				margin-top 			 	: -$s-header;
+				padding 				: 0;
+				max-height 				: 90%;
+			}
+
+			&.banner-fullscreen{
+				img{ width: 100%; }
+
+
+				.wsi-consultant-expression-content{
+					width: 100%;
+					padding: 0px 10% 40px;
+					text-align: center;
+					background-color: #bcbcbc;
+					color: #fff;
+
+					h3{
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.page{
+			position 		: relative;
+			margin-top 		: -6px;
+			overflow 		: hidden;
+
+			.project-title,
+			.section-title{
+				margin 		: 80px auto;
+				position 	: relative;
+				width 		: 90%;
+
+				h1,
+				h2{
+					text-transform 	: uppercase;
+					font-weight 	: bold;
+					letter-spacing 	: 4px;
+					margin-bottom 	: 0;
+					color 			: #fff;
+					font-size 		: $f-size-xxl;
+					position 	: relative;
+					z-index 	: 2;
+				}
+
+				h2.project-category{
+					font-weight 	: 100;
+					color 			: #fff;
+					letter-spacing 	: 2px;
+					font-size 		: $f-size-xl;
+					text-transform 	: inherit;
+				}
+			}
+
+			.bg-slide{
+				@include transform(rotate(-10deg));
+				background-color 	: #004388;
+				width 				: 300%;
+				height 				: 400px;
+			    /*padding 			: 20% 0;*/
+			    position 			: absolute;
+			    left 				: -150%;
+			    z-index 			: 1;
+			    bottom 				: -190px;
+			}
+
+			.wsi-advertising {
+				position 			: relative;
+				z-index 			: 2;
+
+				.wsi-advert{
+					@include display-flex(flex);
+					@include flex-direction(row);
+					@include align-items(center);
+
+					img{
+						@include box-shadow(5px 5px 20px rgba(0,0,0,0.5));
+						max-width: 40%;
+						margin: 0 40px;
+					}
+
+					.wsi-advert--content{
+						@include display-flex(flex);
+						@include flex-direction(column);
+						max-width: 30%;
+
+						h3{
+							font-weight: 600;
+							font-size: $f-size-xl;
+							color: $c-text-darker;
+						}
+					}
+
+					&.wsi-advert-brian,
+					&.wsi-advert-tailor{
+						@include justify-content(flex-start);
+					}
+
+					&.wsi-advert-umbrella{
+						@include justify-content(flex-end);
+
+						.wsi-advert--content{
+							text-align: right;
+						}
+					}
+
+					&.wsi-advert-umbrella,
+					&.wsi-advert-tailor{
+						margin-top: -10%;
+					}
+				}
+			}
+
+			.wsi-consultant{
+				text-align: center;
+
+				img{
+					width: 60%;
+					position: relative;
+					z-index: 2;
+				}
+
+				.wsi-consultant--introduction{
+					width: 70%;
+					margin: 80px auto;
+
+					h3{
+						font-weight: 600;
+						font-size: $f-size-xl;
+						color: $c-text-darker;
+					}
+					
+					strong{
+						color: #004388;
+
+					}
+				}
+
+				.wsi-consultant--expressions{
+					@include display-flex(flex);
+					@include flex-direction(row);
+					@include flex-flow(wrap);
+					@include justify-content(center);
+					@include align-items(center);
+
+					.wsi-consultant-expression{
+						/*@include display-flex(flex);
+						@include align-items(center);*/
+						width: 50%;
+						margin-bottom: $gap;
+
+
+						.wsi-consultant-expression-content{
+							width: 80%;
+							margin: 40px auto 0 ;
+						}
+
+						&.full{
+							width: 100%;
+
+							.wsi-consultant-expression-content{
+								margin: 0 auto 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-large){
+		&#wall-street-institutes{
+			.page{
+
+				.wsi-advertising {
+					.wsi-advert{
+						&.wsi-advert-umbrella,
+						&.wsi-advert-tailor{
+							margin-top: 0;
+						}
+					}
+				}
+
+				.wsi-consultant{
+					.wsi-consultant--introduction{
+						width: 100%;
+					}
+				}
+
+				.bg-slide{
+					height 				: 300px;
+				    bottom 				: -130px;
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-small){
+		&#wall-street-institutes{
+			.page{
+
+				.project-title,
+				.section-title{
+					margin 		: 40px auto;
+					width 		: 100%;
+					text-align  : center;
+				}
+
+				.section-title{
+					margin-top: 150px;
+				}
+
+				.wsi-advertising{
+					.wsi-advert{
+						@include flex-direction(column);
+
+						img{
+							max-width: 100%;
+							margin-bottom: 20px;
+						}
+
+						.wsi-advert--content{
+							max-width 	: 100%;
+						}
+
+						&.wsi-advert-umbrella,
+						&.wsi-advert-tailor,
+						&.wsi-advert-brian{
+							margin-top 		: 40px;
+
+							.wsi-advert--content{
+								@include order(2);
+								text-align 		: center;
+							}
+						}
+					}
+				}
+
+				.wsi-consultant{
+					img{
+						width: 100%;
+					}
+
+					.wsi-consultant--expressions{
+						@include flex-direction(column);
+
+						.wsi-consultant-expression{
+							width: 100%;
+
+							.wsi-consultant-expression-content{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.nav-dots span {
+		@include transition(all 0.2s);
+		background: rgba(150,150,150,0.1);
+		margin: 6px;
+		
+		box-shadow: 
+			0 1px 1px rgba(255,255,255,0.4), 
+			inset 0 1px 1px rgba(0,0,0,0.1),
+			0 0 0 2px rgba(255,255,255,0.5);
+
+		&.nav-dot-current,
+		&:hover {
+			box-shadow: 
+				0 1px 1px rgba(255,255,255,0.4), 
+				inset 0 1px 1px rgba(0,0,0,0.1),
+				0 0 0 5px rgba(255,255,255,0.5);
+		}
+	}
+
+	.bg-img {
+		@include box-sizing(content-box);
+		padding: 200px;
+		position: absolute;
+		top: -200px;
+		left: -200px;
+		width: 100%;
+		height: 100%;
+		@include background-size(cover);
+		background-position: center center;
+	}
+
+	.bg-img-1 {
+		background-image: url(../images/fullscreen/3d/everclear.jpg);
+	}
+
+	.bg-img-2 {
+		background-image: url(../images/fullscreen/3d/iphone.jpg);
+	}
+
+	.bg-img-3 {
+		background-image: url(../images/fullscreen/3d/glumandfish.jpg);
+	}
+
+	.bg-img-4 {
+		background-image: url(../images/fullscreen/3d/glumandfish.jpg);
+	}
+
+	.bg-img-5 {
+		background-image: url(../images/fullscreen/web/visiondirect-project.jpg);
+	}
+
+	.sl-slider-wrapper {
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+	}
+	.col-6, 
+	.col-12{
+		img{ width: 100%; }
+	}
+
+	.sl-slider{
+		h2,
+		blockquote {
+			padding: 100px 30px 10px 30px;
+			width: 80%;
+			max-width: 960px;
+			color: #fff;
+			margin: 0 auto;
+			position: relative;
+			z-index: 100;
+		}
+
+		h2 {
+			font-size: 100px;
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+		}
+
+		blockquote {
+			font-size: 28px;
+			padding-top: 10px;
+			font-weight: 300;
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+
+			cite {
+				font-size: 16px;
+				font-weight: 700;
+				font-style: normal;
+				text-transform: uppercase;
+				letter-spacing: 5px;
+				padding-top: 30px;
+				display: inline-block;
+			}
+		}
+	}
+
+	
+	.see-more { 
+		background-color: $c-background;
+
+		h3 { 
+			color: $c-text-gray; 
+			text-align: center; 
+			font-size: $f-size-xxl; 
+			margin: $gap 0; 
+			border-bottom: 0px; 
+		} 
+	}
+
+	.artwork{
+		text-align: center;
+		background-color: #000;
+	}
+
+	.description{
+		background-color 	: $c-description;
+		overflow-x 			: hidden;
+		overflow-y 			: scroll;
+		color 				: #fff;
+
+		.col-inside{
+			padding-top 		: $gap;
+			
+			span.date{
+				display 		: inline-block;
+				font-weight 	: 100;
+			}
+
+			h1{
+				font-size 		: $f-size-xxl;
+				color 			: #fff;
+				margin-bottom 	: 0px;
+				font-weight 	: bold;
+				text-transform 	: uppercase;
+			}
+
+			h2{
+				font-size 		: $f-size-l;
+				color 			: #fff;
+				margin-bottom 	: 40px;
+				text-transform 	: initial;
+				font-weight 	: 100;
+				letter-spacing 	: 2px;
+			}
+
+			
+
+			p{
+				font-size 		: $f-size;
+				color 			: #fff;
+				line-height 	: 1.2;
+				font-weight 	: 100;
+				letter-spacing 	: 2px;
+			}
+
+			h3{
+				margin 	 		: 40px 0 20px 0;
+				padding-bottom 	: 10px;
+				border-bottom 	: 1px solid #fff;
+				text-transform 	: uppercase;
+				color 			: #fff;
+
+			}
+		}
+	}
+
+	/* background setup    */
+	/* Custom Project Page */
+	.background {
+		background-repeat:no-repeat;
+		/* custom background-position */
+		background-position:50% 50%;
+		/* ie8- graceful degradation */
+		background-position:50% 50%\9 !important;
+	}
+
+	.fullscreen,
+	.content-a {
+		width:100%;
+		min-height:100%;
+	}
+
+	/* content centering styles */
+	.content-a {
+		display:table;
+	}
+
+	.content-b {
+		display: table-cell;
+		position: absolute;
+		vertical-align: middle;
+	}
+
+	.not-fullscreen,
+	.not-fullscreen .content-a,
+	.fullscreen.not-overflow,
+	.fullscreen.not-overflow .content-a {
+		height:100%;
+		overflow:hidden;
+	}
+
+	/* visual styles */
+	.not-fullscreen {
+		height:50%;
+	}
+
+
+	&#vision-direct{
+
+	}
+
+	&#residence{
+				
+	}
+} 
+
+
+.content-a { position: relative; }
+.content-b { 
+	text-align: left;
+
+	h1{ 
+		color:#fff; 
+		margin-bottom: 0px; 
+		line-height: 50px; 
+		font-size: $f-size-xxl;   
+		font-weight: 800;   
+		letter-spacing: 10px;   
+		text-transform: uppercase; 
+		text-shadow: 0 0 1px #000;
+	}
+
+	h2 { 
+		color: #fff; 
+		margin-bottom: 0px; 
+		font-weight: 100;   
+		font-size: $f-size-l;   
+		line-height: 1.1;
+		margin-top: 0px;
+		letter-spacing: 2px;
+	}
+
+	h1, h2{
+		@include animation(push-in 0.6s);
+		opacity: 1;
+	}
+
+	&.top-5  { top: 5%; }
+	&.top-10 { top: 10%; }
+	&.top-20 { top: 20%; }
+	&.top-30 { top: 30%; }
+	&.left   { left: 10%; }
+	&.right  { left: 50%; }
+	&.center { width: 100%; text-align: center; }
+	&.bottom { top: 70%; }
+
+}
+
+.center{ text-align: center; }
+
+.subtitle {
+    margin-bottom: $gap;
+    display: inline-block;
+    color: $c-primary;
+}
+
+.content-b h1{
+	-webkit-animation-name: push-in;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: push-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.content-b h2{
+	-webkit-animation-name: topanimation2;
+    -webkit-animation-duration: 2s;
+}
+
+
+/* ============================================ *
+ * Project - Vision Direct
+ * ============================================ */
+
+.colour-banner { 
+	height: 100px; 
+	background-color: #5fa5d7; 
+	text-align: center; 
+
+	.text-colour-banner{ 
+		font: 36px/100px 'Open Sans', Arial, Helvetica, sans-serif; 
+		font-weight: 800; 
+		color: #fff; 
+	}
+}
+
+.img-banner { 
+	height: 300px; 
+	background-color: #f3f3f3; 
+	text-align: left; 
+	background-image:url('../images/project/vd-third-slide.png'); 
+}
+
+
+
+@include bp(max-width, $bp-medium) {
+
+	.container.project{
+		.sl-slider-wrapper {
+			height: 500px;
+		}
+
+		.sl-slider{
+			h2 {
+				font-size: 36px;
+			}
+
+			blockquote {
+				font-size: 16px;
+			}
+		}
+	} 
+
+}
+
+
+@include bp(max-width, $bp-xlarge){
+	.content-b.left {
+	  left: 10%;
+	}
+}
+
+@include bp(max-width, $bp-xsmall) {
+	.content-b{
+		.bottom { top:60%; }
+		.right { left: 10%; }
+		h1 { font-size:3em; }
+		h2 { font-size:1.5em; }
+
+	}
+}

@@ -1,0 +1,106 @@
+/********************------------------- Caroussel--------*******************/
+
+ol, ul {
+  list-style: none;
+}
+
+#nav a img {
+  border: none;
+}
+
+#nav a {
+  color: #01A2F3;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  border-bottom: solid 1px #2edbac;
+}
+
+#viewport-shadow {
+  position: relative;
+  width: 100%;
+  background-size: 100%;
+  
+}
+
+#box
+{
+    width: 100%;
+    height: 300px;
+}
+
+#viewport {}
+
+#nav {
+  position: absolute;
+  top: 310px;
+  left: 43%;
+}
+
+#controls {
+  position: relative;
+  float: right;
+  overflow: hidden;
+}
+
+#controls li {
+  display: inline;
+}
+
+.goto-slide {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  float: left;
+  border: solid 1px #FFF;
+  border-radius: 8px;
+}
+
+.goto-slide.current {
+  background-color: #FFF;
+}
+
+#next, #prev {
+  @include transition (background .4s);
+  position: absolute;
+  top: 125px;
+  width: 40px;
+  height: 60px;
+  background: url(img/sprite_slider.png) no-repeat;
+  background-position: -4px 0px;
+  display: block;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+#next:hover, #prev:hover {
+  opacity: 1;
+  border: none;
+}
+
+
+#prev {
+  left: 40px;
+}
+
+
+#next, #next:hover {
+  right: 40px;
+  background-position: -40px 0;
+}
+
+#time-indicator {
+  width: 0px;
+  height: 3px;
+  background-color: #366FA8;
+  position: absolute;
+  top: 352px;
+  left: 0px;
+  z-index: 9999;
+}
+
+
+/********************--------------------Fin Caroussel--------*******************/
+

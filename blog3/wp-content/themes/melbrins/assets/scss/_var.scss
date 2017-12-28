@@ -1,0 +1,44 @@
+//
+// @package     melbrins
+//
+
+/*--------------------------------------------------------------
+1.0 Fonts
+--------------------------------------------------------------*/
+
+$f-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+
+
+/*--------------------------------------------------------------
+1.1 Font Sizes
+--------------------------------------------------------------*/
+
+$f-size-xxl 	: 36px;
+$f-size-xl 		: 24px;
+$f-size-l 		: 18px;
+
+$f-size 		: 14px;
+
+$f-size-s 		: 14px;
+$f-size-xs 		: 12px;
+$f-size-xxs 	: 10px;
+
+
+
+$c-text-dark 		: #666;
+$c-text-darker 		: #333;
+
+
+
+/*--------------------------------------------------------------
+2.0 Primary Break Points
+--------------------------------------------------------------*/
+
+// These should be used with the bp (max-width, xx) mixin
+// where a min-width is used, remember to +1 to break correctly.
+
+$bp-xsmall 		: 479px;
+$bp-small 		: 599px;
+$bp-medium 		: 770px;
+$bp-large 		: 979px;
+$bp-xlarge 		: 1199px;
