@@ -537,11 +537,6 @@
 		letter-spacing: 2px;
 	}
 
-	h1, h2{
-		@include animation(push-in 0.6s);
-		opacity: 1;
-	}
-
 	&.top-5  { top: 5%; }
 	&.top-10 { top: 10%; }
 	&.top-20 { top: 20%; }
@@ -559,20 +554,6 @@
     margin-bottom: $gap;
     display: inline-block;
     color: $c-primary;
-}
-
-.content-b h1{
-	-webkit-animation-name: push-in;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-name: push-in;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.content-b h2{
-	-webkit-animation-name: topanimation2;
-    -webkit-animation-duration: 2s;
 }
 
 
@@ -635,5 +616,441 @@
 		h1 { font-size:3em; }
 		h2 { font-size:1.5em; }
 
+	}
+}
+
+
+
+
+
+
+
+/* ============================================ *
+ * GENERAL PROJECT PAGE STYLING
+ * ============================================ */
+body.project{
+	.section.work{
+		.work--project{
+			&.web,
+			&.print,
+			&.illustration{
+				width: 20vw;
+				height: 500px;
+			}
+		}
+	}
+}
+
+
+/* ============================================ *
+ * NEW Project - Vision Direct
+ * ============================================ */
+
+ #vision-direct.project{
+
+ 	.content{
+	 	background-color: #007FA9;
+
+	 	/* ============================================ *
+		 * DETAILS - VD VAN
+		 * ============================================ */
+	 	.details{
+	 		@include display-flex(flex);
+	 		@include align-items(center);
+	 		@include justify-content(center);
+	 		@include flex-direction(row);
+
+	 		width: 80vw;
+	 		height: 80vh;
+	 		padding: 10vh 0;
+	 		margin: 0 10vw;
+
+	 		.section--title{
+	 			width: 20vw;
+	 		}
+
+ 			.project--desc{
+ 				width: 30vw;
+
+ 				h2,	p, dl, dt, dd{
+ 					color: #fff;
+ 				}
+
+ 				dl{
+ 					width: 33.33%;
+ 				}
+
+ 				dt{
+ 					width: 100%;
+ 					font-weight: bold;
+ 					font-size: $f-size-l;
+ 				}
+
+ 				dd, p{
+ 					width: 100%;
+ 					font-weight: 100;
+ 					font-size: $f-size;
+ 					line-height: 20px;
+ 					margin-left: 0;
+ 					margin-top: 10px;
+ 				}
+
+ 				h2{
+ 					font-weight: bold;
+ 					margin-bottom: $gap;
+ 				}
+
+ 				.project--logo{
+ 					margin-bottom: $gap*3;
+ 				}
+
+ 				.project--details{
+ 					@include display-flex(flex);
+ 					@include align-items(flex-start);
+ 					@include justify-content(space-between);
+ 					margin-top: $gap*3;
+ 				}
+ 			}
+
+ 			.project--img{
+ 				width: 60vw;
+ 			}
+	 	}
+
+
+	 	/* ============================================ *
+		 * 01.INTRODUCTION - HOMEPAGE MOCKUP
+		 * ============================================ */
+	 	.introduction{
+	 		@include display-flex(flex);
+	 		@include align-items(flex-start);
+	 		@include justify-content(center);
+	 		position: relative;
+	 		height: 70vh;
+
+	 		.section--title{
+	 			position:absolute;
+	 			left:0;
+	 			top: 20%;
+	 		}
+
+	 		.project--mockup{
+	 			width: 80vw;
+
+	 			position: relative;
+	 			z-index: 5000;
+	 		}
+	 	}
+
+	 	/* ============================================ *
+		 * 02.FONT AND COLOURS
+		 * ============================================ */
+	 	.font{
+	 		@include justify-content(center);
+	 		height: 100vh;
+	 		padding-top: 20vh;
+	 		position: relative;
+
+	 		.section--title{
+	 			position 		: absolute;
+	 			left 			: 0;
+	 			top 			: 20vw;
+	 			width 			: 20vw;
+	 		}
+
+	 		.section--content{
+	 			@include display-flex(flex);
+	 			@include justify-content(center);
+	 			@include flex-direction(column);
+	 			@include align-items(center);
+	 			width: 100vw;
+
+	 			.project--font-sample{
+	 				@include display-flex(flex);
+	 				@include align-items(center);
+	 				@include justify-content(flex-start);
+	 				width: 50vw;
+	 				margin-bottom: $gap*3;
+
+		 			.project--font-letter{
+		 				display 			: inline-block;
+		 				background-color 	: #fff;
+		 				border-radius 		: 4px;
+		 				padding 			: 40px;
+		 				margin-right 		: $gap;
+		 			}
+
+		 			.project--font-info{
+		 				@include display-flex(flex);
+		 				@include align-items(center);
+		 				@include justify-content(space-evenly);
+		 				@include flex-direction(column);
+
+		 				span{
+		 					display 			: block;
+		 					width 				: 100%;
+		 					text-align 			: left;
+
+
+		 					&.project--font-name{
+		 						font-weight 		: bold;
+		 						font-size 			: $f-size-xl;
+		 						color 				: #2a2a2a;
+		 					}
+
+		 					&.project--font-author{
+		 						font-weight 		: 100;
+		 						font-size 			: $f-size-l;
+		 						font-style 			: italic;
+		 						margin-bottom 		: $gap;
+		 					}
+		 				}
+		 			}
+		 		}
+
+
+		 		.project--colours{
+		 			@include display-flex(flex);
+		 			@include flex-direction(column);
+		 			@include align-items(flex-start);
+		 			width: 50vw;
+
+		 			ul{
+		 				@include display-flex(flex);
+		 				@include flex-direction(row);
+		 				@include align-items(flex-start);
+		 				@include justify-content(flex-start);
+		 				margin: $gap 0;
+		 				padding: 0;
+
+		 				li{
+			 				margin 			: 0 $gap $gap 0;
+
+			 				.project--colour-name{
+			 					font-weight 		: 100;
+			 					font-size 			: $f-size-s;
+			 				}
+
+				 			div.project--colour{
+				 				height 				: 100px;
+				 				width 				: 100px;
+				 				background-color 	: #2a2a2a;
+				 				border-radius 		: 4px;
+				 				margin-bottom 		: $gap;
+				 			}
+
+
+				 			&.project--colour-green div.project--colour 		 	{ background-color: #A7C400; }
+				 			&.project--colour-blue div.project--colour 			 	{ background-color: #007FA9; }
+
+				 			&.project--colour-dark-grey div.project--colour 		{ background-color: #333333; }
+				 			&.project--colour-medium-grey-1 div.project--colour 	{ background-color: #555555; }
+				 			&.project--colour-medium-grey-2 div.project--colour 	{ background-color: #777777; }
+				 			&.project--colour-medium-grey-3 div.project--colour 	{ background-color: #999999; }
+				 			&.project--colour-light-grey-1 div.project--colour 		{ background-color: #CCCCCC; }
+				 			&.project--colour-light-grey-2 div.project--colour 		{ background-color: #DDDDDD; }
+
+
+				 		}
+			 		}
+		 		}
+	 		}
+	 	}
+
+	 	/* ============================================ *
+		 * 03. LOGO
+		 * ============================================ */
+		.logo{
+			height: 100vh;
+
+			.section--title{
+				position: absolute;
+	 			left: 0;
+	 			top: 10vw;
+	 			width: 20vw;
+			}
+
+			.section--content{
+				@include display-flex(flex);
+				@include align-items(center);
+				@include justify-content(center);
+				@include flex-direction(column);
+				width: 100vw;
+
+				.project--logo-wire{
+					width: 80vw;
+					
+					img{
+						max-height: 80vh;
+					}
+				}
+
+				.project--logo-background{
+					@include display-flex(flex);
+					@include align-items(center);
+					@include justify-content(center);
+					@include flex-direction(row);
+					width: 100vw;
+
+
+					div{
+						@include display-flex(flex);
+						@include align-items(center);
+						@include justify-content(center);
+						height: 20vh;
+						width: 50vw;
+						padding: 0 5vw;
+
+						svg{
+							width: 25vw;
+							height: auto;
+						}
+
+						&.project--logo-background-dark{
+							@include justify-content(flex-end);
+						}
+
+						&.project--logo-background-light{
+							@include justify-content(flex-start);
+							background-color: #fff;
+
+						}
+					}
+				}
+			}
+		}
+
+		/* ============================================ *
+		 * 04. MAIN SCREENS
+		 * ============================================ */
+		.main-screens{
+		 	position: relative;
+		 	padding: 10vh 0;
+		 	background-image:url("../images/project/Vision-Direct/vd-logo-background.png");
+		 	background-size: cover;
+
+		 	.section--title{
+				position: absolute;
+	 			left: 0;
+	 			top: 10vw;
+	 			width: 20vw;
+
+	 			h2{
+	 				position: absolute;
+				    left: 0;
+				    bottom: 0;
+				    padding: 0;
+				    color: #fff;
+				    margin-bottom: 0;
+				    padding: 0;
+	 			}
+			}
+
+			.section--content{
+				@include display-flex(flex);
+				@include align-items(center);
+				@include justify-content(center);
+				@include flex-direction(column);
+				width: 60vw;
+				margin: 0 20vw;
+
+				.project--screen{
+					width: 60vw;
+
+					.project--screen-title{
+						color: #fff;
+						font-weight: 100;
+						font-size: $f-size-l;
+						margin-bottom: $gap;
+						display: block;
+					}
+
+					img{
+						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
+						border-radius: 4px;
+						overflow:hidden;
+					}
+
+					&.project--3d-contact-lenses{
+						text-align: center;
+
+						.project--screen-title{
+							text-align: center;
+						}
+
+						img{
+							@include box-shadow(none);
+							width: 80%;
+							display: inline-block;
+						}
+					}
+				}
+
+				.secondary-screens{
+					@include display-flex(flex);
+					@include flex-direction(row);
+					@include justify-content(space-between);
+					@include align-items(flex-start);
+					width: 100%;
+
+					.project--screen{
+						width: 28vw;
+					}
+
+					div{
+						margin-top: 4vw;
+					}
+
+				}
+			}
+
+		}
+
+		/* ============================================ *
+		 * 04. MOBILE SCREENS
+		 * ============================================ */
+		.mobile-screens{
+			position: relative;
+			padding-bottom: 10vh;
+
+			.section--title{
+				position: absolute;
+	 			left: 0;
+	 			top: 10vw;
+	 			width: 20vw;
+
+	 			h2{
+	 				position: absolute;
+				    left: 0;
+				    bottom: 0;
+				    padding: 0;
+				    color: #fff;
+				    margin-bottom: 0;
+				    padding: 0;
+	 			}
+			}
+
+
+			.section--content{
+				@include display-flex(flex);
+				@include align-items(center);
+				@include justify-content(space-evenly);
+				@include flex-direction(row);
+
+				width: 60vw;
+				margin: 0 20vw;
+
+				div.project--screen{
+					width: 18vw;
+
+					img{
+						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
+						margin-bottom: 1vw;
+						border-radius: 4px;
+						overflow:hidden;
+					}
+				}
+			}
+		}
 	}
 }

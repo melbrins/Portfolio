@@ -2102,20 +2102,29 @@ p {
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 600;
   display: inline-block;
   line-height: 1.5;
 }
 /* line 23, ../scss/layout/_section.scss */
+.section .section--title.number h2 {
+  font-size: 18px;
+}
+/* line 25, ../scss/layout/_section.scss */
+.section .section--title.number h2 span {
+  font-size: 64px;
+  font-weight: 900;
+}
+/* line 33, ../scss/layout/_section.scss */
 .section.section--grey {
   background-color: #111;
 }
-/* line 27, ../scss/layout/_section.scss */
+/* line 37, ../scss/layout/_section.scss */
 .section.section--grey .section--title h2 {
   color: #2a2a2a;
 }
-/* line 33, ../scss/layout/_section.scss */
+/* line 43, ../scss/layout/_section.scss */
 .section.section--white {
   display: -webkit-flex;
   display: flex;
@@ -2127,12 +2136,12 @@ p {
   position: relative;
   height: 50vh;
 }
-/* line 41, ../scss/layout/_section.scss */
+/* line 51, ../scss/layout/_section.scss */
 .section.section--white .section--title {
   width: 10vw;
   position: relative;
 }
-/* line 45, ../scss/layout/_section.scss */
+/* line 55, ../scss/layout/_section.scss */
 .section.section--white .section--title h2 {
   position: absolute;
   left: 0;
@@ -2141,30 +2150,97 @@ p {
   color: #2a2a2a;
   margin-bottom: 0;
   padding: 0;
-  font-size: 36px;
 }
-/* line 57, ../scss/layout/_section.scss */
+/* line 66, ../scss/layout/_section.scss */
 .section.section--white .section--content {
   width: 80vw;
   text-align: center;
 }
-/* line 71, ../scss/layout/_section.scss */
+/* line 72, ../scss/layout/_section.scss */
+.section.vd-section--grey {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  background-color: #F6F7F8;
+  position: relative;
+  height: 50vh;
+}
+/* line 80, ../scss/layout/_section.scss */
+.section.vd-section--grey .section--title {
+  width: 10vw;
+  position: relative;
+}
+/* line 84, ../scss/layout/_section.scss */
+.section.vd-section--grey .section--title h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  color: #2a2a2a;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 95, ../scss/layout/_section.scss */
+.section.vd-section--grey .section--content {
+  width: 80vw;
+  text-align: center;
+}
+/* line 101, ../scss/layout/_section.scss */
+.section.section--dark-grey {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  background-color: #555;
+  position: relative;
+  height: 50vh;
+}
+/* line 109, ../scss/layout/_section.scss */
+.section.section--dark-grey .section--title {
+  width: 10vw;
+  position: relative;
+}
+/* line 113, ../scss/layout/_section.scss */
+.section.section--dark-grey .section--title h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 124, ../scss/layout/_section.scss */
+.section.section--dark-grey .section--content {
+  width: 80vw;
+  text-align: center;
+}
+/* line 132, ../scss/layout/_section.scss */
+.section.section--blue .section--title h2 {
+  color: #fff;
+}
+/* line 146, ../scss/layout/_section.scss */
 .section.services .section--content .service--icon {
   max-width: 100px;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 77, ../scss/layout/_section.scss */
+/* line 152, ../scss/layout/_section.scss */
 .section.services .section--content h3 {
   font-size: 24px;
   font-weight: 900;
   color: #2a2a2a;
 }
-/* line 83, ../scss/layout/_section.scss */
+/* line 158, ../scss/layout/_section.scss */
 .section.services .section--content p {
   margin-bottom: 20px;
 }
-/* line 87, ../scss/layout/_section.scss */
+/* line 162, ../scss/layout/_section.scss */
 .section.services .section--content .service--list {
   display: -webkit-flex;
   display: flex;
@@ -2175,22 +2251,22 @@ p {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 93, ../scss/layout/_section.scss */
+/* line 168, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li {
   width: 20vw;
 }
-/* line 96, ../scss/layout/_section.scss */
+/* line 171, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li p, .section.services .section--content .service--list li h3, .section.services .section--content .service--list li a {
   text-align: center;
   display: block;
 }
-/* line 112, ../scss/layout/_section.scss */
+/* line 187, ../scss/layout/_section.scss */
 .section.contact .section--content h3 {
   font-size: 24px;
   color: #2a2a2a;
   margin-bottom: 0;
 }
-/* line 118, ../scss/layout/_section.scss */
+/* line 193, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods {
   display: -webkit-flex;
   display: flex;
@@ -2202,19 +2278,19 @@ p {
   align-items: flex-start;
   margin-top: 40px;
 }
-/* line 129, ../scss/layout/_section.scss */
+/* line 204, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method i {
   font-size: 50px;
   color: #2a2a2a;
   margin-bottom: 20px;
 }
-/* line 135, ../scss/layout/_section.scss */
+/* line 210, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method h4 {
   font-weight: 400;
   color: #2a2a2a;
   font-size: 18px;
 }
-/* line 141, ../scss/layout/_section.scss */
+/* line 216, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method.phone {
   margin-right: 20px;
 }
@@ -2223,30 +2299,30 @@ p {
  * HOMEPAGE - MEDIA QUERIES
  * ============================================ */
 @media only screen and (min-width: 600px) {
-  /* line 160, ../scss/layout/_section.scss */
+  /* line 235, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.mobile {
     display: none;
   }
-  /* line 163, ../scss/layout/_section.scss */
+  /* line 238, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.desktop {
     display: -webkit-flex;
     display: flex;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 176, ../scss/layout/_section.scss */
+  /* line 251, ../scss/layout/_section.scss */
   .section.section--white {
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
   }
-  /* line 180, ../scss/layout/_section.scss */
+  /* line 255, ../scss/layout/_section.scss */
   .section.section--white .section--title {
     width: 100vw;
     padding: 0;
   }
-  /* line 184, ../scss/layout/_section.scss */
+  /* line 259, ../scss/layout/_section.scss */
   .section.section--white .section--title h2 {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2258,11 +2334,11 @@ p {
     left: auto;
     font-size: 24px;
   }
-  /* line 194, ../scss/layout/_section.scss */
+  /* line 269, ../scss/layout/_section.scss */
   .section.section--white .section--content {
     width: 100vw;
   }
-  /* line 203, ../scss/layout/_section.scss */
+  /* line 278, ../scss/layout/_section.scss */
   .section.services .section--content .service--list {
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -2279,11 +2355,11 @@ p {
     padding: 20px 0;
     margin: 0;
   }
-  /* line 213, ../scss/layout/_section.scss */
+  /* line 288, ../scss/layout/_section.scss */
   .section.services .section--content .service--list .owl-nav {
     display: none;
   }
-  /* line 217, ../scss/layout/_section.scss */
+  /* line 292, ../scss/layout/_section.scss */
   .section.services .section--content .service--list li {
     -webkit-animation: all 0.2s ease-out;
     -moz-animation: all 0.2s ease-out;
@@ -2298,30 +2374,30 @@ p {
     flex-direction: column;
     width: 100vw;
   }
-  /* line 224, ../scss/layout/_section.scss */
+  /* line 299, ../scss/layout/_section.scss */
   .section.services .section--content .service--list li p {
     max-width: 80vw;
   }
-  /* line 229, ../scss/layout/_section.scss */
+  /* line 304, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.desktop {
     display: none;
   }
-  /* line 237, ../scss/layout/_section.scss */
+  /* line 312, ../scss/layout/_section.scss */
   .section.contact .section--content {
     width: 100vw;
   }
-  /* line 240, ../scss/layout/_section.scss */
+  /* line 315, ../scss/layout/_section.scss */
   .section.contact .section--content h3, .section.contact .section--content p {
     display: none;
   }
-  /* line 244, ../scss/layout/_section.scss */
+  /* line 319, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     margin-top: 0;
   }
-  /* line 249, ../scss/layout/_section.scss */
+  /* line 324, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method {
     display: -webkit-flex;
     display: flex;
@@ -2335,16 +2411,16 @@ p {
     padding: 0 10vw;
     margin-bottom: 20px;
   }
-  /* line 259, ../scss/layout/_section.scss */
+  /* line 334, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method i {
     margin-right: 20px;
   }
-  /* line 263, ../scss/layout/_section.scss */
+  /* line 338, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method.phone {
     margin-right: 0;
   }
 }
-/* line 273, ../scss/layout/_section.scss */
+/* line 348, ../scss/layout/_section.scss */
 .work--list {
   display: -webkit-flex;
   display: flex;
@@ -2357,7 +2433,7 @@ p {
   width: 100%;
   padding: 20px 0;
 }
-/* line 282, ../scss/layout/_section.scss */
+/* line 357, ../scss/layout/_section.scss */
 .work--list .work--project {
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
@@ -2376,13 +2452,13 @@ p {
   position: relative;
   text-align: center;
 }
-/* line 296, ../scss/layout/_section.scss */
+/* line 371, ../scss/layout/_section.scss */
 .work--list .work--project img {
   height: 100%;
   width: auto;
   max-width: initial;
 }
-/* line 302, ../scss/layout/_section.scss */
+/* line 377, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-link {
   height: 100%;
   width: 100%;
@@ -2390,7 +2466,7 @@ p {
   position: relative;
   z-index: 40;
 }
-/* line 310, ../scss/layout/_section.scss */
+/* line 385, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -2404,14 +2480,14 @@ p {
   width: 100%;
   padding: 0 20px;
 }
-/* line 319, ../scss/layout/_section.scss */
+/* line 394, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name,
 .work--list .work--project .work--project-title .work--project-category,
 .work--list .work--project .work--project-title .work--project-view {
   z-index: 20;
   position: relative;
 }
-/* line 326, ../scss/layout/_section.scss */
+/* line 401, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name {
   font-size: 18px;
   font-weight: 500;
@@ -2421,7 +2497,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 336, ../scss/layout/_section.scss */
+/* line 411, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-category {
   font-size: 12px;
   color: #2a2a2a;
@@ -2429,7 +2505,7 @@ p {
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
-/* line 344, ../scss/layout/_section.scss */
+/* line 419, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-view {
   width: 100%;
   height: 40px;
@@ -2440,7 +2516,7 @@ p {
   bottom: -40px;
   left: 0;
 }
-/* line 355, ../scss/layout/_section.scss */
+/* line 430, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title:before {
   -webkit-border-radius: 100% 100% 0 0;
   -moz-border-radius: 100% 100% 0 0;
@@ -2456,99 +2532,99 @@ p {
   top: -60%;
   left: -10%;
 }
-/* line 373, ../scss/layout/_section.scss */
+/* line 448, ../scss/layout/_section.scss */
 .work--list .work--project:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 377, ../scss/layout/_section.scss */
+/* line 452, ../scss/layout/_section.scss */
 .work--list .work--project:hover .work--project-title {
   bottom: 40px;
   left: 0;
 }
 @media only screen and (max-width: 979px) {
-  /* line 385, ../scss/layout/_section.scss */
+  /* line 460, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 32%;
   }
-  /* line 389, ../scss/layout/_section.scss */
+  /* line 464, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 395, ../scss/layout/_section.scss */
+  /* line 470, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 399, ../scss/layout/_section.scss */
+  /* line 474, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(even) {
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 407, ../scss/layout/_section.scss */
+  /* line 482, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 49%;
   }
-  /* line 411, ../scss/layout/_section.scss */
+  /* line 486, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 417, ../scss/layout/_section.scss */
+  /* line 492, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(2n) {
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 273, ../scss/layout/_section.scss */
+  /* line 348, ../scss/layout/_section.scss */
   .work--list {
     padding: 0;
   }
-  /* line 426, ../scss/layout/_section.scss */
+  /* line 501, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 431, ../scss/layout/_section.scss */
+  /* line 506, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title {
     bottom: 40px;
   }
-  /* line 433, ../scss/layout/_section.scss */
+  /* line 508, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 439, ../scss/layout/_section.scss */
+  /* line 514, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-/* line 446, ../scss/layout/_section.scss */
+/* line 521, ../scss/layout/_section.scss */
 .work--list {
   margin: 0;
 }
-/* line 449, ../scss/layout/_section.scss */
+/* line 524, ../scss/layout/_section.scss */
 .work--list .work--project {
   border-radius: 0;
   width: 15vw;
   margin: 0;
 }
-/* line 454, ../scss/layout/_section.scss */
+/* line 529, ../scss/layout/_section.scss */
 .work--list .work--project.web {
   width: 30vw;
 }
-/* line 458, ../scss/layout/_section.scss */
+/* line 533, ../scss/layout/_section.scss */
 .work--list .work--project.print {
   width: 35vw;
 }
-/* line 462, ../scss/layout/_section.scss */
+/* line 537, ../scss/layout/_section.scss */
 .work--list .work--project.thered {
   width: 15vw;
   margin-bottom: 2vw;
 }
-/* line 467, ../scss/layout/_section.scss */
+/* line 542, ../scss/layout/_section.scss */
 .work--list .work--project i {
   background-color: #000;
   height: 30px;
@@ -2562,7 +2638,7 @@ p {
 }
 
 @media only screen and (max-width: 979px) {
-  /* line 483, ../scss/layout/_section.scss */
+  /* line 558, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -2573,7 +2649,7 @@ p {
   }
 }
 @media only screen and (max-width: 979px) {
-  /* line 496, ../scss/layout/_section.scss */
+  /* line 571, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -2585,7 +2661,7 @@ p {
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 510, ../scss/layout/_section.scss */
+  /* line 585, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -3123,93 +3199,68 @@ p {
   letter-spacing: 2px;
 }
 /* line 540, ../scss/content/_project.scss */
-.content-b h1, .content-b h2 {
-  -webkit-animation: push-in 0.6s;
-  -moz-animation: push-in 0.6s;
-  -o-animation: push-in 0.6s;
-  -ms-animation: push-in 0.6s;
-  animation: push-in 0.6s;
-  opacity: 1;
-}
-/* line 545, ../scss/content/_project.scss */
 .content-b.top-5 {
   top: 5%;
 }
-/* line 546, ../scss/content/_project.scss */
+/* line 541, ../scss/content/_project.scss */
 .content-b.top-10 {
   top: 10%;
 }
-/* line 547, ../scss/content/_project.scss */
+/* line 542, ../scss/content/_project.scss */
 .content-b.top-20 {
   top: 20%;
 }
-/* line 548, ../scss/content/_project.scss */
+/* line 543, ../scss/content/_project.scss */
 .content-b.top-30 {
   top: 30%;
 }
-/* line 549, ../scss/content/_project.scss */
+/* line 544, ../scss/content/_project.scss */
 .content-b.left {
   left: 10%;
 }
-/* line 550, ../scss/content/_project.scss */
+/* line 545, ../scss/content/_project.scss */
 .content-b.right {
   left: 50%;
 }
-/* line 551, ../scss/content/_project.scss */
+/* line 546, ../scss/content/_project.scss */
 .content-b.center {
   width: 100%;
   text-align: center;
 }
-/* line 552, ../scss/content/_project.scss */
+/* line 547, ../scss/content/_project.scss */
 .content-b.bottom {
   top: 70%;
 }
 
-/* line 556, ../scss/content/_project.scss */
+/* line 551, ../scss/content/_project.scss */
 .center {
   text-align: center;
 }
 
-/* line 558, ../scss/content/_project.scss */
+/* line 553, ../scss/content/_project.scss */
 .subtitle {
   margin-bottom: 20px;
   display: inline-block;
   color: #2eb1e6;
 }
 
-/* line 564, ../scss/content/_project.scss */
-.content-b h1 {
-  -webkit-animation-name: push-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-name: push-in;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-/* line 573, ../scss/content/_project.scss */
-.content-b h2 {
-  -webkit-animation-name: topanimation2;
-  -webkit-animation-duration: 2s;
-}
-
 /* ============================================ *
  * Project - Vision Direct
  * ============================================ */
-/* line 583, ../scss/content/_project.scss */
+/* line 564, ../scss/content/_project.scss */
 .colour-banner {
   height: 100px;
   background-color: #5fa5d7;
   text-align: center;
 }
-/* line 588, ../scss/content/_project.scss */
+/* line 569, ../scss/content/_project.scss */
 .colour-banner .text-colour-banner {
   font: 36px/100px 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 800;
   color: #fff;
 }
 
-/* line 595, ../scss/content/_project.scss */
+/* line 576, ../scss/content/_project.scss */
 .img-banner {
   height: 300px;
   background-color: #f3f3f3;
@@ -3218,43 +3269,530 @@ p {
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 607, ../scss/content/_project.scss */
+  /* line 588, ../scss/content/_project.scss */
   .container.project .sl-slider-wrapper {
     height: 500px;
   }
-  /* line 612, ../scss/content/_project.scss */
+  /* line 593, ../scss/content/_project.scss */
   .container.project .sl-slider h2 {
     font-size: 36px;
   }
-  /* line 616, ../scss/content/_project.scss */
+  /* line 597, ../scss/content/_project.scss */
   .container.project .sl-slider blockquote {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 1199px) {
-  /* line 626, ../scss/content/_project.scss */
+  /* line 607, ../scss/content/_project.scss */
   .content-b.left {
     left: 10%;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 633, ../scss/content/_project.scss */
+  /* line 614, ../scss/content/_project.scss */
   .content-b .bottom {
     top: 60%;
   }
-  /* line 634, ../scss/content/_project.scss */
+  /* line 615, ../scss/content/_project.scss */
   .content-b .right {
     left: 10%;
   }
-  /* line 635, ../scss/content/_project.scss */
+  /* line 616, ../scss/content/_project.scss */
   .content-b h1 {
     font-size: 3em;
   }
-  /* line 636, ../scss/content/_project.scss */
+  /* line 617, ../scss/content/_project.scss */
   .content-b h2 {
     font-size: 1.5em;
   }
 }
+/* ============================================ *
+ * GENERAL PROJECT PAGE STYLING
+ * ============================================ */
+/* line 634, ../scss/content/_project.scss */
+body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
+  width: 20vw;
+  height: 500px;
+}
+
+/* ============================================ *
+ * NEW Project - Vision Direct
+ * ============================================ */
+/* line 651, ../scss/content/_project.scss */
+#vision-direct.project .content {
+  background-color: #007FA9;
+ 	/* ============================================ *
+	 * DETAILS - VD VAN
+	 * ============================================ */
+ 	/* ============================================ *
+	 * 01.INTRODUCTION - HOMEPAGE MOCKUP
+	 * ============================================ */
+ 	/* ============================================ *
+	 * 02.FONT AND COLOURS
+	 * ============================================ */
+ 	/* ============================================ *
+	 * 03. LOGO
+	 * ============================================ */
+  /* ============================================ *
+   * 04. MAIN SCREENS
+   * ============================================ */
+  /* ============================================ *
+   * 04. MOBILE SCREENS
+   * ============================================ */
+}
+/* line 657, ../scss/content/_project.scss */
+#vision-direct.project .content .details {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 80vw;
+  height: 80vh;
+  padding: 10vh 0;
+  margin: 0 10vw;
+}
+/* line 668, ../scss/content/_project.scss */
+#vision-direct.project .content .details .section--title {
+  width: 20vw;
+}
+/* line 672, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc {
+  width: 30vw;
+}
+/* line 675, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc h2, #vision-direct.project .content .details .project--desc p, #vision-direct.project .content .details .project--desc dl, #vision-direct.project .content .details .project--desc dt, #vision-direct.project .content .details .project--desc dd {
+  color: #fff;
+}
+/* line 679, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc dl {
+  width: 33.33%;
+}
+/* line 683, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc dt {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 689, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc dd, #vision-direct.project .content .details .project--desc p {
+  width: 100%;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+/* line 698, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* line 703, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc .project--logo {
+  margin-bottom: 60px;
+}
+/* line 707, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--desc .project--details {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+/* line 715, ../scss/content/_project.scss */
+#vision-direct.project .content .details .project--img {
+  width: 60vw;
+}
+/* line 724, ../scss/content/_project.scss */
+#vision-direct.project .content .introduction {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  height: 70vh;
+}
+/* line 731, ../scss/content/_project.scss */
+#vision-direct.project .content .introduction .section--title {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+/* line 737, ../scss/content/_project.scss */
+#vision-direct.project .content .introduction .project--mockup {
+  width: 80vw;
+  position: relative;
+  z-index: 5000;
+}
+/* line 748, ../scss/content/_project.scss */
+#vision-direct.project .content .font {
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 20vh;
+  position: relative;
+}
+/* line 754, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--title {
+  position: absolute;
+  left: 0;
+  top: 20vw;
+  width: 20vw;
+}
+/* line 761, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100vw;
+}
+/* line 768, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--font-sample {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 50vw;
+  margin-bottom: 60px;
+}
+/* line 775, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--font-sample .project--font-letter {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 40px;
+  margin-right: 20px;
+}
+/* line 783, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--font-sample .project--font-info {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 789, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--font-sample .project--font-info span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+/* line 795, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--font-sample .project--font-info span.project--font-name {
+  font-weight: bold;
+  font-size: 24px;
+  color: #2a2a2a;
+}
+/* line 801, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--font-sample .project--font-info span.project--font-author {
+  font-weight: 100;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/* line 812, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  width: 50vw;
+}
+/* line 818, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin: 20px 0;
+  padding: 0;
+}
+/* line 826, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li {
+  margin: 0 20px 20px 0;
+}
+/* line 829, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li .project--colour-name {
+  font-weight: 100;
+  font-size: 12px;
+}
+/* line 834, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li div.project--colour {
+  height: 100px;
+  width: 100px;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+/* line 843, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-green div.project--colour {
+  background-color: #A7C400;
+}
+/* line 844, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
+  background-color: #007FA9;
+}
+/* line 846, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-dark-grey div.project--colour {
+  background-color: #333333;
+}
+/* line 847, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-medium-grey-1 div.project--colour {
+  background-color: #555555;
+}
+/* line 848, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-medium-grey-2 div.project--colour {
+  background-color: #777777;
+}
+/* line 849, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-medium-grey-3 div.project--colour {
+  background-color: #999999;
+}
+/* line 850, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-light-grey-1 div.project--colour {
+  background-color: #CCCCCC;
+}
+/* line 851, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-light-grey-2 div.project--colour {
+  background-color: #DDDDDD;
+}
+/* line 863, ../scss/content/_project.scss */
+#vision-direct.project .content .logo {
+  height: 100vh;
+}
+/* line 866, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--title {
+  position: absolute;
+  left: 0;
+  top: 10vw;
+  width: 20vw;
+}
+/* line 873, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100vw;
+}
+/* line 880, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-wire {
+  width: 80vw;
+}
+/* line 883, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-wire img {
+  max-height: 80vh;
+}
+/* line 888, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-background {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100vw;
+}
+/* line 896, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-background div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 20vh;
+  width: 50vw;
+  padding: 0 5vw;
+}
+/* line 904, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-background div svg {
+  width: 25vw;
+  height: auto;
+}
+/* line 909, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-dark {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 913, ../scss/content/_project.scss */
+#vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-light {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+/* line 926, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens {
+  position: relative;
+  padding: 10vh 0;
+  background-image: url("../images/project/Vision-Direct/vd-logo-background.png");
+  background-size: cover;
+}
+/* line 932, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--title {
+  position: absolute;
+  left: 0;
+  top: 10vw;
+  width: 20vw;
+}
+/* line 938, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--title h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 949, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 60vw;
+  margin: 0 20vw;
+}
+/* line 957, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .project--screen {
+  width: 60vw;
+}
+/* line 960, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .project--screen .project--screen-title {
+  color: #fff;
+  font-weight: 100;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 968, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .project--screen img {
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* line 974, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses {
+  text-align: center;
+}
+/* line 977, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses .project--screen-title {
+  text-align: center;
+}
+/* line 981, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses img {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 80%;
+  display: inline-block;
+}
+/* line 989, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .secondary-screens {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+/* line 996, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .secondary-screens .project--screen {
+  width: 28vw;
+}
+/* line 1000, ../scss/content/_project.scss */
+#vision-direct.project .content .main-screens .section--content .secondary-screens div {
+  margin-top: 4vw;
+}
+/* line 1012, ../scss/content/_project.scss */
+#vision-direct.project .content .mobile-screens {
+  position: relative;
+  padding-bottom: 10vh;
+}
+/* line 1016, ../scss/content/_project.scss */
+#vision-direct.project .content .mobile-screens .section--title {
+  position: absolute;
+  left: 0;
+  top: 10vw;
+  width: 20vw;
+}
+/* line 1022, ../scss/content/_project.scss */
+#vision-direct.project .content .mobile-screens .section--title h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 1034, ../scss/content/_project.scss */
+#vision-direct.project .content .mobile-screens .section--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 60vw;
+  margin: 0 20vw;
+}
+/* line 1043, ../scss/content/_project.scss */
+#vision-direct.project .content .mobile-screens .section--content div.project--screen {
+  width: 18vw;
+}
+/* line 1046, ../scss/content/_project.scss */
+#vision-direct.project .content .mobile-screens .section--content div.project--screen img {
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
 /* ============================================ *
  * SHOWREEL
  * ============================================ */

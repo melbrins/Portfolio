@@ -24,7 +24,7 @@
 
 					<!--  VISION DIRECT  -->
 					<li class="work--project mix web" style="background-image: url(images/work/thumbnails/Vision-Direct2.png);">
-	  					<a href="images/fullscreen/illustration/angela.jpg" rel="prettyPhoto[Web]" class="work--project-link">
+	  					<a href="projects/visiondirect.php" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Vision Direct</h3>
