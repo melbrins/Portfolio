@@ -158,6 +158,5 @@
 </body>
 
 <?php include '../layout/after-body.php'; ?>
-<script type="text/javascript" src="/js/ninja-slider.js"></script> 
 
 </html>

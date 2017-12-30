@@ -235,7 +235,7 @@
 			<ul class="work--list">
 
   				<!--  MERCHMAKER  -->
-  				<li class="work--project mix web" style="background-image: url(../images/work/thumbnails/merchmaker2.png);">
+  				<li class="work--project mix web" style="background-image: url(../images/work/thumbnails/merchMAKER.png);">
   					<a href="../images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">

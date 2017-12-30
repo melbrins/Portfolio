@@ -23,7 +23,7 @@
 				<ul class="work--list">
 
 					<!--  VISION DIRECT  -->
-					<li class="work--project mix web" style="background-image: url(images/work/thumbnails/Vision-Direct2.png);">
+					<li class="work--project mix web" style="background-image: url(images/work/thumbnails/Vision-Direct.png);">
 	  					<a href="projects/visiondirect.php" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -36,7 +36,7 @@
 	  				</li>
 
 	  				<!--  MERCHMAKER  -->
-	  				<li class="work--project mix web" style="background-image: url(images/work/thumbnails/merchmaker2.png);">
+	  				<li class="work--project mix web" style="background-image: url(images/work/thumbnails/merchMAKER.png);">
 	  					<a href="images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Web]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -49,7 +49,7 @@
 	  				</li>
 
 	  				<!--  CHOOSEY  -->
-	  				<li class="work--project mix web" style="background-image: url(images/work/thumbnails/choosey2.png);">
+	  				<li class="work--project mix web" style="background-image: url(images/work/thumbnails/choosey.png);">
 	  					<a href="images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Web]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
