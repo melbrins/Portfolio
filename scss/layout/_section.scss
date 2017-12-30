@@ -10,9 +10,19 @@
 		padding 			: 20px 0 40px 0;
 		text-align 			: center;
 		letter-spacing 		: 4px;
+		position 			: absolute;
+		left 				: 10vw;
+		width 				: 30vw;
 
 		h2{
 			@include transform(rotate(-90deg));
+			@include apply-origin(left, false);
+			position 				: absolute;
+		   	left  					: 0;
+		    bottom 					: 0;
+		    padding 				: 0;
+		    margin-bottom 			: 0;
+		    padding 				: 0;
 			font-size 				: 36px;
 			font-weight 			: 600;
 			display 				: inline-block;
@@ -21,7 +31,8 @@
 
 		&.number{
 			h2{
-				font-size 				: 18px;
+				font-size 				: $f-size-l;
+
 				span{
 					font-size 			: 64px;
 					font-weight 		: 900;
@@ -78,17 +89,9 @@
 		height 				: 50vh;
 
 		.section--title{
-			width 			: 10vw;
-			position 		: relative;
 
 			h2{
-				position 		: absolute;
-				left 			: 0;
-				bottom 			: 0;
-				padding 		: 0;
-				color 		 	: #2a2a2a;
-				margin-bottom 	: 0;
-				padding 		: 0;				
+				color 		 	: #2a2a2a;			
 			}
 		}
 
@@ -107,17 +110,9 @@
 		height 				: 50vh;
 
 		.section--title{
-			width 			: 10vw;
-			position 		: relative;
 
 			h2{
-				position 		: absolute;
-				left 			: 0;
-				bottom 			: 0;
-				padding 		: 0;
-				color 		 	: #fff;
-				margin-bottom 	: 0;
-				padding 		: 0;				
+				color 		 	: #fff;			
 			}
 		}
 
@@ -253,8 +248,9 @@
 			@include justify-content(space-evenly);
 			
 			.section--title{
-				width: 100vw;
-				padding:0;
+				width 		: 100vw;
+				padding 	: 0;
+				left 		: 0;
 
 				h2{
 					@include transform(rotate(0deg));

@@ -1450,11 +1450,38 @@ p {
 }
 
 /* line 324, ../scss/_common.scss */
+.desktop {
+  display: block;
+}
+
+/* line 325, ../scss/_common.scss */
 .not-mobile {
   display: block;
 }
 
-/* line 326, ../scss/_common.scss */
+@media only screen and (min-width: 771px) {
+  /* line 329, ../scss/_common.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 330, ../scss/_common.scss */
+  .desktop {
+    display: block;
+  }
+}
+@media only screen and (max-width: 770px) {
+  /* line 334, ../scss/_common.scss */
+  .mobile {
+    display: block;
+  }
+
+  /* line 335, ../scss/_common.scss */
+  .desktop {
+    display: none;
+  }
+}
+/* line 338, ../scss/_common.scss */
 .fixed {
   position: fixed !important;
   left: 0;
@@ -1465,13 +1492,12 @@ p {
   width: 100%;
 }
 
-/* line 336, ../scss/_common.scss */
+/* line 348, ../scss/_common.scss */
 .toggle-fix {
   z-index: 99999;
 }
 
-/*.fixed .m-title { display:none; }*/
-/* line 340, ../scss/_common.scss */
+/* line 350, ../scss/_common.scss */
 .fixed #filters li span:hover {
   color: #fff;
 }
@@ -1479,7 +1505,7 @@ p {
 /* ============================================ *
  * BANNER
  * ============================================ */
-/* line 345, ../scss/_common.scss */
+/* line 355, ../scss/_common.scss */
 .banner-fullscreen {
   width: 100%;
 }
@@ -1487,7 +1513,7 @@ p {
 /* ============================================ *
  * Clearing
  * ============================================ */
-/* line 350, ../scss/_common.scss */
+/* line 360, ../scss/_common.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -1496,7 +1522,7 @@ p {
   visibility: hidden;
 }
 
-/* line 352, ../scss/_common.scss */
+/* line 362, ../scss/_common.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1510,19 +1536,19 @@ p {
   clear: both;
 }
 
-/* line 364, ../scss/_common.scss */
+/* line 374, ../scss/_common.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 368, ../scss/_common.scss */
+/* line 378, ../scss/_common.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
-/* line 373, ../scss/_common.scss */
+/* line 383, ../scss/_common.scss */
 .clear {
   clear: both;
   display: block;
@@ -1532,17 +1558,11 @@ p {
   height: 0;
 }
 
-/* line 381, ../scss/_common.scss */
+/* line 391, ../scss/_common.scss */
 .clearboth {
   clear: both;
 }
 
-@media only screen and (min-width: 771px) {
-  /* line 386, ../scss/_common.scss */
-  .show-mobile {
-    display: none;
-  }
-}
 /* ============================================ *
  * Animation
  * ============================================ */
@@ -2094,37 +2114,50 @@ p {
   padding: 20px 0 40px 0;
   text-align: center;
   letter-spacing: 4px;
+  position: absolute;
+  left: 10vw;
+  width: 30vw;
 }
-/* line 14, ../scss/layout/_section.scss */
+/* line 17, ../scss/layout/_section.scss */
 .section .section--title h2 {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin-bottom: 0;
+  padding: 0;
   font-size: 36px;
   font-weight: 600;
   display: inline-block;
   line-height: 1.5;
 }
-/* line 23, ../scss/layout/_section.scss */
+/* line 33, ../scss/layout/_section.scss */
 .section .section--title.number h2 {
   font-size: 18px;
 }
-/* line 25, ../scss/layout/_section.scss */
+/* line 36, ../scss/layout/_section.scss */
 .section .section--title.number h2 span {
   font-size: 64px;
   font-weight: 900;
 }
-/* line 33, ../scss/layout/_section.scss */
+/* line 44, ../scss/layout/_section.scss */
 .section.section--grey {
   background-color: #111;
 }
-/* line 37, ../scss/layout/_section.scss */
+/* line 48, ../scss/layout/_section.scss */
 .section.section--grey .section--title h2 {
   color: #2a2a2a;
 }
-/* line 43, ../scss/layout/_section.scss */
+/* line 54, ../scss/layout/_section.scss */
 .section.section--white {
   display: -webkit-flex;
   display: flex;
@@ -2136,12 +2169,12 @@ p {
   position: relative;
   height: 50vh;
 }
-/* line 51, ../scss/layout/_section.scss */
+/* line 62, ../scss/layout/_section.scss */
 .section.section--white .section--title {
   width: 10vw;
   position: relative;
 }
-/* line 55, ../scss/layout/_section.scss */
+/* line 66, ../scss/layout/_section.scss */
 .section.section--white .section--title h2 {
   position: absolute;
   left: 0;
@@ -2151,12 +2184,12 @@ p {
   margin-bottom: 0;
   padding: 0;
 }
-/* line 66, ../scss/layout/_section.scss */
+/* line 77, ../scss/layout/_section.scss */
 .section.section--white .section--content {
   width: 80vw;
   text-align: center;
 }
-/* line 72, ../scss/layout/_section.scss */
+/* line 83, ../scss/layout/_section.scss */
 .section.vd-section--grey {
   display: -webkit-flex;
   display: flex;
@@ -2168,27 +2201,16 @@ p {
   position: relative;
   height: 50vh;
 }
-/* line 80, ../scss/layout/_section.scss */
-.section.vd-section--grey .section--title {
-  width: 10vw;
-  position: relative;
-}
-/* line 84, ../scss/layout/_section.scss */
+/* line 93, ../scss/layout/_section.scss */
 .section.vd-section--grey .section--title h2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0;
   color: #2a2a2a;
-  margin-bottom: 0;
-  padding: 0;
 }
-/* line 95, ../scss/layout/_section.scss */
+/* line 98, ../scss/layout/_section.scss */
 .section.vd-section--grey .section--content {
   width: 80vw;
   text-align: center;
 }
-/* line 101, ../scss/layout/_section.scss */
+/* line 104, ../scss/layout/_section.scss */
 .section.section--dark-grey {
   display: -webkit-flex;
   display: flex;
@@ -2200,47 +2222,36 @@ p {
   position: relative;
   height: 50vh;
 }
-/* line 109, ../scss/layout/_section.scss */
-.section.section--dark-grey .section--title {
-  width: 10vw;
-  position: relative;
-}
-/* line 113, ../scss/layout/_section.scss */
+/* line 114, ../scss/layout/_section.scss */
 .section.section--dark-grey .section--title h2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0;
   color: #fff;
-  margin-bottom: 0;
-  padding: 0;
 }
-/* line 124, ../scss/layout/_section.scss */
+/* line 119, ../scss/layout/_section.scss */
 .section.section--dark-grey .section--content {
   width: 80vw;
   text-align: center;
 }
-/* line 132, ../scss/layout/_section.scss */
+/* line 127, ../scss/layout/_section.scss */
 .section.section--blue .section--title h2 {
   color: #fff;
 }
-/* line 146, ../scss/layout/_section.scss */
+/* line 141, ../scss/layout/_section.scss */
 .section.services .section--content .service--icon {
   max-width: 100px;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 152, ../scss/layout/_section.scss */
+/* line 147, ../scss/layout/_section.scss */
 .section.services .section--content h3 {
   font-size: 24px;
   font-weight: 900;
   color: #2a2a2a;
 }
-/* line 158, ../scss/layout/_section.scss */
+/* line 153, ../scss/layout/_section.scss */
 .section.services .section--content p {
   margin-bottom: 20px;
 }
-/* line 162, ../scss/layout/_section.scss */
+/* line 157, ../scss/layout/_section.scss */
 .section.services .section--content .service--list {
   display: -webkit-flex;
   display: flex;
@@ -2251,22 +2262,22 @@ p {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 168, ../scss/layout/_section.scss */
+/* line 163, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li {
   width: 20vw;
 }
-/* line 171, ../scss/layout/_section.scss */
+/* line 166, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li p, .section.services .section--content .service--list li h3, .section.services .section--content .service--list li a {
   text-align: center;
   display: block;
 }
-/* line 187, ../scss/layout/_section.scss */
+/* line 182, ../scss/layout/_section.scss */
 .section.contact .section--content h3 {
   font-size: 24px;
   color: #2a2a2a;
   margin-bottom: 0;
 }
-/* line 193, ../scss/layout/_section.scss */
+/* line 188, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods {
   display: -webkit-flex;
   display: flex;
@@ -2278,19 +2289,19 @@ p {
   align-items: flex-start;
   margin-top: 40px;
 }
-/* line 204, ../scss/layout/_section.scss */
+/* line 199, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method i {
   font-size: 50px;
   color: #2a2a2a;
   margin-bottom: 20px;
 }
-/* line 210, ../scss/layout/_section.scss */
+/* line 205, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method h4 {
   font-weight: 400;
   color: #2a2a2a;
   font-size: 18px;
 }
-/* line 216, ../scss/layout/_section.scss */
+/* line 211, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method.phone {
   margin-right: 20px;
 }
@@ -2299,30 +2310,31 @@ p {
  * HOMEPAGE - MEDIA QUERIES
  * ============================================ */
 @media only screen and (min-width: 600px) {
-  /* line 235, ../scss/layout/_section.scss */
+  /* line 230, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.mobile {
     display: none;
   }
-  /* line 238, ../scss/layout/_section.scss */
+  /* line 233, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.desktop {
     display: -webkit-flex;
     display: flex;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 251, ../scss/layout/_section.scss */
+  /* line 246, ../scss/layout/_section.scss */
   .section.section--white {
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
   }
-  /* line 255, ../scss/layout/_section.scss */
+  /* line 250, ../scss/layout/_section.scss */
   .section.section--white .section--title {
     width: 100vw;
     padding: 0;
+    left: 0;
   }
-  /* line 259, ../scss/layout/_section.scss */
+  /* line 255, ../scss/layout/_section.scss */
   .section.section--white .section--title h2 {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2334,11 +2346,11 @@ p {
     left: auto;
     font-size: 24px;
   }
-  /* line 269, ../scss/layout/_section.scss */
+  /* line 265, ../scss/layout/_section.scss */
   .section.section--white .section--content {
     width: 100vw;
   }
-  /* line 278, ../scss/layout/_section.scss */
+  /* line 274, ../scss/layout/_section.scss */
   .section.services .section--content .service--list {
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -2355,11 +2367,11 @@ p {
     padding: 20px 0;
     margin: 0;
   }
-  /* line 288, ../scss/layout/_section.scss */
+  /* line 284, ../scss/layout/_section.scss */
   .section.services .section--content .service--list .owl-nav {
     display: none;
   }
-  /* line 292, ../scss/layout/_section.scss */
+  /* line 288, ../scss/layout/_section.scss */
   .section.services .section--content .service--list li {
     -webkit-animation: all 0.2s ease-out;
     -moz-animation: all 0.2s ease-out;
@@ -2374,30 +2386,30 @@ p {
     flex-direction: column;
     width: 100vw;
   }
-  /* line 299, ../scss/layout/_section.scss */
+  /* line 295, ../scss/layout/_section.scss */
   .section.services .section--content .service--list li p {
     max-width: 80vw;
   }
-  /* line 304, ../scss/layout/_section.scss */
+  /* line 300, ../scss/layout/_section.scss */
   .section.services .section--content .service--list.desktop {
     display: none;
   }
-  /* line 312, ../scss/layout/_section.scss */
+  /* line 308, ../scss/layout/_section.scss */
   .section.contact .section--content {
     width: 100vw;
   }
-  /* line 315, ../scss/layout/_section.scss */
+  /* line 311, ../scss/layout/_section.scss */
   .section.contact .section--content h3, .section.contact .section--content p {
     display: none;
   }
-  /* line 319, ../scss/layout/_section.scss */
+  /* line 315, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     margin-top: 0;
   }
-  /* line 324, ../scss/layout/_section.scss */
+  /* line 320, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method {
     display: -webkit-flex;
     display: flex;
@@ -2411,16 +2423,16 @@ p {
     padding: 0 10vw;
     margin-bottom: 20px;
   }
-  /* line 334, ../scss/layout/_section.scss */
+  /* line 330, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method i {
     margin-right: 20px;
   }
-  /* line 338, ../scss/layout/_section.scss */
+  /* line 334, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method.phone {
     margin-right: 0;
   }
 }
-/* line 348, ../scss/layout/_section.scss */
+/* line 344, ../scss/layout/_section.scss */
 .work--list {
   display: -webkit-flex;
   display: flex;
@@ -2433,7 +2445,7 @@ p {
   width: 100%;
   padding: 20px 0;
 }
-/* line 357, ../scss/layout/_section.scss */
+/* line 353, ../scss/layout/_section.scss */
 .work--list .work--project {
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
@@ -2452,13 +2464,13 @@ p {
   position: relative;
   text-align: center;
 }
-/* line 371, ../scss/layout/_section.scss */
+/* line 367, ../scss/layout/_section.scss */
 .work--list .work--project img {
   height: 100%;
   width: auto;
   max-width: initial;
 }
-/* line 377, ../scss/layout/_section.scss */
+/* line 373, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-link {
   height: 100%;
   width: 100%;
@@ -2466,7 +2478,7 @@ p {
   position: relative;
   z-index: 40;
 }
-/* line 385, ../scss/layout/_section.scss */
+/* line 381, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -2480,14 +2492,14 @@ p {
   width: 100%;
   padding: 0 20px;
 }
-/* line 394, ../scss/layout/_section.scss */
+/* line 390, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name,
 .work--list .work--project .work--project-title .work--project-category,
 .work--list .work--project .work--project-title .work--project-view {
   z-index: 20;
   position: relative;
 }
-/* line 401, ../scss/layout/_section.scss */
+/* line 397, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-name {
   font-size: 18px;
   font-weight: 500;
@@ -2497,7 +2509,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 411, ../scss/layout/_section.scss */
+/* line 407, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-category {
   font-size: 12px;
   color: #2a2a2a;
@@ -2505,7 +2517,7 @@ p {
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
-/* line 419, ../scss/layout/_section.scss */
+/* line 415, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title .work--project-view {
   width: 100%;
   height: 40px;
@@ -2516,7 +2528,7 @@ p {
   bottom: -40px;
   left: 0;
 }
-/* line 430, ../scss/layout/_section.scss */
+/* line 426, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title:before {
   -webkit-border-radius: 100% 100% 0 0;
   -moz-border-radius: 100% 100% 0 0;
@@ -2532,99 +2544,99 @@ p {
   top: -60%;
   left: -10%;
 }
-/* line 448, ../scss/layout/_section.scss */
+/* line 444, ../scss/layout/_section.scss */
 .work--list .work--project:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 452, ../scss/layout/_section.scss */
+/* line 448, ../scss/layout/_section.scss */
 .work--list .work--project:hover .work--project-title {
   bottom: 40px;
   left: 0;
 }
 @media only screen and (max-width: 979px) {
-  /* line 460, ../scss/layout/_section.scss */
+  /* line 456, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 32%;
   }
-  /* line 464, ../scss/layout/_section.scss */
+  /* line 460, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 470, ../scss/layout/_section.scss */
+  /* line 466, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 474, ../scss/layout/_section.scss */
+  /* line 470, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(even) {
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 482, ../scss/layout/_section.scss */
+  /* line 478, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 49%;
   }
-  /* line 486, ../scss/layout/_section.scss */
+  /* line 482, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 492, ../scss/layout/_section.scss */
+  /* line 488, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(2n) {
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 348, ../scss/layout/_section.scss */
+  /* line 344, ../scss/layout/_section.scss */
   .work--list {
     padding: 0;
   }
-  /* line 501, ../scss/layout/_section.scss */
+  /* line 497, ../scss/layout/_section.scss */
   .work--list .work--project {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  /* line 506, ../scss/layout/_section.scss */
+  /* line 502, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title {
     bottom: 40px;
   }
-  /* line 508, ../scss/layout/_section.scss */
+  /* line 504, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title:before {
     min-height: 180%;
     top: -80%;
   }
-  /* line 514, ../scss/layout/_section.scss */
+  /* line 510, ../scss/layout/_section.scss */
   .work--list .work--project:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-/* line 521, ../scss/layout/_section.scss */
+/* line 517, ../scss/layout/_section.scss */
 .work--list {
   margin: 0;
 }
-/* line 524, ../scss/layout/_section.scss */
+/* line 520, ../scss/layout/_section.scss */
 .work--list .work--project {
   border-radius: 0;
   width: 15vw;
   margin: 0;
 }
-/* line 529, ../scss/layout/_section.scss */
+/* line 525, ../scss/layout/_section.scss */
 .work--list .work--project.web {
   width: 30vw;
 }
-/* line 533, ../scss/layout/_section.scss */
+/* line 529, ../scss/layout/_section.scss */
 .work--list .work--project.print {
   width: 35vw;
 }
-/* line 537, ../scss/layout/_section.scss */
+/* line 533, ../scss/layout/_section.scss */
 .work--list .work--project.thered {
   width: 15vw;
   margin-bottom: 2vw;
 }
-/* line 542, ../scss/layout/_section.scss */
+/* line 538, ../scss/layout/_section.scss */
 .work--list .work--project i {
   background-color: #000;
   height: 30px;
@@ -2638,7 +2650,7 @@ p {
 }
 
 @media only screen and (max-width: 979px) {
-  /* line 558, ../scss/layout/_section.scss */
+  /* line 554, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -2649,7 +2661,7 @@ p {
   }
 }
 @media only screen and (max-width: 979px) {
-  /* line 571, ../scss/layout/_section.scss */
+  /* line 567, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -2661,7 +2673,7 @@ p {
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 585, ../scss/layout/_section.scss */
+  /* line 581, ../scss/layout/_section.scss */
   .work--list .work--project,
   .work--list .work--project.web,
   .work--list .work--project.illustration,
@@ -3314,11 +3326,36 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 20vw;
   height: 500px;
 }
+@media only screen and (max-width: 979px) {
+  /* line 647, ../scss/content/_project.scss */
+  body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
+    width: 40vw;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  /* line 660, ../scss/content/_project.scss */
+  body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
+    width: 40vw;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 671, ../scss/content/_project.scss */
+  body.project .section.work {
+    padding: 0;
+  }
+  /* line 675, ../scss/content/_project.scss */
+  body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
+    width: 100vw;
+    height: 500px;
+  }
+}
 
 /* ============================================ *
  * NEW Project - Vision Direct
  * ============================================ */
-/* line 651, ../scss/content/_project.scss */
+/* line 693, ../scss/content/_project.scss */
 #vision-direct.project .content {
   background-color: #007FA9;
  	/* ============================================ *
@@ -3337,10 +3374,19 @@ body.project .section.work .work--project.web, body.project .section.work .work-
    * 04. MAIN SCREENS
    * ============================================ */
   /* ============================================ *
-   * 04. MOBILE SCREENS
+   * 05. MOBILE SCREENS
+   * ============================================ */
+  /* ============================================ *
+   * MEDIA QUERY - LARGE SCREEN
+   * ============================================ */
+  /* ============================================ *
+   * MEDIA QUERY - MEDIUM SCREEN
+   * ============================================ */
+  /* ============================================ *
+   * MEDIA QUERY - SMALL SCREEN
    * ============================================ */
 }
-/* line 657, ../scss/content/_project.scss */
+/* line 699, ../scss/content/_project.scss */
 #vision-direct.project .content .details {
   display: -webkit-flex;
   display: flex;
@@ -3355,29 +3401,26 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   padding: 10vh 0;
   margin: 0 10vw;
 }
-/* line 668, ../scss/content/_project.scss */
-#vision-direct.project .content .details .section--title {
-  width: 20vw;
-}
-/* line 672, ../scss/content/_project.scss */
+/* line 710, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc {
   width: 30vw;
 }
-/* line 675, ../scss/content/_project.scss */
+/* line 713, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc h2, #vision-direct.project .content .details .project--desc p, #vision-direct.project .content .details .project--desc dl, #vision-direct.project .content .details .project--desc dt, #vision-direct.project .content .details .project--desc dd {
   color: #fff;
 }
-/* line 679, ../scss/content/_project.scss */
+/* line 717, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc dl {
   width: 33.33%;
 }
-/* line 683, ../scss/content/_project.scss */
+/* line 721, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc dt {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
+  line-height: 20px;
 }
-/* line 689, ../scss/content/_project.scss */
+/* line 728, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc dd, #vision-direct.project .content .details .project--desc p {
   width: 100%;
   font-weight: 100;
@@ -3386,16 +3429,16 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   margin-left: 0;
   margin-top: 10px;
 }
-/* line 698, ../scss/content/_project.scss */
+/* line 737, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc h2 {
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 703, ../scss/content/_project.scss */
+/* line 742, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc .project--logo {
   margin-bottom: 60px;
 }
-/* line 707, ../scss/content/_project.scss */
+/* line 746, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--desc .project--details {
   display: -webkit-flex;
   display: flex;
@@ -3405,11 +3448,11 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   justify-content: space-between;
   margin-top: 60px;
 }
-/* line 715, ../scss/content/_project.scss */
+/* line 754, ../scss/content/_project.scss */
 #vision-direct.project .content .details .project--img {
   width: 60vw;
 }
-/* line 724, ../scss/content/_project.scss */
+/* line 763, ../scss/content/_project.scss */
 #vision-direct.project .content .introduction {
   display: -webkit-flex;
   display: flex;
@@ -3420,19 +3463,23 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   position: relative;
   height: 70vh;
 }
-/* line 731, ../scss/content/_project.scss */
+/* line 770, ../scss/content/_project.scss */
 #vision-direct.project .content .introduction .section--title {
-  position: absolute;
-  left: 0;
-  top: 20%;
+  bottom: 20%;
+  top: auto;
 }
-/* line 737, ../scss/content/_project.scss */
+/* line 775, ../scss/content/_project.scss */
 #vision-direct.project .content .introduction .project--mockup {
   width: 80vw;
   position: relative;
   z-index: 5000;
+  text-align: center;
 }
-/* line 748, ../scss/content/_project.scss */
+/* line 781, ../scss/content/_project.scss */
+#vision-direct.project .content .introduction .project--mockup img {
+  max-height: 800px;
+}
+/* line 790, ../scss/content/_project.scss */
 #vision-direct.project .content .font {
   -webkit-justify-content: center;
   justify-content: center;
@@ -3440,14 +3487,11 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   padding-top: 20vh;
   position: relative;
 }
-/* line 754, ../scss/content/_project.scss */
+/* line 796, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--title {
-  position: absolute;
-  left: 0;
-  top: 20vw;
-  width: 20vw;
+  top: 30vw;
 }
-/* line 761, ../scss/content/_project.scss */
+/* line 800, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3459,7 +3503,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: center;
   width: 100vw;
 }
-/* line 768, ../scss/content/_project.scss */
+/* line 807, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--font-sample {
   display: -webkit-flex;
   display: flex;
@@ -3470,7 +3514,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 50vw;
   margin-bottom: 60px;
 }
-/* line 775, ../scss/content/_project.scss */
+/* line 814, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--font-sample .project--font-letter {
   display: inline-block;
   background-color: #fff;
@@ -3478,7 +3522,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   padding: 40px;
   margin-right: 20px;
 }
-/* line 783, ../scss/content/_project.scss */
+/* line 822, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--font-sample .project--font-info {
   display: -webkit-flex;
   display: flex;
@@ -3489,26 +3533,25 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 789, ../scss/content/_project.scss */
+/* line 828, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--font-sample .project--font-info span {
-  display: block;
   width: 100%;
   text-align: left;
 }
-/* line 795, ../scss/content/_project.scss */
+/* line 833, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--font-sample .project--font-info span.project--font-name {
   font-weight: bold;
   font-size: 24px;
   color: #2a2a2a;
 }
-/* line 801, ../scss/content/_project.scss */
+/* line 839, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--font-sample .project--font-info span.project--font-author {
   font-weight: 100;
   font-size: 18px;
   font-style: italic;
   margin-bottom: 20px;
 }
-/* line 812, ../scss/content/_project.scss */
+/* line 850, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours {
   display: -webkit-flex;
   display: flex;
@@ -3518,7 +3561,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: flex-start;
   width: 50vw;
 }
-/* line 818, ../scss/content/_project.scss */
+/* line 856, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul {
   display: -webkit-flex;
   display: flex;
@@ -3528,70 +3571,79 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: flex-start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
 }
-/* line 826, ../scss/content/_project.scss */
+/* line 864, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul li {
   margin: 0 20px 20px 0;
 }
-/* line 829, ../scss/content/_project.scss */
+/* line 867, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul li .project--colour-name {
   font-weight: 100;
   font-size: 12px;
 }
-/* line 834, ../scss/content/_project.scss */
-#vision-direct.project .content .font .section--content .project--colours ul li div.project--colour {
+/* line 872, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li div.project--colour, #vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade.project--colour {
   height: 100px;
   width: 100px;
   background-color: #2a2a2a;
   border-radius: 4px;
   margin-bottom: 20px;
 }
-/* line 843, ../scss/content/_project.scss */
+/* line 882, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul li.project--colour-green div.project--colour {
   background-color: #A7C400;
 }
-/* line 844, ../scss/content/_project.scss */
+/* line 883, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
   background-color: #007FA9;
 }
-/* line 846, ../scss/content/_project.scss */
+/* line 884, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul li.project--colour-dark-grey div.project--colour {
   background-color: #333333;
 }
-/* line 847, ../scss/content/_project.scss */
+/* line 885, ../scss/content/_project.scss */
 #vision-direct.project .content .font .section--content .project--colours ul li.project--colour-medium-grey-1 div.project--colour {
   background-color: #555555;
 }
-/* line 848, ../scss/content/_project.scss */
-#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-medium-grey-2 div.project--colour {
+/* line 890, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  /*@include justify-content(space-evenly);*/
+}
+/* line 895, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades .project--colour {
+  margin: 0 20px 20px 0;
+}
+/* line 900, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-2 {
   background-color: #777777;
 }
-/* line 849, ../scss/content/_project.scss */
-#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-medium-grey-3 div.project--colour {
+/* line 901, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-3 {
   background-color: #999999;
 }
-/* line 850, ../scss/content/_project.scss */
-#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-light-grey-1 div.project--colour {
+/* line 902, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-1 {
   background-color: #CCCCCC;
 }
-/* line 851, ../scss/content/_project.scss */
-#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-light-grey-2 div.project--colour {
+/* line 903, ../scss/content/_project.scss */
+#vision-direct.project .content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-2 {
   background-color: #DDDDDD;
 }
-/* line 863, ../scss/content/_project.scss */
+/* line 919, ../scss/content/_project.scss */
 #vision-direct.project .content .logo {
   height: 100vh;
 }
-/* line 866, ../scss/content/_project.scss */
+/* line 922, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--title {
-  position: absolute;
-  left: 0;
-  top: 10vw;
-  width: 20vw;
+  top: 20vw;
 }
-/* line 873, ../scss/content/_project.scss */
+/* line 926, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3603,15 +3655,15 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   flex-direction: column;
   width: 100vw;
 }
-/* line 880, ../scss/content/_project.scss */
+/* line 933, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-wire {
   width: 80vw;
 }
-/* line 883, ../scss/content/_project.scss */
+/* line 936, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-wire img {
   max-height: 80vh;
 }
-/* line 888, ../scss/content/_project.scss */
+/* line 941, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-background {
   display: -webkit-flex;
   display: flex;
@@ -3623,7 +3675,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   flex-direction: row;
   width: 100vw;
 }
-/* line 896, ../scss/content/_project.scss */
+/* line 949, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-background div {
   display: -webkit-flex;
   display: flex;
@@ -3635,47 +3687,38 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 50vw;
   padding: 0 5vw;
 }
-/* line 904, ../scss/content/_project.scss */
+/* line 957, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-background div svg {
   width: 25vw;
   height: auto;
 }
-/* line 909, ../scss/content/_project.scss */
+/* line 962, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-dark {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
-/* line 913, ../scss/content/_project.scss */
+/* line 966, ../scss/content/_project.scss */
 #vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-light {
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   background-color: #fff;
 }
-/* line 926, ../scss/content/_project.scss */
+/* line 979, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens {
   position: relative;
   padding: 10vh 0;
   background-image: url("../images/project/Vision-Direct/vd-logo-background.png");
   background-size: cover;
 }
-/* line 932, ../scss/content/_project.scss */
+/* line 985, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--title {
-  position: absolute;
-  left: 0;
-  top: 10vw;
-  width: 20vw;
+  top: 20vw;
 }
-/* line 938, ../scss/content/_project.scss */
+/* line 988, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--title h2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0;
   color: #fff;
-  margin-bottom: 0;
-  padding: 0;
 }
-/* line 949, ../scss/content/_project.scss */
+/* line 993, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3688,11 +3731,11 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 957, ../scss/content/_project.scss */
+/* line 1001, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .project--screen {
   width: 60vw;
 }
-/* line 960, ../scss/content/_project.scss */
+/* line 1004, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .project--screen .project--screen-title {
   color: #fff;
   font-weight: 100;
@@ -3700,7 +3743,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   margin-bottom: 20px;
   display: block;
 }
-/* line 968, ../scss/content/_project.scss */
+/* line 1012, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3708,15 +3751,15 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 974, ../scss/content/_project.scss */
+/* line 1018, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses {
   text-align: center;
 }
-/* line 977, ../scss/content/_project.scss */
+/* line 1021, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses .project--screen-title {
   text-align: center;
 }
-/* line 981, ../scss/content/_project.scss */
+/* line 1025, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses img {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -3724,7 +3767,7 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 80%;
   display: inline-block;
 }
-/* line 989, ../scss/content/_project.scss */
+/* line 1033, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .secondary-screens {
   display: -webkit-flex;
   display: flex;
@@ -3736,37 +3779,28 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: flex-start;
   width: 100%;
 }
-/* line 996, ../scss/content/_project.scss */
+/* line 1040, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .secondary-screens .project--screen {
   width: 28vw;
 }
-/* line 1000, ../scss/content/_project.scss */
+/* line 1044, ../scss/content/_project.scss */
 #vision-direct.project .content .main-screens .section--content .secondary-screens div {
   margin-top: 4vw;
 }
-/* line 1012, ../scss/content/_project.scss */
+/* line 1056, ../scss/content/_project.scss */
 #vision-direct.project .content .mobile-screens {
   position: relative;
   padding-bottom: 10vh;
 }
-/* line 1016, ../scss/content/_project.scss */
+/* line 1060, ../scss/content/_project.scss */
 #vision-direct.project .content .mobile-screens .section--title {
-  position: absolute;
-  left: 0;
-  top: 10vw;
-  width: 20vw;
+  top: 20vw;
 }
-/* line 1022, ../scss/content/_project.scss */
+/* line 1063, ../scss/content/_project.scss */
 #vision-direct.project .content .mobile-screens .section--title h2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 0;
   color: #fff;
-  margin-bottom: 0;
-  padding: 0;
 }
-/* line 1034, ../scss/content/_project.scss */
+/* line 1069, ../scss/content/_project.scss */
 #vision-direct.project .content .mobile-screens .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3779,11 +3813,11 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 1043, ../scss/content/_project.scss */
+/* line 1078, ../scss/content/_project.scss */
 #vision-direct.project .content .mobile-screens .section--content div.project--screen {
   width: 18vw;
 }
-/* line 1046, ../scss/content/_project.scss */
+/* line 1081, ../scss/content/_project.scss */
 #vision-direct.project .content .mobile-screens .section--content div.project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3791,6 +3825,395 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   margin-bottom: 1vw;
   border-radius: 4px;
   overflow: hidden;
+}
+@media only screen and (max-width: 1199px) {
+  /* line 693, ../scss/content/_project.scss */
+  #vision-direct.project .content {
+    /* ============================================ *
+     * DETAILS - VD VAN - LARGE SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 02.FONT AND COLOURS - LARGE SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 03. LOGO - LARGE SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 04. MAIN SCREENS - LARGE SCREEN
+     * ============================================ */
+  }
+  /* line 1102, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .section--title,
+  #vision-direct.project .content .introduction .section--title,
+  #vision-direct.project .content .font .section--title,
+  #vision-direct.project .content .logo .section--title,
+  #vision-direct.project .content .main-screens .section--title,
+  #vision-direct.project .content .mobile-screens .section--title {
+    width: 40vw;
+  }
+  /* line 1110, ../scss/content/_project.scss */
+  #vision-direct.project .content .details {
+    width: 100vw;
+  }
+  /* line 1113, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc {
+    width: 40vw;
+  }
+  /* line 1119, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--img img {
+    width: 100vw;
+    max-width: none;
+  }
+  /* line 1130, ../scss/content/_project.scss */
+  #vision-direct.project .content .font {
+    padding-top: 0;
+  }
+  /* line 1133, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--title {
+    top: 40vw;
+  }
+  /* line 1139, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul {
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+  }
+  /* line 1142, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul .project--colour-more-shade {
+    width: 100%;
+    text-align: left;
+  }
+  /* line 1146, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul .project--colour-more-shade .project--colour-name {
+    margin-left: 20px;
+  }
+  /* line 1159, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo .section--title {
+    top: 40vw;
+  }
+  /* line 1168, ../scss/content/_project.scss */
+  #vision-direct.project .content .main-screens .section--title {
+    top: 40vw;
+  }
+}
+@media only screen and (max-width: 770px) {
+  /* line 693, ../scss/content/_project.scss */
+  #vision-direct.project .content {
+    /* ============================================ *
+     * DETAILS - VD VAN - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 01.INTRODUCTION - HOMEPAGE MOCKUP - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 02.FONT AND COLOURS - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 03. LOGO - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 04. MAIN SCREENS - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 05. MOBILE SCREENS - MEDIUM SCREEN
+     * ============================================ */
+  }
+  /* line 1181, ../scss/content/_project.scss */
+  #vision-direct.project .content .details,
+  #vision-direct.project .content .introduction,
+  #vision-direct.project .content .font,
+  #vision-direct.project .content .logo,
+  #vision-direct.project .content .main-screens,
+  #vision-direct.project .content .mobile-screens {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 1189, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .section--title,
+  #vision-direct.project .content .introduction .section--title,
+  #vision-direct.project .content .font .section--title,
+  #vision-direct.project .content .logo .section--title,
+  #vision-direct.project .content .main-screens .section--title,
+  #vision-direct.project .content .mobile-screens .section--title {
+    width: 100vw;
+    padding: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  /* line 1196, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .section--title h2,
+  #vision-direct.project .content .introduction .section--title h2,
+  #vision-direct.project .content .font .section--title h2,
+  #vision-direct.project .content .logo .section--title h2,
+  #vision-direct.project .content .main-screens .section--title h2,
+  #vision-direct.project .content .mobile-screens .section--title h2 {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    position: relative;
+  }
+  /* line 1206, ../scss/content/_project.scss */
+  #vision-direct.project .content .details {
+    height: auto;
+    padding: 10vh 0 0;
+    margin: 0;
+  }
+  /* line 1211, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .section--title {
+    order: 2;
+    margin-bottom: 40px;
+  }
+  /* line 1216, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc {
+    width: 80vw;
+    text-align: center;
+    order: 3;
+  }
+  /* line 1222, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--img {
+    width: 100vw;
+    order: 1;
+    margin: 0 0 5vh;
+  }
+  /* line 1227, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--img img {
+    width: 120vw;
+    max-width: none;
+  }
+  /* line 1237, ../scss/content/_project.scss */
+  #vision-direct.project .content .introduction {
+    height: auto;
+    padding: 10vh 0 0;
+  }
+  /* line 1241, ../scss/content/_project.scss */
+  #vision-direct.project .content .introduction .section--title {
+    display: none;
+  }
+  /* line 1246, ../scss/content/_project.scss */
+  #vision-direct.project .content .introduction .section--content .project--mockup {
+    width: 130vw;
+    left: -15vw;
+  }
+  /* line 1256, ../scss/content/_project.scss */
+  #vision-direct.project .content .font {
+    height: auto;
+    padding: 5vh 0 0;
+  }
+  /* line 1261, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--font-sample {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80vw;
+  }
+  /* line 1266, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--font-sample .project--font-letter {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  /* line 1272, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--font-sample .project--font-info span {
+    text-align: center;
+  }
+  /* line 1278, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours {
+    -webkit-align-items: center;
+    align-items: center;
+    width: 80vw;
+  }
+  /* line 1282, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul {
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin: 0 0 20px;
+  }
+  /* line 1287, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul li {
+    margin: 0;
+    height: 40vw;
+  }
+  /* line 1291, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul li .project--colour-name {
+    font-weight: 100;
+    font-size: 12px;
+  }
+  /* line 1296, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul li div.project--colour {
+    width: 30vw;
+    height: 30vw;
+  }
+  /* line 1302, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul.project--colours-secondary {
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  /* line 1306, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade {
+    margin-top: 20px;
+    height: auto;
+  }
+  /* line 1310, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades {
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+  /* line 1315, ../scss/content/_project.scss */
+  #vision-direct.project .content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades div.project--colour {
+    width: 12vw;
+    height: 12vw;
+    margin: 0;
+  }
+  /* line 1332, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo {
+    height: auto;
+    padding: 5vh 0 0;
+  }
+  /* line 1337, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo .section--content .project--logo-wire {
+    width: 100vw;
+  }
+  /* line 1341, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo .section--content .project--logo-background {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100vw;
+  }
+  /* line 1345, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo .section--content .project--logo-background div {
+    width: 100vw;
+  }
+  /* line 1348, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-dark, #vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-light {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  /* line 1352, ../scss/content/_project.scss */
+  #vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-dark svg, #vision-direct.project .content .logo .section--content .project--logo-background div.project--logo-background-light svg {
+    width: 70vw;
+  }
+  /* line 1364, ../scss/content/_project.scss */
+  #vision-direct.project .content .main-screens {
+    height: auto;
+    padding: 5vh 0;
+  }
+  /* line 1368, ../scss/content/_project.scss */
+  #vision-direct.project .content .main-screens .section--content {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+  /* line 1372, ../scss/content/_project.scss */
+  #vision-direct.project .content .main-screens .section--content .project--screen,
+  #vision-direct.project .content .main-screens .section--content .secondary-screens div.project--screen {
+    width: 80vw;
+    margin-top: 60px;
+  }
+  /* line 1377, ../scss/content/_project.scss */
+  #vision-direct.project .content .main-screens .section--content .project--screen.project--3d-contact-lenses img,
+  #vision-direct.project .content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
+    width: 100%;
+  }
+  /* line 1382, ../scss/content/_project.scss */
+  #vision-direct.project .content .main-screens .section--content .secondary-screens {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 80vw;
+  }
+  /* line 1392, ../scss/content/_project.scss */
+  #vision-direct.project .content .mobile-screens {
+    height: auto;
+    padding: 0 0 5vh 0;
+  }
+  /* line 1396, ../scss/content/_project.scss */
+  #vision-direct.project .content .mobile-screens .section--content {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+  /* line 1400, ../scss/content/_project.scss */
+  #vision-direct.project .content .mobile-screens .section--content div.project--screen {
+    width: 25vw;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 693, ../scss/content/_project.scss */
+  #vision-direct.project .content {
+    /* ============================================ *
+     * DETAILS - VD VAN - SMALL SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 01.INTRODUCTION - HOMEPAGE MOCKUP - SMALL SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 02.FONT AND COLOURS - SMALL SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 03. LOGO - SMALL SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 04. MAIN SCREENS - SMALL SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 05. MOBILE SCREENS - SMALL SCREEN
+     * ============================================ */
+  }
+  /* line 1420, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc .project--details {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 1423, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc .project--details dl {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  /* line 1430, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc .project--details dl dt, #vision-direct.project .content .details .project--desc .project--details dl dd {
+    width: 40%;
+    display: inline-block;
+  }
+  /* line 1435, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc .project--details dl dt {
+    text-align: right;
+    margin-right: 20px;
+  }
+  /* line 1440, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--desc .project--details dl dd {
+    text-align: left;
+    margin: 0;
+  }
+  /* line 1450, ../scss/content/_project.scss */
+  #vision-direct.project .content .details .project--img img {
+    max-height: 40vh;
+    width: auto;
+  }
+  /* line 1490, ../scss/content/_project.scss */
+  #vision-direct.project .content .mobile-screens .section--content {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 10vw;
+  }
+  /* line 1495, ../scss/content/_project.scss */
+  #vision-direct.project .content .mobile-screens .section--content div.project--screen {
+    width: 80vw;
+  }
+  /* line 1498, ../scss/content/_project.scss */
+  #vision-direct.project .content .mobile-screens .section--content div.project--screen img {
+    margin-top: 60px;
+    border-radius: 20px;
+  }
 }
 
 /* ============================================ *

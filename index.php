@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-	<title>Anthony Pucelle - 3D Designer </title>
+  <title>Anthony Pucelle - 3D Designer </title>
 
 	<?php include 'layout/head.php'; ?>
 

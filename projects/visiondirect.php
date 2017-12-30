@@ -14,6 +14,12 @@
 
   	<div class="section section--blue section--gradient details">
 
+  		<div class="section--title number mobile">
+	        <h2>
+	          <span>01.</span> Introduction
+	        </h2>
+	    </div>
+
 	    <div class="project--desc">
 	  		<div class="project--logo">
 	  			<?php include '../images/project/Vision-Direct/vd-white.php'; ?>
@@ -90,8 +96,12 @@
 	    		<div class="project--font-info">
 	    			<span class="project--font-name">Gotham Rounded</span>
 	    			<span class="project--font-author">by Hoefler &amp; Co.</span>
-	    			<span class="project--font-abc">
+	    			<span class="project--font-abc desktop">
 	    				<?php include '../images/project/Vision-Direct/gotham-abc.php'; ?>
+	    			</span>
+
+	    			<span class="project--font-abc mobile">
+	    				<?php include '../images/project/Vision-Direct/gotham-abc-mobile.php'; ?>
 	    			</span>
 	    		</div>
 	    	</div>
@@ -117,25 +127,16 @@
 
 	    			<li class="project--colour-medium-grey-1">
 	    				<div class="project--colour"></div>
-	    				<span class="project--colour-name">Medium Grey #1</span>
+	    				<span class="project--colour-name">Medium Grey</span>
 	    			</li>
-	    			<li class="project--colour-medium-grey-2">
-	    				<div class="project--colour"></div>
-	    				<span class="project--colour-name">Medium Grey #2</span>
-	    			</li>
-
-	    			<li class="project--colour-medium-grey-3">
-	    				<div class="project--colour"></div>
-	    				<span class="project--colour-name">Medium Grey #3</span>
-	    			</li>
-	    			<li class="project--colour-light-grey-1">
-	    				<div class="project--colour"></div>
-	    				<span class="project--colour-name">Light Grey #1</span>
-	    			</li>
-
-	    			<li class="project--colour-light-grey-2">
-	    				<div class="project--colour"></div>
-	    				<span class="project--colour-name">Light Grey #2</span>
+	    			<li class="project--colour-more-shade">
+	    				<div class="colour-shades">
+		    				<div class="project--colour project--colour-medium-grey-2"></div>
+		    				<div class="project--colour project--colour-medium-grey-3"></div>
+		    				<div class="project--colour project--colour-light-grey-1"></div>
+		    				<div class="project--colour project--colour-light-grey-2"></div>
+		    			</div>
+	    				<span class="project--colour-name">And more shade of grey...</span>
 	    			</li>
 	    		</ul>
 	    	</div>

@@ -639,6 +639,48 @@ body.project{
 			}
 		}
 	}
+
+
+	@include bp(max-width, $bp-large){
+		.section.work{
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 40vw;
+					height: 500px;
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-medium){
+		.section.work{
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 40vw;
+					height: 500px;
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-small){
+		.section.work{
+			padding: 0;
+
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 100vw;
+					height: 500px;
+				}
+			}
+		}
+	}
 }
 
 
@@ -665,10 +707,6 @@ body.project{
 	 		padding: 10vh 0;
 	 		margin: 0 10vw;
 
-	 		.section--title{
-	 			width: 20vw;
-	 		}
-
  			.project--desc{
  				width: 30vw;
 
@@ -684,6 +722,7 @@ body.project{
  					width: 100%;
  					font-weight: bold;
  					font-size: $f-size-l;
+ 					line-height: 20px;
  				}
 
  				dd, p{
@@ -725,20 +764,23 @@ body.project{
 	 		@include display-flex(flex);
 	 		@include align-items(flex-start);
 	 		@include justify-content(center);
-	 		position: relative;
-	 		height: 70vh;
+	 		position 		: relative;
+	 		height 			: 70vh;
 
 	 		.section--title{
-	 			position:absolute;
-	 			left:0;
-	 			top: 20%;
+	 			bottom 		: 20%;
+	 			top 		: auto;
 	 		}
 
 	 		.project--mockup{
-	 			width: 80vw;
+	 			width 		: 80vw;
+	 			position 	: relative;
+	 			z-index 	: 5000;
+	 			text-align  : center;
 
-	 			position: relative;
-	 			z-index: 5000;
+	 			img{
+	 				max-height: 800px;
+	 			}
 	 		}
 	 	}
 
@@ -747,15 +789,12 @@ body.project{
 		 * ============================================ */
 	 	.font{
 	 		@include justify-content(center);
-	 		height: 100vh;
-	 		padding-top: 20vh;
-	 		position: relative;
+	 		height 			: 100vh;
+	 		padding-top 	: 20vh;
+	 		position 		: relative;
 
 	 		.section--title{
-	 			position 		: absolute;
-	 			left 			: 0;
-	 			top 			: 20vw;
-	 			width 			: 20vw;
+	 			top			: 30vw;
 	 		}
 
 	 		.section--content{
@@ -769,8 +808,8 @@ body.project{
 	 				@include display-flex(flex);
 	 				@include align-items(center);
 	 				@include justify-content(flex-start);
-	 				width: 50vw;
-	 				margin-bottom: $gap*3;
+	 				width 			: 50vw;
+	 				margin-bottom 	: $gap*3;
 
 		 			.project--font-letter{
 		 				display 			: inline-block;
@@ -787,7 +826,6 @@ body.project{
 		 				@include flex-direction(column);
 
 		 				span{
-		 					display 			: block;
 		 					width 				: 100%;
 		 					text-align 			: left;
 
@@ -820,8 +858,8 @@ body.project{
 		 				@include flex-direction(row);
 		 				@include align-items(flex-start);
 		 				@include justify-content(flex-start);
-		 				margin: $gap 0;
-		 				padding: 0;
+		 				margin 		: 0;
+		 				padding 	: 0;
 
 		 				li{
 			 				margin 			: 0 $gap $gap 0;
@@ -831,7 +869,8 @@ body.project{
 			 					font-size 			: $f-size-s;
 			 				}
 
-				 			div.project--colour{
+				 			div.project--colour,
+				 			&.project--colour-more-shade.project--colour{
 				 				height 				: 100px;
 				 				width 				: 100px;
 				 				background-color 	: #2a2a2a;
@@ -840,15 +879,32 @@ body.project{
 				 			}
 
 
-				 			&.project--colour-green div.project--colour 		 	{ background-color: #A7C400; }
-				 			&.project--colour-blue div.project--colour 			 	{ background-color: #007FA9; }
+				 			&.project--colour-green div.project--colour 		 		{ background-color: #A7C400; }
+				 			&.project--colour-blue div.project--colour 			 		{ background-color: #007FA9; }
+				 			&.project--colour-dark-grey div.project--colour 			{ background-color: #333333; }
+				 			&.project--colour-medium-grey-1 div.project--colour 		{ background-color: #555555; }
 
-				 			&.project--colour-dark-grey div.project--colour 		{ background-color: #333333; }
-				 			&.project--colour-medium-grey-1 div.project--colour 	{ background-color: #555555; }
-				 			&.project--colour-medium-grey-2 div.project--colour 	{ background-color: #777777; }
-				 			&.project--colour-medium-grey-3 div.project--colour 	{ background-color: #999999; }
-				 			&.project--colour-light-grey-1 div.project--colour 		{ background-color: #CCCCCC; }
-				 			&.project--colour-light-grey-2 div.project--colour 		{ background-color: #DDDDDD; }
+
+				 			&.project--colour-more-shade{
+
+				 				.colour-shades{
+					 				@include display-flex(flex);
+					 				@include align-items(flex-start);
+					 				/*@include justify-content(space-evenly);*/
+
+					 				.project--colour{
+					 					margin 			: 0 $gap $gap 0;
+					 				}
+					 			}
+
+				 				.project--colour-medium-grey-2 		{ background-color: #777777; }
+				 				.project--colour-medium-grey-3 		{ background-color: #999999; }
+				 				.project--colour-light-grey-1 		{ background-color: #CCCCCC; }
+				 				.project--colour-light-grey-2 		{ background-color: #DDDDDD; }
+				 			}
+
+				 			
+				 			
 
 
 				 		}
@@ -864,10 +920,7 @@ body.project{
 			height: 100vh;
 
 			.section--title{
-				position: absolute;
-	 			left: 0;
-	 			top: 10vw;
-	 			width: 20vw;
+	 			top: 20vw;
 			}
 
 			.section--content{
@@ -930,19 +983,10 @@ body.project{
 		 	background-size: cover;
 
 		 	.section--title{
-				position: absolute;
-	 			left: 0;
-	 			top: 10vw;
-	 			width: 20vw;
+	 			top: 20vw;
 
 	 			h2{
-	 				position: absolute;
-				    left: 0;
-				    bottom: 0;
-				    padding: 0;
 				    color: #fff;
-				    margin-bottom: 0;
-				    padding: 0;
 	 			}
 			}
 
@@ -1007,26 +1051,17 @@ body.project{
 		}
 
 		/* ============================================ *
-		 * 04. MOBILE SCREENS
+		 * 05. MOBILE SCREENS
 		 * ============================================ */
 		.mobile-screens{
 			position: relative;
 			padding-bottom: 10vh;
 
 			.section--title{
-				position: absolute;
-	 			left: 0;
-	 			top: 10vw;
-	 			width: 20vw;
+	 			top: 20vw;
 
 	 			h2{
-	 				position: absolute;
-				    left: 0;
-				    bottom: 0;
-				    padding: 0;
 				    color: #fff;
-				    margin-bottom: 0;
-				    padding: 0;
 	 			}
 			}
 
@@ -1051,6 +1086,423 @@ body.project{
 					}
 				}
 			}
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - LARGE SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-xlarge){
+			.details,
+			.introduction,
+			.font,
+			.logo,
+			.main-screens,
+			.mobile-screens{
+				.section--title{
+					width: 40vw;
+				}
+			}
+
+			/* ============================================ *
+			 * DETAILS - VD VAN - LARGE SCREEN
+			 * ============================================ */
+			.details{
+				width: 100vw;
+
+				.project--desc{
+					width: 40vw;
+				}
+
+				.project--img{
+
+					img{
+						width 		: 100vw;
+    					max-width 	: none;
+					}
+				}
+			}
+
+
+			/* ============================================ *
+			 * 02.FONT AND COLOURS - LARGE SCREEN
+			 * ============================================ */
+			.font{
+				padding-top: 0;
+
+				.section--title{
+					top: 40vw;
+				}
+
+				.section--content{
+					.project--colours{
+						ul{
+							@include flex-flow(wrap);
+
+							.project--colour-more-shade{
+								width: 100%;
+								text-align: left;
+
+								.project--colour-name{
+									margin-left: $gap;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 03. LOGO - LARGE SCREEN
+			 * ============================================ */
+			.logo{
+				.section--title{
+					top: 40vw;
+				}
+			}
+
+			/* ============================================ *
+			 * 04. MAIN SCREENS - LARGE SCREEN
+			 * ============================================ */
+			.main-screens{
+				.section--title{
+					top: 40vw;
+				}
+			}
+
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - MEDIUM SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-medium){
+
+			.details,
+			.introduction,
+			.font,
+			.logo,
+			.main-screens,
+			.mobile-screens{
+				@include flex-direction(column);
+
+				.section--title{
+					width 		: 100vw;
+					padding 	: 0;
+					position 	: relative;
+				    left 		: 0;
+				    top 		: 0;
+
+					h2{
+						@include transform(rotate(0));
+						position: relative;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * DETAILS - VD VAN - MEDIUM SCREEN
+			 * ============================================ */
+			.details{
+				height: auto;
+				padding: 10vh 0 0;
+				margin: 0;
+
+				.section--title{
+					order: 2;
+					margin-bottom: $gap*2;
+				}
+
+				.project--desc{
+					width: 80vw;
+					text-align: center;
+					order: 3;
+				}
+
+				.project--img{
+					width 		: 100vw;
+					order 		: 1;
+					margin 		: 0 0 5vh;
+
+					img{
+						width 		: 120vw;
+    					max-width 	: none;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - MEDIUM SCREEN
+			 * ============================================ */
+			.introduction{
+				height: auto;
+				padding: 10vh 0 0;
+
+				.section--title{
+					display: none;
+				}
+
+				.section--content{
+					.project--mockup{
+						width 	: 130vw;
+						left 	: -15vw;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 02.FONT AND COLOURS - MEDIUM SCREEN
+			 * ============================================ */
+			.font{
+				height: auto;
+				padding: 5vh 0 0;
+
+				.section--content{
+					.project--font-sample{
+						@include flex-direction(column);
+						margin-top: $gap;
+						width: 80vw;
+
+						.project--font-letter{
+							margin-right: 0;
+							margin-bottom: $gap;
+						}
+
+						.project--font-info{
+							span{
+								text-align: center;
+							}
+						}
+					}
+
+					.project--colours{
+						@include align-items(center);
+						width: 80vw;
+
+						ul{
+							@include justify-content(space-evenly);
+							width: 80vw;
+							margin: 0 0 $gap;
+
+			 				li{
+			 					margin: 0;
+			 					height: 40vw;
+
+				 				.project--colour-name{
+				 					font-weight 		: 100;
+				 					font-size 			: $f-size-s;
+				 				}
+
+					 			div.project--colour{
+					 				width: 30vw;
+					 				height: 30vw;
+					 			}
+					 		}
+
+					 		&.project--colours-secondary{
+					 			@include flex-flow(wrap);
+					 			@include align-items(center);
+
+					 			li.project--colour-more-shade{
+					 				margin-top: $gap;
+					 				height: auto;
+
+					 				div.colour-shades{
+					 					@include justify-content(space-evenly);
+					 					width: 80vw;
+					 					margin-bottom: $gap;
+
+						 				div.project--colour{
+						 					width: 12vw;
+						 					height: 12vw;
+						 					margin: 0;
+						 				}
+						 			}
+
+					 			}
+					 		}
+					 	}
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 03. LOGO - MEDIUM SCREEN
+			 * ============================================ */
+			.logo{
+				height: auto;
+				padding: 5vh 0 0;
+
+				.section--content{
+					.project--logo-wire{
+						width: 100vw;
+					}
+
+					.project--logo-background{
+						@include flex-direction(column);
+						width: 100vw;
+
+						div{
+							width: 100vw;
+
+							&.project--logo-background-dark,
+							&.project--logo-background-light{
+								@include justify-content(center);
+								
+								svg{
+									width: 70vw;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 04. MAIN SCREENS - MEDIUM SCREEN
+			 * ============================================ */
+			.main-screens{
+				height: auto;
+				padding: 5vh 0;
+
+				.section--content{
+					width: 80vw;
+					margin: 0 10vw;
+
+					.project--screen,
+					.secondary-screens div.project--screen{
+						width: 80vw;
+						margin-top: $gap*3;
+
+						&.project--3d-contact-lenses img{
+							width: 100%;
+						}
+					}
+
+					.secondary-screens{
+						@include flex-direction(column);
+						width: 80vw;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 05. MOBILE SCREENS - MEDIUM SCREEN
+			 * ============================================ */
+			.mobile-screens{
+				height: auto;
+				padding: 0 0 5vh 0;
+
+				.section--content{
+					width: 80vw;
+					margin: 0 10vw;
+
+					div.project--screen{
+						width: 25vw;
+					}
+				}
+			}
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - SMALL SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-small){
+
+			/* ============================================ *
+			 * DETAILS - VD VAN - SMALL SCREEN
+			 * ============================================ */
+			.details{
+
+				.project--desc{
+
+					.project--details{
+						@include flex-direction(column);
+						
+						dl{
+							@include display-flex(flex);
+							@include flex-direction(row);
+							@include align-items(flex-start);
+							width: 100%;
+							margin: 0 0 $gap;
+							
+							dt,dd{
+								width: 40%;
+								display: inline-block;
+							}
+
+							dt{
+								text-align:right;
+								margin-right: $gap;
+							}
+
+							dd{
+								text-align: left;
+								margin:0;
+							}
+						}
+					}
+				}
+
+				.project--img{
+
+					img{
+						max-height 		: 40vh;
+    					width 			: auto;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - SMALL SCREEN
+			 * ============================================ */
+			.introduction{
+
+			}
+
+			/* ============================================ *
+			 * 02.FONT AND COLOURS - SMALL SCREEN
+			 * ============================================ */
+			.font{
+
+			}
+
+			/* ============================================ *
+			 * 03. LOGO - SMALL SCREEN
+			 * ============================================ */
+			.logo{
+
+			}
+
+			/* ============================================ *
+			 * 04. MAIN SCREENS - SMALL SCREEN
+			 * ============================================ */
+			.main-screens{
+
+			}
+
+			/* ============================================ *
+			 * 05. MOBILE SCREENS - SMALL SCREEN
+			 * ============================================ */
+			.mobile-screens{
+
+				.section--content{
+					@include flex-direction(column);
+					width: 80vw;
+					margin: 0 10vw;
+
+					div.project--screen{
+						width: 80vw;
+
+						img{
+							margin-top: $gap*3;
+							border-radius: 20px;
+						}
+					}
+				}
+			}
+
 		}
 	}
 }

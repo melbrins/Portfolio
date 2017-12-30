@@ -320,8 +320,20 @@ p 		{ @include p; }
 
 .bold { font-weight:500; }
 	
-.mobile {display:none;}
-.not-mobile {display:block;}
+.mobile  		{ display: none; }
+.desktop  		{ display: block; }
+.not-mobile 	{ display: block; }
+
+
+@include bp(min-width, $bp-medium+1){
+	.mobile 		{ display: none; }
+	.desktop 		{ display: block; }
+}
+
+@include bp(max-width, $bp-medium){
+	.mobile  		{ display: block; }
+	.desktop  		{ display: none; } 
+}
 
 .fixed {
 	position      : fixed !important;
@@ -334,8 +346,6 @@ p 		{ @include p; }
 }
 
 .toggle-fix { z-index: 99999; }
-
-/*.fixed .m-title { display:none; }*/
 
 .fixed #filters li span:hover { color:#fff; }
 
@@ -380,12 +390,6 @@ p 		{ @include p; }
 }
 .clearboth{
 	clear: both;
-}
-
-@include bp(min-width, $bp-medium+1){
-	.show-mobile{
-		display: none;
-	}
 }
 
 
