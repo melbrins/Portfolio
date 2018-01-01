@@ -36,7 +36,7 @@
 	  				</li>
 
 	  				<!--  WALL STREET INSTITUTES  -->
-	  				<li class="work--project mix print" style="background-image: url(images/work/thumbnails/wall-street2.png);">
+	  				<li class="work--project mix print" style="background-image: url(images/work/thumbnails/wall-street.png);">
 	  					<a href="projects/wall-street-institutes.php" class="work--project-link">
 
 	  						<span class="work--project-title">

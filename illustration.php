@@ -49,7 +49,7 @@
 	  				</li>
 
 	  				<!--  OCTOCAT  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/octocat2.png">
+	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/octocat.png">
 	  					<a href="images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -62,7 +62,7 @@
 	  				</li>
 
 	  				<!--  COLD TOUCH -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/melissa-cold-touch2.png">
+	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/melissa-cold-touch.png">
 	  					<a href="images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -75,7 +75,7 @@
 	  				</li>
 
 	  				<!--  MEDUSA  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/medusa3.png">
+	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/medusa.png">
 	  					<a href="images/fullscreen/illustration/medusa.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -88,7 +88,7 @@
 	  				</li>
 
 	  				<!--  BLACK SHEEP GOAT  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/black-sheep-goat3.png">
+	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/black-sheep-goat.png">
 	  					<a href="images/fullscreen/illustration/Black_Sheep_Goat_web.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">

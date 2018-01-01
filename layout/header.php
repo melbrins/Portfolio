@@ -1,6 +1,6 @@
 <div class="container">
 	
-	<?php include 'layout/mobile-menu.php'; ?>
+	<?php include 'mobile-menu.php'; ?>
 
 	<div class="content-wrap">
 	    <div class="content">

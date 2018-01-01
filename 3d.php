@@ -23,7 +23,7 @@
 				<ul class="work--list">
 
 					<!-- GLUM & FISH -->
-	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/glum-and-fish2.png">
+	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/glum-and-fish.png">
 	  					<a href="images/fullscreen/3d/glumandfish_2.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -38,7 +38,7 @@
 
 
 	  				<!-- LONDON COFFEE FESTIVAL -->
-	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/london-coffee-festival3.png">
+	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/london-coffee-festival.png">
 	  					<a href="images/fullscreen/3d/london-coffee-festival.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -53,7 +53,7 @@
 
 
 	  				<!-- Wolf -->
-	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/wolf3.png">
+	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/wolf.png">
 	  					<a href="images/fullscreen/3d/wolf.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -68,7 +68,7 @@
 
 
 	  				<!-- Iphone -->
-	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/iphone3.png">
+	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/iphone.png">
 	  					<a href="images/fullscreen/3d/iphone.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
@@ -95,7 +95,7 @@
 
 
 	  				<!-- VISION DIRECT 3D -->
-	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/vd-3d3.png">
+	  				<li class="work--project mix thered lazy" data-src="images/work/thumbnails/vd-3d.png">
 	  					<a href="images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">

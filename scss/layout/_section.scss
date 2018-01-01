@@ -10,14 +10,35 @@
 		padding 			: 20px 0 40px 0;
 		text-align 			: center;
 		letter-spacing 		: 4px;
+		position 			: absolute;
+		left 				: 10vw;
+		width 				: 30vw;
 
 		h2{
 			@include transform(rotate(-90deg));
-			font-size 				: 60px;
+			@include apply-origin(left, false);
+			position 				: absolute;
+		   	left  					: 0;
+		    bottom 					: 0;
+		    padding 				: 0;
+		    margin-bottom 			: 0;
+		    padding 				: 0;
+			font-size 				: 36px;
 			font-weight 			: 600;
 			display 				: inline-block;
 			line-height 			: 1.5;
 		}		
+
+		&.number{
+			h2{
+				font-size 				: $f-size-l;
+
+				span{
+					font-size 			: 64px;
+					font-weight 		: 900;
+				}
+			}
+		}
 	}
 
 	&.section--grey{
@@ -49,14 +70,63 @@
 				padding 		: 0;
 				color 		 	: #2a2a2a;
 				margin-bottom 	: 0;
-				padding 		: 0;
-				font-size 		: 36px;
+				padding 		: 0;				
 			}
 		}
 
 		.section--content{
 			width 		: 80vw;
 			text-align 	: center;			
+		}
+	}
+
+	&.vd-section--grey{
+		@include display-flex(flex);
+		@include align-items(center);
+		@include justify-content(flex-start);
+		background-color 	: #F6F7F8;
+		position 			: relative;
+		height 				: 50vh;
+
+		.section--title{
+
+			h2{
+				color 		 	: #2a2a2a;			
+			}
+		}
+
+		.section--content{
+			width 		: 80vw;
+			text-align 	: center;			
+		}
+	}
+
+	&.section--dark-grey{
+		@include display-flex(flex);
+		@include align-items(center);
+		@include justify-content(flex-start);
+		background-color 	: #555;
+		position 			: relative;
+		height 				: 50vh;
+
+		.section--title{
+
+			h2{
+				color 		 	: #fff;			
+			}
+		}
+
+		.section--content{
+			width 		: 80vw;
+			text-align 	: center;			
+		}
+	}
+
+	&.section--blue{
+		.section--title{
+			h2{
+				color: #fff;
+			}
 		}
 	}
 
@@ -178,8 +248,9 @@
 			@include justify-content(space-evenly);
 			
 			.section--title{
-				width: 100vw;
-				padding:0;
+				width 		: 100vw;
+				padding 	: 0;
+				left 		: 0;
 
 				h2{
 					@include transform(rotate(0deg));

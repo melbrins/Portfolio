@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-	<title>Anthony Pucelle - 3D Designer </title>
+  <title>Anthony Pucelle - 3D Designer </title>
 
 	<?php include 'layout/head.php'; ?>
 
@@ -163,7 +163,7 @@
                 </li>
 
                 <!--  OCTOCAT  -->
-                <li class="work--project lazy illustration" data-src="images/work/thumbnails/octocat2.png">
+                <li class="work--project lazy illustration" data-src="images/work/thumbnails/octocat.png">
                   <a href="/portfolio.php#prettyPhoto[Illustration]/1/" class="work--project-link">
 
                     <span class="work--project-title">
@@ -176,7 +176,7 @@
                 </li>
 
         				<!-- VISION DIRECT 3D -->
-                <li class="work--project lazy thered" data-src="images/work/thumbnails/vd-3d3.png">
+                <li class="work--project lazy thered" data-src="images/work/thumbnails/vd-3d.png">
                   <a href="images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
                     
                     <span class="work--project-title">
@@ -202,7 +202,7 @@
                 </li>
 
         				<!--  COLD TOUCH -->
-                <li class="work--project lazy illustration" data-src="images/work/thumbnails/melissa-cold-touch2.png">
+                <li class="work--project lazy illustration" data-src="images/work/thumbnails/melissa-cold-touch.png">
                   <a href="images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
                     
                     <span class="work--project-title">
@@ -215,7 +215,7 @@
                 </li>
 
         				<!-- Iphone -->
-                <li class="work--project lazy thered" data-src="images/work/thumbnails/iphone3.png">
+                <li class="work--project lazy thered" data-src="images/work/thumbnails/iphone.png">
                   <a href="images/fullscreen/3d/iphone.jpg" rel="prettyPhoto[3d]" class="work--project-link">
                     
                     <span class="work--project-title">

@@ -537,11 +537,6 @@
 		letter-spacing: 2px;
 	}
 
-	h1, h2{
-		@include animation(push-in 0.6s);
-		opacity: 1;
-	}
-
 	&.top-5  { top: 5%; }
 	&.top-10 { top: 10%; }
 	&.top-20 { top: 20%; }
@@ -559,20 +554,6 @@
     margin-bottom: $gap;
     display: inline-block;
     color: $c-primary;
-}
-
-.content-b h1{
-	-webkit-animation-name: push-in;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-name: push-in;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.content-b h2{
-	-webkit-animation-name: topanimation2;
-    -webkit-animation-duration: 2s;
 }
 
 
@@ -635,5 +616,893 @@
 		h1 { font-size:3em; }
 		h2 { font-size:1.5em; }
 
+	}
+}
+
+
+
+
+
+
+
+/* ============================================ *
+ * GENERAL PROJECT PAGE STYLING
+ * ============================================ */
+body.project{
+	.section.work{
+		.work--project{
+			&.web,
+			&.print,
+			&.illustration{
+				width: 20vw;
+				height: 500px;
+			}
+		}
+	}
+
+
+	@include bp(max-width, $bp-large){
+		.section.work{
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 40vw;
+					height: 500px;
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-medium){
+		.section.work{
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 40vw;
+					height: 500px;
+				}
+			}
+		}
+	}
+
+	@include bp(max-width, $bp-small){
+		.section.work{
+			padding: 0;
+
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 100vw;
+					height: 500px;
+				}
+			}
+		}
+	}
+}
+
+
+/* ============================================ *
+ * NEW Project - Vision Direct
+ * ============================================ */
+
+ #vision-direct.project{
+
+ 	.content{
+	 	background-color: #007FA9;
+
+	 	/* ============================================ *
+		 * DETAILS - VD VAN
+		 * ============================================ */
+	 	.details{
+	 		@include display-flex(flex);
+	 		@include align-items(center);
+	 		@include justify-content(center);
+	 		@include flex-direction(row);
+
+	 		width: 80vw;
+	 		height: 80vh;
+	 		padding: 10vh 0;
+	 		margin: 0 10vw;
+
+ 			.project--desc{
+ 				width: 30vw;
+
+ 				h2,	p, dl, dt, dd{
+ 					color: #fff;
+ 				}
+
+ 				dl{
+ 					width: 33.33%;
+ 				}
+
+ 				dt{
+ 					width: 100%;
+ 					font-weight: bold;
+ 					font-size: $f-size-l;
+ 					line-height: 20px;
+ 				}
+
+ 				dd, p{
+ 					width: 100%;
+ 					font-weight: 100;
+ 					font-size: $f-size;
+ 					line-height: 20px;
+ 					margin-left: 0;
+ 					margin-top: 10px;
+ 				}
+
+ 				h2{
+ 					font-weight: bold;
+ 					margin-bottom: $gap;
+ 				}
+
+ 				.project--logo{
+ 					margin-bottom: $gap*3;
+ 				}
+
+ 				.project--details{
+ 					@include display-flex(flex);
+ 					@include align-items(flex-start);
+ 					@include justify-content(space-between);
+ 					margin-top: $gap*3;
+ 				}
+ 			}
+
+ 			.project--img{
+ 				width: 60vw;
+ 			}
+	 	}
+
+
+	 	/* ============================================ *
+		 * 01.INTRODUCTION - HOMEPAGE MOCKUP
+		 * ============================================ */
+	 	.introduction{
+	 		@include display-flex(flex);
+	 		@include align-items(flex-start);
+	 		@include justify-content(center);
+	 		position 		: relative;
+	 		height 			: 70vh;
+
+	 		.section--title{
+	 			bottom 		: 20%;
+	 			top 		: auto;
+	 		}
+
+	 		.project--mockup{
+	 			width 		: 80vw;
+	 			position 	: relative;
+	 			z-index 	: 5000;
+	 			text-align  : center;
+
+	 			img{
+	 				max-height: 800px;
+	 			}
+	 		}
+	 	}
+
+	 	/* ============================================ *
+		 * 02.FONT AND COLOURS
+		 * ============================================ */
+	 	.font{
+	 		@include justify-content(center);
+	 		height 			: 100vh;
+	 		padding-top 	: 20vh;
+	 		position 		: relative;
+
+	 		.section--title{
+	 			top			: 30vw;
+	 		}
+
+	 		.section--content{
+	 			@include display-flex(flex);
+	 			@include justify-content(center);
+	 			@include flex-direction(column);
+	 			@include align-items(center);
+	 			width: 100vw;
+
+	 			.project--font-sample{
+	 				@include display-flex(flex);
+	 				@include align-items(center);
+	 				@include justify-content(flex-start);
+	 				width 			: 50vw;
+	 				margin-bottom 	: $gap*3;
+
+		 			.project--font-letter{
+		 				display 			: inline-block;
+		 				background-color 	: #fff;
+		 				border-radius 		: 4px;
+		 				padding 			: 40px;
+		 				margin-right 		: $gap;
+		 			}
+
+		 			.project--font-info{
+		 				@include display-flex(flex);
+		 				@include align-items(center);
+		 				@include justify-content(space-evenly);
+		 				@include flex-direction(column);
+
+		 				span{
+		 					width 				: 100%;
+		 					text-align 			: left;
+
+
+		 					&.project--font-name{
+		 						font-weight 		: bold;
+		 						font-size 			: $f-size-xl;
+		 						color 				: #2a2a2a;
+		 					}
+
+		 					&.project--font-author{
+		 						font-weight 		: 100;
+		 						font-size 			: $f-size-l;
+		 						font-style 			: italic;
+		 						margin-bottom 		: $gap;
+		 					}
+		 				}
+		 			}
+		 		}
+
+
+		 		.project--colours{
+		 			@include display-flex(flex);
+		 			@include flex-direction(column);
+		 			@include align-items(flex-start);
+		 			width: 50vw;
+
+		 			ul{
+		 				@include display-flex(flex);
+		 				@include flex-direction(row);
+		 				@include align-items(flex-start);
+		 				@include justify-content(flex-start);
+		 				margin 		: 0;
+		 				padding 	: 0;
+
+		 				li{
+			 				margin 			: 0 $gap $gap 0;
+
+			 				.project--colour-name{
+			 					font-weight 		: 100;
+			 					font-size 			: $f-size-s;
+			 				}
+
+				 			div.project--colour,
+				 			&.project--colour-more-shade.project--colour{
+				 				height 				: 100px;
+				 				width 				: 100px;
+				 				background-color 	: #2a2a2a;
+				 				border-radius 		: 4px;
+				 				margin-bottom 		: $gap;
+				 			}
+
+
+				 			&.project--colour-green div.project--colour 		 		{ background-color: #A7C400; }
+				 			&.project--colour-blue div.project--colour 			 		{ background-color: #007FA9; }
+				 			&.project--colour-dark-grey div.project--colour 			{ background-color: #333333; }
+				 			&.project--colour-medium-grey-1 div.project--colour 		{ background-color: #555555; }
+
+
+				 			&.project--colour-more-shade{
+
+				 				.colour-shades{
+					 				@include display-flex(flex);
+					 				@include align-items(flex-start);
+					 				/*@include justify-content(space-evenly);*/
+
+					 				.project--colour{
+					 					margin 			: 0 $gap $gap 0;
+					 				}
+					 			}
+
+				 				.project--colour-medium-grey-2 		{ background-color: #777777; }
+				 				.project--colour-medium-grey-3 		{ background-color: #999999; }
+				 				.project--colour-light-grey-1 		{ background-color: #CCCCCC; }
+				 				.project--colour-light-grey-2 		{ background-color: #DDDDDD; }
+				 			}
+
+				 			
+				 			
+
+
+				 		}
+			 		}
+		 		}
+	 		}
+	 	}
+
+	 	/* ============================================ *
+		 * 03. LOGO
+		 * ============================================ */
+		.logo{
+			height: 100vh;
+
+			.section--title{
+	 			top: 20vw;
+			}
+
+			.section--content{
+				@include display-flex(flex);
+				@include align-items(center);
+				@include justify-content(center);
+				@include flex-direction(column);
+				width: 100vw;
+
+				.project--logo-wire{
+					width: 80vw;
+					
+					img{
+						max-height: 80vh;
+					}
+				}
+
+				.project--logo-background{
+					@include display-flex(flex);
+					@include align-items(center);
+					@include justify-content(center);
+					@include flex-direction(row);
+					width: 100vw;
+
+
+					div{
+						@include display-flex(flex);
+						@include align-items(center);
+						@include justify-content(center);
+						height: 20vh;
+						width: 50vw;
+						padding: 0 5vw;
+
+						svg{
+							width: 25vw;
+							height: auto;
+						}
+
+						&.project--logo-background-dark{
+							@include justify-content(flex-end);
+						}
+
+						&.project--logo-background-light{
+							@include justify-content(flex-start);
+							background-color: #fff;
+
+						}
+					}
+				}
+			}
+		}
+
+		/* ============================================ *
+		 * 04. MAIN SCREENS
+		 * ============================================ */
+		.main-screens{
+		 	position: relative;
+		 	padding: 10vh 0;
+		 	background-image:url("../images/project/Vision-Direct/vd-logo-background.png");
+		 	background-size: cover;
+
+		 	.section--title{
+	 			top: 20vw;
+
+	 			h2{
+				    color: #fff;
+	 			}
+			}
+
+			.section--content{
+				@include display-flex(flex);
+				@include align-items(center);
+				@include justify-content(center);
+				@include flex-direction(column);
+				width: 60vw;
+				margin: 0 20vw;
+
+				.project--screen{
+					width: 60vw;
+
+					.project--screen-title{
+						color: #fff;
+						font-weight: 100;
+						font-size: $f-size-l;
+						margin-bottom: $gap;
+						display: block;
+					}
+
+					img{
+						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
+						border-radius: 4px;
+						overflow:hidden;
+					}
+
+					&.project--3d-contact-lenses{
+						text-align: center;
+
+						.project--screen-title{
+							text-align: center;
+						}
+
+						img{
+							@include box-shadow(none);
+							width: 80%;
+							display: inline-block;
+						}
+					}
+				}
+
+				.secondary-screens{
+					@include display-flex(flex);
+					@include flex-direction(row);
+					@include justify-content(space-between);
+					@include align-items(flex-start);
+					width: 100%;
+
+					.project--screen{
+						width: 28vw;
+					}
+
+					div{
+						margin-top: 4vw;
+					}
+
+				}
+			}
+
+		}
+
+		/* ============================================ *
+		 * 05. MOBILE SCREENS
+		 * ============================================ */
+		.mobile-screens{
+			position: relative;
+			padding-bottom: 10vh;
+
+			.section--title{
+	 			top: 20vw;
+
+	 			h2{
+				    color: #fff;
+	 			}
+			}
+
+
+			.section--content{
+				@include display-flex(flex);
+				@include align-items(center);
+				@include justify-content(space-evenly);
+				@include flex-direction(row);
+
+				width: 60vw;
+				margin: 0 20vw;
+
+				div.project--screen{
+					width: 18vw;
+
+					img{
+						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
+						margin-bottom: 1vw;
+						border-radius: 4px;
+						overflow:hidden;
+					}
+				}
+			}
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - LARGE SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-xlarge){
+			.details,
+			.introduction,
+			.font,
+			.logo,
+			.main-screens,
+			.mobile-screens{
+				.section--title{
+					width: 40vw;
+				}
+			}
+
+			/* ============================================ *
+			 * DETAILS - VD VAN - LARGE SCREEN
+			 * ============================================ */
+			.details{
+				width: 100vw;
+
+				.project--desc{
+					width: 40vw;
+				}
+
+				.project--img{
+
+					img{
+						width 		: 100vw;
+    					max-width 	: none;
+					}
+				}
+			}
+
+
+			/* ============================================ *
+			 * 02.FONT AND COLOURS - LARGE SCREEN
+			 * ============================================ */
+			.font{
+				padding-top: 0;
+
+				.section--title{
+					top: 40vw;
+				}
+
+				.section--content{
+					.project--colours{
+						ul{
+							@include flex-flow(wrap);
+
+							.project--colour-more-shade{
+								width: 100%;
+								text-align: left;
+
+								.project--colour-name{
+									margin-left: $gap;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 03. LOGO - LARGE SCREEN
+			 * ============================================ */
+			.logo{
+				.section--title{
+					top: 40vw;
+				}
+			}
+
+			/* ============================================ *
+			 * 04. MAIN SCREENS - LARGE SCREEN
+			 * ============================================ */
+			.main-screens{
+				.section--title{
+					top: 40vw;
+				}
+			}
+
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - MEDIUM SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-medium){
+
+			.details,
+			.introduction,
+			.font,
+			.logo,
+			.main-screens,
+			.mobile-screens{
+				@include flex-direction(column);
+
+				.section--title{
+					width 		: 100vw;
+					padding 	: 0;
+					position 	: relative;
+				    left 		: 0;
+				    top 		: 0;
+
+					h2{
+						@include transform(rotate(0));
+						position: relative;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * DETAILS - VD VAN - MEDIUM SCREEN
+			 * ============================================ */
+			.details{
+				height: auto;
+				padding: 10vh 0 0;
+				margin: 0;
+
+				.section--title{
+					order: 2;
+					margin-bottom: $gap*2;
+				}
+
+				.project--desc{
+					width: 80vw;
+					text-align: center;
+					order: 3;
+				}
+
+				.project--img{
+					width 		: 100vw;
+					order 		: 1;
+					margin 		: 0 0 5vh;
+
+					img{
+						width 		: 120vw;
+    					max-width 	: none;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - MEDIUM SCREEN
+			 * ============================================ */
+			.introduction{
+				height: auto;
+				padding: 10vh 0 0;
+
+				.section--title{
+					display: none;
+				}
+
+				.section--content{
+					.project--mockup{
+						width 	: 130vw;
+						left 	: -15vw;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 02.FONT AND COLOURS - MEDIUM SCREEN
+			 * ============================================ */
+			.font{
+				height: auto;
+				padding: 5vh 0 0;
+
+				.section--content{
+					.project--font-sample{
+						@include flex-direction(column);
+						margin-top: $gap;
+						width: 80vw;
+
+						.project--font-letter{
+							margin-right: 0;
+							margin-bottom: $gap;
+						}
+
+						.project--font-info{
+							span{
+								text-align: center;
+							}
+						}
+					}
+
+					.project--colours{
+						@include align-items(center);
+						width: 80vw;
+
+						ul{
+							@include justify-content(space-evenly);
+							width: 80vw;
+							margin: 0 0 $gap;
+
+			 				li{
+			 					margin: 0;
+			 					height: 40vw;
+
+				 				.project--colour-name{
+				 					font-weight 		: 100;
+				 					font-size 			: $f-size-s;
+				 				}
+
+					 			div.project--colour{
+					 				width: 30vw;
+					 				height: 30vw;
+					 			}
+					 		}
+
+					 		&.project--colours-secondary{
+					 			@include flex-flow(wrap);
+					 			@include align-items(center);
+
+					 			li.project--colour-more-shade{
+					 				margin-top: $gap;
+					 				height: auto;
+
+					 				div.colour-shades{
+					 					@include justify-content(space-evenly);
+					 					width: 80vw;
+					 					margin-bottom: $gap;
+
+						 				div.project--colour{
+						 					width: 12vw;
+						 					height: 12vw;
+						 					margin: 0;
+						 				}
+						 			}
+
+					 			}
+					 		}
+					 	}
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 03. LOGO - MEDIUM SCREEN
+			 * ============================================ */
+			.logo{
+				height: auto;
+				padding: 5vh 0 0;
+
+				.section--content{
+					.project--logo-wire{
+						width: 100vw;
+					}
+
+					.project--logo-background{
+						@include flex-direction(column);
+						width: 100vw;
+
+						div{
+							width: 100vw;
+
+							&.project--logo-background-dark,
+							&.project--logo-background-light{
+								@include justify-content(center);
+								
+								svg{
+									width: 70vw;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 04. MAIN SCREENS - MEDIUM SCREEN
+			 * ============================================ */
+			.main-screens{
+				height: auto;
+				padding: 5vh 0;
+
+				.section--content{
+					width: 80vw;
+					margin: 0 10vw;
+
+					.project--screen,
+					.secondary-screens div.project--screen{
+						width: 80vw;
+						margin-top: $gap*3;
+
+						&.project--3d-contact-lenses img{
+							width: 100%;
+						}
+					}
+
+					.secondary-screens{
+						@include flex-direction(column);
+						width: 80vw;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 05. MOBILE SCREENS - MEDIUM SCREEN
+			 * ============================================ */
+			.mobile-screens{
+				height: auto;
+				padding: 0 0 5vh 0;
+
+				.section--content{
+					width: 80vw;
+					margin: 0 10vw;
+
+					div.project--screen{
+						width: 25vw;
+					}
+				}
+			}
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - SMALL SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-small){
+
+			/* ============================================ *
+			 * DETAILS - VD VAN - SMALL SCREEN
+			 * ============================================ */
+			.details{
+
+				.project--desc{
+
+					.project--details{
+						@include flex-direction(column);
+						
+						dl{
+							@include display-flex(flex);
+							@include flex-direction(row);
+							@include align-items(flex-start);
+							width: 100%;
+							margin: 0 0 $gap;
+							
+							dt,dd{
+								width: 40%;
+								display: inline-block;
+							}
+
+							dt{
+								text-align:right;
+								margin-right: $gap;
+							}
+
+							dd{
+								text-align: left;
+								margin:0;
+							}
+						}
+					}
+				}
+
+				.project--img{
+
+					img{
+						max-height 		: 40vh;
+    					width 			: auto;
+					}
+				}
+			}
+
+			/* ============================================ *
+			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - SMALL SCREEN
+			 * ============================================ */
+			.introduction{
+
+			}
+
+			/* ============================================ *
+			 * 02.FONT AND COLOURS - SMALL SCREEN
+			 * ============================================ */
+			.font{
+
+			}
+
+			/* ============================================ *
+			 * 03. LOGO - SMALL SCREEN
+			 * ============================================ */
+			.logo{
+
+			}
+
+			/* ============================================ *
+			 * 04. MAIN SCREENS - SMALL SCREEN
+			 * ============================================ */
+			.main-screens{
+
+			}
+
+			/* ============================================ *
+			 * 05. MOBILE SCREENS - SMALL SCREEN
+			 * ============================================ */
+			.mobile-screens{
+
+				.section--content{
+					@include flex-direction(column);
+					width: 80vw;
+					margin: 0 10vw;
+
+					div.project--screen{
+						width: 80vw;
+
+						img{
+							margin-top: $gap*3;
+							border-radius: 20px;
+						}
+					}
+				}
+			}
+
+		}
 	}
 }
