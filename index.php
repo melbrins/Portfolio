@@ -153,7 +153,7 @@
 
                 <!--  ANGELA  -->
                 <li class="work--project lazy illustration" data-src="images/work/thumbnails/angela.png">
-                  <a href="/portfolio.php#prettyPhoto[Illustration]/0/" class="work--project-link">
+                  <a href="/illustration.php#prettyPhoto[Illustration]/0/" class="work--project-link">
 
                     <span class="work--project-title">
                       <h3 class="work--project-name">Angela</h3>
@@ -166,7 +166,7 @@
 
                 <!--  OCTOCAT  -->
                 <li class="work--project lazy illustration" data-src="images/work/thumbnails/octocat.png">
-                  <a href="/portfolio.php#prettyPhoto[Illustration]/1/" class="work--project-link">
+                  <a href="/illustration.php#prettyPhoto[Illustration]/2/" class="work--project-link">
 
                     <span class="work--project-title">
                       <h3 class="work--project-name">Octocat</h3>
@@ -179,7 +179,7 @@
 
         				<!-- VISION DIRECT 3D -->
                 <li class="work--project lazy thered" data-src="images/work/thumbnails/vd-3d.png">
-                  <a href="images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+                  <a href="/3d.php#prettyPhoto[3d]/5/" rel="prettyPhoto[3d]" class="work--project-link">
                     
                     <span class="work--project-title">
                       <h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
@@ -192,7 +192,7 @@
 
         				<!--  STAR WARS FAMILY  -->
                 <li class="work--project lazy illustration" data-src="images/work/thumbnails/star-wars.png">
-                  <a href="images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+                  <a href="/illustration.php#prettyPhoto[Illustration]/1/" rel="prettyPhoto[Illustration]" class="work--project-link">
                     
                     <span class="work--project-title">
                       <h3 class="work--project-name">Star Wars Family</h3>
@@ -205,7 +205,7 @@
 
         				<!--  COLD TOUCH -->
                 <li class="work--project lazy illustration" data-src="images/work/thumbnails/melissa-cold-touch.png">
-                  <a href="images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+                  <a href="/illustration.php#prettyPhoto[Illustration]/3/" rel="prettyPhoto[Illustration]" class="work--project-link">
                     
                     <span class="work--project-title">
                       <h3 class="work--project-name">Cold Touch</h3>
@@ -218,7 +218,7 @@
 
         				<!-- Iphone -->
                 <li class="work--project lazy thered" data-src="images/work/thumbnails/iphone.png">
-                  <a href="images/fullscreen/3d/iphone.jpg" rel="prettyPhoto[3d]" class="work--project-link">
+                  <a href="/3d.php#prettyPhoto[3d]/3/" rel="prettyPhoto[3d]" class="work--project-link">
                     
                     <span class="work--project-title">
                       <h3 class="work--project-name">Iphone - Black &amp; White</h3>
