@@ -3,8 +3,8 @@
 <head>
 	
 	<title>Illustration - Anthony Pucelle - Melbrins</title>
-	<meta name="description" content=".">
-	<meta name="author" content="">
+	<meta name="description" content="Freelance Illustrator, concept artist. Have a look at my amazing illustration and Character Designs.">
+	<meta name="author" content="Anthony Pucelle">
 
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include 'layout/head.php'; ?>
