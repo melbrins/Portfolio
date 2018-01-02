@@ -84,13 +84,7 @@
 	    <div class="section--content">
 	    	<div class="project--font-sample">
 	    		<div class="project--font-letter">
-	    			<svg width="160px" height="91px" viewBox="0 0 160 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					    <g id="Vision-Direct" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-445.000000, -1754.000000)" font-family="GothamRounded-Bold, Gotham Rounded" font-size="124" font-weight="bold">
-					        <text id="aA" fill="#007FA9">
-					            <tspan x="441.304" y="1843">aA</tspan>
-					        </text>
-					    </g>
-					</svg>
+	    			<?php include '../images/project/Vision-Direct/gotham-aA.php'; ?>
 	    		</div>
 
 	    		<div class="project--font-info">
