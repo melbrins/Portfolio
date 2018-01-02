@@ -1,9 +1,9 @@
-<div class="container">
+<div id="container">
 	
 	<?php include 'mobile-menu.php'; ?>
 
 	<div class="content-wrap">
-	    <div class="content">
+	    <div id="content">
 			<!-- ============================================ *
 			* HEADER
 			* ============================================ -->
