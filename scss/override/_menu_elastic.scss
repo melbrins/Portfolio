@@ -1,13 +1,13 @@
 html,
 body,
-.container,
+#container,
 .content-wrap {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
 }
 
-.container {
+#container {
 	background: #373a47;
 }
 
@@ -28,7 +28,7 @@ body,
 	transition: transform 0.3s;
 }
 
-.content {
+#content {
 	position 			: relative;
 	background 			: $c-background;
 
@@ -181,7 +181,7 @@ body,
 	}
 
 
-	.content::before {
+	#content::before {
 		opacity: 1;
 		-webkit-transition: opacity 0.3s;
 		transition: opacity 0.3s;

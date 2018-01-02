@@ -3,7 +3,7 @@
  * Project Page 
  * ============================================ */
 
-.container.project{
+#container.project{
 
 	background-color: #fff;
 
@@ -472,26 +472,26 @@
 	}
 
 	.fullscreen,
-	.content-a {
+	#content-a {
 		width:100%;
 		min-height:100%;
 	}
 
 	/* content centering styles */
-	.content-a {
+	#content-a {
 		display:table;
 	}
 
-	.content-b {
+	#content-b {
 		display: table-cell;
 		position: absolute;
 		vertical-align: middle;
 	}
 
 	.not-fullscreen,
-	.not-fullscreen .content-a,
+	.not-fullscreen #content-a,
 	.fullscreen.not-overflow,
-	.fullscreen.not-overflow .content-a {
+	.fullscreen.not-overflow #content-a {
 		height:100%;
 		overflow:hidden;
 	}
@@ -512,8 +512,8 @@
 } 
 
 
-.content-a { position: relative; }
-.content-b { 
+#content-a { position: relative; }
+#content-b { 
 	text-align: left;
 
 	h1{ 
@@ -584,7 +584,7 @@
 
 @include bp(max-width, $bp-medium) {
 
-	.container.project{
+	#container.project{
 		.sl-slider-wrapper {
 			height: 500px;
 		}
@@ -604,13 +604,13 @@
 
 
 @include bp(max-width, $bp-xlarge){
-	.content-b.left {
+	#content-b.left {
 	  left: 10%;
 	}
 }
 
 @include bp(max-width, $bp-xsmall) {
-	.content-b{
+	#content-b{
 		.bottom { top:60%; }
 		.right { left: 10%; }
 		h1 { font-size:3em; }
@@ -690,7 +690,7 @@ body.project{
 
  #vision-direct.project{
 
- 	.content{
+ 	#content{
 	 	background-color: #007FA9;
 
 	 	/* ============================================ *
