@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	
-	<title>Illustration - Anthony Pucelle - Melbrins</title>
-	<meta name="description" content=".">
-	<meta name="author" content="">
+	<title>Print - Anthony Pucelle - Melbrins</title>
+	<meta name="description" content="Freelance Graphic Designer, have a look at my latest print projects.">
+	<meta name="author" content="Anthony Pucelle">
 
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include 'layout/head.php'; ?>

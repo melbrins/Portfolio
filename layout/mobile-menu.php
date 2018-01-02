@@ -9,7 +9,7 @@
       <a href="/3d.php"><span>3D</span></a>
       <a href="/web.php"><span>Web</span></a>
       <a href="/print.php"><span>Print</span></a>
-      <a href="/contact.php"><span>Contact</span></a>
+      <!-- <a href="/contact.php"><span>Contact</span></a> -->
     </div>
   </nav>
   <button class="close-button" id="close-button">Close Menu</button>

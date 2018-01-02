@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	
-	<title>Illustration - Anthony Pucelle - Melbrins</title>
-	<meta name="description" content=".">
-	<meta name="author" content="">
+	<title>Ui / Ux - Anthony Pucelle - Melbrins</title>
+	<meta name="description" content="Freelance Ui / UX Designer, have a look at my latest website projects involving: Design, Front-End and Back-End">
+	<meta name="author" content="Anthony Pucelle">
 
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include 'layout/head.php'; ?>

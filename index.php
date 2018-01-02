@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 
-  <title>Anthony Pucelle - 3D Designer </title>
-
+  <title>Anthony Pucelle - Freelance UI / UX Designer </title>
+  <meta name="description" content="Hello, I'm Anthony Pucelle, Freelance UI / UX Designer and also illustrator. Open for new opportunities from February 2018"/>
+  <meta name="author" content="Anthony Pucelle">
+  
 	<?php include 'layout/head.php'; ?>
 
 </head>

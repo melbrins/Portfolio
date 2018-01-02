@@ -42,9 +42,9 @@
 								<a href="/portfolio.php">Portfolio</a>
 							</li> -->
 
-							<li class="menu--contact">
+							<!-- <li class="menu--contact">
 								<a href="/contact.php">Contact</a>
-							</li>
+							</li> -->
 
 							<!-- <li class="menu--blog">
 								<a href="/blog3/">Blog</a>
