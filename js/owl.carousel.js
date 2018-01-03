@@ -423,8 +423,10 @@
 				inner, outer, matches = [], i, n;
 
 			for (i = 0, n = this._coordinates.length; i < n; i++) {
-				inner = this._coordinates[i - 1] || 0;
+				inner = this._coordinates[i-1] || 0;
 				outer = Math.abs(this._coordinates[i]) + padding * rtl;
+
+				matches.push(i);
 
 				if ((this.op(inner, '<=', begin) && (this.op(inner, '>', end)))
 					|| (this.op(outer, '<', begin) && this.op(outer, '>', end))) {
@@ -433,7 +435,8 @@
 			}
 
 			this.$stage.children('.active').removeClass('active');
-			this.$stage.children(':eq(' + matches.join('), :eq(') + ')').addClass('active');
+			// this.$stage.children(':eq(' + matches.join('), :eq(') + ')').addClass('active');
+			this.$stage.children().eq(this.current()).addClass('active');
 
 			if (this.settings.center) {
 				this.$stage.children('.center').removeClass('center');
@@ -906,6 +909,7 @@
 				left: coordinate + 'px'
 			});
 		}
+
 	};
 
 	/**
