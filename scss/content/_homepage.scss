@@ -88,45 +88,123 @@
 			padding	: 0;
 		}
 
-		&.services{
+		/* ============================================ *
+		 * HOMEPAGE - SERVICES
+		 * ============================================ */
+		&.services{	
 			min-height: 400px;
+			
+			.section--content{
+
+				.service--icon{
+					max-width 			: 100px;
+					display 			: inline-block;
+					margin-bottom 		: 10px;
+				}
+
+				h3{
+					font-size: 24px;
+					font-weight: 900;
+					color: #2a2a2a;
+				}
+
+				p{
+					margin-bottom: $gap;
+				}
+
+				.service--list{
+					@include display-flex(flex);
+					@include align-items(flex-start);
+					@include justify-content(space-evenly);
+					@include flex-wrap(wrap);
+
+					li{
+						width: 20vw;
+
+						p, h3, a{
+							text-align: center;
+							display: block;
+						}
+					}
+
+
+				}
+			}
+
 		}
+
 	}
 
 }
 
 
 @include bp(min-width, $bp-small+1){
-	.section{
+	#index{
+		.section{
 
-		&.services{
-			.section--content{
-				.service--list{
-					&.mobile{
-						display: none;
-					}
-					&.desktop{
-						@include display-flex(flex);
+			&.services{
+				.section--content{
+					.service--list{
+						&.mobile{
+							display: none;
+						}
+						&.desktop{
+							@include display-flex(flex);
+						}
 					}
 				}
 			}
 		}
-
 	}
 }
 
 @include bp(max-width, $bp-small){
 
-	.section{
-		&.services{
-			.section--content{
-				.service--list{
-					display: block;
+	#index{
+		.banner{ 
+
+			&.banner-main{
+				height: 100vh;
+			}
+		}
+
+		.section{
+
+			&.services{
+
+				.section--content{
+
+					.service--list{
+						display 	: block;
+						width 		: 100vw;
+					    padding 	: $gap 0;
+					    margin 		: 0;
+
+
+					    .owl-nav{
+					    	display: none;
+					    }
+
+						li{
+							@include animation(all 0.2s ease-out);
+							@include display-flex(flex);
+							@include align-items(center);
+							@include flex-direction(column);
+							width: 100vw;
+
+							p{
+								max-width: 80vw;
+							}
+						}
+
+						&.desktop{
+							display: none;
+						}
+					}
 				}
 			}
 		}
 	}
-
 }
 
 

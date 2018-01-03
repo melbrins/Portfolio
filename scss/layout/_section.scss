@@ -221,24 +221,6 @@
  * HOMEPAGE - MEDIA QUERIES
  * ============================================ */
 
-@include bp(min-width, $bp-small+1){
-	.section{
-
-		&.services{
-			.section--content{
-				.service--list{
-					&.mobile{
-						display: none;
-					}
-					&.desktop{
-						@include display-flex(flex);
-					}
-				}
-			}
-		}
-
-	}
-}
 
 @include bp(max-width, $bp-small){
 	.section{
@@ -264,43 +246,6 @@
 
 			.section--content{
 				width: 100vw;
-			}
-		}
-
-		&.services{
-
-			.section--content{
-
-				.service--list{
-					@include flex-wrap(nowrap);
-					@include animation(all 0.2s ease-out);
-					@include align-items(center);
-					@include flex-direction(column);
-					width: 100vw;
-				    padding: $gap 0;
-				    margin: 0;
-
-
-				    .owl-nav{
-				    	display: none;
-				    }
-
-					li{
-						@include animation(all 0.2s ease-out);
-						@include display-flex(flex);
-						@include align-items(center);
-						@include flex-direction(column);
-						width: 100vw;
-
-						p{
-							max-width: 80vw;
-						}
-					}
-
-					&.desktop{
-						display: none;
-					}
-				}
 			}
 		}
 
