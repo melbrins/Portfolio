@@ -121,7 +121,7 @@
 		&.services{
 			.section--content{
 				.service--list{
-					@include flex-direction(row);
+					display: block;
 				}
 			}
 		}

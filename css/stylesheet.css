@@ -4762,8 +4762,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
 @media only screen and (max-width: 599px) {
   /* line 123, ../scss/content/_homepage.scss */
   .section.services .section--content .service--list {
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    display: block;
   }
 }
 /* line 2, ../scss/content/_contact.scss */
