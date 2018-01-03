@@ -23,7 +23,7 @@
 				<ul class="work--list">
 
 					<!--  TEN CHI JIN  -->
-					<li class="work--project mix print" style="background-image: url(images/portfolios/ten-chi-jin.png);">
+					<li class="work--project mix print lazy" style="background-image: url(images/work/thumbnails/ten-chi-jin.png);">
 	  					<a href="images/fullscreen/print/ten-chi-jin.jpg" rel="prettyPhoto[print]" class="work--project-link">
 
 	  						<span class="work--project-title">
@@ -36,7 +36,7 @@
 	  				</li>
 
 	  				<!--  WALL STREET INSTITUTES  -->
-	  				<li class="work--project mix print" style="background-image: url(images/work/thumbnails/wall-street.png);">
+	  				<li class="work--project mix print lazy" style="background-image: url(images/work/thumbnails/wall-street.png);">
 	  					<a href="projects/wall-street-institutes.php" class="work--project-link">
 
 	  						<span class="work--project-title">
