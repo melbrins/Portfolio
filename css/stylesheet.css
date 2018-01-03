@@ -4739,17 +4739,33 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     font-size: 60px;
   }
 }
-/* line 85, ../scss/content/_homepage.scss */
+/* line 87, ../scss/content/_homepage.scss */
 #index .section.work {
   padding: 0;
 }
-/* line 89, ../scss/content/_homepage.scss */
-#index .page {
-  padding: 0;
-  width: 100%;
-  position: relative;
+/* line 91, ../scss/content/_homepage.scss */
+#index .section.services {
+  min-height: 400px;
 }
 
+@media only screen and (min-width: 600px) {
+  /* line 105, ../scss/content/_homepage.scss */
+  .section.services .section--content .service--list.mobile {
+    display: none;
+  }
+  /* line 108, ../scss/content/_homepage.scss */
+  .section.services .section--content .service--list.desktop {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 123, ../scss/content/_homepage.scss */
+  .section.services .section--content .service--list {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
 /* line 2, ../scss/content/_contact.scss */
 #contact .page {
   background-color: #2eb1e6;

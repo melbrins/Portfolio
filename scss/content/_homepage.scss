@@ -70,7 +70,7 @@
 						}
 
 						h2{
-							font-size 		: 14px;
+							font-size 		: $f-size;
 
 							span.f-bold{
 								font-size 	: 60px;
@@ -82,15 +82,51 @@
 		}
 	}
 
-	.section.work{
-		padding	: 0;
+	.section
+	{
+		&.work{
+			padding	: 0;
+		}
+
+		&.services{
+			min-height: 400px;
+		}
 	}
 
-	.page{
-		padding: 0 ;
-		width: 100%;
-		position: relative;
+}
+
+
+@include bp(min-width, $bp-small+1){
+	.section{
+
+		&.services{
+			.section--content{
+				.service--list{
+					&.mobile{
+						display: none;
+					}
+					&.desktop{
+						@include display-flex(flex);
+					}
+				}
+			}
+		}
+
 	}
+}
+
+@include bp(max-width, $bp-small){
+
+	.section{
+		&.services{
+			.section--content{
+				.service--list{
+					@include flex-direction(row);
+				}
+			}
+		}
+	}
+
 }
 
 
