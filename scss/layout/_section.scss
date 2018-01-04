@@ -250,8 +250,14 @@
 		}
 
 		&.contact{
+
+			.section--title{
+				height: 30%;
+			}
+
 			.section--content{
 				width: 100vw;
+				height: 70%;
 
 				h3, p{
 					display: none;
@@ -259,21 +265,29 @@
 
 				.contact--methods{
 					@include flex-direction(column);
-					width: 100vw;
-					margin-top: 0;
+					@include justify-content(space-evenly);
+					width 			: 100vw;
+					height 			: 100%;
+					margin-top 		: 0;
 
 					.contact--method{
 						@include display-flex(flex);
 						@include flex-direction(row);
 						@include align-items(center);
 						@include justify-content(center);
-
-						width: 100vw;
-						padding: 0 10vw;
-						margin-bottom: $gap;
+						width 			: 100vw;
+						padding 		: 0 10vw;
+						margin-bottom 	: 0;
+						height 			: 50px;
+						line-height 	: 50px;
 
 						i{
-							margin-right: $gap;
+							margin-right 	: $gap;
+							margin-bottom 	: 0;
+						}
+
+						h4{
+							margin 		: 0;
 						}
 
 						&.phone{
@@ -440,21 +454,15 @@
 
 		padding: 0;
 		.work--project{
-			width  : 100%;
-			margin : 0 0 20px 0;
 			
-
 			.work--project-title{
 				bottom 		: 40px;
+
 				&:before{
 					min-height 	: 180%;
-					top 		: -80%;
+					top 		: -50%;
 				}
 			}
-
-			&:nth-child(3n){
-		    	margin-right: 0;
-		    }
 		}
 	}
 }
@@ -529,7 +537,7 @@
 		.work--project.print,
 		.work--project.thered { 
 			width  : 100vw;
-			height : 90vh;
+			height : 85vh;
 			margin-bottom: 0;
 		}
 	}
