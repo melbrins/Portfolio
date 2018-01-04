@@ -3985,8 +3985,8 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   }
   /* line 1282, ../scss/content/_project.scss */
   #vision-direct.project #content .font .section--content .project--colours ul {
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     width: 80vw;
     margin: 0 0 20px;
   }
@@ -3999,105 +3999,110 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   #vision-direct.project #content .font .section--content .project--colours ul li .project--colour-name {
     font-weight: 100;
     font-size: 12px;
+    width: 100%;
   }
-  /* line 1296, ../scss/content/_project.scss */
+  /* line 1297, ../scss/content/_project.scss */
   #vision-direct.project #content .font .section--content .project--colours ul li div.project--colour {
     width: 30vw;
     height: 30vw;
   }
-  /* line 1302, ../scss/content/_project.scss */
+  /* line 1303, ../scss/content/_project.scss */
   #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 1306, ../scss/content/_project.scss */
+  /* line 1307, ../scss/content/_project.scss */
   #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade {
     margin-top: 20px;
     height: auto;
   }
-  /* line 1310, ../scss/content/_project.scss */
+  /* line 1311, ../scss/content/_project.scss */
   #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades {
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     width: 80vw;
     margin-bottom: 20px;
   }
-  /* line 1315, ../scss/content/_project.scss */
+  /* line 1316, ../scss/content/_project.scss */
   #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades div.project--colour {
     width: 12vw;
     height: 12vw;
     margin: 0;
   }
-  /* line 1332, ../scss/content/_project.scss */
+  /* line 1333, ../scss/content/_project.scss */
   #vision-direct.project #content .logo {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 1337, ../scss/content/_project.scss */
+  /* line 1338, ../scss/content/_project.scss */
   #vision-direct.project #content .logo .section--content .project--logo-wire {
     width: 100vw;
   }
-  /* line 1341, ../scss/content/_project.scss */
+  /* line 1342, ../scss/content/_project.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 100vw;
   }
-  /* line 1345, ../scss/content/_project.scss */
+  /* line 1346, ../scss/content/_project.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background div {
     width: 100vw;
   }
-  /* line 1348, ../scss/content/_project.scss */
+  /* line 1349, ../scss/content/_project.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light {
     -webkit-justify-content: center;
     justify-content: center;
   }
-  /* line 1352, ../scss/content/_project.scss */
+  /* line 1353, ../scss/content/_project.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark svg, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light svg {
     width: 70vw;
   }
-  /* line 1364, ../scss/content/_project.scss */
+  /* line 1365, ../scss/content/_project.scss */
   #vision-direct.project #content .main-screens {
     height: auto;
     padding: 5vh 0;
   }
-  /* line 1368, ../scss/content/_project.scss */
+  /* line 1369, ../scss/content/_project.scss */
   #vision-direct.project #content .main-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1372, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--content .project--screen,
+  /* line 1373, ../scss/content/_project.scss */
+  #vision-direct.project #content .main-screens .section--content div.project--screen,
   #vision-direct.project #content .main-screens .section--content .secondary-screens div.project--screen {
     width: 80vw;
-    margin-top: 60px;
+    margin-top: 40px;
   }
-  /* line 1377, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses img,
+  /* line 1378, ../scss/content/_project.scss */
+  #vision-direct.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
   #vision-direct.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
     width: 100%;
   }
-  /* line 1382, ../scss/content/_project.scss */
+  /* line 1383, ../scss/content/_project.scss */
   #vision-direct.project #content .main-screens .section--content .secondary-screens {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
   }
-  /* line 1392, ../scss/content/_project.scss */
+  /* line 1393, ../scss/content/_project.scss */
   #vision-direct.project #content .mobile-screens {
     height: auto;
     padding: 0 0 5vh 0;
   }
-  /* line 1396, ../scss/content/_project.scss */
+  /* line 1397, ../scss/content/_project.scss */
   #vision-direct.project #content .mobile-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1400, ../scss/content/_project.scss */
+  /* line 1401, ../scss/content/_project.scss */
   #vision-direct.project #content .mobile-screens .section--content div.project--screen {
     width: 25vw;
+  }
+  /* line 1404, ../scss/content/_project.scss */
+  #vision-direct.project #content .mobile-screens .section--content div.project--screen .project--screen-title {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -4122,12 +4127,12 @@ body.project .section.work .work--project.web, body.project .section.work .work-
      * 05. MOBILE SCREENS - SMALL SCREEN
      * ============================================ */
   }
-  /* line 1420, ../scss/content/_project.scss */
+  /* line 1425, ../scss/content/_project.scss */
   #vision-direct.project #content .details .project--desc .project--details {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 1423, ../scss/content/_project.scss */
+  /* line 1428, ../scss/content/_project.scss */
   #vision-direct.project #content .details .project--desc .project--details dl {
     display: -webkit-flex;
     display: flex;
@@ -4138,41 +4143,43 @@ body.project .section.work .work--project.web, body.project .section.work .work-
     width: 100%;
     margin: 0 0 20px;
   }
-  /* line 1430, ../scss/content/_project.scss */
+  /* line 1435, ../scss/content/_project.scss */
   #vision-direct.project #content .details .project--desc .project--details dl dt, #vision-direct.project #content .details .project--desc .project--details dl dd {
     width: 40%;
     display: inline-block;
   }
-  /* line 1435, ../scss/content/_project.scss */
+  /* line 1440, ../scss/content/_project.scss */
   #vision-direct.project #content .details .project--desc .project--details dl dt {
     text-align: right;
     margin-right: 20px;
   }
-  /* line 1440, ../scss/content/_project.scss */
+  /* line 1445, ../scss/content/_project.scss */
   #vision-direct.project #content .details .project--desc .project--details dl dd {
     text-align: left;
     margin: 0;
   }
-  /* line 1450, ../scss/content/_project.scss */
+  /* line 1455, ../scss/content/_project.scss */
   #vision-direct.project #content .details .project--img img {
     max-height: 40vh;
     width: auto;
   }
-  /* line 1490, ../scss/content/_project.scss */
+  /* line 1495, ../scss/content/_project.scss */
   #vision-direct.project #content .mobile-screens .section--content {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1495, ../scss/content/_project.scss */
+  /* line 1500, ../scss/content/_project.scss */
   #vision-direct.project #content .mobile-screens .section--content div.project--screen {
     width: 80vw;
   }
-  /* line 1498, ../scss/content/_project.scss */
+  /* line 1503, ../scss/content/_project.scss */
   #vision-direct.project #content .mobile-screens .section--content div.project--screen img {
-    margin-top: 60px;
+    margin-top: 40px;
     border-radius: 20px;
+    width: 100%;
+    max-height: unset;
   }
 }
 
