@@ -131,21 +131,35 @@
 
 @include bp(max-width, $bp-medium){
 	#header{ 
-		width 		: 100%; 
-		text-align  : center;
+		width 		 	: 100%; 
+		text-align   	: center;
+		height 			: $s-header-mobile;
 
 		#open-button{
 			display 	: inline-block;
 			position 	: absolute;
 			left 		: 20px;
-			height 		: $s-header;
+			height 		: $s-header-mobile;
+			line-height : $s-header-mobile;
+
+			i{
+				line-height: $s-header-mobile;
+			}
 		}
 
 		#logo{
 			float 		: none;
+			line-height : $s-header-mobile;
+
+
+			img{
+				line-height 	: $s-header-mobile;
+				max-height 		: $s-header-mobile / 2;
+			}
 		}
 
-		#menu, .not-mobile{ 
+		#menu, 
+		.not-mobile{ 
 			display 	: none; 
 		}
 	}

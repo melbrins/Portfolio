@@ -321,8 +321,8 @@ p 		{ @include p; }
 .bold { font-weight:500; }
 	
 .mobile  		{ display: none; }
-.desktop  		{ display: block; }
-.not-mobile 	{ display: block; }
+.desktop,
+.not-mobile		{ display: block; }
 
 
 @include bp(min-width, $bp-medium+1){
