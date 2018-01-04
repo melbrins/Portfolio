@@ -10,7 +10,9 @@
 			<div id="header" class="toggle-fix">
 				<div class="wrap">
 
-					<a href="#mobilemenu" id="open-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					<a href="#mobilemenu" id="open-button">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</a>
 
 					<a id="logo" href="/">
 						<img src="/images/layout/melbrins_logo-white.png" border="0"/>

@@ -1450,11 +1450,7 @@ p {
 }
 
 /* line 324, ../scss/_common.scss */
-.desktop {
-  display: block;
-}
-
-/* line 325, ../scss/_common.scss */
+.desktop,
 .not-mobile {
   display: block;
 }
@@ -1970,20 +1966,33 @@ p {
   #header {
     width: 100%;
     text-align: center;
+    height: 60px;
   }
-  /* line 137, ../scss/layout/_header.scss */
+  /* line 138, ../scss/layout/_header.scss */
   #header #open-button {
     display: inline-block;
     position: absolute;
     left: 20px;
-    height: 80px;
+    height: 60px;
+    line-height: 60px;
   }
-  /* line 144, ../scss/layout/_header.scss */
+  /* line 145, ../scss/layout/_header.scss */
+  #header #open-button i {
+    line-height: 60px;
+  }
+  /* line 150, ../scss/layout/_header.scss */
   #header #logo {
     float: none;
+    line-height: 60px;
   }
-  /* line 148, ../scss/layout/_header.scss */
-  #header #menu, #header .not-mobile {
+  /* line 155, ../scss/layout/_header.scss */
+  #header #logo img {
+    line-height: 60px;
+    max-height: 30px;
+  }
+  /* line 161, ../scss/layout/_header.scss */
+  #header #menu,
+  #header .not-mobile {
     display: none;
   }
 }
@@ -4749,7 +4758,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
 @media only screen and (max-width: 599px) {
   /* line 166, ../scss/content/_homepage.scss */
   #index .banner.banner-main {
-    height: 100vh;
+    height: 90vh;
   }
   /* line 177, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list {
