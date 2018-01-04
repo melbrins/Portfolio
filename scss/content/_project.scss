@@ -1072,17 +1072,17 @@ body.project{
 				@include justify-content(space-evenly);
 				@include flex-direction(row);
 
-				width: 60vw;
-				margin: 0 20vw;
+				width 		: 60vw;
+				margin 		: 0 20vw;
 
 				div.project--screen{
-					width: 18vw;
+					width 	: 18vw;
 
 					img{
 						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
-						margin-bottom: 1vw;
-						border-radius: 4px;
-						overflow:hidden;
+						margin-bottom 		: 1vw;
+						border-radius 		: 4px;
+						overflow 			: hidden;
 					}
 				}
 			}
@@ -1140,11 +1140,11 @@ body.project{
 							@include flex-flow(wrap);
 
 							.project--colour-more-shade{
-								width: 100%;
-								text-align: left;
+								width 			: 100%;
+								text-align 		: left;
 
 								.project--colour-name{
-									margin-left: $gap;
+									margin-left : $gap;
 								}
 							}
 						}
@@ -1204,19 +1204,19 @@ body.project{
 			 * DETAILS - VD VAN - MEDIUM SCREEN
 			 * ============================================ */
 			.details{
-				height: auto;
-				padding: 10vh 0 0;
-				margin: 0;
+				height 			: auto;
+				padding 		: 10vh 0 0;
+				margin 			: 0;
 
 				.section--title{
-					order: 2;
-					margin-bottom: $gap*2;
+					order 			: 2;
+					margin-bottom 	: $gap*2;
 				}
 
 				.project--desc{
-					width: 80vw;
-					text-align: center;
-					order: 3;
+					width 			: 80vw;
+					text-align 		: center;
+					order 			: 3;
 				}
 
 				.project--img{
@@ -1235,11 +1235,11 @@ body.project{
 			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - MEDIUM SCREEN
 			 * ============================================ */
 			.introduction{
-				height: auto;
-				padding: 10vh 0 0;
+				height 			: auto;
+				padding 		: 10vh 0 0;
 
 				.section--title{
-					display: none;
+					display 	: none;
 				}
 
 				.section--content{
@@ -1260,17 +1260,17 @@ body.project{
 				.section--content{
 					.project--font-sample{
 						@include flex-direction(column);
-						margin-top: $gap;
-						width: 80vw;
+						margin-top 	: $gap;
+						width 		: 80vw;
 
 						.project--font-letter{
-							margin-right: 0;
-							margin-bottom: $gap;
+							margin-right 	: 0;
+							margin-bottom 	: $gap;
 						}
 
 						.project--font-info{
 							span{
-								text-align: center;
+								text-align 	: center;
 							}
 						}
 					}
@@ -1280,22 +1280,23 @@ body.project{
 						width: 80vw;
 
 						ul{
-							@include justify-content(space-evenly);
-							width: 80vw;
-							margin: 0 0 $gap;
+							@include justify-content(space-around);
+							width 		: 80vw;
+							margin 		: 0 0 $gap;
 
 			 				li{
-			 					margin: 0;
-			 					height: 40vw;
+			 					margin 	: 0;
+			 					height 	: 40vw;
 
 				 				.project--colour-name{
 				 					font-weight 		: 100;
 				 					font-size 			: $f-size-s;
+				 					width 				: 100%;
 				 				}
 
 					 			div.project--colour{
-					 				width: 30vw;
-					 				height: 30vw;
+					 				width 	: 30vw;
+					 				height 	: 30vw;
 					 			}
 					 		}
 
@@ -1304,18 +1305,18 @@ body.project{
 					 			@include align-items(center);
 
 					 			li.project--colour-more-shade{
-					 				margin-top: $gap;
-					 				height: auto;
+					 				margin-top 	: $gap;
+					 				height 		: auto;
 
 					 				div.colour-shades{
-					 					@include justify-content(space-evenly);
-					 					width: 80vw;
-					 					margin-bottom: $gap;
+					 					@include justify-content(space-around);
+					 					width 			: 80vw;
+					 					margin-bottom 	: $gap;
 
 						 				div.project--colour{
-						 					width: 12vw;
-						 					height: 12vw;
-						 					margin: 0;
+						 					width 		: 12vw;
+						 					height 		: 12vw;
+						 					margin 		: 0;
 						 				}
 						 			}
 
@@ -1362,26 +1363,26 @@ body.project{
 			 * 04. MAIN SCREENS - MEDIUM SCREEN
 			 * ============================================ */
 			.main-screens{
-				height: auto;
-				padding: 5vh 0;
+				height 		: auto;
+				padding 	: 5vh 0;
 
 				.section--content{
-					width: 80vw;
-					margin: 0 10vw;
+					width 	: 80vw;
+					margin 	: 0 10vw;
 
-					.project--screen,
+					div.project--screen,
 					.secondary-screens div.project--screen{
-						width: 80vw;
-						margin-top: $gap*3;
+						width 		: 80vw;
+						margin-top 	: $gap*2;
 
 						&.project--3d-contact-lenses img{
-							width: 100%;
+							width 	: 100%;
 						}
 					}
 
 					.secondary-screens{
 						@include flex-direction(column);
-						width: 80vw;
+						width 		: 80vw;
 					}
 				}
 			}
@@ -1390,15 +1391,19 @@ body.project{
 			 * 05. MOBILE SCREENS - MEDIUM SCREEN
 			 * ============================================ */
 			.mobile-screens{
-				height: auto;
-				padding: 0 0 5vh 0;
+				height 		: auto;
+				padding 	: 0 0 5vh 0;
 
 				.section--content{
-					width: 80vw;
-					margin: 0 10vw;
+					width 	: 80vw;
+					margin 	: 0 10vw;
 
 					div.project--screen{
-						width: 25vw;
+						width 	: 25vw;
+
+						.project--screen-title{
+							width: 100%;
+						}
 					}
 				}
 			}
@@ -1424,22 +1429,22 @@ body.project{
 							@include display-flex(flex);
 							@include flex-direction(row);
 							@include align-items(flex-start);
-							width: 100%;
-							margin: 0 0 $gap;
+							width 		: 100%;
+							margin 		: 0 0 $gap;
 							
 							dt,dd{
-								width: 40%;
-								display: inline-block;
+								width 		: 40%;
+								display 	: inline-block;
 							}
 
 							dt{
-								text-align:right;
-								margin-right: $gap;
+								text-align 		: right;
+								margin-right 	: $gap;
 							}
 
 							dd{
-								text-align: left;
-								margin:0;
+								text-align 	: left;
+								margin 		: 0;
 							}
 						}
 					}
@@ -1496,8 +1501,10 @@ body.project{
 						width: 80vw;
 
 						img{
-							margin-top: $gap*3;
-							border-radius: 20px;
+							margin-top 		: $gap*2;
+							border-radius 	: 20px;
+							width 			: 100%;
+							max-height 		: unset;
 						}
 					}
 				}
