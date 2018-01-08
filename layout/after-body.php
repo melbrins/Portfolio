@@ -15,7 +15,7 @@
 	$(function() {
 	    $('.content-wrap .lazy').lazy({
 	    	appendScroll: $('.content-wrap'),
-	    	placeholder: "images/lazy.gif"
+	    	placeholder: "/images/lazy.gif"
 	    });
 	});
 
