@@ -55,7 +55,7 @@
 	  	</div>
 
 	  	<div class="project--img">
-	  		<img src="../images/project/Vision-Direct/vd-van_uk3.png" />
+	  		<img class="lazy" data-src="../images/project/Vision-Direct/vd-van_uk3.png" />
 	  	</div>
 
   	</div>
@@ -69,7 +69,7 @@
 
 	    <div class="section--content">
 	    	<div class="project--mockup">
-		    	<img src="../images/project/Vision-Direct/vd-iMac_Homepage.png" />
+		    	<img class="lazy" data-src="../images/project/Vision-Direct/vd-iMac_Homepage.png" />
 		    </div>
 	    </div>
 	</div>
@@ -147,7 +147,7 @@
 
 	    <div class="section--content">
 	    	<div class="project--logo-wire">
-	    		<img src="../images/project/Vision-Direct/vd-logo-wire.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/vd-logo-wire.png" />
 	    	</div>
 
 	    	<div class="project--logo-background">
@@ -172,23 +172,23 @@
 	    <div class="section--content">
 	    	<div class="project--screen project--screen-homepage">
 	    		<span class="project--screen project--screen-title">Homepage</span>
-	    		<img src="../images/project/Vision-Direct/1-Home_page_1140_3.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/1-Home_page_1140_3.png" />
 	    	</div>
 
 	    	<div class="secondary-screens">
 		    	<div class="project--screen project--screen-category">
 		    		<span class="project--screen project--screen-title">Category Page</span>
-		    		<img src="../images/project/Vision-Direct/2-Category_page_1140_3.png" />
+		    		<img class="lazy" data-src="../images/project/Vision-Direct/2-Category_page_1140_3.png" />
 		    	</div>
 
 		    	<div class="project--screen project--screen-product">
 		    		<span class="project--screen project--screen-title">Product Page</span>
-		    		<img src="../images/project/Vision-Direct/3-Product_page_1140_3.png" />
+		    		<img class="lazy" data-src="../images/project/Vision-Direct/3-Product_page_1140_3.png" />
 		    	</div>
 		    </div>
 
 		    <div class="project--screen project--3d-contact-lenses">
-		    	<img src="../images/project/Vision-Direct/vd_boxes.png" />
+		    	<img class="lazy" data-src="../images/project/Vision-Direct/vd_boxes.png" />
 		    	<span class="project--screen project--screen-title">3D Packaging Render</span>
 		    </div>
 
@@ -205,17 +205,17 @@
 
 	    <div class="section--content">
 	    	<div class="project--screen project--screen-homepage">
-	    		<img src="../images/project/Vision-Direct/vd-mobile-Homepage.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/vd-mobile-Homepage.png" />
 	    	</div>
 
 	    	<div class="project--screen project--secondary">
-	    		<img src="../images/project/Vision-Direct/vd-mobile-category.png" />
-	    		<img src="../images/project/Vision-Direct/vd-mobile-Menu.png" />
-	    		<img src="../images/project/Vision-Direct/vd-mobile-search.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/vd-mobile-category.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/vd-mobile-Menu.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/vd-mobile-search.png" />
 	    	</div>
 
 	    	<div class="project--screen project--screen-product">
-	    		<img src="../images/project/Vision-Direct/vd-mobile-product-page.png" />
+	    		<img class="lazy" data-src="../images/project/Vision-Direct/vd-mobile-product-page.png" />
 	    	</div>
 	    </div>
 	</div>  
@@ -229,8 +229,8 @@
 			<ul class="work--list">
 
   				<!--  MERCHMAKER  -->
-  				<li class="work--project mix web" style="background-image: url(../images/work/thumbnails/merchMAKER.png);">
-  					<a href="../images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Web]" class="work--project-link">
+  				<li class="work--project mix web lazy" data-src="images/work/thumbnails/merchMAKER.png">
+  					<a href="#" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">
   							<h3 class="work--project-name">Merchmaker</h3>
@@ -242,8 +242,8 @@
   				</li>
 
   				<!--  CHOOSEY  -->
-  				<li class="work--project mix web" style="background-image: url(../images/work/thumbnails/choosey2.png);">
-  					<a href="../images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Web]" class="work--project-link">
+  				<li class="work--project mix web lazy" data-src="images/work/thumbnails/choosey.png">
+  					<a href="#" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">
   							<h3 class="work--project-name">Choosey</h3>
