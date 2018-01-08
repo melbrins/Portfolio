@@ -229,7 +229,7 @@
 			<ul class="work--list">
 
   				<!--  MERCHMAKER  -->
-  				<li class="work--project mix web lazy" data-src="images/work/thumbnails/merchMAKER.png">
+  				<li class="work--project mix web lazy" data-src="/images/work/thumbnails/merchMAKER.png">
   					<a href="#" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">
@@ -242,7 +242,7 @@
   				</li>
 
   				<!--  CHOOSEY  -->
-  				<li class="work--project mix web lazy" data-src="images/work/thumbnails/choosey.png">
+  				<li class="work--project mix web lazy" data-src="/images/work/thumbnails/choosey.png">
   					<a href="#" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">
