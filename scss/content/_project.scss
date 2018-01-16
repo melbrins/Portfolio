@@ -3,9 +3,11 @@
  * Project Page 
  * ============================================ */
 
-#container.project{
+.project{
 
-	background-color: #fff;
+	#content{
+		background-color: #fff;
+	}
 
 	#main-picture {
 		@include transition(opacity 1s ease-in-out);
@@ -25,8 +27,6 @@
  		.banner{ 
 			overflow 			: hidden; 
 			margin 				: 0;
-			/*background-color 	: $c-primary;*/
-			/*padding 			: 80px 0;*/
 
 			&.banner-main{
 				background 			 	: url(../images/project/wsi-main-banner.jpg);
@@ -50,7 +50,7 @@
 					background-color: #bcbcbc;
 					color: #fff;
 
-					h3{
+					h3, p{
 						color: #fff;
 					}
 				}
@@ -94,7 +94,6 @@
 				background-color 	: #004388;
 				width 				: 300%;
 				height 				: 400px;
-			    /*padding 			: 20% 0;*/
 			    position 			: absolute;
 			    left 				: -150%;
 			    z-index 			: 1;
@@ -181,8 +180,6 @@
 					@include align-items(center);
 
 					.wsi-consultant-expression{
-						/*@include display-flex(flex);
-						@include align-items(center);*/
 						width: 50%;
 						margin-bottom: $gap;
 
