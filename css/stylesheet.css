@@ -4151,29 +4151,29 @@ body.project #content .section.work .work--project.web, body.project #content .s
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 213, ../scss/content/_merchmaker.scss */
+  /* line 214, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .brands-logo .section--content ul.brands li {
     width: 40vw;
     height: 25vw;
   }
-  /* line 218, ../scss/content/_merchmaker.scss */
+  /* line 219, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin: 0;
     padding: 5vh 0;
   }
-  /* line 223, ../scss/content/_merchmaker.scss */
+  /* line 224, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo span {
     width: 100%;
     margin: 0;
     min-height: 30vw;
   }
-  /* line 228, ../scss/content/_merchmaker.scss */
+  /* line 229, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo span.colour {
     border-radius: 0 0 10px 10px;
   }
-  /* line 235, ../scss/content/_merchmaker.scss */
+  /* line 236, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo.logo--2016 span.colour {
     border-radius: 10px 10px 0 0;
   }
