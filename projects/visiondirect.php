@@ -230,7 +230,7 @@
 
   				<!--  MERCHMAKER  -->
   				<li class="work--project mix web lazy" data-src="/images/work/thumbnails/merchMAKER.png">
-  					<a href="#" rel="prettyPhoto[Web]" class="work--project-link">
+  					<a href="/projects/merchmaker.php" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">
   							<h3 class="work--project-name">Merchmaker</h3>
