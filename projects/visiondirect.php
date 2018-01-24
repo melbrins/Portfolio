@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-	<title>Vision Direct - Anthony Pucelle - 3D Designer</title>
+	<title>Vision Direct - Anthony Pucelle Freelance UI / UX Designer</title>
 
 	<?php include '../layout/head.php'; ?>
 

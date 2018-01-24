@@ -2164,7 +2164,7 @@ p {
 }
 /* line 48, ../scss/layout/_section.scss */
 .section.section--grey .section--title h2 {
-  color: #2a2a2a;
+  color: #FFF;
 }
 /* line 54, ../scss/layout/_section.scss */
 .section.section--white {
@@ -2649,9 +2649,6 @@ p {
  * ============================================ */
 /* line 6, ../scss/content/_project.scss */
 .project {
-  /* ============================================ *
-   * Project - Wall Street Institutes
-   * ============================================ */
   /* background setup    */
   /* Custom Project Page */
   /* content centering styles */
@@ -2674,269 +2671,7 @@ p {
 .project #main-picture.full {
   opacity: 1;
 }
-/* line 27, ../scss/content/_project.scss */
-.project#wall-street-institutes .banner {
-  overflow: hidden;
-  margin: 0;
-}
-/* line 31, ../scss/content/_project.scss */
-.project#wall-street-institutes .banner.banner-main {
-  background: url(../images/project/wsi-main-banner.jpg);
-  background-size: cover;
-  background-position: 67%;
-  height: 762px;
-  display: inline-block;
-  margin-top: -80px;
-  padding: 0;
-  max-height: 90%;
-}
-/* line 43, ../scss/content/_project.scss */
-.project#wall-street-institutes .banner.banner-fullscreen img {
-  width: 100%;
-}
-/* line 46, ../scss/content/_project.scss */
-.project#wall-street-institutes .banner.banner-fullscreen .wsi-consultant-expression-content {
-  width: 100%;
-  padding: 0px 10% 40px;
-  text-align: center;
-  background-color: #bcbcbc;
-  color: #fff;
-}
-/* line 53, ../scss/content/_project.scss */
-.project#wall-street-institutes .banner.banner-fullscreen .wsi-consultant-expression-content h3, .project#wall-street-institutes .banner.banner-fullscreen .wsi-consultant-expression-content p {
-  color: #fff;
-}
-/* line 60, ../scss/content/_project.scss */
-.project#wall-street-institutes .page {
-  position: relative;
-  margin-top: -6px;
-  overflow: hidden;
-}
-/* line 65, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .project-title,
-.project#wall-street-institutes .page .section-title {
-  margin: 80px auto;
-  position: relative;
-  width: 90%;
-}
-/* line 71, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .project-title h1,
-.project#wall-street-institutes .page .project-title h2,
-.project#wall-street-institutes .page .section-title h1,
-.project#wall-street-institutes .page .section-title h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 4px;
-  margin-bottom: 0;
-  color: #fff;
-  font-size: 36px;
-  position: relative;
-  z-index: 2;
-}
-/* line 83, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .project-title h2.project-category,
-.project#wall-street-institutes .page .section-title h2.project-category {
-  font-weight: 100;
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 24px;
-  text-transform: inherit;
-}
-/* line 92, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .bg-slide {
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-  background-color: #004388;
-  width: 300%;
-  height: 400px;
-  position: absolute;
-  left: -150%;
-  z-index: 1;
-  bottom: -190px;
-}
-/* line 103, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising {
-  position: relative;
-  z-index: 2;
-}
-/* line 107, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  align-items: center;
-}
-/* line 112, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert img {
-  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  max-width: 40%;
-  margin: 0 40px;
-}
-/* line 118, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert .wsi-advert--content {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  max-width: 30%;
-}
-/* line 123, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert .wsi-advert--content h3 {
-  font-weight: 600;
-  font-size: 24px;
-  color: #333;
-}
-/* line 130, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-brian, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-tailor {
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-/* line 135, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-umbrella {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-/* line 138, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-umbrella .wsi-advert--content {
-  text-align: right;
-}
-/* line 143, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-umbrella, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-tailor {
-  margin-top: -10%;
-}
-/* line 150, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant {
-  text-align: center;
-}
-/* line 153, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant img {
-  width: 60%;
-  position: relative;
-  z-index: 2;
-}
-/* line 159, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--introduction {
-  width: 70%;
-  margin: 80px auto;
-}
-/* line 163, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--introduction h3 {
-  font-weight: 600;
-  font-size: 24px;
-  color: #333;
-}
-/* line 169, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--introduction strong {
-  color: #004388;
-}
-/* line 175, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-flow: wrap;
-  flex-flow: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-/* line 182, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression {
-  width: 50%;
-  margin-bottom: 20px;
-}
-/* line 187, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression .wsi-consultant-expression-content {
-  width: 80%;
-  margin: 40px auto 0;
-}
-/* line 192, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression.full {
-  width: 100%;
-}
-/* line 195, ../scss/content/_project.scss */
-.project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression.full .wsi-consultant-expression-content {
-  margin: 0 auto 40px;
-}
-@media only screen and (max-width: 979px) {
-  /* line 211, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-umbrella, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-tailor {
-    margin-top: 0;
-  }
-  /* line 219, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-consultant .wsi-consultant--introduction {
-    width: 100%;
-  }
-  /* line 224, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .bg-slide {
-    height: 300px;
-    bottom: -130px;
-  }
-}
-@media only screen and (max-width: 599px) {
-  /* line 236, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .project-title,
-  .project#wall-street-institutes .page .section-title {
-    margin: 40px auto;
-    width: 100%;
-    text-align: center;
-  }
-  /* line 243, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .section-title {
-    margin-top: 150px;
-  }
-  /* line 248, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-advertising .wsi-advert {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  /* line 251, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-advertising .wsi-advert img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  /* line 256, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-advertising .wsi-advert .wsi-advert--content {
-    max-width: 100%;
-  }
-  /* line 260, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-umbrella, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-tailor, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-brian {
-    margin-top: 40px;
-  }
-  /* line 265, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-umbrella .wsi-advert--content, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-tailor .wsi-advert--content, .project#wall-street-institutes .page .wsi-advertising .wsi-advert.wsi-advert-brian .wsi-advert--content {
-    -webkit-order: 2;
-    order: 2;
-    text-align: center;
-  }
-  /* line 274, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-consultant img {
-    width: 100%;
-  }
-  /* line 278, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  /* line 281, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression {
-    width: 100%;
-  }
-  /* line 284, ../scss/content/_project.scss */
-  .project#wall-street-institutes .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression .wsi-consultant-expression-content {
-    width: 100%;
-  }
-}
-/* line 294, ../scss/content/_project.scss */
+/* line 21, ../scss/content/_project.scss */
 .project .nav-dots span {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -2947,62 +2682,23 @@ p {
   margin: 6px;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
-/* line 304, ../scss/content/_project.scss */
+/* line 31, ../scss/content/_project.scss */
 .project .nav-dots span.nav-dot-current, .project .nav-dots span:hover {
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 5px rgba(255, 255, 255, 0.5);
 }
-/* line 313, ../scss/content/_project.scss */
-.project .bg-img {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  -o-box-sizing: content-box;
-  -ms-box-sizing: content-box;
-  box-sizing: content-box;
-  padding: 200px;
-  position: absolute;
-  top: -200px;
-  left: -200px;
-  width: 100%;
-  height: 100%;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-}
-/* line 325, ../scss/content/_project.scss */
-.project .bg-img-1 {
-  background-image: url(../images/fullscreen/3d/everclear.jpg);
-}
-/* line 329, ../scss/content/_project.scss */
-.project .bg-img-2 {
-  background-image: url(../images/fullscreen/3d/iphone.jpg);
-}
-/* line 333, ../scss/content/_project.scss */
-.project .bg-img-3 {
-  background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-}
-/* line 337, ../scss/content/_project.scss */
-.project .bg-img-4 {
-  background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-}
-/* line 341, ../scss/content/_project.scss */
-.project .bg-img-5 {
-  background-image: url(../images/fullscreen/web/visiondirect-project.jpg);
-}
-/* line 345, ../scss/content/_project.scss */
+/* line 40, ../scss/content/_project.scss */
 .project .sl-slider-wrapper {
   width: 100%;
   height: 600px;
   overflow: hidden;
   position: relative;
 }
-/* line 353, ../scss/content/_project.scss */
+/* line 48, ../scss/content/_project.scss */
 .project .col-6 img,
 .project .col-12 img {
   width: 100%;
 }
-/* line 357, ../scss/content/_project.scss */
+/* line 52, ../scss/content/_project.scss */
 .project .sl-slider h2,
 .project .sl-slider blockquote {
   padding: 100px 30px 10px 30px;
@@ -3013,19 +2709,19 @@ p {
   position: relative;
   z-index: 100;
 }
-/* line 368, ../scss/content/_project.scss */
+/* line 63, ../scss/content/_project.scss */
 .project .sl-slider h2 {
   font-size: 100px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 373, ../scss/content/_project.scss */
+/* line 68, ../scss/content/_project.scss */
 .project .sl-slider blockquote {
   font-size: 28px;
   padding-top: 10px;
   font-weight: 300;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 379, ../scss/content/_project.scss */
+/* line 74, ../scss/content/_project.scss */
 .project .sl-slider blockquote cite {
   font-size: 16px;
   font-weight: 700;
@@ -3035,11 +2731,11 @@ p {
   padding-top: 30px;
   display: inline-block;
 }
-/* line 392, ../scss/content/_project.scss */
+/* line 87, ../scss/content/_project.scss */
 .project .see-more {
   background-color: #2a2a2a;
 }
-/* line 395, ../scss/content/_project.scss */
+/* line 90, ../scss/content/_project.scss */
 .project .see-more h3 {
   color: #999999;
   text-align: center;
@@ -3047,28 +2743,28 @@ p {
   margin: 20px 0;
   border-bottom: 0px;
 }
-/* line 404, ../scss/content/_project.scss */
+/* line 99, ../scss/content/_project.scss */
 .project .artwork {
   text-align: center;
   background-color: #000;
 }
-/* line 409, ../scss/content/_project.scss */
+/* line 104, ../scss/content/_project.scss */
 .project .description {
   background-color: #2eb1e6;
   overflow-x: hidden;
   overflow-y: scroll;
   color: #fff;
 }
-/* line 415, ../scss/content/_project.scss */
+/* line 110, ../scss/content/_project.scss */
 .project .description .col-inside {
   padding-top: 20px;
 }
-/* line 418, ../scss/content/_project.scss */
+/* line 113, ../scss/content/_project.scss */
 .project .description .col-inside span.date {
   display: inline-block;
   font-weight: 100;
 }
-/* line 423, ../scss/content/_project.scss */
+/* line 118, ../scss/content/_project.scss */
 .project .description .col-inside h1 {
   font-size: 36px;
   color: #fff;
@@ -3076,7 +2772,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 431, ../scss/content/_project.scss */
+/* line 126, ../scss/content/_project.scss */
 .project .description .col-inside h2 {
   font-size: 18px;
   color: #fff;
@@ -3085,7 +2781,7 @@ p {
   font-weight: 100;
   letter-spacing: 2px;
 }
-/* line 442, ../scss/content/_project.scss */
+/* line 137, ../scss/content/_project.scss */
 .project .description .col-inside p {
   font-size: 14px;
   color: #fff;
@@ -3093,7 +2789,7 @@ p {
   font-weight: 100;
   letter-spacing: 2px;
 }
-/* line 450, ../scss/content/_project.scss */
+/* line 145, ../scss/content/_project.scss */
 .project .description .col-inside h3 {
   margin: 40px 0 20px 0;
   padding-bottom: 10px;
@@ -3101,7 +2797,7 @@ p {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 463, ../scss/content/_project.scss */
+/* line 158, ../scss/content/_project.scss */
 .project .background {
   background-repeat: no-repeat;
   /* custom background-position */
@@ -3109,23 +2805,23 @@ p {
   /* ie8- graceful degradation */
   background-position: 50% 50% \9  !important;
 }
-/* line 471, ../scss/content/_project.scss */
+/* line 166, ../scss/content/_project.scss */
 .project .fullscreen,
 .project #content-a {
   width: 100%;
   min-height: 100%;
 }
-/* line 478, ../scss/content/_project.scss */
+/* line 173, ../scss/content/_project.scss */
 .project #content-a {
   display: table;
 }
-/* line 482, ../scss/content/_project.scss */
+/* line 177, ../scss/content/_project.scss */
 .project #content-b {
   display: table-cell;
   position: absolute;
   vertical-align: middle;
 }
-/* line 488, ../scss/content/_project.scss */
+/* line 183, ../scss/content/_project.scss */
 .project .not-fullscreen,
 .project .not-fullscreen #content-a,
 .project .fullscreen.not-overflow,
@@ -3133,21 +2829,21 @@ p {
   height: 100%;
   overflow: hidden;
 }
-/* line 497, ../scss/content/_project.scss */
+/* line 192, ../scss/content/_project.scss */
 .project .not-fullscreen {
   height: 50%;
 }
 
-/* line 512, ../scss/content/_project.scss */
+/* line 207, ../scss/content/_project.scss */
 #content-a {
   position: relative;
 }
 
-/* line 513, ../scss/content/_project.scss */
+/* line 208, ../scss/content/_project.scss */
 #content-b {
   text-align: left;
 }
-/* line 516, ../scss/content/_project.scss */
+/* line 211, ../scss/content/_project.scss */
 #content-b h1 {
   color: #fff;
   margin-bottom: 0px;
@@ -3158,7 +2854,7 @@ p {
   text-transform: uppercase;
   text-shadow: 0 0 1px #000;
 }
-/* line 527, ../scss/content/_project.scss */
+/* line 222, ../scss/content/_project.scss */
 #content-b h2 {
   color: #fff;
   margin-bottom: 0px;
@@ -3168,46 +2864,46 @@ p {
   margin-top: 0px;
   letter-spacing: 2px;
 }
-/* line 537, ../scss/content/_project.scss */
+/* line 232, ../scss/content/_project.scss */
 #content-b.top-5 {
   top: 5%;
 }
-/* line 538, ../scss/content/_project.scss */
+/* line 233, ../scss/content/_project.scss */
 #content-b.top-10 {
   top: 10%;
 }
-/* line 539, ../scss/content/_project.scss */
+/* line 234, ../scss/content/_project.scss */
 #content-b.top-20 {
   top: 20%;
 }
-/* line 540, ../scss/content/_project.scss */
+/* line 235, ../scss/content/_project.scss */
 #content-b.top-30 {
   top: 30%;
 }
-/* line 541, ../scss/content/_project.scss */
+/* line 236, ../scss/content/_project.scss */
 #content-b.left {
   left: 10%;
 }
-/* line 542, ../scss/content/_project.scss */
+/* line 237, ../scss/content/_project.scss */
 #content-b.right {
   left: 50%;
 }
-/* line 543, ../scss/content/_project.scss */
+/* line 238, ../scss/content/_project.scss */
 #content-b.center {
   width: 100%;
   text-align: center;
 }
-/* line 544, ../scss/content/_project.scss */
+/* line 239, ../scss/content/_project.scss */
 #content-b.bottom {
   top: 70%;
 }
 
-/* line 548, ../scss/content/_project.scss */
+/* line 243, ../scss/content/_project.scss */
 .center {
   text-align: center;
 }
 
-/* line 550, ../scss/content/_project.scss */
+/* line 245, ../scss/content/_project.scss */
 .subtitle {
   margin-bottom: 20px;
   display: inline-block;
@@ -3215,110 +2911,13 @@ p {
 }
 
 /* ============================================ *
- * Project - Vision Direct
- * ============================================ */
-/* line 561, ../scss/content/_project.scss */
-.colour-banner {
-  height: 100px;
-  background-color: #5fa5d7;
-  text-align: center;
-}
-/* line 566, ../scss/content/_project.scss */
-.colour-banner .text-colour-banner {
-  font: 36px/100px 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  color: #fff;
-}
-
-/* line 573, ../scss/content/_project.scss */
-.img-banner {
-  height: 300px;
-  background-color: #f3f3f3;
-  text-align: left;
-  background-image: url("../images/project/vd-third-slide.png");
-}
-
-@media only screen and (max-width: 770px) {
-  /* line 585, ../scss/content/_project.scss */
-  #container.project .sl-slider-wrapper {
-    height: 500px;
-  }
-  /* line 590, ../scss/content/_project.scss */
-  #container.project .sl-slider h2 {
-    font-size: 36px;
-  }
-  /* line 594, ../scss/content/_project.scss */
-  #container.project .sl-slider blockquote {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 1199px) {
-  /* line 604, ../scss/content/_project.scss */
-  #content-b.left {
-    left: 10%;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 611, ../scss/content/_project.scss */
-  #content-b .bottom {
-    top: 60%;
-  }
-  /* line 612, ../scss/content/_project.scss */
-  #content-b .right {
-    left: 10%;
-  }
-  /* line 613, ../scss/content/_project.scss */
-  #content-b h1 {
-    font-size: 3em;
-  }
-  /* line 614, ../scss/content/_project.scss */
-  #content-b h2 {
-    font-size: 1.5em;
-  }
-}
-/* ============================================ *
  * GENERAL PROJECT PAGE STYLING
  * ============================================ */
-/* line 631, ../scss/content/_project.scss */
-body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
-  width: 20vw;
-  height: 500px;
-}
-@media only screen and (max-width: 979px) {
-  /* line 644, ../scss/content/_project.scss */
-  body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
-    width: 40vw;
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 770px) {
-  /* line 657, ../scss/content/_project.scss */
-  body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
-    width: 40vw;
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 599px) {
-  /* line 668, ../scss/content/_project.scss */
-  body.project .section.work {
-    padding: 0;
-  }
-  /* line 672, ../scss/content/_project.scss */
-  body.project .section.work .work--project.web, body.project .section.work .work--project.print, body.project .section.work .work--project.illustration {
-    width: 100vw;
-    height: 500px;
-  }
-}
-
-/* ============================================ *
- * NEW Project - Vision Direct
- * ============================================ */
-/* line 690, ../scss/content/_project.scss */
-#vision-direct.project #content {
-  background-color: #007FA9;
- 	/* ============================================ *
-	 * DETAILS - VD VAN
-	 * ============================================ */
+/* line 255, ../scss/content/_project.scss */
+body.project #content {
+  /* ============================================ *
+   * DETAILS - GENERAL
+   * ============================================ */
  	/* ============================================ *
 	 * 01.INTRODUCTION - HOMEPAGE MOCKUP
 	 * ============================================ */
@@ -3326,11 +2925,8 @@ body.project .section.work .work--project.web, body.project .section.work .work-
 	 * 02.FONT AND COLOURS
 	 * ============================================ */
  	/* ============================================ *
-	 * 03. LOGO
+	 * 04. MAIN SCREENS
 	 * ============================================ */
-  /* ============================================ *
-   * 04. MAIN SCREENS
-   * ============================================ */
   /* ============================================ *
    * 05. MOBILE SCREENS
    * ============================================ */
@@ -3344,8 +2940,22 @@ body.project .section.work .work--project.web, body.project .section.work .work-
    * MEDIA QUERY - SMALL SCREEN
    * ============================================ */
 }
-/* line 696, ../scss/content/_project.scss */
-#vision-direct.project #content .details {
+/* line 267, ../scss/content/_project.scss */
+body.project #content .details .section--content p,
+body.project #content .introduction .section--content p,
+body.project #content .font .section--content p,
+body.project #content .brands-logo .section--content p,
+body.project #content .logos .section--content p,
+body.project #content .logo .section--content p,
+body.project #content .main-screens .section--content p,
+body.project #content .mobile-screens .section--content p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  margin: 20px 0;
+}
+/* line 279, ../scss/content/_project.scss */
+body.project #content .details {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -3359,27 +2969,27 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   padding: 10vh 0;
   margin: 0 10vw;
 }
-/* line 707, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc {
+/* line 290, ../scss/content/_project.scss */
+body.project #content .details .project--desc {
   width: 30vw;
 }
-/* line 710, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc h2, #vision-direct.project #content .details .project--desc p, #vision-direct.project #content .details .project--desc dl, #vision-direct.project #content .details .project--desc dt, #vision-direct.project #content .details .project--desc dd {
+/* line 293, ../scss/content/_project.scss */
+body.project #content .details .project--desc h2, body.project #content .details .project--desc p, body.project #content .details .project--desc dl, body.project #content .details .project--desc dt, body.project #content .details .project--desc dd {
   color: #fff;
 }
-/* line 714, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc dl {
+/* line 297, ../scss/content/_project.scss */
+body.project #content .details .project--desc dl {
   width: 33.33%;
 }
-/* line 718, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc dt {
+/* line 301, ../scss/content/_project.scss */
+body.project #content .details .project--desc dt {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
-/* line 725, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc dd, #vision-direct.project #content .details .project--desc p {
+/* line 308, ../scss/content/_project.scss */
+body.project #content .details .project--desc dd, body.project #content .details .project--desc p {
   width: 100%;
   font-weight: 100;
   font-size: 14px;
@@ -3387,17 +2997,17 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   margin-left: 0;
   margin-top: 10px;
 }
-/* line 734, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc h2 {
+/* line 317, ../scss/content/_project.scss */
+body.project #content .details .project--desc h2 {
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 739, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc .project--logo {
+/* line 322, ../scss/content/_project.scss */
+body.project #content .details .project--desc .project--logo {
   margin-bottom: 60px;
 }
-/* line 743, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--desc .project--details {
+/* line 326, ../scss/content/_project.scss */
+body.project #content .details .project--desc .project--details {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-start;
@@ -3406,12 +3016,12 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   justify-content: space-between;
   margin-top: 60px;
 }
-/* line 751, ../scss/content/_project.scss */
-#vision-direct.project #content .details .project--img {
+/* line 334, ../scss/content/_project.scss */
+body.project #content .details .project--img {
   width: 60vw;
 }
-/* line 760, ../scss/content/_project.scss */
-#vision-direct.project #content .introduction {
+/* line 342, ../scss/content/_project.scss */
+body.project #content .introduction {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-start;
@@ -3421,36 +3031,36 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   position: relative;
   height: 70vh;
 }
-/* line 767, ../scss/content/_project.scss */
-#vision-direct.project #content .introduction .section--title {
+/* line 349, ../scss/content/_project.scss */
+body.project #content .introduction .section--title {
   bottom: 20%;
   top: auto;
 }
-/* line 772, ../scss/content/_project.scss */
-#vision-direct.project #content .introduction .project--mockup {
+/* line 354, ../scss/content/_project.scss */
+body.project #content .introduction .project--mockup {
   width: 80vw;
   position: relative;
   z-index: 5000;
   text-align: center;
 }
-/* line 778, ../scss/content/_project.scss */
-#vision-direct.project #content .introduction .project--mockup img {
+/* line 360, ../scss/content/_project.scss */
+body.project #content .introduction .project--mockup img {
   max-height: 800px;
 }
-/* line 787, ../scss/content/_project.scss */
-#vision-direct.project #content .font {
+/* line 369, ../scss/content/_project.scss */
+body.project #content .font {
   -webkit-justify-content: center;
   justify-content: center;
   height: 100vh;
   padding-top: 20vh;
   position: relative;
 }
-/* line 793, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--title {
+/* line 375, ../scss/content/_project.scss */
+body.project #content .font .section--title {
   top: 30vw;
 }
-/* line 797, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content {
+/* line 379, ../scss/content/_project.scss */
+body.project #content .font .section--content {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -3461,8 +3071,8 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: center;
   width: 100vw;
 }
-/* line 804, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--font-sample {
+/* line 386, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--font-sample {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -3472,16 +3082,16 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 50vw;
   margin-bottom: 60px;
 }
-/* line 811, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--font-sample .project--font-letter {
+/* line 393, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--font-sample .project--font-letter {
   display: inline-block;
   background-color: #fff;
   border-radius: 4px;
   padding: 40px;
   margin-right: 20px;
 }
-/* line 819, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--font-sample .project--font-info {
+/* line 401, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--font-sample .project--font-info {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -3491,26 +3101,26 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 825, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--font-sample .project--font-info span {
+/* line 407, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--font-sample .project--font-info span {
   width: 100%;
   text-align: left;
 }
-/* line 830, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--font-sample .project--font-info span.project--font-name {
+/* line 412, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--font-sample .project--font-info span.project--font-name {
   font-weight: bold;
   font-size: 24px;
   color: #2a2a2a;
 }
-/* line 836, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--font-sample .project--font-info span.project--font-author {
+/* line 418, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--font-sample .project--font-info span.project--font-author {
   font-weight: 100;
   font-size: 18px;
   font-style: italic;
   margin-bottom: 20px;
 }
-/* line 847, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours {
+/* line 429, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -3519,8 +3129,8 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: flex-start;
   width: 50vw;
 }
-/* line 853, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul {
+/* line 435, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -3532,152 +3142,81 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   margin: 0;
   padding: 0;
 }
-/* line 861, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li {
+/* line 443, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li {
   margin: 0 20px 20px 0;
 }
-/* line 864, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li .project--colour-name {
+/* line 446, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li .project--colour-name {
   font-weight: 100;
   font-size: 12px;
 }
-/* line 869, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li div.project--colour, #vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade.project--colour {
+/* line 451, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li div.project--colour, body.project #content .font .section--content .project--colours ul li.project--colour-more-shade.project--colour {
   height: 100px;
   width: 100px;
   background-color: #2a2a2a;
   border-radius: 4px;
   margin-bottom: 20px;
 }
-/* line 879, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-green div.project--colour {
+/* line 461, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-green div.project--colour {
   background-color: #A7C400;
 }
-/* line 880, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
+/* line 462, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
   background-color: #007FA9;
 }
-/* line 881, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-dark-grey div.project--colour {
+/* line 463, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-dark-grey div.project--colour {
   background-color: #333333;
 }
-/* line 882, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-medium-grey-1 div.project--colour {
+/* line 464, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-medium-grey-1 div.project--colour {
   background-color: #555555;
 }
-/* line 887, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades {
+/* line 469, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  /*@include justify-content(space-evenly);*/
 }
-/* line 892, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades .project--colour {
+/* line 473, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades .project--colour {
   margin: 0 20px 20px 0;
 }
-/* line 897, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-2 {
+/* line 478, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-2 {
   background-color: #777777;
 }
-/* line 898, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-3 {
+/* line 479, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-3 {
   background-color: #999999;
 }
-/* line 899, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-1 {
+/* line 480, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-1 {
   background-color: #CCCCCC;
 }
-/* line 900, ../scss/content/_project.scss */
-#vision-direct.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-2 {
+/* line 481, ../scss/content/_project.scss */
+body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-2 {
   background-color: #DDDDDD;
 }
-/* line 916, ../scss/content/_project.scss */
-#vision-direct.project #content .logo {
-  height: 100vh;
-}
-/* line 919, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--title {
-  top: 20vw;
-}
-/* line 923, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  width: 100vw;
-}
-/* line 930, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-wire {
-  width: 80vw;
-}
-/* line 933, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-wire img {
-  max-height: 80vh;
-}
-/* line 938, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-background {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  width: 100vw;
-}
-/* line 946, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-background div {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 20vh;
-  width: 50vw;
-  padding: 0 5vw;
-}
-/* line 954, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-background div svg {
-  width: 25vw;
-  height: auto;
-}
-/* line 959, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-/* line 963, ../scss/content/_project.scss */
-#vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light {
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  background-color: #fff;
-}
-/* line 976, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens {
+/* line 493, ../scss/content/_project.scss */
+body.project #content .main-screens {
   position: relative;
   padding: 10vh 0;
-  background-image: url("../images/project/Vision-Direct/vd-logo-background.png");
-  background-size: cover;
 }
-/* line 982, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--title {
+/* line 497, ../scss/content/_project.scss */
+body.project #content .main-screens .section--title {
   top: 20vw;
 }
-/* line 985, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--title h2 {
+/* line 500, ../scss/content/_project.scss */
+body.project #content .main-screens .section--title h2 {
   color: #fff;
 }
-/* line 990, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content {
+/* line 505, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -3689,44 +3228,28 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 998, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .project--screen {
+/* line 513, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content .project--screen {
   width: 60vw;
 }
-/* line 1001, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .project--screen .project--screen-title {
+/* line 516, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content .project--screen .project--screen-title {
   color: #fff;
   font-weight: 100;
   font-size: 18px;
   margin-bottom: 20px;
   display: block;
 }
-/* line 1009, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .project--screen img {
+/* line 524, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content .project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 1015, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses {
-  text-align: center;
-}
-/* line 1018, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses .project--screen-title {
-  text-align: center;
-}
-/* line 1022, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses img {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  width: 80%;
-  display: inline-block;
-}
-/* line 1030, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .secondary-screens {
+/* line 531, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content .secondary-screens {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -3737,29 +3260,29 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   align-items: flex-start;
   width: 100%;
 }
-/* line 1037, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .secondary-screens .project--screen {
+/* line 538, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content .secondary-screens .project--screen {
   width: 28vw;
 }
-/* line 1041, ../scss/content/_project.scss */
-#vision-direct.project #content .main-screens .section--content .secondary-screens div {
+/* line 542, ../scss/content/_project.scss */
+body.project #content .main-screens .section--content .secondary-screens div {
   margin-top: 4vw;
 }
-/* line 1053, ../scss/content/_project.scss */
-#vision-direct.project #content .mobile-screens {
+/* line 554, ../scss/content/_project.scss */
+body.project #content .mobile-screens {
   position: relative;
   padding-bottom: 10vh;
 }
-/* line 1057, ../scss/content/_project.scss */
-#vision-direct.project #content .mobile-screens .section--title {
+/* line 558, ../scss/content/_project.scss */
+body.project #content .mobile-screens .section--title {
   top: 20vw;
 }
-/* line 1060, ../scss/content/_project.scss */
-#vision-direct.project #content .mobile-screens .section--title h2 {
+/* line 561, ../scss/content/_project.scss */
+body.project #content .mobile-screens .section--title h2 {
   color: #fff;
 }
-/* line 1066, ../scss/content/_project.scss */
-#vision-direct.project #content .mobile-screens .section--content {
+/* line 567, ../scss/content/_project.scss */
+body.project #content .mobile-screens .section--content {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -3771,12 +3294,12 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 1075, ../scss/content/_project.scss */
-#vision-direct.project #content .mobile-screens .section--content div.project--screen {
+/* line 576, ../scss/content/_project.scss */
+body.project #content .mobile-screens .section--content div.project--screen {
   width: 18vw;
 }
-/* line 1078, ../scss/content/_project.scss */
-#vision-direct.project #content .mobile-screens .section--content div.project--screen img {
+/* line 579, ../scss/content/_project.scss */
+body.project #content .mobile-screens .section--content div.project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3784,11 +3307,19 @@ body.project .section.work .work--project.web, body.project .section.work .work-
   border-radius: 4px;
   overflow: hidden;
 }
+/* line 591, ../scss/content/_project.scss */
+body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
+  width: 20vw;
+  height: 500px;
+}
 @media only screen and (max-width: 1199px) {
-  /* line 690, ../scss/content/_project.scss */
-  #vision-direct.project #content {
+  /* line 255, ../scss/content/_project.scss */
+  body.project #content {
     /* ============================================ *
      * DETAILS - VD VAN - LARGE SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 01.INTRODUCTION - LARGE SCREEN
      * ============================================ */
     /* ============================================ *
      * 02.FONT AND COLOURS - LARGE SCREEN
@@ -3799,63 +3330,92 @@ body.project .section.work .work--project.web, body.project .section.work .work-
     /* ============================================ *
      * 04. MAIN SCREENS - LARGE SCREEN
      * ============================================ */
+    /* ============================================ *
+     * 04. SECTION WORK - LARGE SCREEN
+     * ============================================ */
   }
-  /* line 1099, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .section--title,
-  #vision-direct.project #content .introduction .section--title,
-  #vision-direct.project #content .font .section--title,
-  #vision-direct.project #content .logo .section--title,
-  #vision-direct.project #content .main-screens .section--title,
-  #vision-direct.project #content .mobile-screens .section--title {
+  /* line 612, ../scss/content/_project.scss */
+  body.project #content .details .section--title,
+  body.project #content .introduction .section--title,
+  body.project #content .font .section--title,
+  body.project #content .brands-logo .section--title,
+  body.project #content .logos .section--title,
+  body.project #content .logo .section--title,
+  body.project #content .main-screens .section--title,
+  body.project #content .mobile-screens .section--title {
     width: 40vw;
+    left: 5vw;
   }
-  /* line 1107, ../scss/content/_project.scss */
-  #vision-direct.project #content .details {
+  /* line 618, ../scss/content/_project.scss */
+  body.project #content .details .section--content p,
+  body.project #content .introduction .section--content p,
+  body.project #content .font .section--content p,
+  body.project #content .brands-logo .section--content p,
+  body.project #content .logos .section--content p,
+  body.project #content .logo .section--content p,
+  body.project #content .main-screens .section--content p,
+  body.project #content .mobile-screens .section--content p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  /* line 628, ../scss/content/_project.scss */
+  body.project #content .details {
     width: 100vw;
   }
-  /* line 1110, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc {
+  /* line 631, ../scss/content/_project.scss */
+  body.project #content .details .project--desc {
     width: 40vw;
   }
-  /* line 1116, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--img img {
+  /* line 637, ../scss/content/_project.scss */
+  body.project #content .details .project--img img {
     width: 100vw;
     max-width: none;
   }
-  /* line 1127, ../scss/content/_project.scss */
-  #vision-direct.project #content .font {
-    padding-top: 0;
+  /* line 648, ../scss/content/_project.scss */
+  body.project #content .introduction .section--content,
+  body.project #content .introduction .project--mockup {
+    width: 70vw;
   }
-  /* line 1130, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--title {
+  /* line 658, ../scss/content/_project.scss */
+  body.project #content .font {
+    padding-top: 0;
+    height: 80vh;
+  }
+  /* line 662, ../scss/content/_project.scss */
+  body.project #content .font .section--title {
     top: 40vw;
   }
-  /* line 1136, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul {
+  /* line 668, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
   }
-  /* line 1139, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul .project--colour-more-shade {
+  /* line 671, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul .project--colour-more-shade {
     width: 100%;
     text-align: left;
   }
-  /* line 1143, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul .project--colour-more-shade .project--colour-name {
+  /* line 675, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul .project--colour-more-shade .project--colour-name {
     margin-left: 20px;
   }
-  /* line 1156, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo .section--title {
+  /* line 688, ../scss/content/_project.scss */
+  body.project #content .logo .section--title {
     top: 40vw;
   }
-  /* line 1165, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--title {
+  /* line 697, ../scss/content/_project.scss */
+  body.project #content .main-screens .section--title {
     top: 40vw;
+  }
+  /* line 707, ../scss/content/_project.scss */
+  body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
+    width: 40vw;
+    height: 500px;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 690, ../scss/content/_project.scss */
-  #vision-direct.project #content {
+  /* line 255, ../scss/content/_project.scss */
+  body.project #content {
     /* ============================================ *
      * DETAILS - VD VAN - MEDIUM SCREEN
      * ============================================ */
@@ -3874,37 +3434,46 @@ body.project .section.work .work--project.web, body.project .section.work .work-
     /* ============================================ *
      * 05. MOBILE SCREENS - MEDIUM SCREEN
      * ============================================ */
+    /* ============================================ *
+     * 04. SECTION WORK - LARGE SCREEN
+     * ============================================ */
   }
-  /* line 1178, ../scss/content/_project.scss */
-  #vision-direct.project #content .details,
-  #vision-direct.project #content .introduction,
-  #vision-direct.project #content .font,
-  #vision-direct.project #content .logo,
-  #vision-direct.project #content .main-screens,
-  #vision-direct.project #content .mobile-screens {
+  /* line 722, ../scss/content/_project.scss */
+  body.project #content .details,
+  body.project #content .introduction,
+  body.project #content .font,
+  body.project #content .brands-logo,
+  body.project #content .logos,
+  body.project #content .logo,
+  body.project #content .main-screens,
+  body.project #content .mobile-screens {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 1186, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .section--title,
-  #vision-direct.project #content .introduction .section--title,
-  #vision-direct.project #content .font .section--title,
-  #vision-direct.project #content .logo .section--title,
-  #vision-direct.project #content .main-screens .section--title,
-  #vision-direct.project #content .mobile-screens .section--title {
+  /* line 732, ../scss/content/_project.scss */
+  body.project #content .details .section--title,
+  body.project #content .introduction .section--title,
+  body.project #content .font .section--title,
+  body.project #content .brands-logo .section--title,
+  body.project #content .logos .section--title,
+  body.project #content .logo .section--title,
+  body.project #content .main-screens .section--title,
+  body.project #content .mobile-screens .section--title {
     width: 100vw;
     padding: 0;
     position: relative;
     left: 0;
     top: 0;
   }
-  /* line 1193, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .section--title h2,
-  #vision-direct.project #content .introduction .section--title h2,
-  #vision-direct.project #content .font .section--title h2,
-  #vision-direct.project #content .logo .section--title h2,
-  #vision-direct.project #content .main-screens .section--title h2,
-  #vision-direct.project #content .mobile-screens .section--title h2 {
+  /* line 739, ../scss/content/_project.scss */
+  body.project #content .details .section--title h2,
+  body.project #content .introduction .section--title h2,
+  body.project #content .font .section--title h2,
+  body.project #content .brands-logo .section--title h2,
+  body.project #content .logos .section--title h2,
+  body.project #content .logo .section--title h2,
+  body.project #content .main-screens .section--title h2,
+  body.project #content .mobile-screens .section--title h2 {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
     -o-transform: rotate(0);
@@ -3912,226 +3481,219 @@ body.project .section.work .work--project.web, body.project .section.work .work-
     transform: rotate(0);
     position: relative;
   }
-  /* line 1203, ../scss/content/_project.scss */
-  #vision-direct.project #content .details {
+  /* line 750, ../scss/content/_project.scss */
+  body.project #content .details {
     height: auto;
     padding: 10vh 0 0;
     margin: 0;
   }
-  /* line 1208, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .section--title {
+  /* line 755, ../scss/content/_project.scss */
+  body.project #content .details .section--title {
     order: 2;
     margin-bottom: 40px;
   }
-  /* line 1213, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc {
+  /* line 760, ../scss/content/_project.scss */
+  body.project #content .details .project--desc {
     width: 80vw;
     text-align: center;
     order: 3;
   }
-  /* line 1219, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--img {
+  /* line 766, ../scss/content/_project.scss */
+  body.project #content .details .project--img {
     width: 100vw;
     order: 1;
     margin: 0 0 5vh;
   }
-  /* line 1224, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--img img {
-    width: 120vw;
-    max-width: none;
-  }
-  /* line 1234, ../scss/content/_project.scss */
-  #vision-direct.project #content .introduction {
+  /* line 776, ../scss/content/_project.scss */
+  body.project #content .introduction {
+    -webkit-align-items: center;
+    align-items: center;
     height: auto;
-    padding: 10vh 0 0;
+    padding: 5vh 0;
   }
-  /* line 1238, ../scss/content/_project.scss */
-  #vision-direct.project #content .introduction .section--title {
+  /* line 781, ../scss/content/_project.scss */
+  body.project #content .introduction .section--title {
     display: none;
   }
-  /* line 1243, ../scss/content/_project.scss */
-  #vision-direct.project #content .introduction .section--content .project--mockup {
-    width: 130vw;
-    left: -15vw;
+  /* line 785, ../scss/content/_project.scss */
+  body.project #content .introduction .section--content,
+  body.project #content .introduction .project--mockup {
+    width: 90vw;
   }
-  /* line 1253, ../scss/content/_project.scss */
-  #vision-direct.project #content .font {
+  /* line 794, ../scss/content/_project.scss */
+  body.project #content .font {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 1258, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--font-sample {
+  /* line 799, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--font-sample {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin-top: 20px;
     width: 80vw;
   }
-  /* line 1263, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--font-sample .project--font-letter {
+  /* line 804, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--font-sample .project--font-letter {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  /* line 1269, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--font-sample .project--font-info span {
+  /* line 810, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--font-sample .project--font-info span {
     text-align: center;
   }
-  /* line 1275, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours {
+  /* line 816, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours {
     -webkit-align-items: center;
     align-items: center;
     width: 80vw;
   }
-  /* line 1279, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul {
+  /* line 820, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     width: 80vw;
     margin: 0 0 20px;
   }
-  /* line 1284, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul li {
+  /* line 825, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul li {
     margin: 0;
     height: 40vw;
   }
-  /* line 1288, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul li .project--colour-name {
+  /* line 829, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul li .project--colour-name {
     font-weight: 100;
     font-size: 12px;
     width: 100%;
   }
-  /* line 1294, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul li div.project--colour {
+  /* line 835, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul li div.project--colour {
     width: 30vw;
     height: 30vw;
   }
-  /* line 1300, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary {
+  /* line 841, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul.project--colours-secondary {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 1304, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade {
+  /* line 845, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade {
     margin-top: 20px;
     height: auto;
   }
-  /* line 1308, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades {
+  /* line 849, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     width: 80vw;
     margin-bottom: 20px;
   }
-  /* line 1313, ../scss/content/_project.scss */
-  #vision-direct.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades div.project--colour {
+  /* line 854, ../scss/content/_project.scss */
+  body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades div.project--colour {
     width: 12vw;
     height: 12vw;
     margin: 0;
   }
-  /* line 1330, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo {
+  /* line 871, ../scss/content/_project.scss */
+  body.project #content .logo {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 1335, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo .section--content .project--logo-wire {
-    width: 100vw;
-  }
-  /* line 1339, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo .section--content .project--logo-background {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    width: 100vw;
-  }
-  /* line 1343, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo .section--content .project--logo-background div {
-    width: 100vw;
-  }
-  /* line 1346, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light {
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-  /* line 1350, ../scss/content/_project.scss */
-  #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark svg, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light svg {
-    width: 70vw;
-  }
-  /* line 1362, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens {
+  /* line 879, ../scss/content/_project.scss */
+  body.project #content .main-screens {
     height: auto;
     padding: 5vh 0;
   }
-  /* line 1366, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--content {
+  /* line 883, ../scss/content/_project.scss */
+  body.project #content .main-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1370, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--content div.project--screen,
-  #vision-direct.project #content .main-screens .section--content .secondary-screens div.project--screen {
+  /* line 887, ../scss/content/_project.scss */
+  body.project #content .main-screens .section--content div.project--screen,
+  body.project #content .main-screens .section--content .secondary-screens div.project--screen {
     width: 80vw;
     margin-top: 40px;
   }
-  /* line 1375, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
-  #vision-direct.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
+  /* line 892, ../scss/content/_project.scss */
+  body.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
+  body.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
     width: 100%;
   }
-  /* line 1380, ../scss/content/_project.scss */
-  #vision-direct.project #content .main-screens .section--content .secondary-screens {
+  /* line 897, ../scss/content/_project.scss */
+  body.project #content .main-screens .section--content .secondary-screens {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
   }
-  /* line 1390, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens {
+  /* line 907, ../scss/content/_project.scss */
+  body.project #content .mobile-screens {
     height: auto;
     padding: 0 0 5vh 0;
   }
-  /* line 1394, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens .section--content {
+  /* line 911, ../scss/content/_project.scss */
+  body.project #content .mobile-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1398, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens .section--content div.project--screen {
+  /* line 915, ../scss/content/_project.scss */
+  body.project #content .mobile-screens .section--content div.project--screen {
     width: 25vw;
   }
-  /* line 1401, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens .section--content div.project--screen .project--screen-title {
+  /* line 918, ../scss/content/_project.scss */
+  body.project #content .mobile-screens .section--content div.project--screen .project--screen-title {
     width: 100%;
+  }
+  /* line 930, ../scss/content/_project.scss */
+  body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
+    width: 40vw;
+    height: 500px;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 690, ../scss/content/_project.scss */
-  #vision-direct.project #content {
+  /* line 255, ../scss/content/_project.scss */
+  body.project #content {
     /* ============================================ *
-     * DETAILS - VD VAN - SMALL SCREEN
-     * ============================================ */
-    /* ============================================ *
-     * 01.INTRODUCTION - HOMEPAGE MOCKUP - SMALL SCREEN
-     * ============================================ */
-    /* ============================================ *
-     * 02.FONT AND COLOURS - SMALL SCREEN
-     * ============================================ */
-    /* ============================================ *
-     * 03. LOGO - SMALL SCREEN
-     * ============================================ */
-    /* ============================================ *
-     * 04. MAIN SCREENS - SMALL SCREEN
+     * DETAILS - SMALL SCREEN
      * ============================================ */
     /* ============================================ *
      * 05. MOBILE SCREENS - SMALL SCREEN
      * ============================================ */
+    /* ============================================ *
+     * SECTION WORK - SMALL SCREEN
+     * ============================================ */
   }
-  /* line 1422, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc .project--details {
+  /* line 945, ../scss/content/_project.scss */
+  body.project #content .details,
+  body.project #content .introduction,
+  body.project #content .font,
+  body.project #content .brands-logo,
+  body.project #content .logos,
+  body.project #content .logo,
+  body.project #content .main-screens,
+  body.project #content .mobile-screens {
+    height: auto;
+  }
+  /* line 954, ../scss/content/_project.scss */
+  body.project #content .details .section--content,
+  body.project #content .introduction .section--content,
+  body.project #content .font .section--content,
+  body.project #content .brands-logo .section--content,
+  body.project #content .logos .section--content,
+  body.project #content .logo .section--content,
+  body.project #content .main-screens .section--content,
+  body.project #content .mobile-screens .section--content {
+    width: 90vw;
+    margin: 0 5vw;
+  }
+  /* line 967, ../scss/content/_project.scss */
+  body.project #content .details .project--desc .project--details {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 1425, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc .project--details dl {
+  /* line 970, ../scss/content/_project.scss */
+  body.project #content .details .project--desc .project--details dl {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -4141,46 +3703,748 @@ body.project .section.work .work--project.web, body.project .section.work .work-
     width: 100%;
     margin: 0 0 20px;
   }
-  /* line 1432, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc .project--details dl dt, #vision-direct.project #content .details .project--desc .project--details dl dd {
+  /* line 977, ../scss/content/_project.scss */
+  body.project #content .details .project--desc .project--details dl dt, body.project #content .details .project--desc .project--details dl dd {
     width: 40%;
     display: inline-block;
   }
-  /* line 1437, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc .project--details dl dt {
+  /* line 982, ../scss/content/_project.scss */
+  body.project #content .details .project--desc .project--details dl dt {
     text-align: right;
     margin-right: 20px;
   }
-  /* line 1442, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--desc .project--details dl dd {
+  /* line 987, ../scss/content/_project.scss */
+  body.project #content .details .project--desc .project--details dl dd {
     text-align: left;
     margin: 0;
   }
-  /* line 1452, ../scss/content/_project.scss */
-  #vision-direct.project #content .details .project--img img {
+  /* line 997, ../scss/content/_project.scss */
+  body.project #content .details .project--img img {
     max-height: 40vh;
     width: auto;
   }
-  /* line 1492, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens .section--content {
+  /* line 1009, ../scss/content/_project.scss */
+  body.project #content .mobile-screens .section--content {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1497, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens .section--content div.project--screen {
+  /* line 1014, ../scss/content/_project.scss */
+  body.project #content .mobile-screens .section--content div.project--screen {
     width: 80vw;
   }
-  /* line 1500, ../scss/content/_project.scss */
-  #vision-direct.project #content .mobile-screens .section--content div.project--screen img {
+  /* line 1017, ../scss/content/_project.scss */
+  body.project #content .mobile-screens .section--content div.project--screen img {
     margin-top: 40px;
     border-radius: 20px;
     width: 100%;
     max-height: unset;
   }
+  /* line 1030, ../scss/content/_project.scss */
+  body.project #content .section.work {
+    padding: 0;
+  }
+  /* line 1034, ../scss/content/_project.scss */
+  body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
+    width: 100vw;
+    height: 500px;
+  }
 }
 
+/* ============================================ *
+ * NEW Project - Vision Direct
+ * ============================================ */
+/* line 7, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content {
+  background-color: #007FA9;
+ 	/* ============================================ *
+	 * 03. LOGO
+	 * ============================================ */
+  /* ============================================ *
+   * 04. MAIN SCREENS
+   * ============================================ */
+  /* ============================================ *
+   * 05. MOBILE SCREENS
+   * ============================================ */
+  /* ============================================ *
+   * MEDIA QUERY - MEDIUM SCREEN
+   * ============================================ */
+}
+/* line 13, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo {
+  height: 100vh;
+}
+/* line 16, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--title {
+  top: 20vw;
+}
+/* line 20, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100vw;
+}
+/* line 27, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-wire {
+  width: 80vw;
+}
+/* line 30, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-wire img {
+  max-height: 80vh;
+}
+/* line 35, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-background {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 100vw;
+}
+/* line 43, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-background div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 20vh;
+  width: 50vw;
+  padding: 0 5vw;
+}
+/* line 51, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-background div svg {
+  width: 25vw;
+  height: auto;
+}
+/* line 56, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 60, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+/* line 73, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .main-screens {
+  background-image: url("../images/project/Vision-Direct/vd-logo-background.png");
+  background-size: cover;
+}
+/* line 81, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses {
+  text-align: center;
+}
+/* line 84, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses .project--screen-title {
+  text-align: center;
+}
+/* line 88, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .main-screens .section--content .project--screen.project--3d-contact-lenses img {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 80%;
+  display: inline-block;
+}
+/* line 103, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .mobile-screens {
+  position: relative;
+  padding-bottom: 10vh;
+}
+/* line 107, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .mobile-screens .section--title {
+  top: 20vw;
+}
+/* line 110, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .mobile-screens .section--title h2 {
+  color: #fff;
+}
+/* line 116, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .mobile-screens .section--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 60vw;
+  margin: 0 20vw;
+}
+/* line 125, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .mobile-screens .section--content div.project--screen {
+  width: 18vw;
+}
+/* line 128, ../scss/content/_visiondirect.scss */
+#vision-direct.project #content .mobile-screens .section--content div.project--screen img {
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1vw;
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 770px) {
+  /* line 7, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content {
+    /* ============================================ *
+     * 01.INTRODUCTION - HOMEPAGE MOCKUP - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 03. LOGO - MEDIUM SCREEN
+     * ============================================ */
+    /* ============================================ *
+     * 04. MAIN SCREENS - MEDIUM SCREEN
+     * ============================================ */
+  }
+  /* line 146, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .details .project--img img {
+    width: 120vw;
+    max-width: none;
+  }
+  /* line 156, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .introduction .section--content,
+  #vision-direct.project #content .introduction .project--mockup {
+    width: 110vw;
+  }
+  /* line 167, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .logo .section--content .project--logo-wire {
+    width: 100vw;
+  }
+  /* line 171, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .logo .section--content .project--logo-background {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100vw;
+  }
+  /* line 175, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .logo .section--content .project--logo-background div {
+    width: 100vw;
+  }
+  /* line 178, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  /* line 182, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark svg, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light svg {
+    width: 70vw;
+  }
+  /* line 201, ../scss/content/_visiondirect.scss */
+  #vision-direct.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
+  #vision-direct.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
+    width: 100%;
+  }
+}
+
+/* ============================================ *
+ * NEW Project - Merchmaker
+ * ============================================ */
+/* line 7, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content {
+  background-color: #333;
+  background-image: url("/images/project/merchmaker/mm-bg.jpg");
+ 	/* ============================================ *
+	 * MEDIA QUERY - MEDIUM SCREEN
+	 * ============================================ */
+}
+/* line 11, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--grey.details {
+  background-color: transparent;
+}
+/* line 14, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--grey.details .project--desc {
+  width: 50vw;
+}
+/* line 18, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--grey.details .project--img {
+  width: 40vw;
+  text-align: center;
+}
+/* line 22, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--grey.details .project--img img {
+  max-width: 490px;
+}
+/* line 28, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--dark-grey.introduction {
+  background-color: transparent;
+  margin-top: 60px;
+}
+/* line 32, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--dark-grey.introduction .project--mockup img {
+  max-height: 700px;
+}
+/* line 37, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section.section--dark-grey {
+  background-color: #333;
+}
+/* line 48, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .font .section--content .project--font-sample .project--font-info span.project--font-abc {
+  margin-top: 20px;
+}
+/* line 61, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
+  background-color: #2D79B9;
+}
+/* line 68, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .brands-logo {
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: auto;
+}
+/* line 74, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .brands-logo .section--content ul.brands {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+  margin: 0;
+  padding: 0;
+}
+/* line 83, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .brands-logo .section--content ul.brands li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 15vw;
+  width: 15vw;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 20px 20px 0;
+}
+/* line 93, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .brands-logo .section--content ul.brands li img {
+  max-height: 80%;
+  max-width: 80%;
+}
+/* line 98, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .brands-logo .section--content ul.brands li:nth-child(4) {
+  margin-right: 0;
+}
+@media only screen and (max-width: 1199px) {
+  /* line 106, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .brands-logo .section--content ul.brands li {
+    width: 30vw;
+    height: 15vw;
+  }
+  /* line 110, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .brands-logo .section--content ul.brands li:nth-child(2) {
+    margin-right: 0;
+  }
+}
+/* line 119, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos {
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: auto;
+}
+/* line 125, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .date {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 130, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .date span {
+  color: #fff;
+  padding: 0 20px;
+}
+/* line 135, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .date:before, #merchmaker.project #content .logos .section--content .date:after {
+  content: '';
+  height: 5px;
+  background-color: #fff;
+  width: 30vw;
+  display: inline-block;
+}
+/* line 146, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .logo {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin: 60px 0;
+}
+/* line 154, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .logo span {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  width: 30vw;
+  min-height: 20vw;
+  margin: 0 40px;
+}
+/* line 164, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .logo span.colour {
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+}
+/* line 169, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .logo span svg {
+  max-width: 90%;
+  margin: 20px 0;
+}
+/* line 177, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .logos .section--content .logo.logo--2016 span.colour {
+  border-radius: 10px 0 0 10px;
+}
+/* line 185, ../scss/content/_merchmaker.scss */
+#merchmaker.project #content .section--blue {
+  background-color: #2D79B9;
+}
+@media only screen and (max-width: 770px) {
+  /* line 7, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content {
+    background-position: center;
+    background-size: cover;
+  }
+  /* line 196, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .section.section--grey.details {
+    background-color: transparent;
+  }
+  /* line 199, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .section.section--grey.details .project--desc,
+  #merchmaker.project #content .section.section--grey.details .project--img {
+    width: 60vw;
+  }
+  /* line 203, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .section.section--grey.details .project--desc img,
+  #merchmaker.project #content .section.section--grey.details .project--img img {
+    max-height: 50vh;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 213, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .brands-logo .section--content ul.brands li {
+    width: 40vw;
+    height: 25vw;
+  }
+  /* line 218, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .logos .section--content .logo {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    padding: 5vh 0;
+  }
+  /* line 223, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .logos .section--content .logo span {
+    width: 100%;
+    margin: 0;
+    min-height: 30vw;
+  }
+  /* line 228, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .logos .section--content .logo span.colour {
+    border-radius: 0 0 10px 10px;
+  }
+  /* line 235, ../scss/content/_merchmaker.scss */
+  #merchmaker.project #content .logos .section--content .logo.logo--2016 span.colour {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/* ============================================ *
+ * Project - Wall Street Institutes
+ * ============================================ */
+/* line 6, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .banner {
+  overflow: hidden;
+  margin: 0;
+}
+/* line 10, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .banner.banner-main {
+  background: url(../images/project/wsi-main-banner.jpg);
+  background-size: cover;
+  background-position: 67%;
+  height: 762px;
+  display: inline-block;
+  margin-top: -80px;
+  padding: 0;
+  max-height: 90%;
+}
+/* line 22, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .banner.banner-fullscreen img {
+  width: 100%;
+}
+/* line 25, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .banner.banner-fullscreen .wsi-consultant-expression-content {
+  width: 100%;
+  padding: 0px 10% 40px;
+  text-align: center;
+  background-color: #bcbcbc;
+  color: #fff;
+}
+/* line 32, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .banner.banner-fullscreen .wsi-consultant-expression-content h3, #wall-street-institutes.project .banner.banner-fullscreen .wsi-consultant-expression-content p {
+  color: #fff;
+}
+/* line 39, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page {
+  position: relative;
+  margin-top: -6px;
+  overflow: hidden;
+}
+/* line 44, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .project-title,
+#wall-street-institutes.project .page .section-title {
+  margin: 80px auto;
+  position: relative;
+  width: 90%;
+}
+/* line 50, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .project-title h1,
+#wall-street-institutes.project .page .project-title h2,
+#wall-street-institutes.project .page .section-title h1,
+#wall-street-institutes.project .page .section-title h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 36px;
+  position: relative;
+  z-index: 2;
+}
+/* line 62, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .project-title h2.project-category,
+#wall-street-institutes.project .page .section-title h2.project-category {
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-transform: inherit;
+}
+/* line 71, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .bg-slide {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  background-color: #004388;
+  width: 300%;
+  height: 400px;
+  position: absolute;
+  left: -150%;
+  z-index: 1;
+  bottom: -190px;
+}
+/* line 82, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising {
+  position: relative;
+  z-index: 2;
+}
+/* line 86, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 91, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert img {
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  max-width: 40%;
+  margin: 0 40px;
+}
+/* line 97, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert .wsi-advert--content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  max-width: 30%;
+}
+/* line 102, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert .wsi-advert--content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+}
+/* line 109, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-brian, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-tailor {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+/* line 114, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-umbrella {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 117, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-umbrella .wsi-advert--content {
+  text-align: right;
+}
+/* line 122, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-umbrella, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-tailor {
+  margin-top: -10%;
+}
+/* line 129, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant {
+  text-align: center;
+}
+/* line 132, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant img {
+  width: 60%;
+  position: relative;
+  z-index: 2;
+}
+/* line 138, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--introduction {
+  width: 70%;
+  margin: 80px auto;
+}
+/* line 142, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--introduction h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+}
+/* line 148, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--introduction strong {
+  color: #004388;
+}
+/* line 154, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 161, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression {
+  width: 50%;
+  margin-bottom: 20px;
+}
+/* line 166, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression .wsi-consultant-expression-content {
+  width: 80%;
+  margin: 40px auto 0;
+}
+/* line 171, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression.full {
+  width: 100%;
+}
+/* line 174, ../scss/content/_wallstreetinstitutes.scss */
+#wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression.full .wsi-consultant-expression-content {
+  margin: 0 auto 40px;
+}
+
+@media only screen and (max-width: 979px) {
+  /* line 190, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-umbrella, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-tailor {
+    margin-top: 0;
+  }
+  /* line 198, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-consultant .wsi-consultant--introduction {
+    width: 100%;
+  }
+  /* line 203, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .bg-slide {
+    height: 300px;
+    bottom: -130px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 215, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .project-title,
+  #wall-street-institutes.project .page .section-title {
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 222, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .section-title {
+    margin-top: 150px;
+  }
+  /* line 227, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-advertising .wsi-advert {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 230, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-advertising .wsi-advert img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  /* line 235, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-advertising .wsi-advert .wsi-advert--content {
+    max-width: 100%;
+  }
+  /* line 239, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-umbrella, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-tailor, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-brian {
+    margin-top: 40px;
+  }
+  /* line 244, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-umbrella .wsi-advert--content, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-tailor .wsi-advert--content, #wall-street-institutes.project .page .wsi-advertising .wsi-advert.wsi-advert-brian .wsi-advert--content {
+    -webkit-order: 2;
+    order: 2;
+    text-align: center;
+  }
+  /* line 253, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-consultant img {
+    width: 100%;
+  }
+  /* line 257, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 260, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression {
+    width: 100%;
+  }
+  /* line 263, ../scss/content/_wallstreetinstitutes.scss */
+  #wall-street-institutes.project .page .wsi-consultant .wsi-consultant--expressions .wsi-consultant-expression .wsi-consultant-expression-content {
+    width: 100%;
+  }
+}
 /* ============================================ *
  * SHOWREEL
  * ============================================ */

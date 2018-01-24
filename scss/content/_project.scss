@@ -18,279 +18,6 @@
 		}
 	}
 
-
-	/* ============================================ *
-	 * Project - Wall Street Institutes
-	 * ============================================ */
-
-	&#wall-street-institutes{
- 		.banner{ 
-			overflow 			: hidden; 
-			margin 				: 0;
-
-			&.banner-main{
-				background 			 	: url(../images/project/wsi-main-banner.jpg);
-				background-size 	 	: cover;
-				background-position 	: 67%;
-				height 				 	: 762px;
-				display 			 	: inline-block;
-				margin-top 			 	: -$s-header;
-				padding 				: 0;
-				max-height 				: 90%;
-			}
-
-			&.banner-fullscreen{
-				img{ width: 100%; }
-
-
-				.wsi-consultant-expression-content{
-					width: 100%;
-					padding: 0px 10% 40px;
-					text-align: center;
-					background-color: #bcbcbc;
-					color: #fff;
-
-					h3, p{
-						color: #fff;
-					}
-				}
-			}
-		}
-
-		.page{
-			position 		: relative;
-			margin-top 		: -6px;
-			overflow 		: hidden;
-
-			.project-title,
-			.section-title{
-				margin 		: 80px auto;
-				position 	: relative;
-				width 		: 90%;
-
-				h1,
-				h2{
-					text-transform 	: uppercase;
-					font-weight 	: bold;
-					letter-spacing 	: 4px;
-					margin-bottom 	: 0;
-					color 			: #fff;
-					font-size 		: $f-size-xxl;
-					position 	: relative;
-					z-index 	: 2;
-				}
-
-				h2.project-category{
-					font-weight 	: 100;
-					color 			: #fff;
-					letter-spacing 	: 2px;
-					font-size 		: $f-size-xl;
-					text-transform 	: inherit;
-				}
-			}
-
-			.bg-slide{
-				@include transform(rotate(-10deg));
-				background-color 	: #004388;
-				width 				: 300%;
-				height 				: 400px;
-			    position 			: absolute;
-			    left 				: -150%;
-			    z-index 			: 1;
-			    bottom 				: -190px;
-			}
-
-			.wsi-advertising {
-				position 			: relative;
-				z-index 			: 2;
-
-				.wsi-advert{
-					@include display-flex(flex);
-					@include flex-direction(row);
-					@include align-items(center);
-
-					img{
-						@include box-shadow(5px 5px 20px rgba(0,0,0,0.5));
-						max-width: 40%;
-						margin: 0 40px;
-					}
-
-					.wsi-advert--content{
-						@include display-flex(flex);
-						@include flex-direction(column);
-						max-width: 30%;
-
-						h3{
-							font-weight: 600;
-							font-size: $f-size-xl;
-							color: $c-text-darker;
-						}
-					}
-
-					&.wsi-advert-brian,
-					&.wsi-advert-tailor{
-						@include justify-content(flex-start);
-					}
-
-					&.wsi-advert-umbrella{
-						@include justify-content(flex-end);
-
-						.wsi-advert--content{
-							text-align: right;
-						}
-					}
-
-					&.wsi-advert-umbrella,
-					&.wsi-advert-tailor{
-						margin-top: -10%;
-					}
-				}
-			}
-
-			.wsi-consultant{
-				text-align: center;
-
-				img{
-					width: 60%;
-					position: relative;
-					z-index: 2;
-				}
-
-				.wsi-consultant--introduction{
-					width: 70%;
-					margin: 80px auto;
-
-					h3{
-						font-weight: 600;
-						font-size: $f-size-xl;
-						color: $c-text-darker;
-					}
-					
-					strong{
-						color: #004388;
-
-					}
-				}
-
-				.wsi-consultant--expressions{
-					@include display-flex(flex);
-					@include flex-direction(row);
-					@include flex-flow(wrap);
-					@include justify-content(center);
-					@include align-items(center);
-
-					.wsi-consultant-expression{
-						width: 50%;
-						margin-bottom: $gap;
-
-
-						.wsi-consultant-expression-content{
-							width: 80%;
-							margin: 40px auto 0 ;
-						}
-
-						&.full{
-							width: 100%;
-
-							.wsi-consultant-expression-content{
-								margin: 0 auto 40px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	@include bp(max-width, $bp-large){
-		&#wall-street-institutes{
-			.page{
-
-				.wsi-advertising {
-					.wsi-advert{
-						&.wsi-advert-umbrella,
-						&.wsi-advert-tailor{
-							margin-top: 0;
-						}
-					}
-				}
-
-				.wsi-consultant{
-					.wsi-consultant--introduction{
-						width: 100%;
-					}
-				}
-
-				.bg-slide{
-					height 				: 300px;
-				    bottom 				: -130px;
-				}
-			}
-		}
-	}
-
-	@include bp(max-width, $bp-small){
-		&#wall-street-institutes{
-			.page{
-
-				.project-title,
-				.section-title{
-					margin 		: 40px auto;
-					width 		: 100%;
-					text-align  : center;
-				}
-
-				.section-title{
-					margin-top: 150px;
-				}
-
-				.wsi-advertising{
-					.wsi-advert{
-						@include flex-direction(column);
-
-						img{
-							max-width: 100%;
-							margin-bottom: 20px;
-						}
-
-						.wsi-advert--content{
-							max-width 	: 100%;
-						}
-
-						&.wsi-advert-umbrella,
-						&.wsi-advert-tailor,
-						&.wsi-advert-brian{
-							margin-top 		: 40px;
-
-							.wsi-advert--content{
-								@include order(2);
-								text-align 		: center;
-							}
-						}
-					}
-				}
-
-				.wsi-consultant{
-					img{
-						width: 100%;
-					}
-
-					.wsi-consultant--expressions{
-						@include flex-direction(column);
-
-						.wsi-consultant-expression{
-							width: 100%;
-
-							.wsi-consultant-expression-content{
-								width: 100%;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	.nav-dots span {
 		@include transition(all 0.2s);
 		background: rgba(150,150,150,0.1);
@@ -308,38 +35,6 @@
 				inset 0 1px 1px rgba(0,0,0,0.1),
 				0 0 0 5px rgba(255,255,255,0.5);
 		}
-	}
-
-	.bg-img {
-		@include box-sizing(content-box);
-		padding: 200px;
-		position: absolute;
-		top: -200px;
-		left: -200px;
-		width: 100%;
-		height: 100%;
-		@include background-size(cover);
-		background-position: center center;
-	}
-
-	.bg-img-1 {
-		background-image: url(../images/fullscreen/3d/everclear.jpg);
-	}
-
-	.bg-img-2 {
-		background-image: url(../images/fullscreen/3d/iphone.jpg);
-	}
-
-	.bg-img-3 {
-		background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-	}
-
-	.bg-img-4 {
-		background-image: url(../images/fullscreen/3d/glumandfish.jpg);
-	}
-
-	.bg-img-5 {
-		background-image: url(../images/fullscreen/web/visiondirect-project.jpg);
 	}
 
 	.sl-slider-wrapper {
@@ -553,147 +248,35 @@
     color: $c-primary;
 }
 
-
-/* ============================================ *
- * Project - Vision Direct
- * ============================================ */
-
-.colour-banner { 
-	height: 100px; 
-	background-color: #5fa5d7; 
-	text-align: center; 
-
-	.text-colour-banner{ 
-		font: 36px/100px 'Open Sans', Arial, Helvetica, sans-serif; 
-		font-weight: 800; 
-		color: #fff; 
-	}
-}
-
-.img-banner { 
-	height: 300px; 
-	background-color: #f3f3f3; 
-	text-align: left; 
-	background-image:url('../images/project/vd-third-slide.png'); 
-}
-
-
-
-@include bp(max-width, $bp-medium) {
-
-	#container.project{
-		.sl-slider-wrapper {
-			height: 500px;
-		}
-
-		.sl-slider{
-			h2 {
-				font-size: 36px;
-			}
-
-			blockquote {
-				font-size: 16px;
-			}
-		}
-	} 
-
-}
-
-
-@include bp(max-width, $bp-xlarge){
-	#content-b.left {
-	  left: 10%;
-	}
-}
-
-@include bp(max-width, $bp-xsmall) {
-	#content-b{
-		.bottom { top:60%; }
-		.right { left: 10%; }
-		h1 { font-size:3em; }
-		h2 { font-size:1.5em; }
-
-	}
-}
-
-
-
-
-
-
-
 /* ============================================ *
  * GENERAL PROJECT PAGE STYLING
  * ============================================ */
 body.project{
-	.section.work{
-		.work--project{
-			&.web,
-			&.print,
-			&.illustration{
-				width: 20vw;
-				height: 500px;
-			}
-		}
-	}
+	#content{
 
+		.details,
+		.introduction,
+		.font,
+		.brands-logo,
+		.logos,
+		.logo,
+		.main-screens,
+		.mobile-screens{
 
-	@include bp(max-width, $bp-large){
-		.section.work{
-			.work--project{
-				&.web,
-				&.print,
-				&.illustration{
-					width: 40vw;
-					height: 500px;
+			.section--content{
+				p{
+					font-size: $f-size-l;
+					line-height: 1.2;
+					color: #fff;
+					margin: $gap 0;
 				}
 			}
 		}
-	}
 
-	@include bp(max-width, $bp-medium){
-		.section.work{
-			.work--project{
-				&.web,
-				&.print,
-				&.illustration{
-					width: 40vw;
-					height: 500px;
-				}
-			}
-		}
-	}
-
-	@include bp(max-width, $bp-small){
-		.section.work{
-			padding: 0;
-
-			.work--project{
-				&.web,
-				&.print,
-				&.illustration{
-					width: 100vw;
-					height: 500px;
-				}
-			}
-		}
-	}
-}
-
-
-/* ============================================ *
- * NEW Project - Vision Direct
- * ============================================ */
-
- #vision-direct.project{
-
- 	#content{
-	 	background-color: #007FA9;
-
-	 	/* ============================================ *
-		 * DETAILS - VD VAN
+		/* ============================================ *
+		 * DETAILS - GENERAL
 		 * ============================================ */
-	 	.details{
+		.details{
 	 		@include display-flex(flex);
 	 		@include align-items(center);
 	 		@include justify-content(center);
@@ -752,7 +335,6 @@ body.project{
  				width: 60vw;
  			}
 	 	}
-
 
 	 	/* ============================================ *
 		 * 01.INTRODUCTION - HOMEPAGE MOCKUP
@@ -887,7 +469,6 @@ body.project{
 				 				.colour-shades{
 					 				@include display-flex(flex);
 					 				@include align-items(flex-start);
-					 				/*@include justify-content(space-evenly);*/
 
 					 				.project--colour{
 					 					margin 			: 0 $gap $gap 0;
@@ -900,10 +481,6 @@ body.project{
 				 				.project--colour-light-grey-2 		{ background-color: #DDDDDD; }
 				 			}
 
-				 			
-				 			
-
-
 				 		}
 			 		}
 		 		}
@@ -911,73 +488,11 @@ body.project{
 	 	}
 
 	 	/* ============================================ *
-		 * 03. LOGO
-		 * ============================================ */
-		.logo{
-			height: 100vh;
-
-			.section--title{
-	 			top: 20vw;
-			}
-
-			.section--content{
-				@include display-flex(flex);
-				@include align-items(center);
-				@include justify-content(center);
-				@include flex-direction(column);
-				width: 100vw;
-
-				.project--logo-wire{
-					width: 80vw;
-					
-					img{
-						max-height: 80vh;
-					}
-				}
-
-				.project--logo-background{
-					@include display-flex(flex);
-					@include align-items(center);
-					@include justify-content(center);
-					@include flex-direction(row);
-					width: 100vw;
-
-
-					div{
-						@include display-flex(flex);
-						@include align-items(center);
-						@include justify-content(center);
-						height: 20vh;
-						width: 50vw;
-						padding: 0 5vw;
-
-						svg{
-							width: 25vw;
-							height: auto;
-						}
-
-						&.project--logo-background-dark{
-							@include justify-content(flex-end);
-						}
-
-						&.project--logo-background-light{
-							@include justify-content(flex-start);
-							background-color: #fff;
-
-						}
-					}
-				}
-			}
-		}
-
-		/* ============================================ *
 		 * 04. MAIN SCREENS
 		 * ============================================ */
 		.main-screens{
 		 	position: relative;
 		 	padding: 10vh 0;
-		 	background-image:url("../images/project/Vision-Direct/vd-logo-background.png");
-		 	background-size: cover;
 
 		 	.section--title{
 	 			top: 20vw;
@@ -1010,20 +525,6 @@ body.project{
 						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
 						border-radius: 4px;
 						overflow:hidden;
-					}
-
-					&.project--3d-contact-lenses{
-						text-align: center;
-
-						.project--screen-title{
-							text-align: center;
-						}
-
-						img{
-							@include box-shadow(none);
-							width: 80%;
-							display: inline-block;
-						}
 					}
 				}
 
@@ -1085,6 +586,16 @@ body.project{
 			}
 		}
 
+		.section.work{
+			.work--project{
+				&.web,
+				&.print,
+				&.illustration{
+					width: 20vw;
+					height: 500px;
+				}
+			}
+		}
 
 		/* ============================================ *
 		 * MEDIA QUERY - LARGE SCREEN
@@ -1093,11 +604,21 @@ body.project{
 			.details,
 			.introduction,
 			.font,
+			.brands-logo,
+			.logos,
 			.logo,
 			.main-screens,
 			.mobile-screens{
 				.section--title{
 					width: 40vw;
+					left: 5vw;
+				}
+
+				.section--content{
+					p{
+						font-size: $f-size;
+						line-height: 1.2;
+					}
 				}
 			}
 
@@ -1120,15 +641,26 @@ body.project{
 				}
 			}
 
+			/* ============================================ *
+			 * 01.INTRODUCTION - LARGE SCREEN
+			 * ============================================ */
+			.introduction{
+				.section--content,
+				.project--mockup{
+					width: 70vw;
+				}
+			}
+
 
 			/* ============================================ *
 			 * 02.FONT AND COLOURS - LARGE SCREEN
 			 * ============================================ */
 			.font{
-				padding-top: 0;
+				padding-top 	: 0;
+				height 			: 80vh;
 
 				.section--title{
-					top: 40vw;
+					top 		: 40vw;
 				}
 
 				.section--content{
@@ -1167,8 +699,20 @@ body.project{
 				}
 			}
 
+			/* ============================================ *
+			 * 04. SECTION WORK - LARGE SCREEN
+			 * ============================================ */
+			.section.work{
+				.work--project{
+					&.web,
+					&.print,
+					&.illustration{
+						width: 40vw;
+						height: 500px;
+					}
+				}
+			}
 		}
-
 
 		/* ============================================ *
 		 * MEDIA QUERY - MEDIUM SCREEN
@@ -1178,6 +722,8 @@ body.project{
 			.details,
 			.introduction,
 			.font,
+			.brands-logo,
+			.logos,
 			.logo,
 			.main-screens,
 			.mobile-screens{
@@ -1195,6 +741,7 @@ body.project{
 						position: relative;
 					}
 				}
+
 			}
 
 			/* ============================================ *
@@ -1220,11 +767,6 @@ body.project{
 					width 		: 100vw;
 					order 		: 1;
 					margin 		: 0 0 5vh;
-
-					img{
-						width 		: 120vw;
-    					max-width 	: none;
-					}
 				}
 			}
 
@@ -1232,18 +774,17 @@ body.project{
 			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - MEDIUM SCREEN
 			 * ============================================ */
 			.introduction{
+				@include align-items(center);
 				height 			: auto;
-				padding 		: 10vh 0 0;
+				padding 		: 5vh 0;
 
 				.section--title{
 					display 	: none;
 				}
 
-				.section--content{
-					.project--mockup{
-						width 	: 130vw;
-						left 	: -15vw;
-					}
+				.section--content,
+				.project--mockup{
+					width: 90vw;
 				}
 			}
 
@@ -1330,30 +871,6 @@ body.project{
 			.logo{
 				height: auto;
 				padding: 5vh 0 0;
-
-				.section--content{
-					.project--logo-wire{
-						width: 100vw;
-					}
-
-					.project--logo-background{
-						@include flex-direction(column);
-						width: 100vw;
-
-						div{
-							width: 100vw;
-
-							&.project--logo-background-dark,
-							&.project--logo-background-light{
-								@include justify-content(center);
-								
-								svg{
-									width: 70vw;
-								}
-							}
-						}
-					}
-				}
 			}
 
 			/* ============================================ *
@@ -1404,6 +921,20 @@ body.project{
 					}
 				}
 			}
+
+			/* ============================================ *
+			 * 04. SECTION WORK - LARGE SCREEN
+			 * ============================================ */
+			.section.work{
+				.work--project{
+					&.web,
+					&.print,
+					&.illustration{
+						width: 40vw;
+						height: 500px;
+					}
+				}
+			}
 		}
 
 
@@ -1411,9 +942,23 @@ body.project{
 		 * MEDIA QUERY - SMALL SCREEN
 		 * ============================================ */
 		@include bp(max-width, $bp-small){
+			.details,
+			.introduction,
+			.font,
+			.brands-logo,
+			.logos,
+			.logo,
+			.main-screens,
+			.mobile-screens{
+				height: auto;
+				.section--content{
+					width: 90vw;
+					margin: 0 5vw;
+				}
+			}
 
 			/* ============================================ *
-			 * DETAILS - VD VAN - SMALL SCREEN
+			 * DETAILS - SMALL SCREEN
 			 * ============================================ */
 			.details{
 
@@ -1457,34 +1002,6 @@ body.project{
 			}
 
 			/* ============================================ *
-			 * 01.INTRODUCTION - HOMEPAGE MOCKUP - SMALL SCREEN
-			 * ============================================ */
-			.introduction{
-
-			}
-
-			/* ============================================ *
-			 * 02.FONT AND COLOURS - SMALL SCREEN
-			 * ============================================ */
-			.font{
-
-			}
-
-			/* ============================================ *
-			 * 03. LOGO - SMALL SCREEN
-			 * ============================================ */
-			.logo{
-
-			}
-
-			/* ============================================ *
-			 * 04. MAIN SCREENS - SMALL SCREEN
-			 * ============================================ */
-			.main-screens{
-
-			}
-
-			/* ============================================ *
 			 * 05. MOBILE SCREENS - SMALL SCREEN
 			 * ============================================ */
 			.mobile-screens{
@@ -1507,6 +1024,21 @@ body.project{
 				}
 			}
 
+			/* ============================================ *
+			 * SECTION WORK - SMALL SCREEN
+			 * ============================================ */
+			.section.work{
+				padding: 0;
+
+				.work--project{
+					&.web,
+					&.print,
+					&.illustration{
+						width: 100vw;
+						height: 500px;
+					}
+				}
+			}
 		}
 	}
 }
