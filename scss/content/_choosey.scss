@@ -1,0 +1,232 @@
+/* ============================================ *
+ * NEW Project - CHOOSEY
+ * ============================================ */
+
+#choosey.project{
+ 	#content{
+ 		background-color: #111;
+
+	 	.details{
+	 		@include align-items(flex-start);
+	 		@include justify-content(flex-start);
+	 		background-image 	: url('/images/project/choosey/AR_Mock_up.png');
+	 		background-size 	: cover;
+	 		width 				: 100vw;
+	 		height 				: 120vh;
+	 		margin 				: 0;
+	 		padding 			: 20vh 0 0 20vw;
+
+	 		.project--desc{
+	 			width 	: 30vw;
+	 		}
+	 	}
+
+	 	.introduction{
+	 		height 				: auto;
+	 		background-color 	: #F6F7F8;
+
+	 		.section--title{
+	 			bottom 		: 40vh;
+	 			width 		: 30vw;
+
+	 			h2{
+	 				color 	: #fff;
+	 			}
+	 		}
+
+	 		.section--content{
+	 			.project--mockup{
+	 				margin-top 		: -20vh;
+	 				margin-left 	: -20vw;
+	 			}
+	 		}
+	 	}
+
+	 	.font{
+	 		height: auto;
+	 		padding: 10vh 0;
+
+	 		.section--title{
+	 			h2{
+	 				color: #FF5959;
+	 			}
+	 		}
+
+	 		.section--content{
+
+	 			.project--font-sample .project--font-info span.project--font-abc{
+	 				margin-top: $gap;
+	 			}
+
+
+	 			.project--colours{
+
+		 			ul{
+
+		 				li{
+
+		 					&.project--colour-red div.project--colour 			 		{ background-color: #FF5959; }
+		 					&.project--colour-orange div.project--colour 			 	{ background-color: #FFB861; }
+				 			&.project--colour-green div.project--colour 		 		{ background-color: #3FAF6C; }
+				 			&.project--colour-beige div.project--colour 		 		{ background-color: #F3EDE5; }
+
+				 		}
+				 	}
+				}
+	 		}
+	 	}
+
+	 	.logo{
+	 		background-color: #F3EDE5;
+	 		height 			: auto;
+	 		padding 		: 0;
+
+	 		.section--title{
+	 			top 		: 30vh;
+	 			bottom 		: auto;
+
+	 			h2{
+	 				color 	: #2a2a2a;
+	 			}
+	 		}
+	 		.section--content{
+	 			.project--logo-background{
+
+	 				.project--logo-background-light,
+	 				.project--logo-background-dark{
+
+	 					background-color 	: #F3EDE5;
+	 					width 				: 100vw;
+	 					padding 			: 20vh 0;
+
+	 					svg{
+	 						width 			: 40vw;
+	 						height 			: auto;
+	 					}
+	 				}
+
+	 				.project--logo-background-light { background-color: #F3EDE5; }
+	 				.project--logo-background-dark  { background-color: #FF5959; }
+
+	 			}
+	 		}
+	 	}
+
+	 	.main-screens{
+	 		background-color 	: #FF5959;
+
+	 		.section--content{
+
+	 			.project--screen-product{
+
+	 				img{
+	 					margin-bottom 	: $gap;
+	 				}
+	 			}
+	 		}
+	 	}
+
+	 	.mobile-screens{
+	 		background-color 	: #FFB861;
+	 		padding 			: 10vh 0;
+
+	 		.section--content{
+	 			@include align-items(flex-start);
+	 		}
+	 	}
+
+
+	 	@include bp(max-width, $bp-medium){
+	 		.details{
+	 			position 				: relative;
+	 			background-size 		: cover;
+	 			background-position 	: right;
+	 			padding 			 	: 0;
+	 			height 					: auto;
+
+	 			.section--title,
+	 			.project--desc{
+	 				z-index 			: 2;
+	 			}
+
+	 			.section--title{
+	 				margin-top 			: 60vh;
+	 			}
+
+
+	 			.project--desc{
+	 				width 				: 100vw;
+	 				padding 			: 0 10vw 10vh;
+	 			}
+
+	 			&:before{
+	 				position 			: absolute;
+	 				content 			: '';
+	 				background-color 	: rgba(0,0,0,0.5);
+	 				height 				: 100%;
+	 				width 				: 100%;
+	 				z-index 			: 1;
+	 				top 				: 0;
+	 				left 				: 0;
+	 				bottom 				: auto;
+	 				right 				: auto;
+	 			}
+	 		}
+
+	 		.introduction{
+	 			.section--content{
+	 				.project--mockup{
+	 					margin 			: 0;
+	 				}
+	 			}
+	 		}
+
+	 		.logo{
+	 			.section--title{
+		 			top 				: 0;
+		 			padding-top 		: 10vh;
+		 		}
+
+		 		.section--content{
+		 			width 				: 100vw;
+
+		 			.project--logo-background{
+
+		 				.project--logo-background-light,
+		 				.project--logo-background-dark{
+		 					padding 			: 10vh 0;
+		 				}
+
+		 			}
+		 		}
+	 		}
+	 	}
+
+	 	@include bp(max-width, $bp-small){
+	 		.details{
+	 			background-position 	: center;
+
+	 			.section--title{
+	 				margin-top 			: 20vh;
+	 			}
+	 		}
+
+	 		.font{
+	 			padding 		: 5vh 0;
+	 		}
+
+	 		.logo{ 
+	 			.section--content{ 
+	 				.project--logo-background {
+	 					.project--logo-background-light,
+	 					.project--logo-background-dark{ 
+	 						svg {
+			 					width 			: 80vw;
+			 				}
+			 			}
+			 		}
+		 		}
+	 		}
+	 	}
+	}
+}

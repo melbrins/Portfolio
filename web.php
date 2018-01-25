@@ -50,7 +50,7 @@
 
 	  				<!--  CHOOSEY  -->
 	  				<li class="work--project mix web lazy" style="background-image: url(images/work/thumbnails/choosey.png);">
-	  					<a href="#" class="work--project-link">
+	  					<a href="projects/choosey.php" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Choosey</h3>
