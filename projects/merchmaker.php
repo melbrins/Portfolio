@@ -90,13 +90,13 @@
 
 	    		<div class="project--font-info">
 	    			<span class="project--font-name">Helvetica Neue</span>
-	    			<!-- <span class="project--font-author">by Hoefler &amp; Co.</span> -->
+	    			
 	    			<span class="project--font-abc desktop">
 	    				<?php include '../images/project/merchmaker/helvetica-abc-desktop.php'; ?>
 	    			</span>
 
 	    			<span class="project--font-abc mobile">
-	    				<?php include '../images/project/Vision-Direct/gotham-abc-mobile.php'; ?>
+	    				<?php include '../images/project/merchmaker/helvetica-mobile-abc.php'; ?>
 	    			</span>
 	    		</div>
 	    	</div>
@@ -311,7 +311,7 @@
 			<ul class="work--list">
 
   				<!--  VISION DIRECT  -->
-				<li class="work--project mix web lazy" style="background-image: url(/images/work/thumbnails/Vision-Direct.png);">
+				<li class="work--project mix web lazy" data-src="/images/work/thumbnails/Vision-Direct.png">
   					<a href="/projects/visiondirect.php" class="work--project-link">
   						
   						<span class="work--project-title">
@@ -325,7 +325,7 @@
 
   				<!--  CHOOSEY  -->
   				<li class="work--project mix web lazy" data-src="/images/work/thumbnails/choosey.png">
-  					<a href="#" rel="prettyPhoto[Web]" class="work--project-link">
+  					<a href="/projects/choosey.php" rel="prettyPhoto[Web]" class="work--project-link">
   						
   						<span class="work--project-title">
   							<h3 class="work--project-name">Choosey</h3>
