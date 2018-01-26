@@ -11,7 +11,8 @@
 		 * 03. LOGO
 		 * ============================================ */
 		.logo{
-
+			padding-bottom: 0;
+			
 			.section--content{
 				@include display-flex(flex);
 				@include align-items(center);

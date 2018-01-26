@@ -344,7 +344,6 @@ body.project{
 	 		@include align-items(flex-start);
 	 		@include justify-content(center);
 	 		position 		: relative;
-	 		height 			: 70vh;
 
 	 		.section--title{
 	 			bottom 		: 20%;
@@ -352,7 +351,7 @@ body.project{
 	 		}
 
 	 		.project--mockup{
-	 			width 		: 80vw;
+	 			width 		: 100vw;
 	 			position 	: relative;
 	 			z-index 	: 5000;
 	 			text-align  : center;
@@ -368,8 +367,6 @@ body.project{
 		 * ============================================ */
 	 	.font{
 	 		@include justify-content(center);
-	 		height 			: 100vh;
-	 		padding-top 	: 20vh;
 	 		position 		: relative;
 
 	 		.section--title{

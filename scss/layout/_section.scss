@@ -4,19 +4,18 @@
 
 .section{
 	width 		: 100%;
-	padding 	: $gap 0;
+	padding 	: 10vh 0;
 
 	.section--title{
-		padding 			: 20px 0 40px 0;
 		text-align 			: center;
 		letter-spacing 		: 4px;
 		position 			: absolute;
-		left 				: 10vw;
+		left 				: 5vw;
 		width 				: 30vw;
 
 		h2{
 			@include transform(rotate(-90deg));
-			@include apply-origin(left, false);
+			@include apply-origin(bottom left, false);
 			position 				: absolute;
 		   	left  					: 0;
 		    bottom 					: 0;
@@ -32,6 +31,7 @@
 		&.number{
 			h2{
 				font-size 				: $f-size-l;
+				white-space 			: nowrap;
 
 				span{
 					font-size 			: 64px;
@@ -59,24 +59,16 @@
 		position 			: relative;
 
 		.section--title{
-			width 			: 10vw;
-			position 		: relative;
 			color 			: #2a2a2a;
 			margin-bottom 	: $gap;
 
 			h2{
-				position 		: absolute;
-				left 			: 0;
-				bottom 			: 0;
-				padding 		: 0;
-				color 		 	: #2a2a2a;
-				margin-bottom 	: 0;
-				padding 		: 0;				
+				color	 	: #2a2a2a;			
 			}
 		}
 
 		.section--content{
-			width 		: 80vw;
+			width 		: 100vw;
 			text-align 	: center;			
 		}
 	}
@@ -87,7 +79,6 @@
 		@include justify-content(flex-start);
 		background-color 	: #F6F7F8;
 		position 			: relative;
-		height 				: 50vh;
 
 		.section--title{
 
@@ -108,7 +99,6 @@
 		@include justify-content(flex-start);
 		background-color 	: #555;
 		position 			: relative;
-		height 				: 50vh;
 
 		.section--title{
 
@@ -118,7 +108,7 @@
 		}
 
 		.section--content{
-			width 		: 80vw;
+			width 		: 100vw;
 			text-align 	: center;			
 		}
 	}
@@ -180,6 +170,7 @@
 		height: 50vh;
 
 		.section--content{
+			width: 100vw;
 
 			h3{
 				font-size 			: 24px;
@@ -223,32 +214,32 @@
  * HOMEPAGE - MEDIA QUERIES
  * ============================================ */
 
-
-@include bp(max-width, $bp-small){
+@include bp(max-width, $bp-medium){
 	.section{
+
+		.section--title{
+			position 	:relative;
+			width 		: 100vw;
+			padding 	: 0;
+			left 		: 0;
+			text-align 	: center;
+
+			h2{
+				@include transform(rotate(0deg));
+				position: relative;
+				top: auto;
+				left: auto;
+				font-size: 24px;
+			}
+		}
+		
+		.section--content{
+			width: 100vw;
+		}
 
 		&.section--white{
 			@include flex-direction(column);
 			@include justify-content(space-evenly);
-			
-			.section--title{
-				width 		: 100vw;
-				padding 	: 0;
-				left 		: 0;
-
-				h2{
-					@include transform(rotate(0deg));
-					position: relative;
-					top: auto;
-					left: auto;
-					font-size: 24px;
-				}
-				
-			}
-
-			.section--content{
-				width: 100vw;
-			}
 		}
 
 		&.contact{

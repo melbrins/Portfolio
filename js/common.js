@@ -68,26 +68,6 @@ jQuery(document).ready(function($) {
 		$("#mobile-menu").slideToggle(500);
 	});
 
-
-	// ============================
-	// MOBILE - FILTER
-	// ============================
-	// $("#toggle-filters").click(function() {
-	// 	$("#filters").slideToggle(500);
-	// 	$('#toggle-filters').toggleClass('active');
-	// });
-	// $(".filter").bind("click", function() {
-	// 	if ($(window).width() < 767) {
-	// 		$("#filters").slideToggle(500);
-	// 		$('#toggle-filters').toggleClass('active');
-
-	// 		$currentfilter = $(this).html();
-
-	// 		$('.top-banner .current-filter').html($currentfilter);
-	// 	}
-	// });
-
-
 	// ============================
 	// TOGGLE - FIXED HEADER
 	// ============================
@@ -126,3 +106,43 @@ jQuery(document).ready(function($) {
 
 	resizeContainer();
 });
+
+
+jQuery(document).ready(function($) {
+
+	$titleSizeW = $(this).find('.section--title h2:visible').width() + 30;
+	$titleSizeH = $(this).find('.section--title h2:visible').height() + 30;
+
+	$(window).resize(function(){
+		positionTitle();
+	});
+
+	function positionTitle(){
+		$(".section:visible").each(function(){
+
+			$sectionPadding = parseInt($(this).css('padding-top').replace("px", ""));
+
+			if($(window).width() > '770'){
+				
+					console.log($(this).attr('class'));
+					$(this).find('.section--title').css("width", $titleSizeH);
+					$(this).find('.section--title').css("height", $titleSizeW);
+					$(this).find('.section--title h2').css("width", $titleSizeW);
+					$(this).find('.section--title h2').css("left", $titleSizeH);
+					$(this).find('.section--title').css("top", $sectionPadding);
+	
+			}else{
+	
+				$(this).find('.section--title').css("width", '');
+				$(this).find('.section--title').css("height", '');
+				$(this).find('.section--title h2').css("width", '');
+				$(this).find('.section--title h2').css("left", '');
+				$(this).find('.section--title').css("top", '');
+	
+			}
+
+		});
+	}
+
+	positionTitle();
+});	
