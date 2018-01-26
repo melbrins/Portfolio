@@ -13,10 +13,6 @@
 		.logo{
 			height: 100vh;
 
-			.section--title{
-	 			top: 20vw;
-			}
-
 			.section--content{
 				@include display-flex(flex);
 				@include align-items(center);
@@ -101,38 +97,7 @@
 		 * 05. MOBILE SCREENS
 		 * ============================================ */
 		.mobile-screens{
-			position: relative;
-			padding-bottom: 10vh;
 
-			.section--title{
-	 			top: 20vw;
-
-	 			h2{
-				    color: #fff;
-	 			}
-			}
-
-
-			.section--content{
-				@include display-flex(flex);
-				@include align-items(center);
-				@include justify-content(space-evenly);
-				@include flex-direction(row);
-
-				width 		: 60vw;
-				margin 		: 0 20vw;
-
-				div.project--screen{
-					width 	: 18vw;
-
-					img{
-						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
-						margin-bottom 		: 1vw;
-						border-radius 		: 4px;
-						overflow 			: hidden;
-					}
-				}
-			}
 		}
 
 

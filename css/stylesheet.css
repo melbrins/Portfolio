@@ -2926,6 +2926,9 @@ body.project #content {
 	 * 02.FONT AND COLOURS
 	 * ============================================ */
  	/* ============================================ *
+	 * 03. LOGO
+	 * ============================================ */
+ 	/* ============================================ *
 	 * 04. MAIN SCREENS
 	 * ============================================ */
   /* ============================================ *
@@ -3203,20 +3206,24 @@ body.project #content .font .section--content .project--colours ul li.project--c
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-2 {
   background-color: #DDDDDD;
 }
-/* line 493, ../scss/content/_project.scss */
+/* line 495, ../scss/content/_project.scss */
+body.project #content .logo .section--title {
+  top: 20vw;
+}
+/* line 503, ../scss/content/_project.scss */
 body.project #content .main-screens {
   position: relative;
   padding: 10vh 0;
 }
-/* line 497, ../scss/content/_project.scss */
+/* line 507, ../scss/content/_project.scss */
 body.project #content .main-screens .section--title {
   top: 20vw;
 }
-/* line 500, ../scss/content/_project.scss */
+/* line 510, ../scss/content/_project.scss */
 body.project #content .main-screens .section--title h2 {
   color: #fff;
 }
-/* line 505, ../scss/content/_project.scss */
+/* line 515, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3229,11 +3236,11 @@ body.project #content .main-screens .section--content {
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 513, ../scss/content/_project.scss */
+/* line 523, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .project--screen {
   width: 60vw;
 }
-/* line 516, ../scss/content/_project.scss */
+/* line 526, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .project--screen .project--screen-title {
   color: #fff;
   font-weight: 100;
@@ -3241,7 +3248,7 @@ body.project #content .main-screens .section--content .project--screen .project-
   margin-bottom: 20px;
   display: block;
 }
-/* line 524, ../scss/content/_project.scss */
+/* line 534, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3249,7 +3256,7 @@ body.project #content .main-screens .section--content .project--screen img {
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 531, ../scss/content/_project.scss */
+/* line 541, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .secondary-screens {
   display: -webkit-flex;
   display: flex;
@@ -3261,28 +3268,28 @@ body.project #content .main-screens .section--content .secondary-screens {
   align-items: flex-start;
   width: 100%;
 }
-/* line 538, ../scss/content/_project.scss */
+/* line 548, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .secondary-screens .project--screen {
   width: 28vw;
 }
-/* line 542, ../scss/content/_project.scss */
+/* line 552, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .secondary-screens div {
   margin-top: 4vw;
 }
-/* line 554, ../scss/content/_project.scss */
+/* line 564, ../scss/content/_project.scss */
 body.project #content .mobile-screens {
   position: relative;
   padding-bottom: 10vh;
 }
-/* line 558, ../scss/content/_project.scss */
+/* line 568, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--title {
   top: 20vw;
 }
-/* line 561, ../scss/content/_project.scss */
+/* line 571, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--title h2 {
   color: #fff;
 }
-/* line 567, ../scss/content/_project.scss */
+/* line 577, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3295,11 +3302,11 @@ body.project #content .mobile-screens .section--content {
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 576, ../scss/content/_project.scss */
+/* line 586, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--content div.project--screen {
   width: 18vw;
 }
-/* line 579, ../scss/content/_project.scss */
+/* line 589, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--content div.project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3308,7 +3315,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 591, ../scss/content/_project.scss */
+/* line 601, ../scss/content/_project.scss */
 body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
   width: 20vw;
   height: 500px;
@@ -3335,7 +3342,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
      * 04. SECTION WORK - LARGE SCREEN
      * ============================================ */
   }
-  /* line 612, ../scss/content/_project.scss */
+  /* line 622, ../scss/content/_project.scss */
   body.project #content .details .section--title,
   body.project #content .introduction .section--title,
   body.project #content .font .section--title,
@@ -3347,7 +3354,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: 40vw;
     left: 5vw;
   }
-  /* line 618, ../scss/content/_project.scss */
+  /* line 628, ../scss/content/_project.scss */
   body.project #content .details .section--content p,
   body.project #content .introduction .section--content p,
   body.project #content .font .section--content p,
@@ -3359,56 +3366,56 @@ body.project #content .section.work .work--project.web, body.project #content .s
     font-size: 14px;
     line-height: 1.2;
   }
-  /* line 628, ../scss/content/_project.scss */
+  /* line 638, ../scss/content/_project.scss */
   body.project #content .details {
     width: 100vw;
   }
-  /* line 631, ../scss/content/_project.scss */
+  /* line 641, ../scss/content/_project.scss */
   body.project #content .details .project--desc {
     width: 40vw;
   }
-  /* line 637, ../scss/content/_project.scss */
+  /* line 647, ../scss/content/_project.scss */
   body.project #content .details .project--img img {
     width: 100vw;
     max-width: none;
   }
-  /* line 648, ../scss/content/_project.scss */
+  /* line 658, ../scss/content/_project.scss */
   body.project #content .introduction .section--content,
   body.project #content .introduction .project--mockup {
     width: 70vw;
   }
-  /* line 658, ../scss/content/_project.scss */
+  /* line 668, ../scss/content/_project.scss */
   body.project #content .font {
     padding-top: 0;
     height: 80vh;
   }
-  /* line 662, ../scss/content/_project.scss */
+  /* line 672, ../scss/content/_project.scss */
   body.project #content .font .section--title {
     top: 40vw;
   }
-  /* line 668, ../scss/content/_project.scss */
+  /* line 678, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
   }
-  /* line 671, ../scss/content/_project.scss */
+  /* line 681, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul .project--colour-more-shade {
     width: 100%;
     text-align: left;
   }
-  /* line 675, ../scss/content/_project.scss */
+  /* line 685, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul .project--colour-more-shade .project--colour-name {
     margin-left: 20px;
   }
-  /* line 688, ../scss/content/_project.scss */
+  /* line 698, ../scss/content/_project.scss */
   body.project #content .logo .section--title {
     top: 40vw;
   }
-  /* line 697, ../scss/content/_project.scss */
+  /* line 707, ../scss/content/_project.scss */
   body.project #content .main-screens .section--title {
     top: 40vw;
   }
-  /* line 707, ../scss/content/_project.scss */
+  /* line 717, ../scss/content/_project.scss */
   body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
     width: 40vw;
     height: 500px;
@@ -3439,7 +3446,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
      * 04. SECTION WORK - LARGE SCREEN
      * ============================================ */
   }
-  /* line 722, ../scss/content/_project.scss */
+  /* line 732, ../scss/content/_project.scss */
   body.project #content .details,
   body.project #content .introduction,
   body.project #content .font,
@@ -3451,7 +3458,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 732, ../scss/content/_project.scss */
+  /* line 742, ../scss/content/_project.scss */
   body.project #content .details .section--title,
   body.project #content .introduction .section--title,
   body.project #content .font .section--title,
@@ -3466,7 +3473,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     left: 0;
     top: 0;
   }
-  /* line 739, ../scss/content/_project.scss */
+  /* line 749, ../scss/content/_project.scss */
   body.project #content .details .section--title h2,
   body.project #content .introduction .section--title h2,
   body.project #content .font .section--title h2,
@@ -3482,171 +3489,171 @@ body.project #content .section.work .work--project.web, body.project #content .s
     transform: rotate(0);
     position: relative;
   }
-  /* line 750, ../scss/content/_project.scss */
+  /* line 760, ../scss/content/_project.scss */
   body.project #content .details {
     height: auto;
     padding: 10vh 0 0;
     margin: 0;
   }
-  /* line 755, ../scss/content/_project.scss */
+  /* line 765, ../scss/content/_project.scss */
   body.project #content .details .section--title {
     order: 2;
     margin-bottom: 40px;
   }
-  /* line 760, ../scss/content/_project.scss */
+  /* line 770, ../scss/content/_project.scss */
   body.project #content .details .project--desc {
     width: 80vw;
     text-align: center;
     order: 3;
   }
-  /* line 766, ../scss/content/_project.scss */
+  /* line 776, ../scss/content/_project.scss */
   body.project #content .details .project--img {
     width: 100vw;
     order: 1;
     margin: 0 0 5vh;
   }
-  /* line 776, ../scss/content/_project.scss */
+  /* line 786, ../scss/content/_project.scss */
   body.project #content .introduction {
     -webkit-align-items: center;
     align-items: center;
     height: auto;
     padding: 5vh 0;
   }
-  /* line 781, ../scss/content/_project.scss */
+  /* line 791, ../scss/content/_project.scss */
   body.project #content .introduction .section--title {
     display: none;
   }
-  /* line 785, ../scss/content/_project.scss */
+  /* line 795, ../scss/content/_project.scss */
   body.project #content .introduction .section--content,
   body.project #content .introduction .project--mockup {
     width: 90vw;
   }
-  /* line 794, ../scss/content/_project.scss */
+  /* line 804, ../scss/content/_project.scss */
   body.project #content .font {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 799, ../scss/content/_project.scss */
+  /* line 809, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--font-sample {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin-top: 20px;
     width: 80vw;
   }
-  /* line 804, ../scss/content/_project.scss */
+  /* line 814, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--font-sample .project--font-letter {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  /* line 810, ../scss/content/_project.scss */
+  /* line 820, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--font-sample .project--font-info span {
     text-align: center;
   }
-  /* line 816, ../scss/content/_project.scss */
+  /* line 826, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours {
     -webkit-align-items: center;
     align-items: center;
     width: 80vw;
   }
-  /* line 820, ../scss/content/_project.scss */
+  /* line 830, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     width: 80vw;
     margin: 0 0 20px;
   }
-  /* line 825, ../scss/content/_project.scss */
+  /* line 835, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul li {
     margin: 0 0 20px 0;
     height: 40vw;
   }
-  /* line 829, ../scss/content/_project.scss */
+  /* line 839, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul li .project--colour-name {
     font-weight: 100;
     font-size: 12px;
     width: 100%;
   }
-  /* line 835, ../scss/content/_project.scss */
+  /* line 845, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul li div.project--colour {
     width: 30vw;
     height: 30vw;
   }
-  /* line 841, ../scss/content/_project.scss */
+  /* line 851, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 845, ../scss/content/_project.scss */
+  /* line 855, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade {
     margin-top: 20px;
     height: auto;
   }
-  /* line 849, ../scss/content/_project.scss */
+  /* line 859, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     width: 80vw;
     margin-bottom: 20px;
   }
-  /* line 854, ../scss/content/_project.scss */
+  /* line 864, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades div.project--colour {
     width: 12vw;
     height: 12vw;
     margin: 0;
   }
-  /* line 871, ../scss/content/_project.scss */
+  /* line 881, ../scss/content/_project.scss */
   body.project #content .logo {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 879, ../scss/content/_project.scss */
+  /* line 889, ../scss/content/_project.scss */
   body.project #content .main-screens {
     height: auto;
     padding: 5vh 0;
   }
-  /* line 883, ../scss/content/_project.scss */
+  /* line 893, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 887, ../scss/content/_project.scss */
+  /* line 897, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content div.project--screen,
   body.project #content .main-screens .section--content .secondary-screens div.project--screen {
     width: 80vw;
     margin-top: 40px;
   }
-  /* line 892, ../scss/content/_project.scss */
+  /* line 902, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
   body.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
     width: 100%;
   }
-  /* line 897, ../scss/content/_project.scss */
+  /* line 907, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content .secondary-screens {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
   }
-  /* line 907, ../scss/content/_project.scss */
+  /* line 917, ../scss/content/_project.scss */
   body.project #content .mobile-screens {
     height: auto;
     padding: 0 0 5vh 0;
   }
-  /* line 911, ../scss/content/_project.scss */
+  /* line 921, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 915, ../scss/content/_project.scss */
+  /* line 925, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen {
     width: 25vw;
   }
-  /* line 918, ../scss/content/_project.scss */
+  /* line 928, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen .project--screen-title {
     width: 100%;
   }
-  /* line 930, ../scss/content/_project.scss */
+  /* line 940, ../scss/content/_project.scss */
   body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
     width: 40vw;
     height: 500px;
@@ -3665,7 +3672,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
      * SECTION WORK - SMALL SCREEN
      * ============================================ */
   }
-  /* line 945, ../scss/content/_project.scss */
+  /* line 955, ../scss/content/_project.scss */
   body.project #content .details,
   body.project #content .introduction,
   body.project #content .font,
@@ -3676,7 +3683,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
   body.project #content .mobile-screens {
     height: auto;
   }
-  /* line 954, ../scss/content/_project.scss */
+  /* line 964, ../scss/content/_project.scss */
   body.project #content .details .section--content,
   body.project #content .introduction .section--content,
   body.project #content .font .section--content,
@@ -3688,12 +3695,12 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: 90vw;
     margin: 0 5vw;
   }
-  /* line 967, ../scss/content/_project.scss */
+  /* line 977, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 970, ../scss/content/_project.scss */
+  /* line 980, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl {
     display: -webkit-flex;
     display: flex;
@@ -3704,49 +3711,48 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: 100%;
     margin: 0 0 20px;
   }
-  /* line 977, ../scss/content/_project.scss */
+  /* line 987, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl dt, body.project #content .details .project--desc .project--details dl dd {
     width: 40%;
     display: inline-block;
   }
-  /* line 982, ../scss/content/_project.scss */
+  /* line 992, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl dt {
     text-align: right;
     margin-right: 20px;
   }
-  /* line 987, ../scss/content/_project.scss */
+  /* line 997, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl dd {
     text-align: left;
     margin: 0;
   }
-  /* line 997, ../scss/content/_project.scss */
+  /* line 1007, ../scss/content/_project.scss */
   body.project #content .details .project--img img {
     max-height: 40vh;
     width: auto;
   }
-  /* line 1009, ../scss/content/_project.scss */
+  /* line 1019, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1014, ../scss/content/_project.scss */
+  /* line 1024, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen {
     width: 80vw;
   }
-  /* line 1017, ../scss/content/_project.scss */
+  /* line 1027, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen img {
     margin-top: 40px;
-    border-radius: 20px;
     width: 100%;
     max-height: unset;
   }
-  /* line 1030, ../scss/content/_project.scss */
+  /* line 1039, ../scss/content/_project.scss */
   body.project #content .section.work {
     padding: 0;
   }
-  /* line 1034, ../scss/content/_project.scss */
+  /* line 1043, ../scss/content/_project.scss */
   body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
     width: 100vw;
     height: 500px;
@@ -3861,45 +3867,6 @@ body.project #content .section.work .work--project.web, body.project #content .s
   width: 80%;
   display: inline-block;
 }
-/* line 103, ../scss/content/_visiondirect.scss */
-#vision-direct.project #content .mobile-screens {
-  position: relative;
-  padding-bottom: 10vh;
-}
-/* line 107, ../scss/content/_visiondirect.scss */
-#vision-direct.project #content .mobile-screens .section--title {
-  top: 20vw;
-}
-/* line 110, ../scss/content/_visiondirect.scss */
-#vision-direct.project #content .mobile-screens .section--title h2 {
-  color: #fff;
-}
-/* line 116, ../scss/content/_visiondirect.scss */
-#vision-direct.project #content .mobile-screens .section--content {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  width: 60vw;
-  margin: 0 20vw;
-}
-/* line 125, ../scss/content/_visiondirect.scss */
-#vision-direct.project #content .mobile-screens .section--content div.project--screen {
-  width: 18vw;
-}
-/* line 128, ../scss/content/_visiondirect.scss */
-#vision-direct.project #content .mobile-screens .section--content div.project--screen img {
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1vw;
-  border-radius: 4px;
-  overflow: hidden;
-}
 @media only screen and (max-width: 770px) {
   /* line 7, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content {
@@ -3913,40 +3880,40 @@ body.project #content .section.work .work--project.web, body.project #content .s
      * 04. MAIN SCREENS - MEDIUM SCREEN
      * ============================================ */
   }
-  /* line 146, ../scss/content/_visiondirect.scss */
+  /* line 115, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .details .project--img img {
     width: 120vw;
     max-width: none;
   }
-  /* line 156, ../scss/content/_visiondirect.scss */
+  /* line 125, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .introduction .section--content,
   #vision-direct.project #content .introduction .project--mockup {
     width: 110vw;
   }
-  /* line 167, ../scss/content/_visiondirect.scss */
+  /* line 136, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .logo .section--content .project--logo-wire {
     width: 100vw;
   }
-  /* line 171, ../scss/content/_visiondirect.scss */
+  /* line 140, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 100vw;
   }
-  /* line 175, ../scss/content/_visiondirect.scss */
+  /* line 144, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background div {
     width: 100vw;
   }
-  /* line 178, ../scss/content/_visiondirect.scss */
+  /* line 147, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light {
     -webkit-justify-content: center;
     justify-content: center;
   }
-  /* line 182, ../scss/content/_visiondirect.scss */
+  /* line 151, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-dark svg, #vision-direct.project #content .logo .section--content .project--logo-background div.project--logo-background-light svg {
     width: 70vw;
   }
-  /* line 201, ../scss/content/_visiondirect.scss */
+  /* line 170, ../scss/content/_visiondirect.scss */
   #vision-direct.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
   #vision-direct.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
     width: 100%;
