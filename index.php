@@ -151,83 +151,14 @@
         		<div class="section--content">
         			<ul class="work--list">
 
-                <!--  ANGELA  -->
-                <li class="work--project lazy illustration" data-src="images/work/thumbnails/angela.png">
-                  <a href="/illustration.php#prettyPhoto[Illustration]/0/" class="work--project-link">
+                <!--  VISION DIRECT  -->
+                <?php include 'layout/project-block/vision-direct.php'; ?>
 
-                    <span class="work--project-title">
-                      <h3 class="work--project-name">Angela</h3>
-                      <h4 class="work--project-category">Illustration</h4>
+                <!--  MERCHMAKER  -->
+                <?php include 'layout/project-block/merchmaker.php'; ?>
 
-                      <span class="work--project-view btn">View Project</span>
-                    </span>
-                  </a>
-                </li>
-
-                <!--  OCTOCAT  -->
-                <li class="work--project lazy illustration" data-src="images/work/thumbnails/octocat.png">
-                  <a href="/illustration.php#prettyPhoto[Illustration]/2/" class="work--project-link">
-
-                    <span class="work--project-title">
-                      <h3 class="work--project-name">Octocat</h3>
-                      <h4 class="work--project-category">Illustration</h4>
-
-                      <span class="work--project-view btn">View Project</span>
-                    </span>
-                  </a>
-                </li>
-
-        				<!-- VISION DIRECT 3D -->
-                <li class="work--project lazy thered" data-src="images/work/thumbnails/vd-3d.png">
-                  <a href="/3d.php#prettyPhoto[3d]/5/" rel="prettyPhoto[3d]" class="work--project-link">
-                    
-                    <span class="work--project-title">
-                      <h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
-                      <h4 class="work--project-category">Packaging / Modeling</h4>
-
-                      <span class="work--project-view btn">View Project</span>
-                    </span>
-                  </a>
-                </li>
-
-        				<!--  STAR WARS FAMILY  -->
-                <li class="work--project lazy illustration" data-src="images/work/thumbnails/star-wars.png">
-                  <a href="/illustration.php#prettyPhoto[Illustration]/1/" rel="prettyPhoto[Illustration]" class="work--project-link">
-                    
-                    <span class="work--project-title">
-                      <h3 class="work--project-name">Star Wars Family</h3>
-                      <h4 class="work--project-category">Illustration</h4>
-
-                      <span class="work--project-view btn">View Project</span>
-                    </span>
-                  </a>
-                </li>
-
-        				<!--  COLD TOUCH -->
-                <li class="work--project lazy illustration" data-src="images/work/thumbnails/melissa-cold-touch.png">
-                  <a href="/illustration.php#prettyPhoto[Illustration]/3/" rel="prettyPhoto[Illustration]" class="work--project-link">
-                    
-                    <span class="work--project-title">
-                      <h3 class="work--project-name">Cold Touch</h3>
-                      <h4 class="work--project-category">Illustration</h4>
-
-                      <span class="work--project-view btn">View Project</span>
-                    </span>
-                  </a>
-                </li>
-
-        				<!-- Iphone -->
-                <li class="work--project lazy thered" data-src="images/work/thumbnails/iphone.png">
-                  <a href="/3d.php#prettyPhoto[3d]/3/" rel="prettyPhoto[3d]" class="work--project-link">
-                    
-                    <span class="work--project-title">
-                      <h3 class="work--project-name">Iphone - Black &amp; White</h3>
-                      <h4 class="work--project-category">Modeling / Packaging</h4>
-
-                      <span class="work--project-view btn">View Project</span>
-                    </span>
-                  </a>
-                </li>
+                <!--  CHOOSEY  -->
+                <?php include 'layout/project-block/choosey.php'; ?>
                 
         			</ul>
         		</div>      
