@@ -23,8 +23,8 @@
 				<ul class="work--list">
 
 					<!--  ANGELA  -->
-					<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/angela.png">
-	  					<a href="images/fullscreen/illustration/angela.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+					<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/angela.png">
+	  					<a href="/dest/images/fullscreen/illustration/angela.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Angela</h3>
@@ -36,8 +36,8 @@
 	  				</li>
 
 	  				<!--  STAR WARS FAMILY  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/star-wars.png">
-	  					<a href="images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/star-wars.png">
+	  					<a href="/dest/images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Star Wars Family</h3>
@@ -49,8 +49,8 @@
 	  				</li>
 
 	  				<!--  OCTOCAT  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/octocat.png">
-	  					<a href="images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/octocat.png">
+	  					<a href="/dest/images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Octocat</h3>
@@ -62,8 +62,8 @@
 	  				</li>
 
 	  				<!--  COLD TOUCH -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/melissa-cold-touch.png">
-	  					<a href="images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/melissa-cold-touch.png">
+	  					<a href="/dest/images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Cold Touch</h3>
@@ -75,8 +75,8 @@
 	  				</li>
 
 	  				<!--  MEDUSA  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/medusa.png">
-	  					<a href="images/fullscreen/illustration/medusa.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/medusa.png">
+	  					<a href="/dest/images/fullscreen/illustration/medusa.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Medusa</h3>
@@ -88,8 +88,8 @@
 	  				</li>
 
 	  				<!--  BLACK SHEEP GOAT  -->
-	  				<li class="work--project mix illustration lazy" data-src="images/work/thumbnails/black-sheep-goat.png">
-	  					<a href="images/fullscreen/illustration/Black_Sheep_Goat_web.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/black-sheep-goat.png">
+	  					<a href="/dest/images/fullscreen/illustration/Black_Sheep_Goat_web.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
 	  						
 	  						<span class="work--project-title">
 	  							<h3 class="work--project-name">Black Sheep Goat</h3>
@@ -110,7 +110,7 @@
 </body>
 
 <?php include 'layout/after-body.php'; ?>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/src/jquery.prettyPhoto.js" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
 			$("a[rel^='prettyPhoto']").prettyPhoto();

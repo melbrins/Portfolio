@@ -6,7 +6,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="/dest/css/components.min.css" />
+<link rel="stylesheet" type="text/css" href="/dest/css/main.min.css" />
 
 <style type="text/css">
 /* fullscreen setup */

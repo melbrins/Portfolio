@@ -29,7 +29,7 @@
       <div class="wsi-advertising">
 
         <div class="wsi-advert wsi-advert-brian">
-          <img src="../images/project/wsi-brian.png" alt="Brian is in the Kitchen - Wall Street Institutes"/>
+          <img src="/dest/images/project/wsi-brian.png" alt="Brian is in the Kitchen - Wall Street Institutes"/>
           <div class="wsi-advert--content">
             <h3>Brian is in the Kitchen</h3>
             <p>
@@ -49,11 +49,11 @@
               This one was less heavy on the retouch and just needed to fix some issue with saturation on his face and clean a green colour on his hair (reflect from environment?).
             </p>
           </div>
-          <img src="../images/project/wsi-umbrella.png" alt="Where is my umbrella - Wall Street Institutes"/>
+          <img src="/dest/images/project/wsi-umbrella.png" alt="Where is my umbrella - Wall Street Institutes"/>
         </div>
 
         <div class="wsi-advert wsi-advert-tailor">
-          <img src="../images/project/wsi-tailor.png" alt="My tailor is rich - Wall Street Institutes"/>
+          <img src="/dest/images/project/wsi-tailor.png" alt="My tailor is rich - Wall Street Institutes"/>
           <div class="wsi-advert--content">
             <h3>My Tailor is Rich</h3>
             <p>
@@ -73,7 +73,7 @@
       </div>
 
       <div class="wsi-consultant">
-        <img src="../images/project/wsi-consultant-1.png" alt="Consultants illustration - Wall Street Institutes" />
+        <img src="/dest/images/project/wsi-consultant-1.png" alt="Consultants illustration - Wall Street Institutes" />
 
         <div class="wsi-consultant--introduction">
           <h3>Internal Communication</h3>
@@ -83,13 +83,13 @@
         </div>
 
         <div class="wsi-consultant--expressions">
-          <div class="wsi-consultant-expression"><img src="../images/project/wsi-consultant-2.png" alt="" /></div>
-          <div class="wsi-consultant-expression"><img src="../images/project/wsi-consultant-3.png" alt="" /></div>
-          <div class="wsi-consultant-expression"><img src="../images/project/wsi-consultant-4.png" alt="" /></div>
-          <div class="wsi-consultant-expression"><img src="../images/project/wsi-consultant-5.png" alt="" /></div>
+          <div class="wsi-consultant-expression"><img src="/dest/images/project/wsi-consultant-2.png" alt="" /></div>
+          <div class="wsi-consultant-expression"><img src="/dest/images/project/wsi-consultant-3.png" alt="" /></div>
+          <div class="wsi-consultant-expression"><img src="/dest/images/project/wsi-consultant-4.png" alt="" /></div>
+          <div class="wsi-consultant-expression"><img src="/dest/images/project/wsi-consultant-5.png" alt="" /></div>
 
           <div class="wsi-consultant-expression">
-            <img src="../images/project/wsi-consultant-6.png" alt="" />
+            <img src="/dest/images/project/wsi-consultant-6.png" alt="" />
             <div class="wsi-consultant-expression-content">
               <h3>Be Persistent</h3>
               <p>
@@ -99,7 +99,7 @@
           </div>
 
           <div class="wsi-consultant-expression">
-            <img src="../images/project/wsi-consultant-7.png" alt="" />
+            <img src="/dest/images/project/wsi-consultant-7.png" alt="" />
             <div class="wsi-consultant-expression-content">
               <h3>Be Confident</h3>
               <p>
@@ -109,7 +109,7 @@
           </div>
 
           <div class="wsi-consultant-expression full">
-            <img src="../images/project/wsi-consultant-8.png" alt="" />
+            <img src="/dest/images/project/wsi-consultant-8.png" alt="" />
             <div class="wsi-consultant-expression-content">
               <h3>Listen to the Client</h3>
               <p>
@@ -119,7 +119,7 @@
           </div>
 
           <div class="wsi-consultant-expression">
-            <img src="../images/project/wsi-consultant-9.png" alt="" />
+            <img src="/dest/images/project/wsi-consultant-9.png" alt="" />
             <div class="wsi-consultant-expression-content">
               <h3>Make the client comfortable</h3>
               <p>
@@ -129,7 +129,7 @@
           </div>
 
           <div class="wsi-consultant-expression">
-            <img src="../images/project/wsi-consultant-10.png" alt="" />
+            <img src="/dest/images/project/wsi-consultant-10.png" alt="" />
             <div class="wsi-consultant-expression-content">
               <h3>Set up a Healthy Communication</h3>
               <p>
@@ -143,7 +143,7 @@
   </div>
 
   <div class="banner banner-fullscreen">
-    <img src="../images/project/wsi-consultant-11.png" alt="" />
+    <img src="/dest/images/project/wsi-consultant-11.png" alt="" />
 
     <div class="wsi-consultant-expression-content">
       <h3>Be Audacious</h3>

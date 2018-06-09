@@ -1,0 +1,22 @@
+{
+  "name": "melbrins",
+  "version": "0.0.1",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-lazyload": "^1.0.3",
+    "grunt-unused": "^0.2.3",
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "vanilla-lazyload": "^8.7.1"
+  },
+  "dependencies": {}
+}

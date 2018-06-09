@@ -22,7 +22,7 @@
 
 	    <div class="project--desc">
 	  		<div class="project--logo">
-	  			<?php include '../images/project/choosey/choosey-white-logo.php'; ?>
+	  			<?php include '/dest/images/project/choosey/choosey-white-logo.php'; ?>
 	  		</div>
 	  		
 	  		<h2>Greeting Cards that comes to life.</h2>
@@ -62,7 +62,7 @@
 
 	    <div class="section--content">
 	    	<div class="project--mockup">
-		    	<img class="lazy" data-src="../images/project/choosey/choosey-mock-up.png" />
+		    	<img class="lazy" data-src="/dest/images/project/choosey/choosey-mock-up.png" />
 		    </div>
 	    </div>
 	</div>
@@ -77,18 +77,18 @@
 	    <div class="section--content">
 	    	<div class="project--font-sample">
 	    		<div class="project--font-letter">
-	    			<?php include '../images/project/choosey/sofia-aA.php'; ?>
+	    			<?php include '/dest/images/project/choosey/sofia-aA.php'; ?>
 	    		</div>
 
 	    		<div class="project--font-info">
 	    			<span class="project--font-name">Sofia Pro</span>
 	 
 	    			<span class="project--font-abc desktop">
-	    				<?php include '../images/project/choosey/sofia-desktop-abc.php'; ?>
+	    				<?php include '/dest/images/project/choosey/sofia-desktop-abc.php'; ?>
 	    			</span>
 
 	    			<span class="project--font-abc mobile">
-	    				<?php include '../images/project/choosey/sofia-mobile-abc.php'; ?>
+	    				<?php include '/dest/images/project/choosey/sofia-mobile-abc.php'; ?>
 	    			</span>
 	    		</div>
 	    	</div>
@@ -153,11 +153,11 @@
 	    	<div class="project--logo-background">
 	    		
 	    		<div class="project--logo-background-light">
-	    			<?php include '../images/project/choosey/choosey-colour-logo.php'; ?>
+	    			<?php include '/dest/images/project/choosey/choosey-colour-logo.php'; ?>
 	    		</div>
 
 	    		<div class="project--logo-background-dark">
-	    			<?php include '../images/project/choosey/choosey-white-logo.php'; ?>
+	    			<?php include '/dest/images/project/choosey/choosey-white-logo.php'; ?>
 	    		</div>
 
 	    	</div>
@@ -175,19 +175,19 @@
 	    <div class="section--content">
 	    	<div class="project--screen project--screen-homepage">
 	    		<span class="project--screen project--screen-title">Homepage</span>
-	    		<img class="lazy" data-src="../images/project/choosey/choosey-homepage.png" />
+	    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-homepage.png" />
 	    	</div>
 
 	    	<div class="secondary-screens">
 		    	<div class="project--screen project--screen-category">
 		    		<span class="project--screen project--screen-title">Category Page</span>
-		    		<img class="lazy" data-src="../images/project/choosey/choosey-category-page.png" />
+		    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-category-page.png" />
 		    	</div>
 
 		    	<div class="project--screen project--screen-product">
 		    		<span class="project--screen project--screen-title">Product Page</span>
-		    		<img class="lazy" data-src="../images/project/choosey/choosey-product-page.png" />
-		    		<img class="lazy" data-src="../images/project/choosey/choosey-product-page-2.png" />
+		    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-product-page.png" />
+		    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-product-page-2.png" />
 		    	</div>
 		    </div>
 
@@ -204,16 +204,16 @@
 
 	    <div class="section--content">
 	    	<div class="project--screen project--screen-homepage">
-	    		<img class="lazy" data-src="../images/project/choosey/choosey-mobile-homepage.png" />
+	    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-mobile-homepage.png" />
 	    	</div>
 
 	    	<div class="project--screen project--secondary">
-	    		<img class="lazy" data-src="../images/project/choosey/choosey-mobile-category.png" />
+	    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-mobile-category.png" />
 	    	</div>
 
 	    	<div class="project--screen project--screen-product">
-	    		<img class="lazy" data-src="../images/project/choosey/choosey-mobile-menu.png" />
-	    		<img class="lazy" data-src="../images/project/choosey/choosey-mobile-product-page.png" />
+	    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-mobile-menu.png" />
+	    		<img class="lazy" data-src="/dest/images/project/choosey/choosey-mobile-product-page.png" />
 	    	</div>
 	    </div>
 	</div>  

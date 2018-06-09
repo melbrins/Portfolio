@@ -25,19 +25,19 @@
 							</li> -->
 
 							<li class="menu--illustration">
-								<a href="/illustration.php">Illustration</a>
+								<a href="/category/illustration.php">Illustration</a>
 							</li>
 
 							<li class="menu--3d">
-								<a href="/3d.php">3D</a>
+								<a href="/category/3d.php">3D</a>
 							</li>
 
 							<li class="menu--web">
-								<a href="/web.php">Web</a>
+								<a href="/category/web.php">Web</a>
 							</li>
 
 							<li class="menu--print">
-								<a href="/print.php">Print</a>
+								<a href="/category/print.php">Print</a>
 							</li>
 
 							<!-- <li class="menu--portfolio">

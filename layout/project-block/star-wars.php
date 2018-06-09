@@ -1,5 +1,5 @@
-<li class="work--project lazy illustration" data-src="images/work/thumbnails/star-wars.png">
-	<a href="/illustration.php#prettyPhoto[Illustration]/1/" rel="prettyPhoto[Illustration]" class="work--project-link">
+<li class="work--project lazy illustration" data-src="../dest/images/work/thumbnails/star-wars.png">
+	<a href="../category/illustration.php#prettyPhoto[Illustration]/1/" rel="prettyPhoto[Illustration]" class="work--project-link">
 		
 		<span class="work--project-title">
 			<h3 class="work--project-name">Star Wars Family</h3>

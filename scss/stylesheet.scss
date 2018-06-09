@@ -13,7 +13,7 @@
 
 @import "compass";
 @import "compass/css3";
-
+ 
 $mq-support: true;
 $mq-fixed-value: false;
 
@@ -64,9 +64,6 @@ $mq-fixed-value: false;
 // Override
 
 @import "override/prettyPhoto";
-@import "override/owlCarousel";
-@import "override/owlCarousel-theme-var";
-@import "override/owlCarousel-theme";
 @import "override/menu_elastic";
 
 // ----------------------------------------------
