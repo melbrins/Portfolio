@@ -74,7 +74,7 @@
 
                   <p>Passionate about Character Design and to deliver original concept and high quality illustration for any purposes.</p>
 
-                  <a href="/web.php">See Illustrations projects</a>
+                  <a href="/illustration.php">See Illustrations projects</a>
 
               </li>
 
@@ -88,7 +88,7 @@
 
                   <p>Driven to make the best use of 3D to create flexible and high quality mock-up for all size businesses.</p>
 
-                  <a href="/web.php">See 3D projects</a>
+                  <a href="/3d.php">See 3D projects</a>
 
               </li>
             </ul>
