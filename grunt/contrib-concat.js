@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 				'js/src/jquery.min.js',
 				'js/src/jquery.easing.min.js',
 				'js/src/jquery.ba-cond.min.js',
-				'js/src/jquery.lazy.min.js',
+				'js/src/jquery.lazy.min.js'
 				],
 
 			dest: 'js/jquery.js'

@@ -19,9 +19,9 @@ fullscreenFix();
 // ============================
 // PROJECT - BACKGROUND RESIZE
 // ============================
+var windowH = $(window).height();
 
-function backgroundResize(){
-	var windowH = $(window).height();
+function backgroundResize(){	
 	$(".background").each(function(){
 		var path = $(this);
         // variables
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 	// TOGGLE - FIXED HEADER
 	// ============================
 	$(".content-wrap").bind('scroll', function() {
-		if ($(".content-wrap").scrollTop() > 300) {
+		if ($(".content-wrap").scrollTop() > windowH) {
 			$(".toggle-fix").addClass('fixed');
 			var toggleSize = $(".toggle-fix").height();
 			$(".content-wrap").css('padding-top', toggleSize);
@@ -110,6 +110,25 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
 
+	// ========================================================
+	// SCROLL TO 
+	// Target: Element, Button: Element, Time: String
+	// ========================================================
+	function scrollTo ($target, $button, $time){
+		$($button).click(function() {
+			
+			event.preventDefault();
+
+		    $('.content-wrap').animate({
+		        scrollTop: $($target).position().top
+		    }, $time);
+
+		});
+	}
+
+	scrollTo('#services', '#discover', 500);
+
+
 	$titleSizeW = $(this).find('.section--title h2:visible').width() + 30;
 	$titleSizeH = $(this).find('.section--title h2:visible').height() + 30;
 
@@ -126,18 +145,19 @@ jQuery(document).ready(function($) {
 				
 					$(this).find('.section--title').css("width", $titleSizeH);
 					$(this).find('.section--title').css("height", $titleSizeW);
-					$(this).find('.section--title h2').css("width", $titleSizeW);
-					$(this).find('.section--title h2').css("left", $titleSizeH);
 					$(this).find('.section--title').css("top", $sectionPadding);
+
+					$(this).find('.section--title h2').css("width", $titleSizeW);
+					$(this).find('.section--title h2').css("left", $titleSizeH / 2);
 	
 			}else{
 	
 				$(this).find('.section--title').css("width", '');
 				$(this).find('.section--title').css("height", '');
+				$(this).find('.section--title').css("top", '');
+
 				$(this).find('.section--title h2').css("width", '');
 				$(this).find('.section--title h2').css("left", '');
-				$(this).find('.section--title').css("top", '');
-	
 			}
 
 		});
@@ -145,4 +165,75 @@ jQuery(document).ready(function($) {
 
 	positionTitle();
 });	
+/**
+ * main3.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2014, Codrops
+ * http://www.codrops.com
+ */
+(function() { 
+
+	var bodyEl  	= document.body,
+		content 	= document.querySelector( '.content-wrap' ),
+		openbtn 	= document.getElementById( 'open-button' ),
+		closebtn 	= document.getElementById( 'close-button' ),
+		isOpen 		= false,
+
+		morphEl 	= document.getElementById( 'morph-shape' ),
+		s 			= Snap( morphEl.querySelector( 'svg' ) );
+
+		path 		= s.select( 'path' );
+		
+		var initialPath = this.path.attr('d'),
+		pathOpen 	= morphEl.getAttribute( 'data-morph-open' ),
+		isAnimating = false;
+
+	function init() {
+		initEvents();
+	}
+
+	function initEvents() {
+		console.log('initEvents'); 
+		openbtn.addEventListener( 'click', toggleMenu );
+		if( closebtn ) {
+			closebtn.addEventListener( 'click', toggleMenu );
+		}
+
+		// close the menu element if the target it´s not the menu element or one of its descendants..
+		content.addEventListener( 'click', function(ev) {
+			var target = ev.target;
+			if( isOpen && target !== openbtn ) {
+				toggleMenu();
+			}
+		} );
+	}
+
+	function toggleMenu() {
+		console.log('toggleMenu');
+		if( isAnimating ) return false;
+		isAnimating = true;
+		if( isOpen ) {
+			classie.remove( bodyEl, 'show-menu' );
+			// animate path
+			setTimeout( function() {
+				// reset path
+				path.attr( 'd', initialPath );
+				isAnimating = false; 
+			}, 300 );
+		}
+		else {
+			classie.add( bodyEl, 'show-menu' );
+			// animate path
+			path.animate( { 'path' : pathOpen }, 400, mina.easeinout, function() { isAnimating = false; } );
+		}
+		isOpen = !isOpen;
+	}
+
+	init();
+
+})();
 //# sourceMappingURL=main.js.map

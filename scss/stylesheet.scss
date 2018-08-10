@@ -50,6 +50,7 @@ $mq-fixed-value: false;
 // ----------------------------------------------
 // CONTENT
 
+@import "content/loading";
 @import "content/project";
 @import "content/visiondirect";
 @import "content/merchmaker";
@@ -65,6 +66,7 @@ $mq-fixed-value: false;
 
 @import "override/prettyPhoto";
 @import "override/menu_elastic";
+@import "override/owlCarousel-theme";
 
 // ----------------------------------------------
 // FONT AWESOME

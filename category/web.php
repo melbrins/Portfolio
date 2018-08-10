@@ -11,7 +11,12 @@
 
 </head>
 <body id="portfolio">
+  <div id="container">
+  
+  <?php include '../layout/mobile-menu.php'; ?>
 
+  <div class="content-wrap">
+      <div id="content">
 	<?php include '../layout/header.php'; ?>
 	
 	<!-- ============================================ *

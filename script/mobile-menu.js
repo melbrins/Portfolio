@@ -10,17 +10,19 @@
  */
 (function() { 
 
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false,
+	var bodyEl  	= document.body,
+		content 	= document.querySelector( '.content-wrap' ),
+		openbtn 	= document.getElementById( 'open-button' ),
+		closebtn 	= document.getElementById( 'close-button' ),
+		isOpen 		= false,
 
-		morphEl = document.getElementById( 'morph-shape' ),
-		s = Snap( morphEl.querySelector( 'svg' ) );
-		path = s.select( 'path' );
-		initialPath = this.path.attr('d'),
-		pathOpen = morphEl.getAttribute( 'data-morph-open' ),
+		morphEl 	= document.getElementById( 'morph-shape' ),
+		s 			= Snap( morphEl.querySelector( 'svg' ) );
+
+		path 		= s.select( 'path' );
+		
+		var initialPath = this.path.attr('d'),
+		pathOpen 	= morphEl.getAttribute( 'data-morph-open' ),
 		isAnimating = false;
 
 	function init() {
@@ -28,6 +30,7 @@
 	}
 
 	function initEvents() {
+		console.log('initEvents'); 
 		openbtn.addEventListener( 'click', toggleMenu );
 		if( closebtn ) {
 			closebtn.addEventListener( 'click', toggleMenu );
@@ -43,6 +46,7 @@
 	}
 
 	function toggleMenu() {
+		console.log('toggleMenu');
 		if( isAnimating ) return false;
 		isAnimating = true;
 		if( isOpen ) {

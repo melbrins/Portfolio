@@ -5,7 +5,10 @@ module.exports = function(grunt) {
 		components: {
 
 			files: {
-				'css/components.css' : 'node_modules/owl.carousel/src/scss/owl.carousel.scss'
+				'css/components.css' : [
+					'node_modules/owl.carousel/src/scss/owl.carousel.scss',
+					'node_modules/owl.carousel/src/scss/_theme.scss'
+				]
 			}
 		},
 
