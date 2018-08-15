@@ -21,7 +21,7 @@ fullscreenFix();
 // ============================
 var windowH = $(window).height();
 
-function backgroundResize(){	
+function backgroundResize(){
 	$(".background").each(function(){
 		var path = $(this);
         // variables
@@ -64,9 +64,12 @@ jQuery(document).ready(function($) {
 	// ============================
 	// MOBILE - MENU
 	// ============================
-	$("#mobile-menu").hide();
+	var menu = $("#mobile-menu");
+
+	menu.hide();
+
 	$("#toggle-nav").click(function() {
-		$("#mobile-menu").slideToggle(500);
+        menu.slideToggle(500);
 	});
 
 	// ============================
@@ -74,6 +77,11 @@ jQuery(document).ready(function($) {
 	// ============================
 	var toggleElement  	= $(".toggle-fix");
     var toggleSize  	= toggleElement.height();
+	var loadingSection  = $('#loading');
+
+    if(loadingSection){
+        loadingSection.css('height', windowH);
+	}
 
 	$(window).bind('scroll', function() {
 
@@ -114,63 +122,59 @@ jQuery(document).ready(function($) {
 	}
 
 	resizeContainer();
+
+    // ========================================================
+    // SCROLL TO
+    // Target: Element, Button: Element, Time: String
+    // ========================================================
+    function scrollTo ($target, $button, $time){
+        $($button).click(function() {
+
+            event.preventDefault();
+
+            $('html').animate({
+                scrollTop: $($target).position().top
+            }, $time);
+
+        });
+    }
+
+    scrollTo('#services', '#discover', 500);
+
+
+    $titleSizeW = $(this).find('.section--title h2:visible').width() + 30;
+    $titleSizeH = $(this).find('.section--title h2:visible').height() + 30;
+
+    $(window).resize(function(){
+        positionTitle();
+    });
+
+    function positionTitle(){
+        $(".section:visible").each(function(){
+
+            $sectionPadding = parseInt($(this).css('padding-top').replace("px", ""));
+
+            if($(window).width() > '770'){
+
+                $(this).find('.section--title').css("width", $titleSizeH);
+                $(this).find('.section--title').css("height", $titleSizeW);
+                $(this).find('.section--title').css("top", $sectionPadding);
+
+                $(this).find('.section--title h2').css("width", $titleSizeW);
+                $(this).find('.section--title h2').css("left", $titleSizeH / 2);
+
+            }else{
+
+                $(this).find('.section--title').css("width", '');
+                $(this).find('.section--title').css("height", '');
+                $(this).find('.section--title').css("top", '');
+
+                $(this).find('.section--title h2').css("width", '');
+                $(this).find('.section--title h2').css("left", '');
+            }
+
+        });
+    }
+
+    positionTitle();
 });
-
-
-jQuery(document).ready(function($) {
-
-	// ========================================================
-	// SCROLL TO 
-	// Target: Element, Button: Element, Time: String
-	// ========================================================
-	function scrollTo ($target, $button, $time){
-		$($button).click(function() {
-			
-			event.preventDefault();
-
-		    $('html').animate({
-		        scrollTop: $($target).position().top
-		    }, $time);
-
-		});
-	}
-
-	scrollTo('#services', '#discover', 500);
-
-
-	$titleSizeW = $(this).find('.section--title h2:visible').width() + 30;
-	$titleSizeH = $(this).find('.section--title h2:visible').height() + 30;
-
-	$(window).resize(function(){
-		positionTitle();
-	});
-
-	function positionTitle(){
-		$(".section:visible").each(function(){
-
-			$sectionPadding = parseInt($(this).css('padding-top').replace("px", ""));
-
-			if($(window).width() > '770'){
-				
-					$(this).find('.section--title').css("width", $titleSizeH);
-					$(this).find('.section--title').css("height", $titleSizeW);
-					$(this).find('.section--title').css("top", $sectionPadding);
-
-					$(this).find('.section--title h2').css("width", $titleSizeW);
-					$(this).find('.section--title h2').css("left", $titleSizeH / 2);
-	
-			}else{
-	
-				$(this).find('.section--title').css("width", '');
-				$(this).find('.section--title').css("height", '');
-				$(this).find('.section--title').css("top", '');
-
-				$(this).find('.section--title h2').css("width", '');
-				$(this).find('.section--title h2').css("left", '');
-			}
-
-		});
-	}
-
-	positionTitle();
-});	
