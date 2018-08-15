@@ -53,6 +53,7 @@ function backgroundResize(){
         path.css("background-size", imgW + "px " + imgH + "px");
     });
 }
+
 $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
 backgroundResize();
@@ -71,17 +72,25 @@ jQuery(document).ready(function($) {
 	// ============================
 	// TOGGLE - FIXED HEADER
 	// ============================
-	$(".content-wrap").bind('scroll', function() {
-		if ($(".content-wrap").scrollTop() > windowH) {
-			$(".toggle-fix").addClass('fixed');
-			var toggleSize = $(".toggle-fix").height();
-			$(".content-wrap").css('padding-top', toggleSize);
+	var toggleElement  	= $(".toggle-fix");
+    var toggleSize  	= toggleElement.height();
+
+	$(window).bind('scroll', function() {
+
+		if ($(window).scrollTop() > windowH) {
+
+            toggleElement.addClass('fixed');
+            $("body").css('padding-top', toggleSize);
+
+		} else {
+
+            toggleElement.removeClass('fixed');
+            $("body").css('padding-top', "0");
+
 		}
-		else {
-			$(".toggle-fix").removeClass('fixed');
-			$(".content-wrap").css('padding-top', "0");
-		}
+
 	});
+
 	// ============================
 	// PROJECT - MAIN PICTURE
 	// ============================
@@ -119,7 +128,7 @@ jQuery(document).ready(function($) {
 			
 			event.preventDefault();
 
-		    $('.content-wrap').animate({
+		    $('html').animate({
 		        scrollTop: $($target).position().top
 		    }, $time);
 

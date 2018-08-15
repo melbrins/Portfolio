@@ -10,10 +10,12 @@
 
 <body id="merchmaker" class="project">
 
+<?php include '../layout/mobile-menu.php'; ?>
 <?php include '../layout/header.php'; ?>
+
 <div id="container">
 
-    <?php include '../layout/mobile-menu.php'; ?>
+
 
     <div class="content-wrap">
         <div id="content">
