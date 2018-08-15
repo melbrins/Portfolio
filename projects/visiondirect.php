@@ -223,7 +223,7 @@
                     </div>
 
                     <div class="project--screen project--screen-product">
-                        <img class="lazy" data-src="./dest/images/project/Vision-Direct/vd-mobile-product-page.png" />
+                        <img class="lazy" data-src="../dest/images/project/Vision-Direct/vd-mobile-product-page.png" />
                     </div>
                 </div>
             </div>
