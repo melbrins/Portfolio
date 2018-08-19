@@ -20,7 +20,7 @@
 
   <div class="content-wrap">
       <div id="content">
-	<?php include '../layout/header.php'; ?>
+	    <?php include '../layout/header.php'; ?>
 	
 	<!-- ============================================ *
 	* SECTION - WORK
@@ -31,89 +31,22 @@
 				<ul class="work--list">
 
 					<!-- GLUM & FISH -->
-	  				<li class="work--project mix thered lazy" data-src="/dest/images/work/thumbnails/glum-and-fish.png">
-	  					<a href="/dest/images/fullscreen/3d/glumandfish_2.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Glum &amp; Fish</h3>
-	  							<h4 class="work--project-category">Illustration / Modeling</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
-
-
+	  				<?php include '../layout/project-block/glumFish.php'; ?>
 
 	  				<!-- LONDON COFFEE FESTIVAL -->
-	  				<li class="work--project mix thered lazy" data-src="/dest/images/work/thumbnails/london-coffee-festival.png">
-	  					<a href="/dest/images/fullscreen/3d/london-coffee-festival.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">London Coffee Festival</h3>
-	  							<h4 class="work--project-category">Illustration / Modeling</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
-
-
+	  				<?php include '../layout/project-block/coffeeFestival.php'; ?>
 
 	  				<!-- Wolf -->
-	  				<li class="work--project mix thered lazy" data-src="/dest/images/work/thumbnails/wolf.png">
-	  					<a href="/dest/images/fullscreen/3d/wolf.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wolf - Black Sheep Project</h3>
-	  							<h4 class="work--project-category">Character Modeling / Rigging</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
-
-
+	  				<?php include '../layout/project-block/wolf.php'; ?>
 
 	  				<!-- Iphone -->
-	  				<li class="work--project mix thered lazy" data-src="/dest/images/work/thumbnails/iphone.png">
-	  					<a href="/dest/images/fullscreen/3d/iphone.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Iphone - Black &amp; White</h3>
-	  							<h4 class="work--project-category">Modeling / Packaging</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+	  				<?php include '../layout/project-block/iphone.php'; ?>
 
 	  				<!-- JACK -->
-	  				<li class="work--project mix thered lazy" data-src="/dest/images/work/thumbnails/jack2.png">
-	  					<a href="/dest/images/fullscreen/3d/jack.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Jack Daniels</h3>
-	  							<h4 class="work--project-category">Character Design / Modeling</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
-
+	  				<?php include '../layout/project-block/jack.php'; ?>
 
 	  				<!-- VISION DIRECT 3D -->
-	  				<li class="work--project mix thered lazy" data-src="/dest/images/work/thumbnails/vd-3d.png">
-	  					<a href="/dest/images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Vision Direct - 3D Packaging</h3>
-	  							<h4 class="work--project-category">Packaging / Modeling</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+                    <?php include '../layout/project-block/vd3D.php'; ?>
 
 				</ul>
 			</div>

@@ -1,66 +1,57 @@
-// ============================
-// PROJECT - FULLSCREEN FIX
-// Fix vertical when not overflow
-// Call fullscreenFix() if .fullscreen content changes
-// ============================
+windowH = $(window).height();
+windowW = $(window).width();
+var mobileBreakPoint = 768;
+var device;
+var img = $('img');
 
-function fullscreenFix(){
-	var h = $('body').height();
-    // set .fullscreen height
-    $(".content-b").each(function(){
-    	if($(this).innerHeight() <= h){
-    		$(this).closest(".fullscreen").addClass("not-overflow");
-    	}
-    });
-}
-$(window).resize(fullscreenFix);
-fullscreenFix();
+function isMobile(){
 
-// ============================
-// PROJECT - BACKGROUND RESIZE
-// ============================
-var windowH = $(window).height();
+    if($(window).width() < mobileBreakPoint) return true;
+    return false;
 
-function backgroundResize(){
-	$(".background").each(function(){
-		var path = $(this);
-        // variables
-        var contW = path.width();
-        var contH = path.height();
-        var imgW = path.attr("data-img-width");
-        var imgH = path.attr("data-img-height");
-        var ratio = imgW / imgH;
-        // overflowing difference
-        var diff = parseFloat(path.attr("data-diff"));
-        diff = diff ? diff : 0;
-        // remaining height to have fullscreen image only on parallax
-        var remainingH = 0;
-        if(path.hasClass("parallax")){
-        	//var maxH = contH > windowH ? contH : windowH;
-        	remainingH = windowH - contH;
-        }
-        // set img values depending on cont
-        imgH = contH + remainingH + diff;
-        imgW = imgH * ratio;
-        // fix when too large
-        if(contW > imgW){
-        	imgW = contW;
-        	imgH = imgW / ratio;
-        }
-        //
-        path.data("resized-imgW", imgW);
-        path.data("resized-imgH", imgH);
-        path.css("background-size", imgW + "px " + imgH + "px");
-    });
 }
 
-$(window).resize(backgroundResize);
-$(window).focus(backgroundResize);
-backgroundResize();
+$(window).resize(windowResize);
 
+function windowResize (){
+    previousDevice = device;
+
+    if(isMobile()){
+        device = 'mobile';
+    } else {
+        device = 'desktop';
+    }
+
+    if(previousDevice != device){
+        toggleImages();
+    }
+}
+
+function toggleImages(){
+
+    img.each(function(){
+        if(isMobile()) {
+            if (this.getAttribute('data-src-mobile') != undefined) {
+                var mobileImg = this.getAttribute('data-src-mobile');
+
+                this.src = mobileImg;
+                console.log('src                : ' + this.getAttribute('src'));
+            }
+        }else{
+            if (this.getAttribute('data-src-desktop') != undefined) {
+                var desktopImg = this.getAttribute('data-src-desktop');
+
+                this.src = desktopImg;
+                console.log('src                : ' + this.getAttribute('src'));
+            }
+        }
+
+
+    });
+}
 
 jQuery(document).ready(function($) {
-
+    windowResize ();
 	// ============================
 	// MOBILE - MENU
 	// ============================

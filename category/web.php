@@ -20,7 +20,7 @@
 
   <div class="content-wrap">
       <div id="content">
-	<?php include '../layout/header.php'; ?>
+	    <?php include '../layout/header.php'; ?>
 	
 	<!-- ============================================ *
 	* SECTION - WORK

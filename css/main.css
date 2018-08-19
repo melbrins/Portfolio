@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@media (771px) {
+  /* line 39, ../scss/_var.scss */
+  img[data-src-desktop] {
+    content: attr(data-src-desktop, url);
+  }
+}
 /*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -1391,7 +1397,7 @@ p {
     left: 10%;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 770px) {
   /* line 307, ../scss/_common.scss */
   .col-3,
   .col-4,
@@ -2092,7 +2098,7 @@ p {
   margin-left: 0;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 770px) {
   /* line 76, ../scss/layout/_footer.scss */
   #footer .wrap {
     padding: 40px 0;
@@ -2124,14 +2130,14 @@ p {
 /* line 5, ../scss/layout/_section.scss */
 .section {
   width: 100%;
-  padding: 10vh 0;
+  padding: 120px 0;
   /* ============================================ *
    * HOMEPAGE - SERVICES
    * ============================================ */
 }
 /* line 9, ../scss/layout/_section.scss */
 .section .section--title {
-  text-align: center;
+  text-align: right;
   letter-spacing: 4px;
   position: absolute;
   left: 1vw;
@@ -2236,19 +2242,18 @@ p {
   justify-content: center;
   -webkit-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
   background-color: #000;
 }
-/* line 110, ../scss/layout/_section.scss */
+/* line 109, ../scss/layout/_section.scss */
 .section.section--dark .section--title h2 {
   color: #fff;
 }
-/* line 115, ../scss/layout/_section.scss */
+/* line 114, ../scss/layout/_section.scss */
 .section.section--dark .section--content {
   width: 100vw;
   text-align: center;
 }
-/* line 121, ../scss/layout/_section.scss */
+/* line 120, ../scss/layout/_section.scss */
 .section.section--dark#introduction h2 {
   font-size: 44px;
   font-weight: 100;
@@ -2256,7 +2261,7 @@ p {
   color: #fff;
   letter-spacing: 2.5px;
 }
-/* line 129, ../scss/layout/_section.scss */
+/* line 128, ../scss/layout/_section.scss */
 .section.section--dark#introduction h4 {
   font-size: 24px;
   font-weight: 100;
@@ -2265,11 +2270,11 @@ p {
   color: #fff;
   text-transform: inherit;
 }
-/* line 140, ../scss/layout/_section.scss */
+/* line 139, ../scss/layout/_section.scss */
 .section.section--dark svg {
   fill: #fff;
 }
-/* line 145, ../scss/layout/_section.scss */
+/* line 144, ../scss/layout/_section.scss */
 .section.section--dark-grey {
   display: -webkit-flex;
   display: flex;
@@ -2280,36 +2285,36 @@ p {
   background-color: #555;
   position: relative;
 }
-/* line 154, ../scss/layout/_section.scss */
+/* line 153, ../scss/layout/_section.scss */
 .section.section--dark-grey .section--title h2 {
   color: #fff;
 }
-/* line 159, ../scss/layout/_section.scss */
+/* line 158, ../scss/layout/_section.scss */
 .section.section--dark-grey .section--content {
   width: 100vw;
   text-align: center;
 }
-/* line 167, ../scss/layout/_section.scss */
+/* line 166, ../scss/layout/_section.scss */
 .section.section--blue .section--title h2 {
   color: #fff;
 }
-/* line 181, ../scss/layout/_section.scss */
+/* line 180, ../scss/layout/_section.scss */
 .section.services .section--content .service--icon {
   max-width: 100px;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 187, ../scss/layout/_section.scss */
+/* line 186, ../scss/layout/_section.scss */
 .section.services .section--content h3 {
   font-size: 24px;
   font-weight: 900;
   color: #1a1a1a;
 }
-/* line 193, ../scss/layout/_section.scss */
+/* line 192, ../scss/layout/_section.scss */
 .section.services .section--content p {
   margin-bottom: 20px;
 }
-/* line 197, ../scss/layout/_section.scss */
+/* line 196, ../scss/layout/_section.scss */
 .section.services .section--content .service--list {
   display: -webkit-flex;
   display: flex;
@@ -2320,31 +2325,30 @@ p {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 203, ../scss/layout/_section.scss */
+/* line 202, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li {
   width: 20vw;
 }
-/* line 206, ../scss/layout/_section.scss */
+/* line 205, ../scss/layout/_section.scss */
 .section.services .section--content .service--list li p, .section.services .section--content .service--list li h3, .section.services .section--content .service--list li a {
   text-align: center;
   display: block;
 }
-/* line 218, ../scss/layout/_section.scss */
+/* line 217, ../scss/layout/_section.scss */
 .section.contact {
-  height: 50vh;
   min-height: 300px;
 }
-/* line 222, ../scss/layout/_section.scss */
+/* line 220, ../scss/layout/_section.scss */
 .section.contact .section--content {
   width: 100vw;
 }
-/* line 225, ../scss/layout/_section.scss */
+/* line 223, ../scss/layout/_section.scss */
 .section.contact .section--content h3 {
   font-size: 24px;
   color: #1a1a1a;
   margin-bottom: 0;
 }
-/* line 231, ../scss/layout/_section.scss */
+/* line 229, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods {
   display: -webkit-flex;
   display: flex;
@@ -2356,19 +2360,19 @@ p {
   align-items: flex-start;
   margin-top: 40px;
 }
-/* line 242, ../scss/layout/_section.scss */
+/* line 240, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method i {
   font-size: 24px;
   color: #1a1a1a;
   margin-bottom: 20px;
 }
-/* line 248, ../scss/layout/_section.scss */
+/* line 246, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method h4 {
   font-weight: 400;
   color: #1a1a1a;
   font-size: 18px;
 }
-/* line 254, ../scss/layout/_section.scss */
+/* line 252, ../scss/layout/_section.scss */
 .section.contact .section--content .contact--methods .contact--method.phone {
   margin-right: 20px;
 }
@@ -2377,7 +2381,7 @@ p {
  * HOMEPAGE - MEDIA QUERIES
  * ============================================ */
 @media only screen and (max-width: 770px) {
-  /* line 270, ../scss/layout/_section.scss */
+  /* line 268, ../scss/layout/_section.scss */
   .section .section--title {
     position: relative;
     width: 100vw;
@@ -2385,7 +2389,7 @@ p {
     left: 0;
     text-align: center;
   }
-  /* line 277, ../scss/layout/_section.scss */
+  /* line 275, ../scss/layout/_section.scss */
   .section .section--title h2 {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2397,35 +2401,35 @@ p {
     left: auto;
     font-size: 24px;
   }
-  /* line 286, ../scss/layout/_section.scss */
+  /* line 284, ../scss/layout/_section.scss */
   .section .section--content {
     width: 100vw;
   }
-  /* line 290, ../scss/layout/_section.scss */
+  /* line 288, ../scss/layout/_section.scss */
   .section.section--white {
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
   }
-  /* line 295, ../scss/layout/_section.scss */
+  /* line 293, ../scss/layout/_section.scss */
   .section.contact {
     height: auto;
   }
-  /* line 298, ../scss/layout/_section.scss */
+  /* line 296, ../scss/layout/_section.scss */
   .section.contact .section--title {
     height: 30%;
   }
-  /* line 302, ../scss/layout/_section.scss */
+  /* line 300, ../scss/layout/_section.scss */
   .section.contact .section--content {
     width: 100vw;
     height: 70%;
   }
-  /* line 306, ../scss/layout/_section.scss */
+  /* line 304, ../scss/layout/_section.scss */
   .section.contact .section--content h3, .section.contact .section--content p {
     display: none;
   }
-  /* line 310, ../scss/layout/_section.scss */
+  /* line 308, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods {
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -2435,7 +2439,7 @@ p {
     height: 100%;
     margin-top: 0;
   }
-  /* line 317, ../scss/layout/_section.scss */
+  /* line 315, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method {
     display: -webkit-flex;
     display: flex;
@@ -2451,21 +2455,24 @@ p {
     height: 50px;
     line-height: 50px;
   }
-  /* line 328, ../scss/layout/_section.scss */
+  /* line 326, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method i {
     margin-right: 20px;
     margin-bottom: 0;
   }
-  /* line 333, ../scss/layout/_section.scss */
+  /* line 331, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method h4 {
     margin: 0;
   }
-  /* line 337, ../scss/layout/_section.scss */
+  /* line 335, ../scss/layout/_section.scss */
   .section.contact .section--content .contact--methods .contact--method.phone {
     margin-right: 0;
   }
 }
-/* line 347, ../scss/layout/_section.scss */
+/* ============================================ *
+ * WORK LIST
+ * ============================================ */
+/* line 363, ../scss/layout/_section.scss */
 .work--list {
   display: -webkit-flex;
   display: flex;
@@ -2475,35 +2482,22 @@ p {
   justify-content: space-evenly;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   width: 100%;
-  padding: 20px 0;
+  padding: 0;
+  margin: 0;
 }
-/* line 356, ../scss/layout/_section.scss */
+/* line 373, ../scss/layout/_section.scss */
 .work--list .work--project {
-  -webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
-  border-radius: 10px 10px 0 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  background-size: cover;
-  background-position-x: 50%;
-  width: 23%;
-  height: 780px;
-  margin: 0 1% 2% 1%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
+  width: 100vw;
+  margin-bottom: 0;
 }
-/* line 370, ../scss/layout/_section.scss */
+/* line 377, ../scss/layout/_section.scss */
 .work--list .work--project img {
-  height: 100%;
-  width: auto;
-  max-width: initial;
+  width: 100%;
 }
-/* line 376, ../scss/layout/_section.scss */
+/* line 381, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-link {
   height: 100%;
   width: 100%;
@@ -2511,201 +2505,155 @@ p {
   position: relative;
   z-index: 40;
 }
-/* line 384, ../scss/layout/_section.scss */
+/* line 389, ../scss/layout/_section.scss */
 .work--list .work--project .work--project-title {
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0 20px;
+  display: none;
 }
-/* line 393, ../scss/layout/_section.scss */
-.work--list .work--project .work--project-title .work--project-name,
-.work--list .work--project .work--project-title .work--project-category,
-.work--list .work--project .work--project-title .work--project-view {
-  z-index: 20;
-  position: relative;
-}
-/* line 400, ../scss/layout/_section.scss */
-.work--list .work--project .work--project-title .work--project-name {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #1a1a1a;
-  line-height: 1.4;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-/* line 410, ../scss/layout/_section.scss */
-.work--list .work--project .work--project-title .work--project-category {
-  font-size: 12px;
-  color: #1a1a1a;
-  font-weight: 200;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-/* line 418, ../scss/layout/_section.scss */
-.work--list .work--project .work--project-title .work--project-view {
-  width: 100%;
-  height: 40px;
-  background-color: #1a1a1a;
-  line-height: 40px;
-  border-radius: 0;
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-}
-/* line 429, ../scss/layout/_section.scss */
-.work--list .work--project .work--project-title:before {
-  -webkit-border-radius: 100% 100% 0 0;
-  -moz-border-radius: 100% 100% 0 0;
-  border-radius: 100% 100% 0 0;
-  content: '';
-  width: 120%;
-  min-height: 160%;
-  padding-top: 80%;
-  background-color: #fff;
-  display: block;
-  position: absolute;
-  z-index: 0;
-  top: -60%;
-  left: -10%;
-}
-/* line 447, ../scss/layout/_section.scss */
-.work--list .work--project:hover:before {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-/* line 451, ../scss/layout/_section.scss */
-.work--list .work--project:hover .work--project-title {
-  bottom: 40px;
-  left: 0;
-}
-@media only screen and (max-width: 979px) {
-  /* line 459, ../scss/layout/_section.scss */
-  .work--list .work--project {
-    width: 32%;
-  }
-  /* line 463, ../scss/layout/_section.scss */
-  .work--list .work--project .work--project-title:before {
-    min-height: 180%;
-    top: -80%;
-  }
-  /* line 469, ../scss/layout/_section.scss */
-  .work--list .work--project:nth-child(3n) {
-    margin-right: 0;
-  }
-  /* line 473, ../scss/layout/_section.scss */
-  .work--list .work--project:nth-child(even) {
-    margin-top: 0;
-  }
-}
-@media only screen and (max-width: 770px) {
-  /* line 481, ../scss/layout/_section.scss */
-  .work--list .work--project {
-    width: 49%;
-  }
-  /* line 485, ../scss/layout/_section.scss */
-  .work--list .work--project .work--project-title:before {
-    min-height: 180%;
-    top: -80%;
-  }
-  /* line 491, ../scss/layout/_section.scss */
-  .work--list .work--project:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 347, ../scss/layout/_section.scss */
+
+@media only screen and (min-width: 771px) {
+  /* line 394, ../scss/layout/_section.scss */
   .work--list {
-    padding: 0;
+    margin: 0;
+    -webkit-flex-direction: row;
+    flex-direction: row;
   }
-  /* line 502, ../scss/layout/_section.scss */
+  /* line 399, ../scss/layout/_section.scss */
+  .work--list .work--project {
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-size: cover;
+    background-position-x: 50%;
+    height: 780px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+    width: 33.33vw;
+  }
+  /* line 415, ../scss/layout/_section.scss */
+  .work--list .work--project.web {
+    width: 33.33vw;
+  }
+  /* line 419, ../scss/layout/_section.scss */
+  .work--list .work--project.print {
+    width: 50%;
+  }
+  /* line 423, ../scss/layout/_section.scss */
+  .work--list .work--project i {
+    background-color: #000;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+  }
+  /* line 435, ../scss/layout/_section.scss */
+  .work--list .work--project img {
+    height: 100%;
+    width: auto;
+    max-width: initial;
+    margin: 0 -50%;
+  }
+  /* line 442, ../scss/layout/_section.scss */
   .work--list .work--project .work--project-title {
-    bottom: 40px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* line 451, ../scss/layout/_section.scss */
+  .work--list .work--project .work--project-title .work--project-name,
+  .work--list .work--project .work--project-title .work--project-category,
+  .work--list .work--project .work--project-title .work--project-view {
+    z-index: 20;
+    position: relative;
+  }
+  /* line 458, ../scss/layout/_section.scss */
+  .work--list .work--project .work--project-title .work--project-name {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  /* line 468, ../scss/layout/_section.scss */
+  .work--list .work--project .work--project-title .work--project-category {
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  /* line 476, ../scss/layout/_section.scss */
+  .work--list .work--project .work--project-title .work--project-view {
+    width: 100%;
+    height: 40px;
+    background-color: #1a1a1a;
+    line-height: 40px;
+    border-radius: 0;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+  }
+  /* line 487, ../scss/layout/_section.scss */
+  .work--list .work--project .work--project-title:before {
+    -webkit-border-radius: 100% 100% 0 0;
+    -moz-border-radius: 100% 100% 0 0;
+    border-radius: 100% 100% 0 0;
+    content: '';
+    width: 120%;
+    min-height: 160%;
+    padding-top: 80%;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: -60%;
+    left: -10%;
   }
   /* line 505, ../scss/layout/_section.scss */
-  .work--list .work--project .work--project-title:before {
-    min-height: 180%;
-    top: -50%;
+  .work--list .work--project:hover:before {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  /* line 509, ../scss/layout/_section.scss */
+  .work--list .work--project:hover .work--project-title {
+    bottom: 40px;
+    left: 0;
   }
 }
-
-/* line 514, ../scss/layout/_section.scss */
-.work--list {
-  margin: 0;
-}
-/* line 517, ../scss/layout/_section.scss */
-.work--list .work--project {
-  border-radius: 0;
-  width: 15vw;
-  margin: 0;
-}
-/* line 522, ../scss/layout/_section.scss */
-.work--list .work--project.web {
-  width: 30vw;
-}
-/* line 526, ../scss/layout/_section.scss */
-.work--list .work--project.print {
-  width: 35vw;
-}
-/* line 530, ../scss/layout/_section.scss */
-.work--list .work--project.thered {
-  width: 15vw;
-  margin-bottom: 2vw;
-}
-/* line 535, ../scss/layout/_section.scss */
-.work--list .work--project i {
-  background-color: #000;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 14px;
-}
-
-@media only screen and (max-width: 979px) {
-  /* line 551, ../scss/layout/_section.scss */
-  .work--list .work--project,
-  .work--list .work--project.web,
-  .work--list .work--project.illustration,
-  .work--list .work--project.print,
-  .work--list .work--project.thered {
-    width: 33.33vw;
-    height: 50vh;
+@media only screen and (min-width: 979px) {
+  /* line 520, ../scss/layout/_section.scss */
+  .work--list .work--project {
+    margin: 40px 0;
+    width: 15vw;
   }
-}
-@media only screen and (max-width: 979px) {
-  /* line 564, ../scss/layout/_section.scss */
-  .work--list .work--project,
-  .work--list .work--project.web,
-  .work--list .work--project.illustration,
-  .work--list .work--project.print,
-  .work--list .work--project.thered {
-    width: 46vw;
-    height: 50vh;
-    margin-bottom: 2vw;
+  /* line 524, ../scss/layout/_section.scss */
+  .work--list .work--project.web {
+    width: 30vw;
   }
-}
-@media only screen and (max-width: 479px) {
-  /* line 578, ../scss/layout/_section.scss */
-  .work--list .work--project,
-  .work--list .work--project.web,
-  .work--list .work--project.illustration,
-  .work--list .work--project.print,
-  .work--list .work--project.thered {
-    width: 100vw;
-    height: 85vh;
-    margin-bottom: 0;
+  /* line 528, ../scss/layout/_section.scss */
+  .work--list .work--project.print {
+    width: 35vw;
   }
 }
 /* line 1, ../scss/content/_loading.scss */
@@ -3872,7 +3820,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     height: 500px;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 770px) {
   /* line 255, ../scss/content/_project.scss */
   body.project #content {
     /* ============================================ *
@@ -4327,7 +4275,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: auto;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 770px) {
   /* line 214, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .brands-logo .section--content ul.brands li {
     width: 40vw;
@@ -4533,7 +4481,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     padding: 10vh 0;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 770px) {
   /* line 201, ../scss/content/_choosey.scss */
   #choosey.project #content .details {
     background-position: center;
@@ -4765,7 +4713,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     bottom: -130px;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 770px) {
   /* line 215, ../scss/content/_wallstreetinstitutes.scss */
   #wall-street-institutes.project .page .project-title,
   #wall-street-institutes.project .page .section-title {
@@ -5365,7 +5313,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
   background-color: blue;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 771px) {
   /* line 117, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list.mobile {
     display: none;
@@ -5376,7 +5324,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     display: flex;
   }
 }
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 770px) {
   /* line 135, ../scss/content/_homepage.scss */
   #index .banner.banner-main {
     height: 90vh;

@@ -12,14 +12,11 @@
 
 <?php include '../layout/mobile-menu.php'; ?>
 
-<?php include '../layout/header.php'; ?>
-
 <div id="container">
-
-
 
     <div class="content-wrap">
         <div id="content">
+            <?php include '../layout/header.php'; ?>
 
             <div class="section section--blue section--gradient details">
 

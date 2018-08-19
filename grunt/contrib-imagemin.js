@@ -39,6 +39,19 @@ module.exports = function(grunt) {
         		src: ['**/*.{png,jpg,gif}'],
                 dest: 'dest/images/work/'
         	}]
+        },
+
+        mobile: {
+	        options: {
+	            optimizationLevel: 7
+            },
+
+            files: [{
+	            expand: true,
+                cwd: 'images/mobile',
+                src: ['**/*.{png,jpg,gif}'],
+                dest: 'dest/images/mobile/'
+            }]
         }
 	});
 

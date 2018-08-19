@@ -20,7 +20,7 @@
 
   <div class="content-wrap">
       <div id="content">
-	<?php include '../layout/header.php'; ?>
+	    <?php include '../layout/header.php'; ?>
 	
 	<!-- ============================================ *
 	* SECTION - WORK
@@ -31,30 +31,10 @@
 				<ul class="work--list">
 
 					<!--  TEN CHI JIN  -->
-					<li class="work--project mix print lazy" style="background-image: url(/dest/images/work/thumbnails/ten-chi-jin.png);">
-	  					<a href="/dest/images/fullscreen/print/ten-chi-jin.jpg" rel="prettyPhoto[print]" class="work--project-link">
-
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Ten Chi Jin</h3>
-	  							<h4 class="work--project-category">Branding</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+					<?php include '../layout/project-block/tenChiJin.php'; ?>
 
 	  				<!--  WALL STREET INSTITUTES  -->
-	  				<li class="work--project mix print lazy" style="background-image: url(/dest/images/work/thumbnails/wall-street.png);">
-	  					<a href="../projects/wall-street-institutes.php" class="work--project-link">
-
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Wall Street Institutes</h3>
-	  							<h4 class="work--project-category">Graphic / Avertising</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+	  				<?php include '../layout/project-block/WSI.php'; ?>
 
 				</ul>
 			</div>

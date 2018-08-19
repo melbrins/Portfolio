@@ -20,7 +20,7 @@
 
   <div class="content-wrap">
       <div id="content">
-	<?php include '../layout/header.php'; ?>
+	    <?php include '../layout/header.php'; ?>
 	
 	<!-- ============================================ *
 	* SECTION - WORK
@@ -31,83 +31,22 @@
 				<ul class="work--list">
 
 					<!--  ANGELA  -->
-					<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/angela.png">
-	  					<a href="/dest/images/fullscreen/illustration/angela.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Angela</h3>
-	  							<h4 class="work--project-category">Illustration</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+					<?php include '../layout/project-block/angela.php'; ?>
 
 	  				<!--  STAR WARS FAMILY  -->
-	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/star-wars.png">
-	  					<a href="/dest/images/fullscreen/illustration/star_wars.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Star Wars Family</h3>
-	  							<h4 class="work--project-category">Illustration</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+                    <?php include '../layout/project-block/star-wars.php'; ?>
 
 	  				<!--  OCTOCAT  -->
-	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/octocat.png">
-	  					<a href="/dest/images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Octocat</h3>
-	  							<h4 class="work--project-category">Illustration</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+                    <?php include '../layout/project-block/octocat.php'; ?>
 
 	  				<!--  COLD TOUCH -->
-	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/melissa-cold-touch.png">
-	  					<a href="/dest/images/fullscreen/illustration/Cold_Touch_Final.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Cold Touch</h3>
-	  							<h4 class="work--project-category">Illustration</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+                    <?php include '../layout/project-block/cold-touch.php'; ?>
 
 	  				<!--  MEDUSA  -->
-	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/medusa.png">
-	  					<a href="/dest/images/fullscreen/illustration/medusa.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Medusa</h3>
-	  							<h4 class="work--project-category">Illustration</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
+	  				<?php include '../layout/project-block/medusa.php'; ?>
 
 	  				<!--  BLACK SHEEP GOAT  -->
-	  				<li class="work--project mix illustration lazy" data-src="/dest/images/work/thumbnails/black-sheep-goat.png">
-	  					<a href="/dest/images/fullscreen/illustration/Black_Sheep_Goat_web.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-	  						
-	  						<span class="work--project-title">
-	  							<h3 class="work--project-name">Black Sheep Goat</h3>
-	  							<h4 class="work--project-category">Illustration</h4>
-
-	  							<span class="work--project-view btn">View Project</span>
-	  						</span>
-	  					</a>
-	  				</li>
-
+                    <?php include '../layout/project-block/black-sheep.php'; ?>
 				</ul>
 			</div>
 	</div>

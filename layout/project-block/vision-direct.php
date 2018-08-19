@@ -1,5 +1,10 @@
-<li class="work--project mix web lazy" style="background-image: url(../dest/images/work/thumbnails/Vision-Direct.png);">
+<li class="work--project mix web lazy">
 	<a href="../projects/visiondirect.php" class="work--project-link">
+
+        <img src="../dest/images/mobile/category/visionDirect.jpg"
+             data-src-desktop="../dest/images/work/thumbnails/Vision-Direct.png"
+             data-src-mobile="../dest/images/mobile/category/visionDirect.jpg"
+             alt="Vision Direct">
 
 		<span class="work--project-title">
 			<h3 class="work--project-name">Vision Direct</h3>

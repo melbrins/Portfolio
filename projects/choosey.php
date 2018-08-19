@@ -10,14 +10,14 @@
 
 <body id="choosey" class="project">
 
-<?php include '../layout/header.php'; ?>
+<?php include '../layout/mobile-menu.php'; ?>
 
 <div id="container">
 
-    <?php include '../layout/mobile-menu.php'; ?>
-
     <div class="content-wrap">
         <div id="content">
+            <?php include '../layout/header.php'; ?>
+
             <div class="section section--blue section--gradient details">
 
                 <div class="section--title number mobile">
