@@ -15,8 +15,6 @@
 <?php include '../layout/mobile-menu.php'; ?>
 
 <div id="container">
-  
-
 
   <div class="content-wrap">
       <div id="content">
