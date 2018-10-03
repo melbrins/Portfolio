@@ -40,14 +40,14 @@
 	  				<!-- Wolf -->
 	  				<?php include '../layout/project-block/wolf.php'; ?>
 
+                    <!-- VISION DIRECT 3D -->
+                    <?php include '../layout/project-block/vd3D.php'; ?>
+
+                    <!-- JACK -->
+                    <?php include '../layout/project-block/jack.php'; ?>
+
 	  				<!-- Iphone -->
 	  				<?php include '../layout/project-block/iphone.php'; ?>
-
-	  				<!-- JACK -->
-	  				<?php include '../layout/project-block/jack.php'; ?>
-
-	  				<!-- VISION DIRECT 3D -->
-                    <?php include '../layout/project-block/vd3D.php'; ?>
 
 				</ul>
 			</div>
