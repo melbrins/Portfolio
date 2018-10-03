@@ -5512,7 +5512,6 @@ div.light_rounded .pp_details {
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
