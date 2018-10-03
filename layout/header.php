@@ -18,16 +18,16 @@
 					<a href="/showreel.php">Showreel</a>
 				</li> -->
 
+                <li class="menu--web">
+                    <a href="/category/web.php">UI / UX</a>
+                </li>
+
 				<li class="menu--illustration">
 					<a href="/category/illustration.php">Illustration</a>
 				</li>
 
 				<li class="menu--3d">
 					<a href="/category/3d.php">3D</a>
-				</li>
-
-				<li class="menu--web">
-					<a href="/category/web.php">Web</a>
 				</li>
 
 				<li class="menu--print">
