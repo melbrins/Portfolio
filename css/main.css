@@ -1511,7 +1511,7 @@ p {
 .fixed {
   position: fixed !important;
   left: 0;
-  top: 0px;
+  top: 0;
   /*height 	  : 40px;*/
   padding: 20px 0;
   background: rgba(42, 42, 42, 0.8);
@@ -4303,7 +4303,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
   /* line 199, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .section.section--grey.details .project--desc,
   #merchmaker.project #content .section.section--grey.details .project--img {
-    width: 60vw;
+    width: 80vw;
   }
   /* line 203, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .section.section--grey.details .project--desc img,
