@@ -13,9 +13,9 @@
 <body id="index">
 
 <?php include 'layout/mobile-menu.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <div id="container">
-
 
     <div class="content-wrap">
         <div id="content">
@@ -50,9 +50,6 @@
                 </div>
 
             </div>
-
-
-            <?php include 'layout/header.php'; ?>
 
 
             <!-- ============================================ *

@@ -1496,22 +1496,63 @@ p {
   }
 }
 /* line 349, ../scss/_common.scss */
+.bg-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 360, ../scss/_common.scss */
 .fixed {
   position: fixed !important;
   left: 0;
-  top: 0;
-  /*height: 40px;*/
+  top: 0px;
+  /*height 	  : 40px;*/
   padding: 20px 0;
   background: rgba(42, 42, 42, 0.8);
   width: 100%;
+  -webkit-animation: show-fixed-header 0.3s ease-out;
+  -moz-animation: show-fixed-header 0.3s ease-out;
+  -o-animation: show-fixed-header 0.3s ease-out;
+  -ms-animation: show-fixed-header 0.3s ease-out;
+  animation: show-fixed-header 0.3s ease-out;
 }
 
-/* line 359, ../scss/_common.scss */
+@-moz-keyframes show-fixed-header {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes show-fixed-header {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes show-fixed-header {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+  }
+}
+/* line 377, ../scss/_common.scss */
 .toggle-fix {
   z-index: 99999;
 }
 
-/* line 361, ../scss/_common.scss */
+/* line 379, ../scss/_common.scss */
 .fixed #filters li span:hover {
   color: #fff;
 }
@@ -1519,7 +1560,7 @@ p {
 /* ============================================ *
  * BANNER
  * ============================================ */
-/* line 366, ../scss/_common.scss */
+/* line 384, ../scss/_common.scss */
 .banner-fullscreen {
   width: 100%;
 }
@@ -1527,7 +1568,7 @@ p {
 /* ============================================ *
  * Clearing
  * ============================================ */
-/* line 371, ../scss/_common.scss */
+/* line 389, ../scss/_common.scss */
 #container:after {
   content: "\0020";
   display: block;
@@ -1536,7 +1577,7 @@ p {
   visibility: hidden;
 }
 
-/* line 373, ../scss/_common.scss */
+/* line 391, ../scss/_common.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1550,19 +1591,19 @@ p {
   clear: both;
 }
 
-/* line 385, ../scss/_common.scss */
+/* line 403, ../scss/_common.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 389, ../scss/_common.scss */
+/* line 407, ../scss/_common.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
-/* line 394, ../scss/_common.scss */
+/* line 412, ../scss/_common.scss */
 .clear {
   clear: both;
   display: block;
@@ -1572,7 +1613,7 @@ p {
   height: 0;
 }
 
-/* line 402, ../scss/_common.scss */
+/* line 420, ../scss/_common.scss */
 .clearboth {
   clear: both;
 }
@@ -5520,32 +5561,9 @@ div.light_rounded .pp_details {
   position: relative;
   background: #2a2a2a;
 }
-/* line 23, ../scss/override/_menu_elastic.scss */
-#content::before {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, transform 0s 0.3s;
-  -moz-transition: opacity 0.3s, transform 0s 0.3s;
-  -ms-transition: opacity 0.3s, transform 0s 0.3s;
-  -o-transition: opacity 0.3s, transform 0s 0.3s;
-  transition: opacity 0.3s, transform 0s 0.3s;
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
-  -ms-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  content: none;
-}
 
 /* Menu Button */
-/* line 39, ../scss/override/_menu_elastic.scss */
+/* line 25, ../scss/override/_menu_elastic.scss */
 .menu-button {
   position: fixed;
   z-index: 1000;
@@ -5559,7 +5577,7 @@ div.light_rounded .pp_details {
   color: transparent;
   background: transparent;
 }
-/* line 52, ../scss/override/_menu_elastic.scss */
+/* line 38, ../scss/override/_menu_elastic.scss */
 .menu-button::before {
   position: absolute;
   top: 0.5em;
@@ -5569,14 +5587,14 @@ div.light_rounded .pp_details {
   background: linear-gradient(#373a47 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, #373a47 40%, #373a47 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 80%, #373a47 80%);
   content: '';
 }
-/* line 62, ../scss/override/_menu_elastic.scss */
+/* line 48, ../scss/override/_menu_elastic.scss */
 .menu-button:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
 
 /* Close Button */
-/* line 68, ../scss/override/_menu_elastic.scss */
+/* line 54, ../scss/override/_menu_elastic.scss */
 .close-button {
   width: 16px;
   height: 16px;
@@ -5590,7 +5608,7 @@ div.light_rounded .pp_details {
   background: transparent;
   color: transparent;
 }
-/* line 81, ../scss/override/_menu_elastic.scss */
+/* line 67, ../scss/override/_menu_elastic.scss */
 .close-button::before, .close-button::after {
   content: '';
   position: absolute;
@@ -5600,7 +5618,7 @@ div.light_rounded .pp_details {
   left: 50%;
   background: #000;
 }
-/* line 92, ../scss/override/_menu_elastic.scss */
+/* line 78, ../scss/override/_menu_elastic.scss */
 .close-button::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -5608,7 +5626,7 @@ div.light_rounded .pp_details {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 96, ../scss/override/_menu_elastic.scss */
+/* line 82, ../scss/override/_menu_elastic.scss */
 .close-button::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -5618,7 +5636,7 @@ div.light_rounded .pp_details {
 }
 
 /* Menu */
-/* line 102, ../scss/override/_menu_elastic.scss */
+/* line 88, ../scss/override/_menu_elastic.scss */
 .menu-wrap {
   -webkit-transform: translate3d(-300px, 0, 0);
   -moz-transform: translate3d(-300px, 0, 0);
@@ -5631,36 +5649,36 @@ div.light_rounded .pp_details {
   -o-transition: transform 0.3s;
   transition: transform 0.3s;
   position: fixed;
-  z-index: 2001;
+  z-index: 10001;
   width: 300px;
-  height: 100vh;
+  height: 100%;
   font-size: 1.15em;
   top: 0;
   bottom: auto;
   /* Morph Shape */
 }
-/* line 113, ../scss/override/_menu_elastic.scss */
+/* line 99, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu {
   background: #fff;
   width: calc(100% - 120px);
   height: 100%;
   padding: 2em 1em;
 }
-/* line 119, ../scss/override/_menu_elastic.scss */
+/* line 105, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu .icon-list {
   width: 280px;
 }
-/* line 122, ../scss/override/_menu_elastic.scss */
+/* line 108, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu .icon-list a {
   display: block;
   padding: 0.8em;
 }
-/* line 126, ../scss/override/_menu_elastic.scss */
+/* line 112, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu .icon-list a i {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 130, ../scss/override/_menu_elastic.scss */
+/* line 116, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu .icon-list a span {
   margin-left: 10px;
   text-transform: uppercase;
@@ -5668,16 +5686,16 @@ div.light_rounded .pp_details {
   letter-spacing: 1px;
   font-size: 0.75em;
 }
-/* line 140, ../scss/override/_menu_elastic.scss */
+/* line 126, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu a {
   color: #000;
 }
-/* line 143, ../scss/override/_menu_elastic.scss */
+/* line 129, ../scss/override/_menu_elastic.scss */
 .menu-wrap .menu a:hover, .menu-wrap .menu a:focus {
   color: #2eb1e6;
   text-decoration: none;
 }
-/* line 152, ../scss/override/_menu_elastic.scss */
+/* line 138, ../scss/override/_menu_elastic.scss */
 .menu-wrap .morph-shape {
   position: absolute;
   width: 120px;
@@ -5689,7 +5707,7 @@ div.light_rounded .pp_details {
 }
 
 /* Shown menu */
-/* line 166, ../scss/override/_menu_elastic.scss */
+/* line 152, ../scss/override/_menu_elastic.scss */
 .show-menu .menu-wrap {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -5697,11 +5715,11 @@ div.light_rounded .pp_details {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 170, ../scss/override/_menu_elastic.scss */
+/* line 156, ../scss/override/_menu_elastic.scss */
 .show-menu #container {
   overflow: hidden;
 }
-/* line 173, ../scss/override/_menu_elastic.scss */
+/* line 159, ../scss/override/_menu_elastic.scss */
 .show-menu #container .content-wrap {
   -webkit-transform: translate3d(100px, 0, 0);
   -moz-transform: translate3d(100px, 0, 0);
@@ -5713,21 +5731,15 @@ div.light_rounded .pp_details {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-/* line 178, ../scss/override/_menu_elastic.scss */
-.show-menu #container #content::before {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  content: '';
+/* line 167, ../scss/override/_menu_elastic.scss */
+.show-menu .bg-overlay {
+  display: block;
+  -moz-animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 /* line 3, ../scss/override/_owlCarousel-theme.scss */

@@ -75,9 +75,13 @@
       <!-- END FOOTER DIV -->
       </div>
 
+
     <!-- END CONTENT DIV -->
     </div>
   <!-- END CONTENT-WRAP DIV -->
   </div>
   <!-- END CONTAINER DIV -->
+
 </div>
+
+      <div class="bg-overlay"></div>
