@@ -70,13 +70,15 @@ jQuery(document).ready(function($) {
     var toggleSize  	= toggleElement.height();
 	var loadingSection  = $('#loading');
 
+	var loadingSize = windowH - 60;
+
     if(loadingSection){
-        loadingSection.css('height', windowH);
+        loadingSection.css('height', loadingSize);
 	}
 
 	$(window).bind('scroll', function() {
 
-		if ($(window).scrollTop() > windowH) {
+		if ($(window).scrollTop() > loadingSize) {
 
             toggleElement.addClass('fixed');
             $("body").css('padding-top', toggleSize);
