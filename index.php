@@ -77,7 +77,7 @@
             <!-- ============================================ *
             * SECTION - WORK
             * ============================================ -->
-            <div class="work section section--grey" data-section-name="work">
+            <div id="homepage-work" class="work section section--grey" data-section-name="work">
 
                 <div class="section--content">
                     <ul class="work--list grid-3">

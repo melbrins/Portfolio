@@ -3,7 +3,7 @@
 	@include align-items(center); 
 	@include justify-content(center);
 	@include flex-direction(column);
-	width 	 			: 100vw;
+	width 	 			: 100%;
 	min-height   		: 100%;
 	background-color 	: #fff;
 	position 			: relative;
@@ -13,7 +13,7 @@
 		@include display-flex(flex);
 		@include align-items(center);
 		@include justify-content(center);
-		width: 100vw;
+		width: 100%;
 		
 		svg{
 			width: 50%;
@@ -29,7 +29,7 @@
 		animation-delay 		: 5s;
 
 		@include opacity(0);
-		width 			: 100vw;
+		width 			: 100%;
 		height 			: 50px;
 		text-align 		: center;
 		margin-top 		: 20px;
@@ -71,9 +71,9 @@
 
 	.discover-more{
 		@include display-flex(flex);
-		@include align-items(center);
+		@include align-items(flex-start);
 		@include justify-content(center);
-		@include flex-direction(column);
+		@include flex-direction(row);
 
 		-webkit-animation: leftAppear 1s ease-out forwards;
 		-moz-animation: leftAppear 1s ease-out forwards;
@@ -93,20 +93,18 @@
 		height: 100px;
 
 		a{
-			position 	: absolute;
-			top 		: 0;
-			bottom 		: auto;
-
 			&:hover{
 				text-decoration: none;
 			}
 		}
 
 		.icon{
-			margin-top 	: 10px;
 			height 		: 50px;
+			margin 		: 0 auto;
 
 			svg{
+				position 	: absolute;
+				bottom 		: 0;
 				-webkit-animation: bouncing 1s ease-out forwards;
 				-moz-animation: bouncing 1s ease-out forwards;
 				-o-animation: bouncing 1s ease-out forwards;
@@ -132,15 +130,15 @@
 
 	@-webkit-keyframes bouncing{
 		0%{
-			margin-top 	: 0;
+			bottom 	: 0;
 		}
 
 		50%{
-			margin-top 	: 20px;
+			bottom 	: 20px;
 		}
 
 		100%{
-			margin-top 	: 0px;
+			bottom 	: 0px;
 		}
 	};
 }

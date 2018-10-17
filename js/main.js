@@ -35,14 +35,12 @@ function toggleImages(){
                 var mobileImg = this.getAttribute('data-src-mobile');
 
                 this.src = mobileImg;
-                console.log('src                : ' + this.getAttribute('src'));
             }
         }else{
             if (this.getAttribute('data-src-desktop') != undefined) {
                 var desktopImg = this.getAttribute('data-src-desktop');
 
                 this.src = desktopImg;
-                console.log('src                : ' + this.getAttribute('src'));
             }
         }
 
@@ -78,7 +76,7 @@ jQuery(document).ready(function($) {
 
 	$(window).bind('scroll', function() {
 
-		if ($(window).scrollTop() > loadingSize) {
+		if ($(window).scrollTop() > loadingSize - 10) {
 
             toggleElement.addClass('fixed');
             $("body").css('padding-top', toggleSize);
@@ -125,14 +123,16 @@ jQuery(document).ready(function($) {
 
             event.preventDefault();
 
-            $('html').animate({
+            $('html, body').animate({
                 scrollTop: $($target).position().top
             }, $time);
 
+            console.log($('html').scrollTop);
+            console.log($($target).position().top);
         });
     }
 
-    scrollTo('#services', '#discover', 500);
+    scrollTo('#homepage-work', '#discover', 500);
 
 
     $titleSizeW = $(this).find('.section--title h2:visible').width() + 30;
