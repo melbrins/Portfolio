@@ -29,7 +29,7 @@
 	<div class="work section section--grey">
 
 			<div class="section--content">
-				<ul class="work--list">
+				<ul class="work--list grid-6">
 
 					<!-- GLUM & FISH -->
 	  				<?php include '../layout/project-block/glumFish.php'; ?>

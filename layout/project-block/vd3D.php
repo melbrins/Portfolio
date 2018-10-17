@@ -1,6 +1,6 @@
 <li class="work--project mix thered lazy">
     <a href="../dest/images/fullscreen/3d/vd-delivery-and-boxes.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-        <img src="../dest/images/mobile/category/visionDirect3D.jpg.jpg"
+        <img src="../dest/images/mobile/category/visionDirect3D.jpg"
              data-src-desktop="../dest/images/work/thumbnails/vd-3d.png"
              data-src-mobile="../dest/images/mobile/category/visionDirect3D.jpg"
              alt="Vision Direct 3D">

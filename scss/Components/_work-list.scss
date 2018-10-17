@@ -1,0 +1,205 @@
+/* ============================================ *
+ * WORK LIST - Container
+ * ============================================ */
+.work--list{
+  @include display-flex(flex);
+  @include align-items(flex-start);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  width 		: 100%;
+  padding 	    : 0;
+  margin 		: 0;
+
+
+  /* ============================================ *
+   * WORK Project - Item
+   * ============================================ */
+  &.grid-6,
+  &.grid-3,
+  &.grid-2{
+    .work--project{
+      width: 100vw;
+    }
+  }
+
+  .work--project {
+    @include border-radius(10px 10px 0 0);
+    @include transition(all 0.3s ease-out);
+    width   		: 100vw;
+    margin-bottom 	: 0;
+
+    img{
+      width: 100%;
+    }
+
+    .work--project-link {
+      height 		: 100%;
+      width 		: 100%;
+      display 	: inline-block;
+      position 	: relative;
+      z-index 	: 40;
+    }
+
+    .work--project-title { display: none; }
+  }
+}
+
+@include bp(min-width, $bp-medium + 1) {
+
+  /* ============================================ *
+   * WORK LIST - Container
+   * ============================================ */
+  .work--list {
+    @include flex-direction(row);
+
+    /* ============================================ *
+     * WORK Project - Item
+     * ============================================ */
+
+
+    &.grid-6{
+      .work--project{
+        width: 15vw;
+      }
+    }
+    &.grid-3 {
+      .work--project {
+        width 		    : 33.33vw;
+      }
+    }
+
+    &.grid-2 {
+      .work--project {
+        width           : 50vw;
+      }
+    }
+
+    .work--project {
+      height 			: $s-thumbnails-height;
+      overflow 		    : hidden;
+      position 		    : relative;
+      text-align 		: center;
+      margin 			: 0;
+      border-radius 	: 0;
+      width             : 33.33vw;
+
+      i {
+        background-color 	: #000;
+        height 				: 30px;
+        width 				: 30px;
+        line-height 		: 30px;
+        color 				: #fff;
+        position 			: absolute;
+        top 				: 0;
+        left 				: 0;
+        font-size 			: 14px;
+      }
+
+      img {
+        height 		: 100%;
+        width 		: auto;
+        max-width 	: initial;
+        margin 		: 0 -50%;
+      }
+
+      .work--project-title {
+        @include transition(all 0.3s ease-out);
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 $gap;
+
+        .work--project-name,
+        .work--project-category,
+        .work--project-view {
+          z-index: 20;
+          position: relative;
+        }
+
+        .work--project-name {
+          font-size: $f-size-l;
+          font-weight: 500;
+          letter-spacing: 1px;
+          color: $c-text-darker;
+          line-height: 1.4;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+
+        .work--project-category {
+          font-size: $f-size-s;
+          color: $c-text-darker;
+          font-weight: 200;
+          letter-spacing: 2px;
+          margin-bottom: $gap;
+        }
+
+        .work--project-view {
+          width: 100%;
+          height: 40px;
+          background-color: $c-text-darker;
+          line-height: 40px;
+          border-radius: 0;
+          position: absolute;
+          bottom: -40px;
+          left: 0;
+        }
+
+        &:before {
+          @include border-radius(100% 100% 0 0);
+
+          content: '';
+          width: 120%;
+          min-height: 160%;
+          padding-top: 80%;
+          background-color: #fff;
+          display: block;
+          position: absolute;
+          z-index: 0;
+          top: -60%;
+          left: -10%;
+        }
+      }
+
+      &:hover {
+
+        &:before {
+          @include opacity(1);
+        }
+
+        .work--project-title {
+          bottom: 40px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@include bp(min-width, $bp-large) {
+  /* ============================================ *
+   * WORK List - Container
+   * ============================================ */
+  .work--list{
+
+    /* ============================================ *
+     * WORK Project - Item
+     * ============================================ */
+    .work--project{
+      margin 			: 40px 0;
+      width 			: 15vw;
+
+      &.web {
+        width 		: 30vw;
+      }
+
+      &.print {
+        width 		: 35vw;
+      }
+
+    }
+  }
+}

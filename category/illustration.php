@@ -29,7 +29,7 @@
 	<div class="work section section--grey">
 
 			<div class="section--content">
-				<ul class="work--list">
+				<ul class="work--list grid-6">
 
 					<!--  ANGELA  -->
 					<?php include '../layout/project-block/angela.php'; ?>

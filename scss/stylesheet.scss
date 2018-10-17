@@ -48,6 +48,11 @@ $mq-fixed-value: false;
 
 
 // ----------------------------------------------
+// COMPONENTS
+
+@import 'Components/work-list';
+
+// ----------------------------------------------
 // CONTENT
 
 @import "content/loading";

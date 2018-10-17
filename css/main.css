@@ -1012,7 +1012,7 @@ textarea {
 /* line 54, ../scss/_common.scss */
 #container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   background-color: #2a2a2a;
@@ -2511,16 +2511,16 @@ p {
   }
 }
 /* ============================================ *
- * WORK LIST
+ * WORK LIST - Container
  * ============================================ */
-/* line 363, ../scss/layout/_section.scss */
+/* line 4, ../scss/Components/_work-list.scss */
 .work--list {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-flex-direction: column;
@@ -2528,17 +2528,32 @@ p {
   width: 100%;
   padding: 0;
   margin: 0;
+  /* ============================================ *
+   * WORK Project - Item
+   * ============================================ */
 }
-/* line 373, ../scss/layout/_section.scss */
+/* line 21, ../scss/Components/_work-list.scss */
+.work--list.grid-6 .work--project, .work--list.grid-3 .work--project, .work--list.grid-2 .work--project {
+  width: 100vw;
+}
+/* line 26, ../scss/Components/_work-list.scss */
 .work--list .work--project {
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   width: 100vw;
   margin-bottom: 0;
 }
-/* line 377, ../scss/layout/_section.scss */
+/* line 32, ../scss/Components/_work-list.scss */
 .work--list .work--project img {
   width: 100%;
 }
-/* line 381, ../scss/layout/_section.scss */
+/* line 36, ../scss/Components/_work-list.scss */
 .work--list .work--project .work--project-link {
   height: 100%;
   width: 100%;
@@ -2546,30 +2561,37 @@ p {
   position: relative;
   z-index: 40;
 }
-/* line 389, ../scss/layout/_section.scss */
+/* line 44, ../scss/Components/_work-list.scss */
 .work--list .work--project .work--project-title {
   display: none;
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 394, ../scss/layout/_section.scss */
+  /* ============================================ *
+   * WORK LIST - Container
+   * ============================================ */
+  /* line 53, ../scss/Components/_work-list.scss */
   .work--list {
-    margin: 0;
     -webkit-flex-direction: row;
     flex-direction: row;
+    /* ============================================ *
+     * WORK Project - Item
+     * ============================================ */
   }
-  /* line 399, ../scss/layout/_section.scss */
+  /* line 62, ../scss/Components/_work-list.scss */
+  .work--list.grid-6 .work--project {
+    width: 15vw;
+  }
+  /* line 67, ../scss/Components/_work-list.scss */
+  .work--list.grid-3 .work--project {
+    width: 33.33vw;
+  }
+  /* line 73, ../scss/Components/_work-list.scss */
+  .work--list.grid-2 .work--project {
+    width: 50vw;
+  }
+  /* line 78, ../scss/Components/_work-list.scss */
   .work--list .work--project {
-    -webkit-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
-    border-radius: 10px 10px 0 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    background-size: cover;
-    background-position-x: 50%;
     height: 780px;
     overflow: hidden;
     position: relative;
@@ -2578,15 +2600,7 @@ p {
     border-radius: 0;
     width: 33.33vw;
   }
-  /* line 415, ../scss/layout/_section.scss */
-  .work--list .work--project.web {
-    width: 33.33vw;
-  }
-  /* line 419, ../scss/layout/_section.scss */
-  .work--list .work--project.print {
-    width: 50vw;
-  }
-  /* line 423, ../scss/layout/_section.scss */
+  /* line 87, ../scss/Components/_work-list.scss */
   .work--list .work--project i {
     background-color: #000;
     height: 30px;
@@ -2598,14 +2612,14 @@ p {
     left: 0;
     font-size: 14px;
   }
-  /* line 435, ../scss/layout/_section.scss */
+  /* line 99, ../scss/Components/_work-list.scss */
   .work--list .work--project img {
     height: 100%;
     width: auto;
     max-width: initial;
     margin: 0 -50%;
   }
-  /* line 442, ../scss/layout/_section.scss */
+  /* line 106, ../scss/Components/_work-list.scss */
   .work--list .work--project .work--project-title {
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -2619,14 +2633,14 @@ p {
     width: 100%;
     padding: 0 20px;
   }
-  /* line 451, ../scss/layout/_section.scss */
+  /* line 115, ../scss/Components/_work-list.scss */
   .work--list .work--project .work--project-title .work--project-name,
   .work--list .work--project .work--project-title .work--project-category,
   .work--list .work--project .work--project-title .work--project-view {
     z-index: 20;
     position: relative;
   }
-  /* line 458, ../scss/layout/_section.scss */
+  /* line 122, ../scss/Components/_work-list.scss */
   .work--list .work--project .work--project-title .work--project-name {
     font-size: 18px;
     font-weight: 500;
@@ -2636,7 +2650,7 @@ p {
     text-transform: uppercase;
     margin-bottom: 5px;
   }
-  /* line 468, ../scss/layout/_section.scss */
+  /* line 132, ../scss/Components/_work-list.scss */
   .work--list .work--project .work--project-title .work--project-category {
     font-size: 12px;
     color: #1a1a1a;
@@ -2644,7 +2658,7 @@ p {
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
-  /* line 476, ../scss/layout/_section.scss */
+  /* line 140, ../scss/Components/_work-list.scss */
   .work--list .work--project .work--project-title .work--project-view {
     width: 100%;
     height: 40px;
@@ -2655,7 +2669,7 @@ p {
     bottom: -40px;
     left: 0;
   }
-  /* line 487, ../scss/layout/_section.scss */
+  /* line 151, ../scss/Components/_work-list.scss */
   .work--list .work--project .work--project-title:before {
     -webkit-border-radius: 100% 100% 0 0;
     -moz-border-radius: 100% 100% 0 0;
@@ -2671,28 +2685,37 @@ p {
     top: -60%;
     left: -10%;
   }
-  /* line 505, ../scss/layout/_section.scss */
+  /* line 169, ../scss/Components/_work-list.scss */
   .work--list .work--project:hover:before {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
   }
-  /* line 509, ../scss/layout/_section.scss */
+  /* line 173, ../scss/Components/_work-list.scss */
   .work--list .work--project:hover .work--project-title {
     bottom: 40px;
     left: 0;
   }
 }
 @media only screen and (min-width: 979px) {
-  /* line 520, ../scss/layout/_section.scss */
+  /* ============================================ *
+   * WORK List - Container
+   * ============================================ */
+  /* line 186, ../scss/Components/_work-list.scss */
+  .work--list {
+    /* ============================================ *
+     * WORK Project - Item
+     * ============================================ */
+  }
+  /* line 191, ../scss/Components/_work-list.scss */
   .work--list .work--project {
     margin: 40px 0;
     width: 15vw;
   }
-  /* line 524, ../scss/layout/_section.scss */
+  /* line 195, ../scss/Components/_work-list.scss */
   .work--list .work--project.web {
     width: 30vw;
   }
-  /* line 528, ../scss/layout/_section.scss */
+  /* line 199, ../scss/Components/_work-list.scss */
   .work--list .work--project.print {
     width: 35vw;
   }

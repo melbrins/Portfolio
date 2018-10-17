@@ -27,7 +27,7 @@
 	<div class="work section section--grey">
 
 			<div class="section--content">
-				<ul class="work--list">
+				<ul class="work--list grid-2">
 
 					<!--  TEN CHI JIN  -->
 					<?php include '../layout/project-block/tenChiJin.php'; ?>

@@ -28,7 +28,7 @@
 	<div class="work section section--grey">
 
 			<div class="section--content">
-				<ul class="work--list">
+				<ul class="work--list grip-3">
 
 					<!--  VISION DIRECT  -->
 					<?php include '../layout/project-block/vision-direct.php'; ?>
