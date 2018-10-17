@@ -155,7 +155,7 @@
 		 				@include display-flex(flex);
 		 				@include flex-direction(column);
 		 				@include align-items(center);
-		 				@include justify-content(space-evenly);
+		 				@include justify-content(space-around);
 
 		 				width: 30vw;
 		 				min-height: 20vw;

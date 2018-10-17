@@ -398,7 +398,7 @@ body.project{
 		 			.project--font-info{
 		 				@include display-flex(flex);
 		 				@include align-items(center);
-		 				@include justify-content(space-evenly);
+		 				@include justify-content(space-around);
 		 				@include flex-direction(column);
 
 		 				span{
@@ -574,7 +574,7 @@ body.project{
 			.section--content{
 				@include display-flex(flex);
 				@include align-items(center);
-				@include justify-content(space-evenly);
+				@include justify-content(space-around);
 				@include flex-direction(row);
 
 				width 		: 60vw;
@@ -589,16 +589,6 @@ body.project{
 						border-radius 		: 4px;
 						overflow 			: hidden;
 					}
-				}
-			}
-		}
-
-		.section.work{
-			.work--project{
-				&.web,
-				&.print,
-				&.illustration{
-					width: 20vw;
 				}
 			}
 		}
@@ -702,19 +692,6 @@ body.project{
 			.main-screens{
 				.section--title{
 					top: 40vw;
-				}
-			}
-
-			/* ============================================ *
-			 * 04. SECTION WORK - LARGE SCREEN
-			 * ============================================ */
-			.section.work{
-				.work--project{
-					&.web,
-					&.print,
-					&.illustration{
-						width: 40vw;
-					}
 				}
 			}
 		}
@@ -926,19 +903,6 @@ body.project{
 					}
 				}
 			}
-
-			/* ============================================ *
-			 * 04. SECTION WORK - LARGE SCREEN
-			 * ============================================ */
-			.section.work{
-				.work--project{
-					&.web,
-					&.print,
-					&.illustration{
-						width: 40vw;
-					}
-				}
-			}
 		}
 
 
@@ -1027,20 +991,6 @@ body.project{
 				}
 			}
 
-			/* ============================================ *
-			 * SECTION WORK - SMALL SCREEN
-			 * ============================================ */
-			.section.work{
-				padding: 0;
-
-				.work--project{
-					&.web,
-					&.print,
-					&.illustration{
-						width: 100vw;
-					}
-				}
-			}
 		}
 	}
 }

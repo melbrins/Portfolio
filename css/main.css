@@ -1043,49 +1043,48 @@ ul {
 img {
   display: inline-block;
   max-width: 100%;
-  max-height: 100%;
 }
 
-/* line 86, ../scss/_common.scss */
+/* line 85, ../scss/_common.scss */
 .image {
   padding: 10px;
 }
-/* line 89, ../scss/_common.scss */
+/* line 88, ../scss/_common.scss */
 .image.left {
   padding-left: 0;
 }
-/* line 90, ../scss/_common.scss */
+/* line 89, ../scss/_common.scss */
 .image.right {
   padding-right: 0;
 }
 
-/* line 93, ../scss/_common.scss */
+/* line 92, ../scss/_common.scss */
 a {
   text-decoration: none;
   color: #2eb1e6;
   cursor: pointer;
 }
-/* line 98, ../scss/_common.scss */
+/* line 97, ../scss/_common.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 102, ../scss/_common.scss */
+/* line 101, ../scss/_common.scss */
 a:focus {
   outline: none;
 }
 
-/* line 107, ../scss/_common.scss */
+/* line 106, ../scss/_common.scss */
 .light_grey {
   background: #aaa;
   color: #fff !important;
   margin-top: -5px;
 }
-/* line 112, ../scss/_common.scss */
+/* line 111, ../scss/_common.scss */
 .light_grey a {
   color: #777;
 }
 
-/* line 117, ../scss/_common.scss */
+/* line 116, ../scss/_common.scss */
 .f-main-colour {
   color: #2eb1e6;
 }
@@ -1093,7 +1092,7 @@ a:focus {
 /* ============================================ *
  * Typography
  * ============================================ */
-/* line 125, ../scss/_common.scss */
+/* line 124, ../scss/_common.scss */
 h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
@@ -1106,7 +1105,7 @@ h1, .h1 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 127, ../scss/_common.scss */
+/* line 126, ../scss/_common.scss */
 h2, .h2 {
   margin: 0;
   margin-bottom: 0.5em;
@@ -1119,7 +1118,7 @@ h2, .h2 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 129, ../scss/_common.scss */
+/* line 128, ../scss/_common.scss */
 h3, .h3 {
   margin: 0;
   margin-bottom: 10px;
@@ -1132,7 +1131,7 @@ h3, .h3 {
   text-rendering: optimizeSpeed;
 }
 
-/* line 131, ../scss/_common.scss */
+/* line 130, ../scss/_common.scss */
 h4, .h4 {
   margin: 0;
   margin-bottom: 10px;
@@ -1146,7 +1145,7 @@ h4, .h4 {
   text-transform: uppercase;
 }
 
-/* line 133, ../scss/_common.scss */
+/* line 132, ../scss/_common.scss */
 h5, .h5 {
   margin: 0;
   margin-bottom: 10px;
@@ -1160,7 +1159,7 @@ h5, .h5 {
   text-transform: uppercase;
 }
 
-/* line 135, ../scss/_common.scss */
+/* line 134, ../scss/_common.scss */
 h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
@@ -1174,7 +1173,7 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
-/* line 137, ../scss/_common.scss */
+/* line 136, ../scss/_common.scss */
 p {
   margin: 0;
   margin-bottom: 5px;
@@ -1190,7 +1189,7 @@ p {
 /* ============================================ *
  * BUTTON
  * ============================================ */
-/* line 142, ../scss/_common.scss */
+/* line 141, ../scss/_common.scss */
 .btn {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -1205,11 +1204,11 @@ p {
   display: inline-block;
   font-size: 14px;
 }
-/* line 152, ../scss/_common.scss */
+/* line 151, ../scss/_common.scss */
 .btn span {
   padding: 0 50px;
 }
-/* line 156, ../scss/_common.scss */
+/* line 155, ../scss/_common.scss */
 .btn.bg1 {
   border-bottom: 4px solid #fff;
   /* padding: 10px 0; */
@@ -1217,54 +1216,54 @@ p {
   padding: 15px 0px;
   line-height: 30px;
 }
-/* line 163, ../scss/_common.scss */
+/* line 162, ../scss/_common.scss */
 .btn.bg1:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 168, ../scss/_common.scss */
+/* line 167, ../scss/_common.scss */
 .btn.bg2 {
   border-bottom: 4px solid #2a2a2a;
   padding: 15px 0px;
 }
-/* line 172, ../scss/_common.scss */
+/* line 171, ../scss/_common.scss */
 .btn.bg2 a {
   line-height: 30px;
   color: #2a2a2a;
 }
-/* line 177, ../scss/_common.scss */
+/* line 176, ../scss/_common.scss */
 .btn.bg2:hover {
   background-color: rgba(42, 42, 42, 0.2);
 }
-/* line 184, ../scss/_common.scss */
+/* line 183, ../scss/_common.scss */
 .btn.color1 span {
   color: #fff !important;
 }
-/* line 185, ../scss/_common.scss */
+/* line 184, ../scss/_common.scss */
 .btn.color1 .bg1 {
   /* border: 1px solid #333; */
 }
-/* line 187, ../scss/_common.scss */
+/* line 186, ../scss/_common.scss */
 .btn.color1 .bg1:hover {
   background-color: #aaa;
 }
-/* line 193, ../scss/_common.scss */
+/* line 192, ../scss/_common.scss */
 .btn.h40 {
   height: 40px;
 }
-/* line 195, ../scss/_common.scss */
+/* line 194, ../scss/_common.scss */
 .btn.h40 span {
   height: 40px;
   line-height: 40px !important;
   font-size: 18px !important;
 }
-/* line 202, ../scss/_common.scss */
+/* line 201, ../scss/_common.scss */
 .btn.h60 span {
   /* height: 60px; */
   /* line-height: 60px!important; */
   font-size: 24px !important;
   font-weight: 200;
 }
-/* line 209, ../scss/_common.scss */
+/* line 208, ../scss/_common.scss */
 .btn a:hover {
   text-decoration: none;
 }
@@ -1272,102 +1271,102 @@ p {
 /* ============================================ *
  * LAYOUT COL SEMANTIC
  * ============================================ */
-/* line 219, ../scss/_common.scss */
+/* line 218, ../scss/_common.scss */
 .left {
   float: left;
 }
 
-/* line 223, ../scss/_common.scss */
+/* line 222, ../scss/_common.scss */
 .right {
   float: right;
 }
 
-/* line 227, ../scss/_common.scss */
+/* line 226, ../scss/_common.scss */
 .col-2 {
   width: 16.66667%;
 }
 
-/* line 230, ../scss/_common.scss */
+/* line 229, ../scss/_common.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 233, ../scss/_common.scss */
+/* line 232, ../scss/_common.scss */
 .col-4 {
   width: 33.33333%;
 }
 
-/* line 236, ../scss/_common.scss */
+/* line 235, ../scss/_common.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 239, ../scss/_common.scss */
+/* line 238, ../scss/_common.scss */
 .col-8 {
   width: 66.66667%;
 }
 
-/* line 242, ../scss/_common.scss */
+/* line 241, ../scss/_common.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 245, ../scss/_common.scss */
+/* line 244, ../scss/_common.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 249, ../scss/_common.scss */
+/* line 248, ../scss/_common.scss */
 .col-inside {
   padding: 0 20px;
 }
 
-/* line 253, ../scss/_common.scss */
+/* line 252, ../scss/_common.scss */
 .col-12 .col-inside {
   padding: 20px 0;
 }
 
-/* line 254, ../scss/_common.scss */
+/* line 253, ../scss/_common.scss */
 .col-12 .col-inside.x2 {
   padding: 40px 20px;
 }
 
-/* line 255, ../scss/_common.scss */
+/* line 254, ../scss/_common.scss */
 .col-12 .col-inside.x3 {
   padding: 60px 20px;
 }
 
-/* line 257, ../scss/_common.scss */
+/* line 256, ../scss/_common.scss */
 .last.left .col-inside {
   padding: 0px;
 }
 
-/* line 261, ../scss/_common.scss */
+/* line 260, ../scss/_common.scss */
 .col2-set {
   width: 100%;
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 266, ../scss/_common.scss */
+  /* line 265, ../scss/_common.scss */
   #container {
     margin-bottom: 0;
   }
 
-  /* line 268, ../scss/_common.scss */
+  /* line 267, ../scss/_common.scss */
   .col-2,
   .col-3,
   .col-4 {
     width: 50%;
   }
 
-  /* line 271, ../scss/_common.scss */
+  /* line 270, ../scss/_common.scss */
   .col-6,
   .col-8,
   .col-9 {
     width: 100%;
   }
 
-  /* line 282, ../scss/_common.scss */
+  /* line 281, ../scss/_common.scss */
   .col-2 .col-inside,
   .col-3 .col-inside,
   .col-4 .col-inside,
@@ -1377,7 +1376,7 @@ p {
     padding: 20px;
   }
 
-  /* line 288, ../scss/_common.scss */
+  /* line 287, ../scss/_common.scss */
   .col2-set .col-2,
   .col2-set .col-3,
   .col2-set .col-4,
@@ -1387,115 +1386,115 @@ p {
     width: 100%;
   }
 
-  /* line 296, ../scss/_common.scss */
+  /* line 295, ../scss/_common.scss */
   .last.left .col-inside {
     padding: 0 20px 0 0;
   }
 
-  /* line 298, ../scss/_common.scss */
+  /* line 297, ../scss/_common.scss */
   #content-b.left {
     left: 10%;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 307, ../scss/_common.scss */
+  /* line 306, ../scss/_common.scss */
   .col-3,
   .col-4,
   .col-6 {
     width: 100%;
   }
 
-  /* line 311, ../scss/_common.scss */
+  /* line 310, ../scss/_common.scss */
   .last.left .col-inside, .col-3 .col-inside {
     padding: 0 4%;
   }
 
-  /* line 312, ../scss/_common.scss */
+  /* line 311, ../scss/_common.scss */
   .col-6, .col-3, .col-12 {
     margin-bottom: 20px;
   }
 }
 /*.col-inside { width: 98%; margin: 0 auto;}*/
 /*.project .col-6 { height: 385px;}*/
-/* line 318, ../scss/_common.scss */
+/* line 317, ../scss/_common.scss */
 .project-details, .see-more {
   /* padding: 80px 0 40px 0; */
 }
 
-/* line 320, ../scss/_common.scss */
+/* line 319, ../scss/_common.scss */
 #glum .col-6.last.left .col-inside {
   margin: 10% 0 10% 0;
 }
 
-/* line 322, ../scss/_common.scss */
+/* line 321, ../scss/_common.scss */
 .last {
   margin-right: 0;
 }
 
-/* line 324, ../scss/_common.scss */
+/* line 323, ../scss/_common.scss */
 .height-test {
   height: 400px;
 }
 
-/* line 326, ../scss/_common.scss */
+/* line 325, ../scss/_common.scss */
 .bg-dark {
   background-color: #252525;
 }
 
-/* line 327, ../scss/_common.scss */
+/* line 326, ../scss/_common.scss */
 .bg-light {
   background-color: #ccc;
 }
 
-/* line 329, ../scss/_common.scss */
+/* line 328, ../scss/_common.scss */
 .pb20px {
   margin-bottom: 20px;
 }
 
-/* line 330, ../scss/_common.scss */
+/* line 329, ../scss/_common.scss */
 .pb40px {
   margin-bottom: 40px;
 }
 
-/* line 332, ../scss/_common.scss */
+/* line 331, ../scss/_common.scss */
 .bold {
   font-weight: 500;
 }
 
-/* line 334, ../scss/_common.scss */
+/* line 333, ../scss/_common.scss */
 .mobile {
   display: none;
 }
 
-/* line 335, ../scss/_common.scss */
+/* line 334, ../scss/_common.scss */
 .desktop,
 .not-mobile {
   display: block;
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 340, ../scss/_common.scss */
+  /* line 339, ../scss/_common.scss */
   .mobile {
     display: none;
   }
 
-  /* line 341, ../scss/_common.scss */
+  /* line 340, ../scss/_common.scss */
   .desktop {
     display: block;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 345, ../scss/_common.scss */
+  /* line 344, ../scss/_common.scss */
   .mobile {
     display: block;
   }
 
-  /* line 346, ../scss/_common.scss */
+  /* line 345, ../scss/_common.scss */
   .desktop {
     display: none;
   }
 }
-/* line 349, ../scss/_common.scss */
+/* line 348, ../scss/_common.scss */
 .bg-overlay {
   display: none;
   position: fixed;
@@ -1507,7 +1506,7 @@ p {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 360, ../scss/_common.scss */
+/* line 359, ../scss/_common.scss */
 .fixed {
   position: fixed !important;
   left: 0;
@@ -1547,12 +1546,12 @@ p {
     top: 0;
   }
 }
-/* line 377, ../scss/_common.scss */
+/* line 376, ../scss/_common.scss */
 .toggle-fix {
   z-index: 99999;
 }
 
-/* line 379, ../scss/_common.scss */
+/* line 378, ../scss/_common.scss */
 .fixed #filters li span:hover {
   color: #fff;
 }
@@ -1560,7 +1559,7 @@ p {
 /* ============================================ *
  * BANNER
  * ============================================ */
-/* line 384, ../scss/_common.scss */
+/* line 383, ../scss/_common.scss */
 .banner-fullscreen {
   width: 100%;
 }
@@ -1568,7 +1567,7 @@ p {
 /* ============================================ *
  * Clearing
  * ============================================ */
-/* line 389, ../scss/_common.scss */
+/* line 388, ../scss/_common.scss */
 #container:after {
   content: "\0020";
   display: block;
@@ -1577,7 +1576,7 @@ p {
   visibility: hidden;
 }
 
-/* line 391, ../scss/_common.scss */
+/* line 390, ../scss/_common.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1591,19 +1590,19 @@ p {
   clear: both;
 }
 
-/* line 403, ../scss/_common.scss */
+/* line 402, ../scss/_common.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 407, ../scss/_common.scss */
+/* line 406, ../scss/_common.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
-/* line 412, ../scss/_common.scss */
+/* line 411, ../scss/_common.scss */
 .clear {
   clear: both;
   display: block;
@@ -1613,7 +1612,7 @@ p {
   height: 0;
 }
 
-/* line 420, ../scss/_common.scss */
+/* line 419, ../scss/_common.scss */
 .clearboth {
   clear: both;
 }
@@ -2361,8 +2360,8 @@ p {
   display: flex;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2450,8 +2449,8 @@ p {
   .section.section--white {
     -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
   }
   /* line 293, ../scss/layout/_section.scss */
   .section.contact {
@@ -2474,8 +2473,8 @@ p {
   .section.contact .section--content .contact--methods {
     -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     width: 100vw;
     height: 100%;
     margin-top: 0;
@@ -2574,25 +2573,27 @@ p {
   .work--list {
     -webkit-flex-direction: row;
     flex-direction: row;
+    padding: 40px 0;
     /* ============================================ *
      * WORK Project - Item
      * ============================================ */
   }
-  /* line 62, ../scss/Components/_work-list.scss */
+  /* line 61, ../scss/Components/_work-list.scss */
   .work--list.grid-6 .work--project {
     width: 15vw;
   }
   /* line 67, ../scss/Components/_work-list.scss */
   .work--list.grid-3 .work--project {
-    width: 33.33vw;
+    width: 30vw;
   }
   /* line 73, ../scss/Components/_work-list.scss */
   .work--list.grid-2 .work--project {
-    width: 50vw;
+    width: 45vw;
   }
-  /* line 78, ../scss/Components/_work-list.scss */
+  /* line 77, ../scss/Components/_work-list.scss */
   .work--list .work--project {
-    height: 780px;
+    height: 70vh;
+    max-height: 680px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -2706,18 +2707,9 @@ p {
      * WORK Project - Item
      * ============================================ */
   }
-  /* line 191, ../scss/Components/_work-list.scss */
-  .work--list .work--project {
-    margin: 40px 0;
-    width: 15vw;
-  }
-  /* line 195, ../scss/Components/_work-list.scss */
-  .work--list .work--project.web {
+  /* line 189, ../scss/Components/_work-list.scss */
+  .work--list.grid-2 .work--project {
     width: 30vw;
-  }
-  /* line 199, ../scss/Components/_work-list.scss */
-  .work--list .work--project.print {
-    width: 35vw;
   }
 }
 /* line 1, ../scss/content/_loading.scss */
@@ -3325,8 +3317,8 @@ body.project #content .font .section--content .project--font-sample .project--fo
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-flex-direction: column;
   flex-direction: column;
 }
@@ -3520,8 +3512,8 @@ body.project #content .mobile-screens .section--content {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-flex-direction: row;
   flex-direction: row;
   width: 60vw;
@@ -3539,10 +3531,6 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   margin-bottom: 1vw;
   border-radius: 4px;
   overflow: hidden;
-}
-/* line 598, ../scss/content/_project.scss */
-body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
-  width: 20vw;
 }
 @media only screen and (max-width: 1199px) {
   /* line 255, ../scss/content/_project.scss */
@@ -3562,11 +3550,8 @@ body.project #content .section.work .work--project.web, body.project #content .s
     /* ============================================ *
      * 04. MAIN SCREENS - LARGE SCREEN
      * ============================================ */
-    /* ============================================ *
-     * 04. SECTION WORK - LARGE SCREEN
-     * ============================================ */
   }
-  /* line 618, ../scss/content/_project.scss */
+  /* line 608, ../scss/content/_project.scss */
   body.project #content .details .section--title,
   body.project #content .introduction .section--title,
   body.project #content .font .section--title,
@@ -3578,7 +3563,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: 40vw;
     left: 5vw;
   }
-  /* line 624, ../scss/content/_project.scss */
+  /* line 614, ../scss/content/_project.scss */
   body.project #content .details .section--content p,
   body.project #content .introduction .section--content p,
   body.project #content .font .section--content p,
@@ -3590,58 +3575,54 @@ body.project #content .section.work .work--project.web, body.project #content .s
     font-size: 14px;
     line-height: 1.2;
   }
-  /* line 634, ../scss/content/_project.scss */
+  /* line 624, ../scss/content/_project.scss */
   body.project #content .details {
     width: 100vw;
   }
-  /* line 637, ../scss/content/_project.scss */
+  /* line 627, ../scss/content/_project.scss */
   body.project #content .details .project--desc {
     width: 40vw;
   }
-  /* line 643, ../scss/content/_project.scss */
+  /* line 633, ../scss/content/_project.scss */
   body.project #content .details .project--img img {
     width: 100vw;
     max-width: none;
   }
-  /* line 654, ../scss/content/_project.scss */
+  /* line 644, ../scss/content/_project.scss */
   body.project #content .introduction .section--content,
   body.project #content .introduction .project--mockup {
     width: 70vw;
   }
-  /* line 664, ../scss/content/_project.scss */
+  /* line 654, ../scss/content/_project.scss */
   body.project #content .font {
     padding-top: 0;
     height: 80vh;
   }
-  /* line 668, ../scss/content/_project.scss */
+  /* line 658, ../scss/content/_project.scss */
   body.project #content .font .section--title {
     top: 40vw;
   }
-  /* line 674, ../scss/content/_project.scss */
+  /* line 664, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
   }
-  /* line 677, ../scss/content/_project.scss */
+  /* line 667, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul .project--colour-more-shade {
     width: 100%;
     text-align: left;
   }
-  /* line 681, ../scss/content/_project.scss */
+  /* line 671, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul .project--colour-more-shade .project--colour-name {
     margin-left: 20px;
   }
-  /* line 694, ../scss/content/_project.scss */
+  /* line 684, ../scss/content/_project.scss */
   body.project #content .logo .section--title {
     top: 40vw;
   }
-  /* line 703, ../scss/content/_project.scss */
+  /* line 693, ../scss/content/_project.scss */
   body.project #content .main-screens .section--title {
     top: 40vw;
-  }
-  /* line 713, ../scss/content/_project.scss */
-  body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
-    width: 40vw;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -3665,11 +3646,8 @@ body.project #content .section.work .work--project.web, body.project #content .s
     /* ============================================ *
      * 05. MOBILE SCREENS - MEDIUM SCREEN
      * ============================================ */
-    /* ============================================ *
-     * 04. SECTION WORK - LARGE SCREEN
-     * ============================================ */
   }
-  /* line 727, ../scss/content/_project.scss */
+  /* line 704, ../scss/content/_project.scss */
   body.project #content .details,
   body.project #content .introduction,
   body.project #content .font,
@@ -3681,7 +3659,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 737, ../scss/content/_project.scss */
+  /* line 714, ../scss/content/_project.scss */
   body.project #content .details .section--title,
   body.project #content .introduction .section--title,
   body.project #content .font .section--title,
@@ -3696,7 +3674,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
     left: 0;
     top: 0;
   }
-  /* line 744, ../scss/content/_project.scss */
+  /* line 721, ../scss/content/_project.scss */
   body.project #content .details .section--title h2,
   body.project #content .introduction .section--title h2,
   body.project #content .font .section--title h2,
@@ -3712,173 +3690,169 @@ body.project #content .section.work .work--project.web, body.project #content .s
     transform: rotate(0);
     position: relative;
   }
-  /* line 755, ../scss/content/_project.scss */
+  /* line 732, ../scss/content/_project.scss */
   body.project #content .details {
     height: auto;
     padding: 10vh 0 0;
     margin: 0;
   }
-  /* line 760, ../scss/content/_project.scss */
+  /* line 737, ../scss/content/_project.scss */
   body.project #content .details .section--title {
     order: 2;
     margin-bottom: 40px;
   }
-  /* line 765, ../scss/content/_project.scss */
+  /* line 742, ../scss/content/_project.scss */
   body.project #content .details .project--desc {
     width: 80vw;
     text-align: center;
     order: 3;
   }
-  /* line 771, ../scss/content/_project.scss */
+  /* line 748, ../scss/content/_project.scss */
   body.project #content .details .project--img {
     width: 100vw;
     order: 1;
     margin: 0 0 5vh;
   }
-  /* line 781, ../scss/content/_project.scss */
+  /* line 758, ../scss/content/_project.scss */
   body.project #content .introduction {
     -webkit-align-items: center;
     align-items: center;
     height: auto;
     padding: 5vh 0;
   }
-  /* line 786, ../scss/content/_project.scss */
+  /* line 763, ../scss/content/_project.scss */
   body.project #content .introduction .section--title {
     display: none;
   }
-  /* line 790, ../scss/content/_project.scss */
+  /* line 767, ../scss/content/_project.scss */
   body.project #content .introduction .section--content,
   body.project #content .introduction .project--mockup {
     width: 90vw;
   }
-  /* line 799, ../scss/content/_project.scss */
+  /* line 776, ../scss/content/_project.scss */
   body.project #content .font {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 804, ../scss/content/_project.scss */
+  /* line 781, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--font-sample {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin-top: 20px;
     width: 80vw;
   }
-  /* line 809, ../scss/content/_project.scss */
+  /* line 786, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--font-sample .project--font-letter {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  /* line 815, ../scss/content/_project.scss */
+  /* line 792, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--font-sample .project--font-info span {
     text-align: center;
   }
-  /* line 821, ../scss/content/_project.scss */
+  /* line 798, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours {
     -webkit-align-items: center;
     align-items: center;
     width: 80vw;
   }
-  /* line 825, ../scss/content/_project.scss */
+  /* line 802, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     width: 80vw;
     margin: 0 0 20px;
   }
-  /* line 830, ../scss/content/_project.scss */
+  /* line 807, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul li {
     margin: 0 0 20px 0;
     height: 40vw;
   }
-  /* line 834, ../scss/content/_project.scss */
+  /* line 811, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul li .project--colour-name {
     font-weight: 100;
     font-size: 12px;
     width: 100%;
   }
-  /* line 840, ../scss/content/_project.scss */
+  /* line 817, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul li div.project--colour {
     width: 30vw;
     height: 30vw;
   }
-  /* line 846, ../scss/content/_project.scss */
+  /* line 823, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
     -webkit-align-items: center;
     align-items: center;
   }
-  /* line 850, ../scss/content/_project.scss */
+  /* line 827, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade {
     margin-top: 20px;
     height: auto;
   }
-  /* line 854, ../scss/content/_project.scss */
+  /* line 831, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades {
     -webkit-justify-content: space-around;
     justify-content: space-around;
     width: 80vw;
     margin-bottom: 20px;
   }
-  /* line 859, ../scss/content/_project.scss */
+  /* line 836, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul.project--colours-secondary li.project--colour-more-shade div.colour-shades div.project--colour {
     width: 12vw;
     height: 12vw;
     margin: 0;
   }
-  /* line 876, ../scss/content/_project.scss */
+  /* line 853, ../scss/content/_project.scss */
   body.project #content .logo {
     height: auto;
     padding: 5vh 0 0;
   }
-  /* line 884, ../scss/content/_project.scss */
+  /* line 861, ../scss/content/_project.scss */
   body.project #content .main-screens {
     height: auto;
     padding: 5vh 0;
   }
-  /* line 888, ../scss/content/_project.scss */
+  /* line 865, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 892, ../scss/content/_project.scss */
+  /* line 869, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content div.project--screen,
   body.project #content .main-screens .section--content .secondary-screens div.project--screen {
     width: 80vw;
     margin-top: 40px;
   }
-  /* line 897, ../scss/content/_project.scss */
+  /* line 874, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content div.project--screen.project--3d-contact-lenses img,
   body.project #content .main-screens .section--content .secondary-screens div.project--screen.project--3d-contact-lenses img {
     width: 100%;
   }
-  /* line 902, ../scss/content/_project.scss */
+  /* line 879, ../scss/content/_project.scss */
   body.project #content .main-screens .section--content .secondary-screens {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
   }
-  /* line 912, ../scss/content/_project.scss */
+  /* line 889, ../scss/content/_project.scss */
   body.project #content .mobile-screens {
     height: auto;
     padding: 0 0 5vh 0;
   }
-  /* line 916, ../scss/content/_project.scss */
+  /* line 893, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content {
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 920, ../scss/content/_project.scss */
+  /* line 897, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen {
     width: 25vw;
   }
-  /* line 923, ../scss/content/_project.scss */
+  /* line 900, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen .project--screen-title {
     width: 100%;
-  }
-  /* line 935, ../scss/content/_project.scss */
-  body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
-    width: 40vw;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -3890,11 +3864,8 @@ body.project #content .section.work .work--project.web, body.project #content .s
     /* ============================================ *
      * 05. MOBILE SCREENS - SMALL SCREEN
      * ============================================ */
-    /* ============================================ *
-     * SECTION WORK - SMALL SCREEN
-     * ============================================ */
   }
-  /* line 949, ../scss/content/_project.scss */
+  /* line 913, ../scss/content/_project.scss */
   body.project #content .details,
   body.project #content .introduction,
   body.project #content .font,
@@ -3905,7 +3876,7 @@ body.project #content .section.work .work--project.web, body.project #content .s
   body.project #content .mobile-screens {
     height: auto;
   }
-  /* line 958, ../scss/content/_project.scss */
+  /* line 922, ../scss/content/_project.scss */
   body.project #content .details .section--content,
   body.project #content .introduction .section--content,
   body.project #content .font .section--content,
@@ -3917,12 +3888,12 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: 90vw;
     margin: 0 5vw;
   }
-  /* line 971, ../scss/content/_project.scss */
+  /* line 935, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 974, ../scss/content/_project.scss */
+  /* line 938, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl {
     display: -webkit-flex;
     display: flex;
@@ -3933,50 +3904,42 @@ body.project #content .section.work .work--project.web, body.project #content .s
     width: 100%;
     margin: 0 0 20px;
   }
-  /* line 981, ../scss/content/_project.scss */
+  /* line 945, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl dt, body.project #content .details .project--desc .project--details dl dd {
     width: 40%;
     display: inline-block;
   }
-  /* line 986, ../scss/content/_project.scss */
+  /* line 950, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl dt {
     text-align: right;
     margin-right: 20px;
   }
-  /* line 991, ../scss/content/_project.scss */
+  /* line 955, ../scss/content/_project.scss */
   body.project #content .details .project--desc .project--details dl dd {
     text-align: left;
     margin: 0;
   }
-  /* line 1001, ../scss/content/_project.scss */
+  /* line 965, ../scss/content/_project.scss */
   body.project #content .details .project--img img {
     max-height: 40vh;
     width: auto;
   }
-  /* line 1013, ../scss/content/_project.scss */
+  /* line 977, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content {
     -webkit-flex-direction: column;
     flex-direction: column;
     width: 80vw;
     margin: 0 10vw;
   }
-  /* line 1018, ../scss/content/_project.scss */
+  /* line 982, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen {
     width: 80vw;
   }
-  /* line 1021, ../scss/content/_project.scss */
+  /* line 985, ../scss/content/_project.scss */
   body.project #content .mobile-screens .section--content div.project--screen img {
     margin-top: 40px;
     width: 100%;
     max-height: unset;
-  }
-  /* line 1033, ../scss/content/_project.scss */
-  body.project #content .section.work {
-    padding: 0;
-  }
-  /* line 1037, ../scss/content/_project.scss */
-  body.project #content .section.work .work--project.web, body.project #content .section.work .work--project.print, body.project #content .section.work .work--project.illustration {
-    width: 100vw;
   }
 }
 
@@ -4289,8 +4252,8 @@ body.project #content .section.work .work--project.web, body.project #content .s
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   width: 30vw;
   min-height: 20vw;
   margin: 0 40px;
@@ -5324,8 +5287,8 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
   display: flex;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  -webkit-justify-content: space-evenly;
-  justify-content: space-evenly;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }

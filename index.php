@@ -80,7 +80,7 @@
             <div class="work section section--grey" data-section-name="work">
 
                 <div class="section--content">
-                    <ul class="work--list">
+                    <ul class="work--list grid-3">
 
                         <!--  VISION DIRECT  -->
                         <?php include 'layout/project-block/vision-direct.php'; ?>

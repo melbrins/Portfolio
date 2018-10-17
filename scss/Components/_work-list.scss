@@ -36,9 +36,9 @@
     .work--project-link {
       height 		: 100%;
       width 		: 100%;
-      display 	: inline-block;
-      position 	: relative;
-      z-index 	: 40;
+      display 	    : inline-block;
+      position 	    : relative;
+      z-index 	    : 40;
     }
 
     .work--project-title { display: none; }
@@ -52,31 +52,31 @@
    * ============================================ */
   .work--list {
     @include flex-direction(row);
-
+    padding: 40px 0;
     /* ============================================ *
      * WORK Project - Item
      * ============================================ */
-
 
     &.grid-6{
       .work--project{
         width: 15vw;
       }
     }
+
     &.grid-3 {
       .work--project {
-        width 		    : 33.33vw;
+        width 		    : 30vw;
       }
     }
 
     &.grid-2 {
       .work--project {
-        width           : 50vw;
+        width           : 45vw;
       }
     }
-
     .work--project {
-      height 			: $s-thumbnails-height;
+      height            : 70vh;
+      max-height 		: $s-thumbnails-height;
       overflow 		    : hidden;
       position 		    : relative;
       text-align 		: center;
@@ -185,21 +185,14 @@
    * ============================================ */
   .work--list{
 
+    &.grid-2{
+      .work--project{
+        width: 30vw;
+      }
+    }
     /* ============================================ *
      * WORK Project - Item
      * ============================================ */
-    .work--project{
-      margin 			: 40px 0;
-      width 			: 15vw;
 
-      &.web {
-        width 		: 30vw;
-      }
-
-      &.print {
-        width 		: 35vw;
-      }
-
-    }
   }
 }
