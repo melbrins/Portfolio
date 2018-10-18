@@ -50,7 +50,7 @@
             </li>
 
             <li>
-              <a href="https://www.behance.net/melbrins0a98" target="_blank">
+              <a href="https://www.behance.net/melbrins" target="_blank">
                 <i class="fa fa-behance" aria-hidden="true"></i>
               </a>
             </li>
