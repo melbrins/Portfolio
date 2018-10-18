@@ -90,9 +90,11 @@
 		top: auto;
 		bottom: 50px;
 		width: 100%;
-		height: 100px;
+
 
 		a{
+			height: 100px;
+
 			&:hover{
 				text-decoration: none;
 			}

@@ -2,54 +2,33 @@ windowH = $(window).height();
 windowW = $(window).width();
 var mobileBreakPoint = 768;
 var device;
-var img = $('img');
-
-function isMobile(){
-
-    if($(window).width() < mobileBreakPoint) return true;
-    return false;
-
-}
-
-$(window).resize(windowResize);
-
-function windowResize (){
-    previousDevice = device;
-
-    if(isMobile()){
-        device = 'mobile';
-    } else {
-        device = 'desktop';
-    }
-
-    if(previousDevice != device){
-        toggleImages();
-    }
-}
-
-function toggleImages(){
-
-    img.each(function(){
-        if(isMobile()) {
-            if (this.getAttribute('data-src-mobile') != undefined) {
-                var mobileImg = this.getAttribute('data-src-mobile');
-
-                this.src = mobileImg;
-            }
-        }else{
-            if (this.getAttribute('data-src-desktop') != undefined) {
-                var desktopImg = this.getAttribute('data-src-desktop');
-
-                this.src = desktopImg;
-            }
-        }
+var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
 
-    });
-}
 
 jQuery(document).ready(function($) {
+    function isMobile(){
+
+        if($(window).width() < mobileBreakPoint) return true;
+        return false;
+
+    }
+
+    $(window).resize(windowResize);
+
+    function windowResize (){
+        previousDevice = device;
+
+        if(isMobile()){
+            device = 'mobile';
+        } else {
+            device = 'desktop';
+        }
+
+    }
+
     windowResize ();
+
 	// ============================
 	// MOBILE - MENU
 	// ============================
@@ -90,29 +69,6 @@ jQuery(document).ready(function($) {
 
 	});
 
-	// ============================
-	// PROJECT - MAIN PICTURE
-	// ============================
-	$("#main-picture").addClass("full");
-	// ============================
-	// PROJECT - PAGE HEIGHT
-	// ============================
-	$(window).resize(function(){
-		resizeContainer();
-	});
-
-	function resizeContainer(){
-		if($(window).width() > 770){
-			$docHeight = $(window).height();
-			$(".artwork").height($docHeight);
-			$(".description").height($docHeight);
-		}else{
-			$(".artwork").height('auto');
-			$(".description").height('auto');
-		}
-	}
-
-	resizeContainer();
 
     // ========================================================
     // SCROLL TO
@@ -135,6 +91,10 @@ jQuery(document).ready(function($) {
     scrollTo('#homepage-work', '#discover', 500);
 
 
+    // ========================================================
+    // POSITION TITLE
+    // Goal: Position correctly rotated section titles.
+    // ========================================================
     $titleSizeW = $(this).find('.section--title h2:visible').width() + 30;
     $titleSizeH = $(this).find('.section--title h2:visible').height() + 30;
 

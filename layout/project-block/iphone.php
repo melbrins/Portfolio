@@ -1,9 +1,9 @@
 <li class="work--project mix thered lazy">
     <a href="../dest/images/fullscreen/3d/iphone.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-    <img src="../dest/images/mobile/category/iphone.jpg"
-         data-src-desktop="../dest/images/work/thumbnails/iphone.png"
-         data-src-mobile="../dest/images/mobile/category/iphone.jpg"
-         alt="iPhone Black & White">
+    <picture>
+        <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/iphone.png"/>
+        <img src="../dest/images/mobile/category/iphone.jpg"alt="iPhone Black & White 3d mockup"/>
+    </picture>
 
     <span class="work--project-title">
             <h3 class="work--project-name">Iphone - Black &amp; White</h3>

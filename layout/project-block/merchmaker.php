@@ -1,10 +1,11 @@
 <li class="work--project mix web lazy">
 	<a href="../projects/merchmaker.php" class="work--project-link">
 
-        <img src="../dest/images/mobile/category/merchMaker.jpg"
-             data-src-desktop="../dest/images/work/thumbnails/merchMAKER.png"
-             data-src-mobile="../dest/images/mobile/category/merchMaker.jpg"
-             alt="merchMAKER">
+        <picture>
+            <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/merchMAKER.png"/>
+            <img src="../dest/images/mobile/category/merchMaker.jpg" alt="merchMAKER"/>
+        </picture>
+
 
 		<span class="work--project-title">
 			<h3 class="work--project-name">Merchmaker</h3>

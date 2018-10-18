@@ -1,10 +1,10 @@
 <li class="work--project mix web lazy">
 	<a href="../projects/choosey.php" class="work--project-link">
+    <picture>
+        <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/choosey.png"/>
+        <img src="../dest/images/mobile/category/choosey.jpg" alt="merchMAKER"/>
+    </picture>
 
-        <img src="../dest/images/mobile/category/choosey.jpg"
-             data-src-desktop="../dest/images/work/thumbnails/choosey.png"
-             data-src-mobile="../dest/images/mobile/category/choosey.jpg"
-             alt="merchMAKER">
 
 		<span class="work--project-title">
 			<h3 class="work--project-name">Choosey</h3>

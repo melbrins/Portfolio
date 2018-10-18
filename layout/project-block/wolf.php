@@ -1,9 +1,10 @@
 <li class="work--project mix thered lazy">
     <a href="../dest/images/fullscreen/3d/wolf.jpg" rel="prettyPhoto[3d]" class="work--project-link">
-        <img src="../dest/images/mobile/category/wolf.jpg"
-             data-src-desktop="../dest/images/work/thumbnails/wolf.png"
-             data-src-mobile="../dest/images/mobile/category/wolf.jpg"
-             alt="Wolf">
+
+        <picture>
+            <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/wolf.png"/>
+            <img src="../dest/images/mobile/category/wolf.jpg" alt="Wolf 3d Character"/>
+        </picture>
 
         <span class="work--project-title">
             <h3 class="work--project-name">Wolf - Black Sheep Project</h3>

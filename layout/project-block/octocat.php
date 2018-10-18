@@ -1,9 +1,11 @@
 <li class="work--project lazy illustration">
     <a href="../dest/images/fullscreen/illustration/octocat.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
-        <img src="../dest/images/mobile/category/octocat.jpg"
-             data-src-desktop="../dest/images/work/thumbnails/octocat.png"
-             data-src-mobile="../dest/images/mobile/category/octocat.jpg"
-             alt="Octocat">
+
+        <picture>
+            <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/octocat.png">
+            <img src="../dest/images/mobile/category/octocat.jpg" alt="Octocat">
+        </picture>
+
 
 		<span class="work--project-title">
 			<h3 class="work--project-name">Octocat</h3>

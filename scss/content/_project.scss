@@ -934,14 +934,14 @@ body.project{
 
 					.project--details{
 						@include flex-direction(column);
-						
+
 						dl{
 							@include display-flex(flex);
 							@include flex-direction(row);
 							@include align-items(flex-start);
 							width 		: 100%;
 							margin 		: 0 0 $gap;
-							
+
 							dt,dd{
 								width 		: 40%;
 								display 	: inline-block;
@@ -957,14 +957,6 @@ body.project{
 								margin 		: 0;
 							}
 						}
-					}
-				}
-
-				.project--img{
-
-					img{
-						max-height 		: 40vh;
-    					width 			: auto;
 					}
 				}
 			}
