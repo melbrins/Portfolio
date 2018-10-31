@@ -1180,7 +1180,6 @@ p {
   color: #777777;
   font-family: "Nunito", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 200;
   font-style: normal;
   line-height: 1.4;
   text-rendering: optimizeSpeed;
@@ -1507,51 +1506,11 @@ p {
 }
 
 /* line 359, ../scss/_common.scss */
-.fixed {
-  position: fixed !important;
-  left: 0;
-  top: 0;
-  /*height 	  : 40px;*/
-  padding: 20px 0;
-  background: rgba(42, 42, 42, 0.8);
-  width: 100%;
-  -webkit-animation: show-fixed-header 0.3s ease-out;
-  -moz-animation: show-fixed-header 0.3s ease-out;
-  -o-animation: show-fixed-header 0.3s ease-out;
-  -ms-animation: show-fixed-header 0.3s ease-out;
-  animation: show-fixed-header 0.3s ease-out;
-}
-
-@-moz-keyframes show-fixed-header {
-  from {
-    top: -60px;
-  }
-  to {
-    top: 0;
-  }
-}
-@-webkit-keyframes show-fixed-header {
-  from {
-    top: -60px;
-  }
-  to {
-    top: 0;
-  }
-}
-@keyframes show-fixed-header {
-  from {
-    top: -60px;
-  }
-  to {
-    top: 0;
-  }
-}
-/* line 376, ../scss/_common.scss */
 .toggle-fix {
   z-index: 99999;
 }
 
-/* line 378, ../scss/_common.scss */
+/* line 361, ../scss/_common.scss */
 .fixed #filters li span:hover {
   color: #fff;
 }
@@ -1559,7 +1518,7 @@ p {
 /* ============================================ *
  * BANNER
  * ============================================ */
-/* line 383, ../scss/_common.scss */
+/* line 366, ../scss/_common.scss */
 .banner-fullscreen {
   width: 100%;
 }
@@ -1567,7 +1526,7 @@ p {
 /* ============================================ *
  * Clearing
  * ============================================ */
-/* line 388, ../scss/_common.scss */
+/* line 371, ../scss/_common.scss */
 #container:after {
   content: "\0020";
   display: block;
@@ -1576,7 +1535,7 @@ p {
   visibility: hidden;
 }
 
-/* line 390, ../scss/_common.scss */
+/* line 373, ../scss/_common.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1590,19 +1549,19 @@ p {
   clear: both;
 }
 
-/* line 402, ../scss/_common.scss */
+/* line 385, ../scss/_common.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 406, ../scss/_common.scss */
+/* line 389, ../scss/_common.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
-/* line 411, ../scss/_common.scss */
+/* line 394, ../scss/_common.scss */
 .clear {
   clear: both;
   display: block;
@@ -1612,7 +1571,7 @@ p {
   height: 0;
 }
 
-/* line 419, ../scss/_common.scss */
+/* line 402, ../scss/_common.scss */
 .clearboth {
   clear: both;
 }
@@ -1982,6 +1941,46 @@ p {
 }
 
 /* line 95, ../scss/layout/_header.scss */
+.fixed {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  /*height 	  : 40px;*/
+  padding: 20px 0;
+  background: rgba(42, 42, 42, 0.8);
+  width: 100%;
+  -webkit-animation: show-fixed-header 0.3s ease-out;
+  -moz-animation: show-fixed-header 0.3s ease-out;
+  -o-animation: show-fixed-header 0.3s ease-out;
+  -ms-animation: show-fixed-header 0.3s ease-out;
+  animation: show-fixed-header 0.3s ease-out;
+}
+
+@-moz-keyframes show-fixed-header {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes show-fixed-header {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes show-fixed-header {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 0;
+  }
+}
+/* line 112, ../scss/layout/_header.scss */
 #mobile-menu {
   display: none;
   width: 100%;
@@ -1993,39 +1992,39 @@ p {
   height: 100%;
   z-index: 8888;
 }
-/* line 106, ../scss/layout/_header.scss */
+/* line 123, ../scss/layout/_header.scss */
 #mobile-menu ul {
   padding: 0;
 }
-/* line 109, ../scss/layout/_header.scss */
+/* line 126, ../scss/layout/_header.scss */
 #mobile-menu ul li {
   width: 90%;
   margin: 0 auto;
   border-top: 1px dotted #ccc;
 }
-/* line 114, ../scss/layout/_header.scss */
+/* line 131, ../scss/layout/_header.scss */
 #mobile-menu ul li a {
   color: #ccc;
   display: block;
   padding: 20px 0;
 }
-/* line 119, ../scss/layout/_header.scss */
+/* line 136, ../scss/layout/_header.scss */
 #mobile-menu ul li a:hover {
   color: #fff;
 }
-/* line 124, ../scss/layout/_header.scss */
+/* line 141, ../scss/layout/_header.scss */
 #mobile-menu ul li:first-child {
   border-top: 0px solid #ccc;
 }
 
 @media only screen and (max-width: 770px) {
-  /* line 132, ../scss/layout/_header.scss */
+  /* line 149, ../scss/layout/_header.scss */
   #header {
     width: 100%;
     text-align: center;
     height: 60px;
   }
-  /* line 137, ../scss/layout/_header.scss */
+  /* line 154, ../scss/layout/_header.scss */
   #header #open-button {
     display: inline-block;
     position: absolute;
@@ -2033,21 +2032,21 @@ p {
     height: 60px;
     line-height: 60px;
   }
-  /* line 144, ../scss/layout/_header.scss */
+  /* line 161, ../scss/layout/_header.scss */
   #header #open-button i {
     line-height: 60px;
   }
-  /* line 149, ../scss/layout/_header.scss */
+  /* line 166, ../scss/layout/_header.scss */
   #header #logo {
     float: none;
     line-height: 60px;
   }
-  /* line 154, ../scss/layout/_header.scss */
+  /* line 171, ../scss/layout/_header.scss */
   #header #logo img {
     line-height: 60px;
     max-height: 30px;
   }
-  /* line 160, ../scss/layout/_header.scss */
+  /* line 177, ../scss/layout/_header.scss */
   #header #menu,
   #header .not-mobile {
     display: none;
@@ -2724,7 +2723,7 @@ p {
   flex-direction: column;
   width: 100%;
   min-height: 100%;
-  background-color: #fff;
+  background-color: #111;
   position: relative;
 }
 /* line 12, ../scss/content/_loading.scss */
@@ -2744,15 +2743,15 @@ p {
 }
 /* line 24, ../scss/content/_loading.scss */
 #loading.container .page-title {
-  -webkit-animation: leftAppear 1s ease-out forwards;
-  -moz-animation: leftAppear 1s ease-out forwards;
-  -o-animation: leftAppear 1s ease-out forwards;
-  -ms-animation: leftAppear 1s ease-out forwards;
-  animation: leftAppear 1s ease-out forwards;
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation: topAppear 2s ease-out forwards;
+  -moz-animation: topAppear 2s ease-out forwards;
+  -o-animation: topAppear 2s ease-out forwards;
+  -ms-animation: topAppear 2s ease-out forwards;
+  animation: topAppear 2s ease-out forwards;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   width: 100%;
@@ -2762,35 +2761,53 @@ p {
 }
 /* line 37, ../scss/content/_loading.scss */
 #loading.container .page-title h1 {
-  color: #1a1a1a;
+  color: #fff;
   font-size: 36px;
+  font-weight: 100;
 }
-/* line 45, ../scss/content/_loading.scss */
+/* line 46, ../scss/content/_loading.scss */
 #loading.container .subtitle {
-  -webkit-animation: leftAppear 1s ease-out forwards;
-  -moz-animation: leftAppear 1s ease-out forwards;
-  -o-animation: leftAppear 1s ease-out forwards;
-  animation: leftAppear 1s ease-out forwards;
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation: topAppear 2s ease-out forwards;
+  -moz-animation: topAppear 2s ease-out forwards;
+  -o-animation: topAppear 2s ease-out forwards;
+  -ms-animation: topAppear 2s ease-out forwards;
+  animation: topAppear 2s ease-out forwards;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-/* line 59, ../scss/content/_loading.scss */
+/* line 57, ../scss/content/_loading.scss */
 #loading.container .subtitle h2 {
   line-height: 33px;
   font-size: 24px;
   letter-spacing: 2.5px;
+  color: #777;
+  font-weight: 100;
 }
 /* line 64, ../scss/content/_loading.scss */
 #loading.container .subtitle h2 strong {
-  font-weight: 600;
+  font-weight: 100;
 }
-/* line 72, ../scss/content/_loading.scss */
+@-webkit-keyframes topAppear {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5000);
+    opacity: 50;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
+    opacity: 100;
+  }
+}
+/* line 86, ../scss/content/_loading.scss */
 #loading.container .discover-more {
   display: -webkit-flex;
   display: flex;
@@ -2800,14 +2817,15 @@ p {
   justify-content: center;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-animation: leftAppear 1s ease-out forwards;
-  -moz-animation: leftAppear 1s ease-out forwards;
-  -o-animation: leftAppear 1s ease-out forwards;
-  animation: leftAppear 1s ease-out forwards;
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  -o-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation: key_opacity 1s ease-out forwards;
+  -moz-animation: key_opacity 1s ease-out forwards;
+  -o-animation: key_opacity 1s ease-out forwards;
+  -ms-animation: key_opacity 1s ease-out forwards;
+  animation: key_opacity 1s ease-out forwards;
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   text-align: center;
@@ -2816,34 +2834,39 @@ p {
   bottom: 50px;
   width: 100%;
 }
-/* line 95, ../scss/content/_loading.scss */
+/* line 106, ../scss/content/_loading.scss */
 #loading.container .discover-more a {
   height: 100px;
 }
-/* line 98, ../scss/content/_loading.scss */
+/* line 109, ../scss/content/_loading.scss */
 #loading.container .discover-more a:hover {
   text-decoration: none;
 }
-/* line 103, ../scss/content/_loading.scss */
+/* line 113, ../scss/content/_loading.scss */
+#loading.container .discover-more a p {
+  letter-spacing: 2px;
+}
+/* line 118, ../scss/content/_loading.scss */
 #loading.container .discover-more .icon {
   height: 50px;
   margin: 0 auto;
 }
-/* line 107, ../scss/content/_loading.scss */
+/* line 122, ../scss/content/_loading.scss */
 #loading.container .discover-more .icon svg {
   position: absolute;
   bottom: 0;
   -webkit-animation: bouncing 1s ease-out forwards;
   -moz-animation: bouncing 1s ease-out forwards;
   -o-animation: bouncing 1s ease-out forwards;
+  -ms-animation: bouncing 1s ease-out forwards;
   animation: bouncing 1s ease-out forwards;
-  -webkit-animation-delay: 7s;
-  -moz-animation-delay: 7s;
-  -o-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   animation-iteration-count: infinite;
 }
-@-webkit-keyframes leftAppear {
+@-webkit-keyframes key_opacity {
   0% {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -5232,50 +5255,64 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
 /* ============================================ *
  * Homepage
  * ============================================ */
+/* line 5, ../scss/content/_homepage.scss */
+#index {
+  background-color: #111;
+}
 /* line 8, ../scss/content/_homepage.scss */
+#index #header {
+  top: -60px;
+  -webkit-animation: show-fixed-header 0.3s ease-out forwards;
+  -moz-animation: show-fixed-header 0.3s ease-out forwards;
+  -o-animation: show-fixed-header 0.3s ease-out forwards;
+  -ms-animation: show-fixed-header 0.3s ease-out forwards;
+  animation: show-fixed-header 0.3s ease-out forwards;
+  animation-delay: 4s;
+}
+/* line 15, ../scss/content/_homepage.scss */
 #index #introduction p {
   padding: 20px;
   color: #fff;
   letter-spacing: 2.5px;
 }
-/* line 15, ../scss/content/_homepage.scss */
+/* line 22, ../scss/content/_homepage.scss */
 #index .banner {
   overflow: hidden;
   margin: 0;
   background-color: #2eb1e6;
   padding: 80px 0;
 }
-/* line 22, ../scss/content/_homepage.scss */
+/* line 29, ../scss/content/_homepage.scss */
 #index .section {
   /* ============================================ *
    * HOMEPAGE - SERVICES
    * ============================================ */
 }
-/* line 24, ../scss/content/_homepage.scss */
+/* line 31, ../scss/content/_homepage.scss */
 #index .section.work {
   padding: 0;
 }
-/* line 31, ../scss/content/_homepage.scss */
+/* line 38, ../scss/content/_homepage.scss */
 #index .section.services {
   min-height: 400px;
 }
-/* line 36, ../scss/content/_homepage.scss */
+/* line 43, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--icon {
   max-width: 50%;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 43, ../scss/content/_homepage.scss */
+/* line 50, ../scss/content/_homepage.scss */
 #index .section.services .section--content h3 {
   font-size: 24px;
   font-weight: 900;
   color: #fff;
 }
-/* line 49, ../scss/content/_homepage.scss */
+/* line 56, ../scss/content/_homepage.scss */
 #index .section.services .section--content p {
   margin-bottom: 20px;
 }
-/* line 53, ../scss/content/_homepage.scss */
+/* line 60, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list {
   display: -webkit-flex;
   display: flex;
@@ -5286,19 +5323,19 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 59, ../scss/content/_homepage.scss */
+/* line 66, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li {
   width: 20vw;
 }
-/* line 62, ../scss/content/_homepage.scss */
+/* line 69, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li .service--title {
   margin-bottom: 20px;
 }
-/* line 66, ../scss/content/_homepage.scss */
+/* line 73, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li .service--content {
   margin-top: 20px;
 }
-/* line 70, ../scss/content/_homepage.scss */
+/* line 77, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li .service--icon {
   display: -webkit-flex;
   display: flex;
@@ -5309,55 +5346,55 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
   min-width: 100%;
   min-height: 220px;
 }
-/* line 77, ../scss/content/_homepage.scss */
+/* line 84, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li .service--icon svg {
   max-width: 170px;
   max-height: 170px;
 }
-/* line 83, ../scss/content/_homepage.scss */
+/* line 90, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li p,
 #index .section.services .section--content .service--list li h3,
 #index .section.services .section--content .service--list li a {
   text-align: center;
   display: block;
 }
-/* line 90, ../scss/content/_homepage.scss */
+/* line 97, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list li p {
   min-height: 70px;
 }
-/* line 95, ../scss/content/_homepage.scss */
+/* line 102, ../scss/content/_homepage.scss */
 #index .section.services .section--content .service--list.service--illu {
   background-color: blue;
 }
 
 @media only screen and (min-width: 771px) {
-  /* line 117, ../scss/content/_homepage.scss */
+  /* line 124, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list.mobile {
     display: none;
   }
-  /* line 120, ../scss/content/_homepage.scss */
+  /* line 127, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list.desktop {
     display: -webkit-flex;
     display: flex;
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 135, ../scss/content/_homepage.scss */
+  /* line 142, ../scss/content/_homepage.scss */
   #index .banner.banner-main {
     height: 90vh;
   }
-  /* line 146, ../scss/content/_homepage.scss */
+  /* line 153, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list {
     display: block;
     width: 100vw;
     padding: 20px 0;
     margin: 0;
   }
-  /* line 153, ../scss/content/_homepage.scss */
+  /* line 160, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list .owl-nav {
     display: none;
   }
-  /* line 157, ../scss/content/_homepage.scss */
+  /* line 164, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list li {
     -webkit-animation: all 0.2s ease-out;
     -moz-animation: all 0.2s ease-out;
@@ -5372,12 +5409,12 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
     flex-direction: column;
     width: 100vw;
   }
-  /* line 164, ../scss/content/_homepage.scss */
+  /* line 171, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list li p {
     max-width: 80vw;
     color: #999;
   }
-  /* line 170, ../scss/content/_homepage.scss */
+  /* line 177, ../scss/content/_homepage.scss */
   #index .section.services .section--content .service--list.desktop {
     display: none;
   }

@@ -36,7 +36,7 @@
                 <div class="subtitle">
                     <h2>
                         Freelance<br>
-                        <strong>UI/UX Designer</strong>
+                        <strong>UI / UX Designer</strong>
                     </h2>
                 </div>
 

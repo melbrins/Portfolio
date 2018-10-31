@@ -1,6 +1,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 133.2" style="enable-background:new 0 0 192 133.2;" xml:space="preserve" width="40%" height="40%">
 	<style type="text/css">
-		.st0, .st1{fill:none;stroke:#000;stroke-width:0.5;stroke-miterlimit:10;}
+		.st0, .st1{fill:none;stroke:#fff;stroke-width:0.5;stroke-miterlimit:10;}
 	</style>
 
 	<defs>
@@ -9,33 +9,32 @@
 				stroke-dasharray: 1000;
 				stroke-dashoffset: 0;
 				fill: none;
-				-webkit-animation: dash 4s linear forwards;
-				-moz-animation: dash 4s linear forwards;
-				-o-animation: dash 4s linear forwards;
-				animation: dash 4s linear forwards;
+				-webkit-animation: dash 3s ease-in forwards;
+				-moz-animation: dash 3s ease-in forwards;
+				-o-animation: dash 3s ease-in forwards;
+				animation: dash 3s ease-in forwards;
 			}
 
 			.st1{
 				width: 100%;
 				height: 100%;
-				fill: rgba(0,0,0,0);
-				stroke: rgba(0,0,0,0);
+				fill: rgba(255,255,255,0);
+				stroke: rgba(255,255,255,0);
 			}
 
 			@-webkit-keyframes dash {
 				0% {
 					stroke-dashoffset: 1000;
-					fill: rgba(0,0,0,0);
+					fill: rgba(255,255,255,0);
 				}
 
 				80%{
-					fill: rgba(0,0,0,0);
+					fill: rgba(255,255,255,0);
 					stroke-dashoffset: 0;
 				}
 
 				100%{
-
-					fill: rgba(0,0,0,1);
+					fill: rgba(255,255,255,1);
 				}
 			}
 		</style>
@@ -52,14 +51,14 @@
 			c22.2,0,40.3,18,40.3,40.3C181.5,97.5,163.4,115.6,141.2,115.6z"/>
 		</g>
 		
-		<!-- SCALE DOWN -->
+		<!-- SCALE DOWN -->w
 		<animate 
 			xlink:href="#circle" 
 			attributeName="r" 
 			from="50" 
 			to="12.8" 
-			dur="0.2s" 
-			begin="4s" 
+			dur="0.1s"
+			begin="3s"
 			values="50; 12.8" 
 			keyTimes="0; 1" 
 			fill="freeze" 
@@ -72,8 +71,8 @@
 			from="0" 
 			to="1" 
 			dur="0.2s" 
-			begin="4s" 
-			values="rgba(0,0,0,0); rgba(0,0,0,1)" 
+			begin="3s"
+			values="rgba(255,255,255,0); rgba(255,255,255,1)"
 			keyTimes="0; 1" 
 			fill="freeze" 
 		/>
