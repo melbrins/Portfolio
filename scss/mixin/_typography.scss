@@ -83,7 +83,7 @@
     color: $c-p;
     font-family: $f-stack-sans;
     font-size: $f-size;
-    font-weight: 200;
+    //font-weight: 200;
     font-style: normal;
     line-height: 1.4;
     text-rendering: optimizeSpeed;
@@ -91,7 +91,7 @@
 
 @mixin pageTitle() {
     font-size: $f-size-xxl;
-    font-weight: 200;
+    //font-weight: 200;
     color: $c-text-darker;
     border-bottom: 1px solid $c-module-border-light;
     padding-bottom: 3px;

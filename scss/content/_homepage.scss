@@ -3,6 +3,13 @@
  * ============================================ */
 
 #index{
+	background-color: #111;
+
+	#header{
+		top: -60px;
+		@include animation(show-fixed-header 0.3s ease-out forwards);
+		animation-delay: 4s;
+	}
 
 	#introduction{
 		p{
