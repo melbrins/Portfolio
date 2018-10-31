@@ -9,7 +9,6 @@
         <a href="/category/illustration.php"><span>Illustration</span></a>
         <a href="/category/3d.php"><span>3D</span></a>
         <a href="/category/print.php"><span>Print</span></a>
-      <!-- <a href="/contact.php"><span>Contact</span></a> -->
     </div>
   </nav>
   <button class="close-button" id="close-button">Close Menu</button>
@@ -19,31 +18,3 @@
     </svg>
   </div>
 </div>
-<!-- 
-
-<div id="mobile-menu">
-
-  <ul>
-    <li class="menu--illustration">
-      <a href="/illustration.php">Illustration</a>
-    </li>
-
-    <li class="menu--3d">
-      <a href="/3d.php">3D</a>
-    </li>
-
-    <li class="menu--web">
-      <a href="/web.php">Web</a>
-    </li>
-
-    <li class="menu--print">
-      <a href="/print.php">Print</a>
-    </li>
-
-    <li>
-      <a href="/contact.php">Contact</a>
-    </li>
-  
-  </ul>
-
-</div> -->

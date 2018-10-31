@@ -14,10 +14,6 @@
 
 		<div id="menu">
 			<ul>
-				<!-- <li class="menu--showreel">
-					<a href="/showreel.php">Showreel</a>
-				</li> -->
-
                 <li class="menu--web">
                     <a href="/category/web.php">UI / UX</a>
                 </li>
@@ -33,18 +29,6 @@
 				<li class="menu--print">
 					<a href="/category/print.php">Print</a>
 				</li>
-
-				<!-- <li class="menu--portfolio">
-					<a href="/portfolio.php">Portfolio</a>
-				</li> -->
-
-				<!-- <li class="menu--contact">
-					<a href="/contact.php">Contact</a>
-				</li> -->
-
-				<!-- <li class="menu--blog">
-					<a href="/blog3/">Blog</a>
-				</li> -->
 			</ul>
 		</div>
 
