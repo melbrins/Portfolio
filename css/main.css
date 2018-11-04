@@ -2066,7 +2066,7 @@ p {
   font-size: 14px;
   color: #999999;
   text-align: left;
-  background-color: #2a2a2a;
+  background-color: black;
   /* Social Media */
 }
 /* line 13, ../scss/layout/_footer.scss */
@@ -5261,7 +5261,7 @@ ul.portfolio-list li.portfolio-list__li:hover .portfolio-list__icon {
 }
 /* line 8, ../scss/content/_homepage.scss */
 #index #header {
-  top: -60px;
+  top: -80px;
   -webkit-animation: show-fixed-header 0.3s ease-out forwards;
   -moz-animation: show-fixed-header 0.3s ease-out forwards;
   -o-animation: show-fixed-header 0.3s ease-out forwards;

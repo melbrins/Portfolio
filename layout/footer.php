@@ -69,7 +69,7 @@
 
           </ul>
 
-          <span class="copyright">©2017 Melbrins. All rights reserved</span>
+          <span class="copyright">©2018 Melbrins. All rights reserved</span>
         </div>
 
       <!-- END FOOTER DIV -->
