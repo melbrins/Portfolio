@@ -80,7 +80,7 @@
 
                 <div class="section--content">
                     <div class="project--mockup">
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mm-ipad-mockup.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mm-ipad-mockup.png" width="1970px" height="1394px"/>
                     </div>
                 </div>
             </div>

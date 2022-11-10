@@ -2726,37 +2726,7 @@ p {
   background-color: #111;
   position: relative;
 }
-/* line 11, ../scss/content/_loading.scss */
-#loading.container:after {
-  -webkit-animation: backgroundImage 2s ease-out forwards;
-  -moz-animation: backgroundImage 2s ease-out forwards;
-  -o-animation: backgroundImage 2s ease-out forwards;
-  -ms-animation: backgroundImage 2s ease-out forwards;
-  animation: backgroundImage 2s ease-out forwards;
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  animation-delay: 3s;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../dest/images/fullscreen/illustration/heroes-of-the-storm.jpg);
-  background-size: cover;
-  z-index: 1;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}
-/* line 29, ../scss/content/_loading.scss */
-#loading.container .loading-logo,
-#loading.container .page-title,
-#loading.container .subtitle,
-#loading.container .discover-more {
-  z-index: 2;
-}
-/* line 36, ../scss/content/_loading.scss */
+/* line 12, ../scss/content/_loading.scss */
 #loading.container .loading-logo {
   display: -webkit-flex;
   display: flex;
@@ -2766,12 +2736,12 @@ p {
   justify-content: center;
   width: 100%;
 }
-/* line 42, ../scss/content/_loading.scss */
+/* line 18, ../scss/content/_loading.scss */
 #loading.container .loading-logo svg {
   width: 50%;
   max-height: 30vh;
 }
-/* line 48, ../scss/content/_loading.scss */
+/* line 24, ../scss/content/_loading.scss */
 #loading.container .page-title {
   -webkit-animation: topAppear 2s ease-out forwards;
   -moz-animation: topAppear 2s ease-out forwards;
@@ -2789,13 +2759,13 @@ p {
   text-align: center;
   margin-top: 20px;
 }
-/* line 61, ../scss/content/_loading.scss */
+/* line 37, ../scss/content/_loading.scss */
 #loading.container .page-title h1 {
   color: #fff;
   font-size: 36px;
   font-weight: 100;
 }
-/* line 70, ../scss/content/_loading.scss */
+/* line 46, ../scss/content/_loading.scss */
 #loading.container .subtitle {
   -webkit-animation: topAppear 2s ease-out forwards;
   -moz-animation: topAppear 2s ease-out forwards;
@@ -2811,7 +2781,7 @@ p {
   text-align: center;
   margin-top: 20px;
 }
-/* line 81, ../scss/content/_loading.scss */
+/* line 57, ../scss/content/_loading.scss */
 #loading.container .subtitle h2 {
   line-height: 33px;
   font-size: 24px;
@@ -2819,23 +2789,9 @@ p {
   color: #777;
   font-weight: 100;
 }
-/* line 88, ../scss/content/_loading.scss */
+/* line 64, ../scss/content/_loading.scss */
 #loading.container .subtitle h2 strong {
   font-weight: 100;
-}
-@-webkit-keyframes backgroundImage {
-  0% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
-    opacity: 0.1;
-  }
-  50% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-    opacity: 0.2;
-  }
-  100% {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-    opacity: 0.3;
-  }
 }
 @-webkit-keyframes topAppear {
   0% {
@@ -2851,7 +2807,7 @@ p {
     opacity: 100;
   }
 }
-/* line 125, ../scss/content/_loading.scss */
+/* line 86, ../scss/content/_loading.scss */
 #loading.container .discover-more {
   display: -webkit-flex;
   display: flex;
@@ -2878,24 +2834,24 @@ p {
   bottom: 50px;
   width: 100%;
 }
-/* line 145, ../scss/content/_loading.scss */
+/* line 106, ../scss/content/_loading.scss */
 #loading.container .discover-more a {
   height: 100px;
 }
-/* line 148, ../scss/content/_loading.scss */
+/* line 109, ../scss/content/_loading.scss */
 #loading.container .discover-more a:hover {
   text-decoration: none;
 }
-/* line 152, ../scss/content/_loading.scss */
+/* line 113, ../scss/content/_loading.scss */
 #loading.container .discover-more a p {
   letter-spacing: 2px;
 }
-/* line 157, ../scss/content/_loading.scss */
+/* line 118, ../scss/content/_loading.scss */
 #loading.container .discover-more .icon {
   height: 50px;
   margin: 0 auto;
 }
-/* line 161, ../scss/content/_loading.scss */
+/* line 122, ../scss/content/_loading.scss */
 #loading.container .discover-more .icon svg {
   position: absolute;
   bottom: 0;
@@ -3258,27 +3214,28 @@ body.project #content .details {
   height: 80vh;
   padding: 10vh 0;
   margin: 0 10vw;
+  max-height: 900px;
 }
-/* line 290, ../scss/content/_project.scss */
+/* line 291, ../scss/content/_project.scss */
 body.project #content .details .project--desc {
   width: 30vw;
 }
-/* line 293, ../scss/content/_project.scss */
+/* line 294, ../scss/content/_project.scss */
 body.project #content .details .project--desc h2, body.project #content .details .project--desc p, body.project #content .details .project--desc dl, body.project #content .details .project--desc dt, body.project #content .details .project--desc dd {
   color: #fff;
 }
-/* line 297, ../scss/content/_project.scss */
+/* line 298, ../scss/content/_project.scss */
 body.project #content .details .project--desc dl {
   width: 33.33%;
 }
-/* line 301, ../scss/content/_project.scss */
+/* line 302, ../scss/content/_project.scss */
 body.project #content .details .project--desc dt {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
-/* line 308, ../scss/content/_project.scss */
+/* line 309, ../scss/content/_project.scss */
 body.project #content .details .project--desc dd, body.project #content .details .project--desc p {
   width: 100%;
   font-weight: 100;
@@ -3287,16 +3244,16 @@ body.project #content .details .project--desc dd, body.project #content .details
   margin-left: 0;
   margin-top: 10px;
 }
-/* line 317, ../scss/content/_project.scss */
+/* line 318, ../scss/content/_project.scss */
 body.project #content .details .project--desc h2 {
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 322, ../scss/content/_project.scss */
+/* line 323, ../scss/content/_project.scss */
 body.project #content .details .project--desc .project--logo {
   margin-bottom: 60px;
 }
-/* line 326, ../scss/content/_project.scss */
+/* line 327, ../scss/content/_project.scss */
 body.project #content .details .project--desc .project--details {
   display: -webkit-flex;
   display: flex;
@@ -3306,11 +3263,11 @@ body.project #content .details .project--desc .project--details {
   justify-content: space-between;
   margin-top: 60px;
 }
-/* line 334, ../scss/content/_project.scss */
+/* line 335, ../scss/content/_project.scss */
 body.project #content .details .project--img {
   width: 60vw;
 }
-/* line 342, ../scss/content/_project.scss */
+/* line 343, ../scss/content/_project.scss */
 body.project #content .introduction {
   display: -webkit-flex;
   display: flex;
@@ -3320,33 +3277,33 @@ body.project #content .introduction {
   justify-content: center;
   position: relative;
 }
-/* line 348, ../scss/content/_project.scss */
+/* line 349, ../scss/content/_project.scss */
 body.project #content .introduction .section--title {
   bottom: 20%;
   top: auto;
 }
-/* line 353, ../scss/content/_project.scss */
+/* line 354, ../scss/content/_project.scss */
 body.project #content .introduction .project--mockup {
   width: 100vw;
   position: relative;
   z-index: 5000;
   text-align: center;
 }
-/* line 359, ../scss/content/_project.scss */
+/* line 360, ../scss/content/_project.scss */
 body.project #content .introduction .project--mockup img {
   max-height: 800px;
 }
-/* line 368, ../scss/content/_project.scss */
+/* line 369, ../scss/content/_project.scss */
 body.project #content .font {
   -webkit-justify-content: center;
   justify-content: center;
   position: relative;
 }
-/* line 372, ../scss/content/_project.scss */
+/* line 373, ../scss/content/_project.scss */
 body.project #content .font .section--title {
   top: 30vw;
 }
-/* line 376, ../scss/content/_project.scss */
+/* line 377, ../scss/content/_project.scss */
 body.project #content .font .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3358,7 +3315,7 @@ body.project #content .font .section--content {
   align-items: center;
   width: 100vw;
 }
-/* line 383, ../scss/content/_project.scss */
+/* line 384, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--font-sample {
   display: -webkit-flex;
   display: flex;
@@ -3369,7 +3326,7 @@ body.project #content .font .section--content .project--font-sample {
   width: 50vw;
   margin-bottom: 60px;
 }
-/* line 390, ../scss/content/_project.scss */
+/* line 391, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--font-sample .project--font-letter {
   display: inline-block;
   background-color: #fff;
@@ -3377,7 +3334,7 @@ body.project #content .font .section--content .project--font-sample .project--fo
   padding: 40px;
   margin-right: 20px;
 }
-/* line 398, ../scss/content/_project.scss */
+/* line 399, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--font-sample .project--font-info {
   display: -webkit-flex;
   display: flex;
@@ -3388,25 +3345,25 @@ body.project #content .font .section--content .project--font-sample .project--fo
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-/* line 404, ../scss/content/_project.scss */
+/* line 405, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--font-sample .project--font-info span {
   width: 100%;
   text-align: left;
 }
-/* line 409, ../scss/content/_project.scss */
+/* line 410, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--font-sample .project--font-info span.project--font-name {
   font-weight: bold;
   font-size: 24px;
   color: #2a2a2a;
 }
-/* line 415, ../scss/content/_project.scss */
+/* line 416, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--font-sample .project--font-info span.project--font-author {
   font-weight: 100;
   font-size: 18px;
   font-style: italic;
   margin-bottom: 20px;
 }
-/* line 426, ../scss/content/_project.scss */
+/* line 427, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours {
   display: -webkit-flex;
   display: flex;
@@ -3416,7 +3373,7 @@ body.project #content .font .section--content .project--colours {
   align-items: flex-start;
   width: 50vw;
 }
-/* line 432, ../scss/content/_project.scss */
+/* line 433, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul {
   display: -webkit-flex;
   display: flex;
@@ -3429,16 +3386,16 @@ body.project #content .font .section--content .project--colours ul {
   margin: 0;
   padding: 0;
 }
-/* line 440, ../scss/content/_project.scss */
+/* line 441, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li {
   margin: 0 20px 20px 0;
 }
-/* line 443, ../scss/content/_project.scss */
+/* line 444, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li .project--colour-name {
   font-weight: 100;
   font-size: 12px;
 }
-/* line 448, ../scss/content/_project.scss */
+/* line 449, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li div.project--colour, body.project #content .font .section--content .project--colours ul li.project--colour-more-shade.project--colour {
   height: 100px;
   width: 100px;
@@ -3446,67 +3403,67 @@ body.project #content .font .section--content .project--colours ul li div.projec
   border-radius: 4px;
   margin-bottom: 20px;
 }
-/* line 458, ../scss/content/_project.scss */
+/* line 459, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-green div.project--colour {
   background-color: #A7C400;
 }
-/* line 459, ../scss/content/_project.scss */
+/* line 460, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
   background-color: #007FA9;
 }
-/* line 460, ../scss/content/_project.scss */
+/* line 461, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-dark-grey div.project--colour {
   background-color: #333333;
 }
-/* line 461, ../scss/content/_project.scss */
+/* line 462, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-medium-grey-1 div.project--colour {
   background-color: #555555;
 }
-/* line 466, ../scss/content/_project.scss */
+/* line 467, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-start;
   align-items: flex-start;
 }
-/* line 470, ../scss/content/_project.scss */
+/* line 471, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .colour-shades .project--colour {
   margin: 0 20px 20px 0;
 }
-/* line 475, ../scss/content/_project.scss */
+/* line 476, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-2 {
   background-color: #777777;
 }
-/* line 476, ../scss/content/_project.scss */
+/* line 477, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-medium-grey-3 {
   background-color: #999999;
 }
-/* line 477, ../scss/content/_project.scss */
+/* line 478, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-1 {
   background-color: #CCCCCC;
 }
-/* line 478, ../scss/content/_project.scss */
+/* line 479, ../scss/content/_project.scss */
 body.project #content .font .section--content .project--colours ul li.project--colour-more-shade .project--colour-light-grey-2 {
   background-color: #DDDDDD;
 }
-/* line 492, ../scss/content/_project.scss */
+/* line 493, ../scss/content/_project.scss */
 body.project #content .logo .section--title {
   top: 20vw;
 }
-/* line 500, ../scss/content/_project.scss */
+/* line 501, ../scss/content/_project.scss */
 body.project #content .main-screens {
   position: relative;
   padding: 10vh 0;
 }
-/* line 504, ../scss/content/_project.scss */
+/* line 505, ../scss/content/_project.scss */
 body.project #content .main-screens .section--title {
   top: 20vw;
 }
-/* line 507, ../scss/content/_project.scss */
+/* line 508, ../scss/content/_project.scss */
 body.project #content .main-screens .section--title h2 {
   color: #fff;
 }
-/* line 512, ../scss/content/_project.scss */
+/* line 513, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3519,11 +3476,11 @@ body.project #content .main-screens .section--content {
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 520, ../scss/content/_project.scss */
+/* line 521, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .project--screen {
   width: 60vw;
 }
-/* line 523, ../scss/content/_project.scss */
+/* line 524, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .project--screen .project--screen-title {
   color: #fff;
   font-weight: 100;
@@ -3531,7 +3488,7 @@ body.project #content .main-screens .section--content .project--screen .project-
   margin-bottom: 20px;
   display: block;
 }
-/* line 531, ../scss/content/_project.scss */
+/* line 532, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3539,7 +3496,7 @@ body.project #content .main-screens .section--content .project--screen img {
   border-radius: 4px;
   overflow: hidden;
 }
-/* line 538, ../scss/content/_project.scss */
+/* line 539, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .secondary-screens {
   display: -webkit-flex;
   display: flex;
@@ -3551,28 +3508,28 @@ body.project #content .main-screens .section--content .secondary-screens {
   align-items: flex-start;
   width: 100%;
 }
-/* line 545, ../scss/content/_project.scss */
+/* line 546, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .secondary-screens .project--screen {
   width: 28vw;
 }
-/* line 549, ../scss/content/_project.scss */
+/* line 550, ../scss/content/_project.scss */
 body.project #content .main-screens .section--content .secondary-screens div {
   margin-top: 4vw;
 }
-/* line 561, ../scss/content/_project.scss */
+/* line 562, ../scss/content/_project.scss */
 body.project #content .mobile-screens {
   position: relative;
   padding-bottom: 10vh;
 }
-/* line 565, ../scss/content/_project.scss */
+/* line 566, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--title {
   top: 20vw;
 }
-/* line 568, ../scss/content/_project.scss */
+/* line 569, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--title h2 {
   color: #fff;
 }
-/* line 574, ../scss/content/_project.scss */
+/* line 575, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--content {
   display: -webkit-flex;
   display: flex;
@@ -3585,11 +3542,11 @@ body.project #content .mobile-screens .section--content {
   width: 60vw;
   margin: 0 20vw;
 }
-/* line 583, ../scss/content/_project.scss */
+/* line 584, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--content div.project--screen {
   width: 18vw;
 }
-/* line 586, ../scss/content/_project.scss */
+/* line 587, ../scss/content/_project.scss */
 body.project #content .mobile-screens .section--content div.project--screen img {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -3617,7 +3574,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
      * 04. MAIN SCREENS - LARGE SCREEN
      * ============================================ */
   }
-  /* line 608, ../scss/content/_project.scss */
+  /* line 609, ../scss/content/_project.scss */
   body.project #content .details .section--title,
   body.project #content .introduction .section--title,
   body.project #content .font .section--title,
@@ -3629,7 +3586,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
     width: 40vw;
     left: 5vw;
   }
-  /* line 614, ../scss/content/_project.scss */
+  /* line 615, ../scss/content/_project.scss */
   body.project #content .details .section--content p,
   body.project #content .introduction .section--content p,
   body.project #content .font .section--content p,
@@ -3641,52 +3598,52 @@ body.project #content .mobile-screens .section--content div.project--screen img 
     font-size: 14px;
     line-height: 1.2;
   }
-  /* line 624, ../scss/content/_project.scss */
+  /* line 625, ../scss/content/_project.scss */
   body.project #content .details {
     width: 100vw;
   }
-  /* line 627, ../scss/content/_project.scss */
+  /* line 628, ../scss/content/_project.scss */
   body.project #content .details .project--desc {
     width: 40vw;
   }
-  /* line 633, ../scss/content/_project.scss */
+  /* line 634, ../scss/content/_project.scss */
   body.project #content .details .project--img img {
     width: 100vw;
     max-width: none;
   }
-  /* line 644, ../scss/content/_project.scss */
+  /* line 645, ../scss/content/_project.scss */
   body.project #content .introduction .section--content,
   body.project #content .introduction .project--mockup {
     width: 70vw;
   }
-  /* line 654, ../scss/content/_project.scss */
+  /* line 655, ../scss/content/_project.scss */
   body.project #content .font {
     padding-top: 0;
     height: 80vh;
   }
-  /* line 658, ../scss/content/_project.scss */
+  /* line 659, ../scss/content/_project.scss */
   body.project #content .font .section--title {
     top: 40vw;
   }
-  /* line 664, ../scss/content/_project.scss */
+  /* line 665, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul {
     -webkit-flex-flow: wrap;
     flex-flow: wrap;
   }
-  /* line 667, ../scss/content/_project.scss */
+  /* line 668, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul .project--colour-more-shade {
     width: 100%;
     text-align: left;
   }
-  /* line 671, ../scss/content/_project.scss */
+  /* line 672, ../scss/content/_project.scss */
   body.project #content .font .section--content .project--colours ul .project--colour-more-shade .project--colour-name {
     margin-left: 20px;
   }
-  /* line 684, ../scss/content/_project.scss */
+  /* line 685, ../scss/content/_project.scss */
   body.project #content .logo .section--title {
     top: 40vw;
   }
-  /* line 693, ../scss/content/_project.scss */
+  /* line 694, ../scss/content/_project.scss */
   body.project #content .main-screens .section--title {
     top: 40vw;
   }
@@ -3713,7 +3670,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
      * 05. MOBILE SCREENS - MEDIUM SCREEN
      * ============================================ */
   }
-  /* line 704, ../scss/content/_project.scss */
+  /* line 705, ../scss/content/_project.scss */
   body.project #content .details,
   body.project #content .introduction,
   body.project #content .font,
@@ -3725,7 +3682,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-  /* line 714, ../scss/content/_project.scss */
+  /* line 715, ../scss/content/_project.scss */
   body.project #content .details .section--title,
   body.project #content .introduction .section--title,
   body.project #content .font .section--title,
@@ -3739,7 +3696,6 @@ body.project #content .mobile-screens .section--content div.project--screen img 
     position: relative;
     left: 0;
     top: 0;
-    z-index: 2;
   }
   /* line 722, ../scss/content/_project.scss */
   body.project #content .details .section--title h2,
@@ -4198,26 +4154,27 @@ body.project #content .mobile-screens .section--content div.project--screen img 
 /* line 32, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .section.section--dark-grey.introduction .project--mockup img {
   max-height: 700px;
+  max-width: 989px;
 }
-/* line 37, ../scss/content/_merchmaker.scss */
+/* line 38, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .section.section--dark-grey {
   background-color: #333;
 }
-/* line 48, ../scss/content/_merchmaker.scss */
+/* line 49, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .font .section--content .project--font-sample .project--font-info span.project--font-abc {
   margin-top: 20px;
 }
-/* line 61, ../scss/content/_merchmaker.scss */
+/* line 62, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .font .section--content .project--colours ul li.project--colour-blue div.project--colour {
   background-color: #2D79B9;
 }
-/* line 68, ../scss/content/_merchmaker.scss */
+/* line 69, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .brands-logo {
   -webkit-justify-content: center;
   justify-content: center;
   height: auto;
 }
-/* line 74, ../scss/content/_merchmaker.scss */
+/* line 75, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .brands-logo .section--content ul.brands {
   display: -webkit-flex;
   display: flex;
@@ -4232,7 +4189,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   margin: 0;
   padding: 0;
 }
-/* line 83, ../scss/content/_merchmaker.scss */
+/* line 84, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .brands-logo .section--content ul.brands li {
   display: -webkit-flex;
   display: flex;
@@ -4246,33 +4203,33 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   border-radius: 10px;
   margin: 0 20px 20px 0;
 }
-/* line 93, ../scss/content/_merchmaker.scss */
+/* line 94, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .brands-logo .section--content ul.brands li img {
   max-height: 80%;
   max-width: 80%;
 }
-/* line 98, ../scss/content/_merchmaker.scss */
+/* line 99, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .brands-logo .section--content ul.brands li:nth-child(4) {
   margin-right: 0;
 }
 @media only screen and (max-width: 1199px) {
-  /* line 106, ../scss/content/_merchmaker.scss */
+  /* line 107, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .brands-logo .section--content ul.brands li {
     width: 30vw;
     height: 15vw;
   }
-  /* line 110, ../scss/content/_merchmaker.scss */
+  /* line 111, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .brands-logo .section--content ul.brands li:nth-child(2) {
     margin-right: 0;
   }
 }
-/* line 119, ../scss/content/_merchmaker.scss */
+/* line 120, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos {
   -webkit-justify-content: center;
   justify-content: center;
   height: auto;
 }
-/* line 125, ../scss/content/_merchmaker.scss */
+/* line 126, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .date {
   display: -webkit-flex;
   display: flex;
@@ -4281,12 +4238,12 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 130, ../scss/content/_merchmaker.scss */
+/* line 131, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .date span {
   color: #fff;
   padding: 0 20px;
 }
-/* line 135, ../scss/content/_merchmaker.scss */
+/* line 136, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .date:before, #merchmaker.project #content .logos .section--content .date:after {
   content: '';
   height: 5px;
@@ -4294,7 +4251,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   width: 30vw;
   display: inline-block;
 }
-/* line 146, ../scss/content/_merchmaker.scss */
+/* line 147, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .logo {
   display: -webkit-flex;
   display: flex;
@@ -4306,7 +4263,7 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   flex-direction: row;
   margin: 60px 0;
 }
-/* line 154, ../scss/content/_merchmaker.scss */
+/* line 155, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .logo span {
   display: -webkit-flex;
   display: flex;
@@ -4320,21 +4277,21 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   min-height: 20vw;
   margin: 0 40px;
 }
-/* line 164, ../scss/content/_merchmaker.scss */
+/* line 165, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .logo span.colour {
   background-color: #fff;
   border-radius: 0 10px 10px 0;
 }
-/* line 169, ../scss/content/_merchmaker.scss */
+/* line 170, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .logo span svg {
   max-width: 90%;
   margin: 20px 0;
 }
-/* line 177, ../scss/content/_merchmaker.scss */
+/* line 178, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .logos .section--content .logo.logo--2016 span.colour {
   border-radius: 10px 0 0 10px;
 }
-/* line 185, ../scss/content/_merchmaker.scss */
+/* line 186, ../scss/content/_merchmaker.scss */
 #merchmaker.project #content .section--blue {
   background-color: #2D79B9;
 }
@@ -4344,16 +4301,16 @@ body.project #content .mobile-screens .section--content div.project--screen img 
     background-position: center;
     background-size: cover;
   }
-  /* line 196, ../scss/content/_merchmaker.scss */
+  /* line 197, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .section.section--grey.details {
     background-color: transparent;
   }
-  /* line 199, ../scss/content/_merchmaker.scss */
+  /* line 200, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .section.section--grey.details .project--desc,
   #merchmaker.project #content .section.section--grey.details .project--img {
     width: 80vw;
   }
-  /* line 203, ../scss/content/_merchmaker.scss */
+  /* line 204, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .section.section--grey.details .project--desc img,
   #merchmaker.project #content .section.section--grey.details .project--img img {
     max-height: 50vh;
@@ -4361,29 +4318,29 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 214, ../scss/content/_merchmaker.scss */
+  /* line 215, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .brands-logo .section--content ul.brands li {
     width: 40vw;
     height: 25vw;
   }
-  /* line 219, ../scss/content/_merchmaker.scss */
+  /* line 220, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo {
     -webkit-flex-direction: column;
     flex-direction: column;
     margin: 0;
     padding: 5vh 0;
   }
-  /* line 224, ../scss/content/_merchmaker.scss */
+  /* line 225, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo span {
     width: 100%;
     margin: 0;
     min-height: 30vw;
   }
-  /* line 229, ../scss/content/_merchmaker.scss */
+  /* line 230, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo span.colour {
     border-radius: 0 0 10px 10px;
   }
-  /* line 236, ../scss/content/_merchmaker.scss */
+  /* line 237, ../scss/content/_merchmaker.scss */
   #merchmaker.project #content .logos .section--content .logo.logo--2016 span.colour {
     border-radius: 10px 10px 0 0;
   }
