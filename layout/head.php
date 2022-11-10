@@ -13,7 +13,7 @@
 <!-- <link rel="preload" href="/fonts/font-awesome/fontawesome-webfont.woff2" as="font"> -->
 
 <!-- <link rel="stylesheet" type="text/css" href="/dest/css/components.min.css" /> -->
-<link rel="preload" type="style" href="/dest/css/main.min.css" />
+<link rel="preload" type="style" href="/dest/css/main.min.css" as="style"/>
 <link rel="stylesheet" type="text/css" href="/dest/css/main.min.css" />
 
 <style type="text/css">
