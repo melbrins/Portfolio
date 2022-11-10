@@ -6,7 +6,7 @@
         </picture>
 
 		<span class="work--project-title">
-			<h3 class="work--project-name">Fantasy Fox Dragon</h3>
+			<h3 class="work--project-name">Fantasy<br>Fox Dragon</h3>
 			<h4 class="work--project-category">Illustration</h4>
 
 			<span class="work--project-view btn">View Project</span>
