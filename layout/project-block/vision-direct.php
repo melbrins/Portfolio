@@ -3,7 +3,7 @@
 
         <picture>
             <source media="(min-width: 771px)" srcset="../dest/images/work/thumbnails/Vision-Direct.png">
-            <img src="../dest/images/mobile/category/visionDirect.jpg" alt="Vision Direct - UI / UX Project" >
+            <img src="../dest/images/mobile/category/visionDirect.jpg" alt="Vision Direct - UI / UX Project" width="100%" height="100%" />
         </picture>
 
 		<span class="work--project-title">

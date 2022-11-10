@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 
+    <link rel="preload" as="image" href="../dest/images/project/merchmaker/mm-phone-case.png">
+    <link rel="preload" as="image" href="../images/project/merchmaker/mm-bg.jpg">
+
     <title>Merchmaker - Anthony Pucelle Freelance UI / UX Designer</title>
 
     <?php include '../layout/head.php'; ?>
@@ -63,7 +66,7 @@
                 </div>
 
                 <div class="project--img">
-                    <img class="lazy" data-src="../dest/images/project/merchmaker/mm-phone-case.png" />
+                    <img class="lazy" data-src="../dest/images/project/merchmaker/mm-phone-case.png" width="100%" height="100%"/>
                 </div>
 
             </div>
@@ -77,7 +80,7 @@
 
                 <div class="section--content">
                     <div class="project--mockup">
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mm-ipad-mockup.png" />
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mm-ipad-mockup.png" width="100%" height="100%"/>
                     </div>
                 </div>
             </div>
@@ -155,19 +158,19 @@
 
                     <ul class="brands">
                         <li class="brand power-rangers">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/power-rangers.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/power-rangers.png" width="100%" height="100%"/>
                         </li>
 
                         <li class="brand thunderbirds">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/thunderbirds-are-go.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/thunderbirds-are-go.png" width="100%" height="100%"/>
                         </li>
 
                         <li class="brand star-trek">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/star-trek.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/star-trek.png" width="100%" height="100%"/>
                         </li>
 
                         <li class="brand kill-bill">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/kill-bill.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/kill-bill.png" width="100%" height="100%"/>
                         </li>
 
                     </ul>
@@ -175,19 +178,19 @@
 
 
                         <li class="brand wwe">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/wwe.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/wwe.png" width="100%" height="100%"/>
                         </li>
 
                         <li class="brand talking-tom">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/talking-tom.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/talking-tom.png" width="100%" height="100%"/>
                         </li>
 
                         <li class="brand pulp-fiction">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/pulp-fiction.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/pulp-fiction.png" width="100%" height="100%"/>
                         </li>
 
                         <li class="brand liverpool-fc">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/liverpool-fc.png" />
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/liverpool-fc.png" width="100%" height="100%"/>
                         </li>
                     </ul>
                 </div>
@@ -271,7 +274,7 @@
                             Each store had a different styling using the brand guidelines to fit the look and feel that the fans were expecting.
                             However to make sure that every update on the website will be done on all store, the template and functionalities were identical.
                         </p>
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/lfc-homepage.png" />
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/lfc-homepage.png" width="100%" height="100%"/>
                     </div>
 
 
@@ -282,7 +285,7 @@
                             on the right side.
                         </p>
 
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/tbag-product.png" />
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/tbag-product.png" width="100%" height="100%"/>
                     </div>
 
                 </div>
@@ -297,13 +300,13 @@
 
                 <div class="section--content">
                     <div class="project--screen project--screen-homepage">
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/st-mobile-homepage.png" />
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/st-mobile-homepage.png" width="100%" height="100%"/>
                     </div>
 
                     <div class="project--screen project--secondary">
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-product.png" />
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-menu.png" />
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-mini-cart.png" />
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-product.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-menu.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-mini-cart.png" width="100%" height="100%"/>
                     </div>
 
                 </div>

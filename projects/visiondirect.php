@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+    <link rel="preload" as="image" href="../dest/images/project/Vision-Direct/vd-van_uk3.png">
+    
     <title>Vision Direct - Anthony Pucelle Freelance UI / UX Designer</title>
 
     <?php include '../layout/head.php'; ?>

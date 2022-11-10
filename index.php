@@ -44,8 +44,8 @@
                     <a href="#" id="discover">
                         <p>Discover More</p>
                         <span class="icon">
-                <?php include 'dest/svg/arrow-down.php'; ?>
-              </span>
+                            <?php include 'dest/svg/arrow-down.php'; ?>
+                        </span>
                     </a>
                 </div>
 

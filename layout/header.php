@@ -9,7 +9,7 @@
 		</a>
 
 		<a id="logo" href="/">
-			<img src="/images/layout/melbrins_logo-white.png" border="0"/>
+			<img src="/images/layout/melbrins_logo-white.png" border="0" width="158px" height="30px"/>
 		</a>
 
 		<div id="menu">

@@ -4,9 +4,16 @@
 <link rel="icon" href="/images/layout/favicon_32.png" type="image/png">
 <link rel="shortcut icon" href="/images/layout/favicon_32.png" type="image/png">
 
-<link href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900&display=swap" as="style" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2" as="font" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,400,700,900&display=swap" rel="stylesheet" crossorigin>
 
-<link rel="stylesheet" type="text/css" href="/dest/css/components.min.css" />
+
+<!-- <link rel="preload" href="/fonts/font-awesome/fontawesome-webfont.woff2" as="font"> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="/dest/css/components.min.css" /> -->
+<link rel="preload" type="style" href="/dest/css/main.min.css" />
 <link rel="stylesheet" type="text/css" href="/dest/css/main.min.css" />
 
 <style type="text/css">

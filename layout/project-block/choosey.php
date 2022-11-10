@@ -2,7 +2,7 @@
 	<a href="../projects/choosey.php" class="work--project-link">
     <picture>
         <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/choosey.png"/>
-        <img src="../dest/images/mobile/category/choosey.jpg" alt="merchMAKER"/>
+        <img src="../dest/images/mobile/category/choosey.jpg" alt="merchMAKER" width="100%" height="100%"/>
     </picture>
 
 

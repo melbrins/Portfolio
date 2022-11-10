@@ -3,7 +3,7 @@
 
         <picture>
             <source media="(min-width:771px)" srcset="../dest/images/work/thumbnails/merchMAKER.png"/>
-            <img src="../dest/images/mobile/category/merchMaker.jpg" alt="merchMAKER"/>
+            <img src="../dest/images/mobile/category/merchMaker.jpg" alt="merchMAKER" width="100%" height="100%"/>
         </picture>
 
 
