@@ -29,25 +29,45 @@
 	<div class="work section section--grey">
 
 			<div class="section--content">
+
+				<ul class="work--list grid-6">
+						<?php include '../layout/project-block/ranger-amazon.php'; ?>
+            <?php include '../layout/project-block/wizardly-foxy.php'; ?>
+            <?php include '../layout/project-block/fox-dragon.php'; ?>
+            <?php include '../layout/project-block/turning-red-red.php'; ?>
+            <?php include '../layout/project-block/fantasy-weapon-shop.php'; ?>	
+            <?php include '../layout/project-block/fox-woman-portrait.php'; ?>
+
+				</ul>
+
+				<ul class="work--list grid-6">
+						<?php include '../layout/project-block/efreet-daraco.php'; ?>
+						<?php include '../layout/project-block/queen-bee.php'; ?>
+						<?php include '../layout/project-block/bee-anatomy.php'; ?>
+						<?php include '../layout/project-block/burning-gaze.php'; ?>
+						<?php include '../layout/project-block/heroes-of-the-storm.php'; ?>
+						<?php include '../layout/project-block/dark-elf.php'; ?>
+				</ul>
+
 				<ul class="work--list grid-6">
 
 					<!--  ANGELA  -->
-					<?php include '../layout/project-block/angela.php'; ?>
+						<?php include '../layout/project-block/angela.php'; ?>
 
-	  				<!--  STAR WARS FAMILY  -->
-                    <?php include '../layout/project-block/star-wars.php'; ?>
+  				<!--  STAR WARS FAMILY  -->
+            <?php include '../layout/project-block/star-wars.php'; ?>
 
-	  				<!--  OCTOCAT  -->
-                    <?php include '../layout/project-block/octocat.php'; ?>
+  				<!--  OCTOCAT  -->
+            <?php include '../layout/project-block/octocat.php'; ?>
 
-	  				<!--  COLD TOUCH -->
-                    <?php include '../layout/project-block/cold-touch.php'; ?>
+  				<!--  COLD TOUCH -->
+            <?php include '../layout/project-block/cold-touch.php'; ?>
 
-	  				<!--  MEDUSA  -->
-	  				<?php include '../layout/project-block/medusa.php'; ?>
+  				<!--  MEDUSA  -->
+						<?php include '../layout/project-block/medusa.php'; ?>
 
-	  				<!--  BLACK SHEEP GOAT  -->
-                    <?php include '../layout/project-block/black-sheep.php'; ?>
+  				<!--  BLACK SHEEP GOAT  -->
+            <?php include '../layout/project-block/black-sheep.php'; ?>
 				</ul>
 			</div>
 	</div>
