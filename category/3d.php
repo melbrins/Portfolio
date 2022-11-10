@@ -6,6 +6,8 @@
 	<meta name="description" content="Freelance CG Artists, browse through my latest 3D projects, Character Design, Product Packaging.">
 	<meta name="author" content="Anthony Pucelle">
 
+	<link rel="canonical" href="https://www.melbrins.com/category/3d.php"/>
+
 	<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include '../layout/head.php'; ?>
 

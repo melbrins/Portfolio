@@ -6,6 +6,7 @@
     <meta name="description" content="Hello, I'm Anthony Pucelle, Freelance UI / UX Designer and also illustrator. Open for new opportunities from February 2018"/>
     <meta name="author" content="Anthony Pucelle">
 
+    <link rel="canonical" href="https://www.melbrins.com/"/>
     <?php include 'layout/head.php'; ?>
 
 </head>

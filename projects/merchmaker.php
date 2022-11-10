@@ -5,6 +5,8 @@
     <link rel="preload" as="image" href="../dest/images/project/merchmaker/mm-phone-case.png">
     <link rel="preload" as="image" href="../images/project/merchmaker/mm-bg.jpg">
 
+    <link rel="canonical" href="https://www.melbrins.com/projects/merchmaker.php"/>
+
     <title>Merchmaker - Anthony Pucelle Freelance UI / UX Designer</title>
 
     <?php include '../layout/head.php'; ?>

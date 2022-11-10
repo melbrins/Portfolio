@@ -6,6 +6,8 @@
 	<meta name="description" content="Freelance Illustrator, concept artist. Have a look at my amazing illustration and Character Designs.">
 	<meta name="author" content="Anthony Pucelle">
 
+	<link rel="canonical" href="https://www.melbrins.com/category/illustration.php"/>
+
 	<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include '../layout/head.php'; ?>
 

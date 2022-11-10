@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 
+    <link rel="canonical" href="https://www.melbrins.com/projects/wall-street-institutes.php"/>
+
     <title>Wall Street Institutes - Anthony Pucelle Freelance UI / UX Designer</title>
 
     <?php include '../layout/head.php'; ?>

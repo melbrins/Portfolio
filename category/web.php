@@ -6,6 +6,8 @@
 	<meta name="description" content="Freelance Ui / UX Designer, have a look at my latest website projects involving: Design, Front-End and Back-End">
 	<meta name="author" content="Anthony Pucelle">
 
+	<link rel="canonical" href="https://www.melbrins.com/category/web.php"/>
+	
 	<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include '../layout/head.php'; ?>
 

@@ -4,6 +4,8 @@
 
     <link rel="preload" as="image" href="../dest/images/project/Vision-Direct/vd-van_uk3.png">
     
+    <link rel="canonical" href="https://www.melbrins.com/projects/visiondirect.php"/>
+
     <title>Vision Direct - Anthony Pucelle Freelance UI / UX Designer</title>
 
     <?php include '../layout/head.php'; ?>

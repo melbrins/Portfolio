@@ -6,6 +6,8 @@
 	<meta name="description" content="Freelance Graphic Designer, have a look at my latest print projects.">
 	<meta name="author" content="Anthony Pucelle">
 
+	<link rel="canonical" href="https://www.melbrins.com/category/print.php"/>
+
 	<link rel="stylesheet" href="../css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<?php include '../layout/head.php'; ?>
 
