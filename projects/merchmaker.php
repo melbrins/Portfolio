@@ -160,19 +160,19 @@
 
                     <ul class="brands">
                         <li class="brand power-rangers">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/power-rangers.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/power-rangers.png" width="358px" height="116px" alt="Power Rangers Logo - Sabans"/>
                         </li>
 
                         <li class="brand thunderbirds">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/thunderbirds-are-go.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/thunderbirds-are-go.png" width="360px" height="172px" alt="Thunderbirds Are Go Logo"/>
                         </li>
 
                         <li class="brand star-trek">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/star-trek.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/star-trek.png" width="360px" height="78px" alt="Star Trek Logo"/>
                         </li>
 
                         <li class="brand kill-bill">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/kill-bill.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/kill-bill.png" width="360px" height="70px" alt="Kill Bill Tarantino Logo"/>
                         </li>
 
                     </ul>
@@ -180,19 +180,19 @@
 
 
                         <li class="brand wwe">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/wwe.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/wwe.png" width="360px" height="328px" alt="WWE Logo"/>
                         </li>
 
                         <li class="brand talking-tom">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/talking-tom.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/talking-tom.png" width="360px" height="256px" alt="Talking Tom Logo"/>
                         </li>
 
                         <li class="brand pulp-fiction">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/pulp-fiction.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/pulp-fiction.png" width="360px" height="80px" alt="Pulp Fiction Logo"/>
                         </li>
 
                         <li class="brand liverpool-fc">
-                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/liverpool-fc.png" width="100%" height="100%"/>
+                            <img class="lazy" data-src="../dest/images/project/merchmaker/brands/liverpool-fc.png" width="324px" height="100px" alt="Liverpool FC Logo"/>
                         </li>
                     </ul>
                 </div>
@@ -276,7 +276,7 @@
                             Each store had a different styling using the brand guidelines to fit the look and feel that the fans were expecting.
                             However to make sure that every update on the website will be done on all store, the template and functionalities were identical.
                         </p>
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/lfc-homepage.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/lfc-homepage.png" width="1860px" height="3526px" alt="Merchmaker Liverpool FC Homepage"/>
                     </div>
 
 
@@ -287,7 +287,7 @@
                             on the right side.
                         </p>
 
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/tbag-product.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/main-screens/tbag-product.png" width="1860px" height="3984px" alt="Merchmaker Thunderbirds Are Go Product Page"/>
                     </div>
 
                 </div>
@@ -302,13 +302,13 @@
 
                 <div class="section--content">
                     <div class="project--screen project--screen-homepage">
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/st-mobile-homepage.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/st-mobile-homepage.png" width="640px" height="5190px" alt="Merchmaker Star Trek Mobile Homepage "/>
                     </div>
 
                     <div class="project--screen project--secondary">
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-product.png" width="100%" height="100%"/>
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-menu.png" width="100%" height="100%"/>
-                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-mini-cart.png" width="100%" height="100%"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-product.png" width="640px" height="2326px" alt="Merchmaker WWE Mobile Product Page"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-menu.png" width="640px" height="1492px" alt="Merchmaker WWE Mobile Menu"/>
+                        <img class="lazy" data-src="../dest/images/project/merchmaker/mobile-screens/wwe-mobile-mini-cart.png" width="640px" height="1480px" alt="Merchmaker WWE Mobile Mini Cart"/>
                     </div>
 
                 </div>

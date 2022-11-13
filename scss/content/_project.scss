@@ -533,6 +533,7 @@ body.project{
 						@include box-shadow( 0 10px 20px rgba(0,0,0,0.2));
 						border-radius: 4px;
 						overflow:hidden;
+						height: auto;
 					}
 				}
 
@@ -589,6 +590,7 @@ body.project{
 						margin-bottom 		: 1vw;
 						border-radius 		: 4px;
 						overflow 			: hidden;
+						height 				: auto;
 					}
 				}
 			}
