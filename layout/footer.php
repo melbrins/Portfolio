@@ -12,7 +12,7 @@
           <div class="contact--methods">
             <div class="contact--method phone">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <h4>+44 (0)7 5827 55 002</h4>
+              <h4>+33 (0)7 82 70 50 64</h4>
             </div>
 
             <div class="contact--method mail">
@@ -69,7 +69,7 @@
 
           </ul>
 
-          <span class="copyright">©2018 Melbrins. All rights reserved</span>
+          <span class="copyright">©2022 Melbrins. All rights reserved</span>
         </div>
 
       <!-- END FOOTER DIV -->
