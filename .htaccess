@@ -3,3 +3,7 @@ RewriteEngine On
 	## http -> https
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
+
+	## non-www to www
+RewriteCond %{HTTP_HOST} ^melbrins.com [NC]
+RewriteRule ^(.*)$ https://www.melbrins.com/$1 [L,R=301]
