@@ -4373,6 +4373,10 @@ body.project #content .mobile-screens .section--content div.project--screen img 
   #ranger-amazon.project #content .section.thumbnail-research .section--content {
     padding: 0;
   }
+  /* line 220, ../scss/content/_fantasy-ranger-amazon.scss */
+  #ranger-amazon.project #content .section.close-ups img {
+    width: 100%;
+  }
 }
 
 /* ============================================ *
