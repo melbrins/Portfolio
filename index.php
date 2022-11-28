@@ -86,11 +86,11 @@
                         <!--  VISION DIRECT  -->
                         <?php include 'layout/project-block/vision-direct.php'; ?>
 
+                        <!--  RANGER AMAZON  -->
+                        <?php include 'layout/project-block/ranger-amazon.php'; ?>
+
                         <!--  MERCHMAKER  -->
                         <?php include 'layout/project-block/merchmaker.php'; ?>
-
-                        <!--  CHOOSEY  -->
-                        <?php include 'layout/project-block/choosey.php'; ?>
 
                     </ul>
                 </div>

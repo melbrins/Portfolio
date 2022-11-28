@@ -1,5 +1,5 @@
 <li class="work--project lazy illustration">
-	<a href="../dest/images/fullscreen/illustration/ranger-amazon.jpg" rel="prettyPhoto[Illustration]" class="work--project-link">
+	<a href="../projects/ranger-amazon.php" class="work--project-link">
         <picture>
             <source media="(min-width: 771px)" srcset="../dest/images/work/thumbnails/ranger-amazon.jpg">
             <img src="../dest/images/mobile/category/ranger-amazon.jpg" alt="Ranger Amazon">

@@ -1,0 +1,222 @@
+/* ============================================ *
+ * NEW Project - ILLUSTRATION - Fantasy Ranger Amazon
+ * ============================================ */
+
+ #ranger-amazon.project{
+
+ 	#content{
+	 	background-color: #040910;
+
+	 	.project--desc {
+	 		@include display-flex(flex);
+	 		@include flex-direction(column);
+	 		@include align-items(center);
+	 		text-align: center;
+	 		padding: 90px $gap*2;
+	 		max-width: 1000px;
+	 		
+	 		h1, h2, p, dl, dt, dd {
+	 			color: #fff;  
+	 		}	
+
+	 		h1 {
+	 			margin-bottom: 20px;
+	 			text-transform: uppercase;
+	 		}
+
+	 		dl{
+				width: 33.33%;
+			}
+
+			dt{
+				width: 100%;
+				font-weight: bold;
+				font-size: $f-size-l;
+				line-height: 20px;
+			}
+
+			dd, p{
+				width: 100%;
+				font-weight: 100;
+				font-size: $f-size;
+				line-height: 20px;
+				margin-left: 0;
+				margin-top: $gap;
+			}
+
+			p {
+	 			text-align: justify;
+	 			font-size: 18px;
+	 			line-height: 24px;
+	 		}
+
+			.project--details{
+				@include display-flex(flex);
+				@include align-items(flex-start);
+				@include justify-content(space-between);
+				margin: $gap*3 0;
+				width: 100%;
+				max-width: 700px;
+			}
+	 	}
+
+	 	.project--links {
+		 	@include display-flex(flex);
+		 	@include flex-direction(column);
+		 	@include align-items(center);
+	 		margin-bottom: 90px;
+	 		width: 100%;
+
+	 		h2, a {
+	 			color: #fff;
+	 			text-align: center;
+	 		}
+
+	 		h2 {
+	 			margin-bottom: $gap*3;
+	 		}
+
+	 		.link--list {
+	 			@include display-flex(flex);
+	 			@include align-items(flex-start);
+	 			@include flex-direction(row);
+	 			width: 100%;
+	 			max-width: 700px;
+
+	 			&.grid-4 li {
+	 				width: 25%;
+	 				text-align: center;
+
+	 				a.btn--external-link {
+		 				border: 1px solid #fff;
+		 				border-radius: 10px;
+		 				display: inline-block;
+		 				width: 100%;
+		 				padding: 0 5px;
+		 				line-height: 38px;
+		 				max-width: 150px;
+	 				}
+	 			}
+	 		}
+	 	}
+
+	 	.section.thumbnail-research {
+	 		background-color: #363636;
+
+	 		.section--content {
+	 			padding: 90px 0;
+	 		}
+	 	}
+
+
+	 	.section.close-ups {
+	 		padding: 90px $gap;
+	 	}
+
+
+	 	/* ============================================ *
+		 * MEDIA QUERY - MEDIUM SCREEN
+		 * ============================================ */
+		@include bp(min-width, $bp-medium + 1){
+			.section.thumbnail-research {
+				position: relative;
+		 		background-color: #363636;
+		 		max-height: 800px;
+
+		 		.section--content {
+		 			@include display-flex(flex);
+		 			@include flex-direction(column);
+		 			@include justify-content(space-evenly);
+			 		position: absolute;
+			 		top: 0;
+			 		z-index: 10;
+			 		width: 100%;
+			 		height: 100%;
+			 		padding: 0 $gap*2;
+
+			 		.thumbnail-sketches img {
+			 			height: 100px;
+			 		}
+
+			 		.thumbnail-shaded img {
+			 			height: 150px;
+			 		}
+
+			 		.thumbnail-coloured img {
+			 			height: 200px; 
+			 		}
+		 		}
+		 	}
+		}
+
+
+		/* ============================================ *
+		 * MEDIA QUERY - MEDIUM SCREEN
+		 * ============================================ */
+		@include bp(max-width, $bp-small){
+
+			.project--desc{
+
+				.project--details{
+					@include flex-direction(column);
+
+					dl{
+						@include display-flex(flex);
+						@include flex-direction(row);
+						@include align-items(flex-start);
+						@include justify-content(space-between);
+						width 		: 100%;
+						margin 		: 0 0 $gap;
+
+						dt,dd{
+							width 		: 50%;
+							display 	: inline-block;
+						}
+
+						dt{
+							text-align 		: left;
+							margin-right 	: $gap;
+						}
+
+						dd{
+							text-align 	: right;
+							margin 		: 0;
+						}
+					}
+
+				}
+
+			}
+
+			.project--links {
+				padding: 0 $gap;
+
+				.link--list {
+					@include flex-direction(column);
+
+					&.grid-4 li {
+						width: 100%;
+						margin-bottom: $gap;
+
+						a.btn--external-link {
+		 					max-width: 100%;
+		 				}
+					}
+				}
+
+			}
+
+			.section.thumbnail-research {
+				img {
+					width: 100%;
+				}
+
+				.section--content {
+					padding: 0;
+				}
+			}
+
+		}	
+	}
+
+}
