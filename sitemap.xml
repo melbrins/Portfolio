@@ -48,10 +48,14 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.melbrins.com/projects/ranger-amazon.php</loc>
+  <lastmod>2022-11-28T21:35:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.melbrins.com/projects/wall-street-institutes.php</loc>
   <lastmod>2022-11-10T17:40:59+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
-
+ 
 </urlset>
