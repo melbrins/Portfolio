@@ -18,61 +18,99 @@
 <?php include '../layout/header.php'; ?>
 
   <div id="container">
-  
+      <div class="content-wrap">
+          <div id="content">
 
+            <!-- ============================================ *
+            * SECTION - WORK
+            * ============================================ -->
+            <div class="work section section--grey">
 
-  <div class="content-wrap">
-      <div id="content">
+                    <div class="section--content">
 
-	
-	<!-- ============================================ *
-	* SECTION - WORK
-	* ============================================ -->
-	<div class="work section section--grey">
+                        <ul class="work--list grid-6">
+                                <?php include '../layout/project-block/ranger-amazon.php'; ?>
+                    <?php include '../layout/project-block/wizardly-foxy.php'; ?>
+                    <?php include '../layout/project-block/fox-dragon.php'; ?>
+                    <?php include '../layout/project-block/turning-red-red.php'; ?>
+                    <?php include '../layout/project-block/fantasy-weapon-shop.php'; ?>
+                    <?php include '../layout/project-block/fox-woman-portrait.php'; ?>
 
-			<div class="section--content">
+                        </ul>
 
-				<ul class="work--list grid-6">
-						<?php include '../layout/project-block/ranger-amazon.php'; ?>
-            <?php include '../layout/project-block/wizardly-foxy.php'; ?>
-            <?php include '../layout/project-block/fox-dragon.php'; ?>
-            <?php include '../layout/project-block/turning-red-red.php'; ?>
-            <?php include '../layout/project-block/fantasy-weapon-shop.php'; ?>	
-            <?php include '../layout/project-block/fox-woman-portrait.php'; ?>
+                        <ul class="work--list grid-6">
+                                <?php include '../layout/project-block/efreet-daraco.php'; ?>
+                                <?php include '../layout/project-block/queen-bee.php'; ?>
+                                <?php include '../layout/project-block/bee-anatomy.php'; ?>
+                                <?php include '../layout/project-block/burning-gaze.php'; ?>
+                                <?php include '../layout/project-block/heroes-of-the-storm.php'; ?>
+                                <?php include '../layout/project-block/dark-elf.php'; ?>
+                        </ul>
 
-				</ul>
+                        <ul class="work--list grid-6">
 
-				<ul class="work--list grid-6">
-						<?php include '../layout/project-block/efreet-daraco.php'; ?>
-						<?php include '../layout/project-block/queen-bee.php'; ?>
-						<?php include '../layout/project-block/bee-anatomy.php'; ?>
-						<?php include '../layout/project-block/burning-gaze.php'; ?>
-						<?php include '../layout/project-block/heroes-of-the-storm.php'; ?>
-						<?php include '../layout/project-block/dark-elf.php'; ?>
-				</ul>
+                            <!--  ANGELA  -->
+                                <?php include '../layout/project-block/angela.php'; ?>
 
-				<ul class="work--list grid-6">
+                        <!--  STAR WARS FAMILY  -->
+                    <?php include '../layout/project-block/star-wars.php'; ?>
 
-					<!--  ANGELA  -->
-						<?php include '../layout/project-block/angela.php'; ?>
+                        <!--  OCTOCAT  -->
+                    <?php include '../layout/project-block/octocat.php'; ?>
 
-  				<!--  STAR WARS FAMILY  -->
-            <?php include '../layout/project-block/star-wars.php'; ?>
+                        <!--  COLD TOUCH -->
+                    <?php include '../layout/project-block/cold-touch.php'; ?>
 
-  				<!--  OCTOCAT  -->
-            <?php include '../layout/project-block/octocat.php'; ?>
+                        <!--  MEDUSA  -->
+                                <?php include '../layout/project-block/medusa.php'; ?>
 
-  				<!--  COLD TOUCH -->
-            <?php include '../layout/project-block/cold-touch.php'; ?>
+                        <!--  BLACK SHEEP GOAT  -->
+                    <?php include '../layout/project-block/black-sheep.php'; ?>
+                        </ul>
+                    </div>
+            </div>
 
-  				<!--  MEDUSA  -->
-						<?php include '../layout/project-block/medusa.php'; ?>
-
-  				<!--  BLACK SHEEP GOAT  -->
-            <?php include '../layout/project-block/black-sheep.php'; ?>
-				</ul>
-			</div>
-	</div>
+            <div class="content">
+                <h1>Captivating Digital Illustrations: A Visual Journey of Imagination and Creativity</h1>
+                <p>
+                    Welcome to my digital illustration gallery, where imagination comes to life in vibrant colors and captivating
+                    visuals. As an illustrator, I pour my heart and soul into creating unique and imaginative artworks that
+                    transport viewers to extraordinary realms.
+                </p>
+                <p>
+                    Within this collection, you'll find a diverse range of illustrations showcasing my artistic prowess.
+                    From fantastical creatures and whimsical landscapes to dynamic character portraits and mesmerizing scenes,
+                    each piece tells a story and evokes emotions.
+                </p>
+                <p>
+                    I bring my skills as a UI/UX designer, full-stack developer on Magento 2, and graphic designer into my
+                    illustrations, infusing them with a unique blend of creativity and technical expertise.
+                    This multidisciplinary approach allows me to craft visually stunning and conceptually rich artworks
+                    that resonate with a wide audience.
+                </p>
+                <p>
+                    Whether you're seeking inspiration, looking to commission custom artwork, or simply appreciating the
+                    beauty of digital illustration, this collection offers something for everyone. Explore the gallery and
+                    immerse yourself in a world where imagination knows no bounds.
+                </p>
+                <p>
+                    Each artwork is meticulously created, paying attention to intricate details, vibrant color palettes, and
+                    dynamic compositions. I strive to bring characters and concepts to life, inviting you to join me on a visual
+                    journey filled with wonder and curiosity.
+                </p>
+                <p>
+                    If you're interested in collaborating on a project or commissioning a custom illustration, I would be
+                    thrilled to bring your vision to life. Feel free to reach out via the contact page to discuss your ideas or
+                    inquire about my illustration and design services.
+                </p>
+                <p>
+                    Thank you for visiting my digital illustration page. I hope my artwork sparks your imagination, ignites
+                    your creativity, and leaves you inspired. Enjoy the captivating world of digital illustration!
+                </p>
+            </div>
+          </div>
+      </div>
+  </div>
 	<!-- page -->
 
 <?php include '../layout/footer.php'; ?>

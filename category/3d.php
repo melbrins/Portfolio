@@ -24,36 +24,79 @@
   <div class="content-wrap">
       <div id="content">
 
-	
-	<!-- ============================================ *
-	* SECTION - WORK
-	* ============================================ -->
-	<div class="work section section--grey">
+            <!-- ============================================ *
+            * SECTION - WORK
+            * ============================================ -->
+            <div class="work section section--grey">
 
-			<div class="section--content">
-				<ul class="work--list grid-6">
+                    <div class="section--content">
+                        <ul class="work--list grid-6">
 
-					<!-- GLUM & FISH -->
-	  				<?php include '../layout/project-block/glumFish.php'; ?>
+                            <!-- GLUM & FISH -->
+                            <?php include '../layout/project-block/glumFish.php'; ?>
 
-	  				<!-- LONDON COFFEE FESTIVAL -->
-	  				<?php include '../layout/project-block/coffeeFestival.php'; ?>
+                            <!-- LONDON COFFEE FESTIVAL -->
+                            <?php include '../layout/project-block/coffeeFestival.php'; ?>
 
-	  				<!-- Wolf -->
-	  				<?php include '../layout/project-block/wolf.php'; ?>
+                            <!-- Wolf -->
+                            <?php include '../layout/project-block/wolf.php'; ?>
 
-                    <!-- VISION DIRECT 3D -->
-                    <?php include '../layout/project-block/vd3D.php'; ?>
+                            <!-- VISION DIRECT 3D -->
+                            <?php include '../layout/project-block/vd3D.php'; ?>
 
-                    <!-- JACK -->
-                    <?php include '../layout/project-block/jack.php'; ?>
+                            <!-- JACK -->
+                            <?php include '../layout/project-block/jack.php'; ?>
 
-	  				<!-- Iphone -->
-	  				<?php include '../layout/project-block/iphone.php'; ?>
+                            <!-- Iphone -->
+                            <?php include '../layout/project-block/iphone.php'; ?>
 
-				</ul>
-			</div>
-	</div>
+                        </ul>
+                    </div>
+            </div>
+
+          <div class="content">
+              <h1>Immersive 3D Creations: Showcasing My Captivating Portfolio</h1>
+              <p>
+                  Welcome to my 3D portfolio, where imagination meets the realm of three-dimensional artistry. Within
+                  this curated collection, I invite you to explore an array of captivating 3D creations that push
+                  the boundaries of visual storytelling.
+              </p>
+              <p>
+                  As a skilled artist and designer, I have crafted a diverse range of 3D works that span various genres
+                  and styles. From realistic architectural renderings and product visualizations to fantastical
+                  character designs and immersive environments, each piece showcases my expertise in bringing concepts
+                  to life with stunning depth and realism.
+              </p>
+              <p>
+                  Through meticulous attention to detail, lighting, texture, and composition, I strive to create
+                  engaging and evocative 3D artworks that transport viewers into extraordinary worlds. With a
+                  combination of technical skill and creative vision, I aim to captivate and inspire.
+              </p>
+              <p>
+                  Within this portfolio, you'll find in-depth case studies, wireframes, and final renders that shed
+                  light on my design process, including concept ideation, modeling, texturing, lighting, and
+                  post-production. Each project serves as a testament to my dedication, creativity, and ability to
+                  transform ideas into tangible 3D masterpieces.
+              </p>
+              <p>
+                  Whether you're seeking visualizations for architectural projects, product designs, or looking to
+                  collaborate on immersive virtual experiences, my portfolio offers a glimpse into the possibilities of
+                  3D art. I am passionate about working closely with clients to understand their vision and bring it to
+                  life with exceptional attention to detail.
+              </p>
+              <p>
+                  If you're interested in discussing a project or commissioning a custom 3D creation, I welcome you to
+                  reach out via the contact page. I'm excited to explore new creative opportunities and contribute my
+                  expertise to your endeavors.
+              </p>
+              <p>
+                  Thank you for visiting my 3D portfolio. Immerse yourself in the captivating world of three-dimensional
+                  art, where imagination takes shape and extraordinary visions become reality. Discover the power of
+                  3D and envision the possibilities of bringing your ideas to life.
+              </p>
+          </div>
+      </div>
+  </div>
 	<!-- page -->
 
 <?php include '../layout/footer.php'; ?>

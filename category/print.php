@@ -21,25 +21,67 @@
 
   <div class="content-wrap">
       <div id="content">
+        <!-- ============================================ *
+        * SECTION - WORK
+        * ============================================ -->
+        <div class="work section section--grey">
+            <div class="section--content">
+                <ul class="work--list grid-2">
 
-	
-	<!-- ============================================ *
-	* SECTION - WORK
-	* ============================================ -->
-	<div class="work section section--grey">
+                    <!--  TEN CHI JIN  -->
+                    <?php include '../layout/project-block/tenChiJin.php'; ?>
 
-			<div class="section--content">
-				<ul class="work--list grid-2">
+                    <!--  WALL STREET INSTITUTES  -->
+                    <?php include '../layout/project-block/WSI.php'; ?>
 
-					<!--  TEN CHI JIN  -->
-					<?php include '../layout/project-block/tenChiJin.php'; ?>
+                </ul>
+            </div>
+        </div>
 
-	  				<!--  WALL STREET INSTITUTES  -->
-	  				<?php include '../layout/project-block/WSI.php'; ?>
-
-				</ul>
-			</div>
-	</div>
+        <div class="content">
+              <h1>Visual Brilliance Unleashed: Showcasing My Diverse Graphic Design Portfolio</h1>
+              <p>
+                  Welcome to my graphic design portfolio, a realm where creativity and visual brilliance collide.
+                  Within this carefully curated collection, you'll discover an eclectic range of projects that
+                  demonstrate my expertise in delivering captivating designs across various mediums.
+              </p>
+              <p>
+                  From eye-catching branding and logo designs to stunning print materials and digital graphics, each
+                  piece reflects my passion for creating compelling visuals that leave a lasting impact. I specialize
+                  in combining artistic flair with strategic thinking to craft designs that effectively communicate
+                  messages, evoke emotions, and captivate audiences.
+              </p>
+              <p>
+                  In this showcase, you'll find a showcase of my graphic design prowess through case studies, brand
+                  identity packages, packaging designs, marketing collateral, and more. Each project tells a unique
+                  story, providing insights into my design process, conceptualization, and the meticulous attention I
+                  pay to typography, color theory, and composition.
+              </p>
+              <p>
+                  With a focus on collaboration and understanding clients' objectives, I strive to create designs that
+                  not only visually stun but also align with their brand's essence and resonate with their target audience.
+                  Whether it's developing a cohesive visual identity or breathing new life into existing materials, my
+                  goal is to craft designs that exceed expectations and deliver results.
+              </p>
+              <p>
+                  Whether you're a business owner seeking impactful marketing materials, an entrepreneur looking to
+                  elevate your brand, or simply an art enthusiast curious about the world of graphic design, this
+                  portfolio offers a glimpse into the breadth and depth of my skills.
+              </p>
+              <p>
+                  If you're interested in discussing a project or partnering on a creative endeavor, I invite you to
+                  reach out via the contact page. Let's collaborate to bring your design visions to life and create
+                  visual brilliance that leaves a lasting impression.
+              </p>
+              <p>
+                  Thank you for visiting my graphic design portfolio. Dive into a world where aesthetics and
+                  communication converge, and discover the power of design to transform ideas into captivating realities.
+                  Together, let's create visual wonders that make a memorable mark.
+              </p>
+      </div>
+    </div>
+  </div>
+</div>
 	<!-- page -->
 
 <?php include '../layout/footer.php'; ?>

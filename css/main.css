@@ -1813,6 +1813,24 @@ p {
     opacity: 0;
   }
 }
+/* line 540, ../scss/_common.scss */
+.content {
+  max-width: 1024px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+/* line 548, ../scss/_common.scss */
+.content h1 {
+  color: white;
+}
+/* line 552, ../scss/_common.scss */
+.content p {
+  margin-bottom: 15px;
+}
+
 /* ============================================ *
  * HEADER
  * ============================================ */
